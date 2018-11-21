@@ -9,6 +9,10 @@ Spiele programmieren mit C# in Unity - Grundlagentutorial
 
 ## Was wirst du in diesem Tutorial lernen?
 
+- bullet list of topics
+
+- competence model
+
 ##Nächste Schritte
 
 Im Anschluss an dieses Grundlagentutorial kannst du das [BouncyFant Tutorial](http://example.com/ "BouncyFant Tutorial") starten, in dem du ein Jump'n'Run-artiges Arcade Spiel entwickelst! 
