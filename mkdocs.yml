@@ -3,6 +3,24 @@ site_name: 'learn2proGrAME Grundlagentutorial'
 site_description: 'Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity'
 site_author: 'learn2proGrAME'
 site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
+nav:
+    - Einleitung: index.md
+    - Bedienoberfläche: userinterface.md
+    - Erste Schritte: firststeps.md
+    - Debugging: debugging.md
+    - Variablen: variables.md
+    - Operatoren: operators.md
+    - Funktionen: functions.md
+    - Spiel - Krapfenklicker: donutclicker.md
+    - Transform Spielobjektkomponente: transform.md
+    - Verzweigungen: conditionals.md
+    - Spiel - Ellis' großes Abenteuer: adventure.md
+    - Figuren zeichnen in GIMP: drawingingimp.md
+    - Schleifen: loops.md
+    - Die Spiel-Schleife: gameloop.md
+    - Objekt-orientiertes Programmieren - Grundlagen: classes.md
+    - Über learn2proGrAME: about.md
+
 
 # Repository
 repo_name: 'learn2proGrAME/learn2proGrAME-Grundlagen'
@@ -21,6 +39,8 @@ theme:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
+  highlightjs: true
+     
 
 # Customization
 extra:
