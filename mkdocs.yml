@@ -1,0 +1,41 @@
+# Project information
+site_name: 'learn2proGrAME Grundlagentutorial'
+site_description: 'Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity'
+site_author: 'learn2proGrAME'
+site_url: 'https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen'
+
+# Repository
+repo_name: 'learn2proGrAME/learn2proGrAME-Grundlagen'
+repo_url: 'https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 learn2proGrAME'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'de'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/learn2proGrAME'
+
+
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
