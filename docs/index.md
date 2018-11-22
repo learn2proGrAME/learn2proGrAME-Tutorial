@@ -41,7 +41,7 @@ Was wirst du im [BouncyFant Tutorial](http://example.com/ "BouncyFant Tutorial")
 
 * Dateimanagement in Unity
 * Spielobjekt-Animation in Unity
-* Spielobjektkomponente Rigidbody2d 
+* Spielobjektkomponente Rigidbody2D 
 * Spielobjekte bewegen
 * Springen mit Hilfe von Vektoren
 * Kollisionsabfrage in Unity

@@ -33,7 +33,7 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 
 C*#*-Skripte werden einem Spielobjekt über *"Add Component"* > *"New Script"* > *"C*#*-Script"* "angeheftet". 
 
-Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobjekts oder überhaupt auf andere Spielobjekte in einer Szene zugreifen kannst. Somit kannst du gezielt die Spiellogik für dein Spiel programmieren. 
+Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobjekts oder überhaupt auf andere Spielobjekte in einer Szene zugreifen kannst. Weiters können Eingaben durch Keyboard, Maus oder GamePad verwendet  oder andere Aspekte der Unity [Spiel-Engine](https://de.wikipedia.org/wiki/Spiel-Engine) verändert werden. Somit kannst du gezielt die Spiellogik für dein Spiel programmieren. 
 
 
 ![Spielobjekt und Komponenten](img/gameobjectandcomponents.png)

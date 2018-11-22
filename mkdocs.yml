@@ -5,7 +5,7 @@ site_author: 'learn2proGrAME'
 site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
 nav:
     - Einleitung: index.md
-    - Bedienoberfläche: userinterface.md
+    - Bedienoberflächen: userinterface.md
     - Erste Schritte: firststeps.md
     - Debugging: debugging.md
     - Variablen: variables.md
