@@ -1,6 +1,6 @@
 #Über [learn2proGrAME](https://programe.at)
 
-
+---
 ##Das Projekt
 
 ![learn2proGrAME Logo](/img/smallproGrAME.png) 
@@ -15,7 +15,12 @@ Programmieren lernen ist für die meisten Menschen eine große Herausforderung u
 
 ![sparklingscience Logo](img/sparklingscience-150x150.png) ![Universität Wien Logo](img/univie-300x150.png)
  
+---
+
 ##Das Team
+
+
+---
 
 ##Für Lehrpersonen: Lernergebnis Strukturmodell
 
