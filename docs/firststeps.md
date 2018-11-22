@@ -14,7 +14,7 @@ Programmieren könnte man als Problemlöseverfahren beschreiben. In unserem Fall
 Ein bisschen allgemeiner könnte man daher sagen: 
 **Ein Algorithmus ist ein Problemlöseverfahren in endlich vielen Schritten.**
 
-![Algorithmus](/img/algo.png)
+![Algorithmus](img/algo.png)
 
 !!! success "Übung"
 	Schreibe *in Stichworten* einen Algorithmus für Zähne putzen.
