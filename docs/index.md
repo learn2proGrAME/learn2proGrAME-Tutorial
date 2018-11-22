@@ -1,6 +1,6 @@
 # learn2proGrAME Grundlagentutorial
 
-![learn2proGrAME Logo](/img/smallproGrAME.png) 
+![learn2proGrAME Logo](img/smallproGrAME.png) 
 
 Spiele programmieren mit C# in Unity - Grundlagentutorial
 

@@ -3,7 +3,7 @@
 ---
 ##Das Projekt
 
-![learn2proGrAME Logo](/img/smallproGrAME.png) 
+![learn2proGrAME Logo](img/smallproGrAME.png) 
 
 **Unter welchen Bedingungen kann Computerspieleentwicklung das Programmierenlernen verbessern?**
  

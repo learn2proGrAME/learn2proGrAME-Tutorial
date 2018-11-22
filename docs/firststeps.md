@@ -36,7 +36,7 @@ C*#*-Skripte werden einem Spielobjekt über *"Add Component"* > *"New Script"* >
 Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobjekts oder überhaupt auf andere Spielobjekte in einer Szene zugreifen kannst. Somit kannst du gezielt die Spiellogik für dein Spiel programmieren. 
 
 
-![Spielobjekt und Komponenten](/img/gameobjectandcomponents.png)
+![Spielobjekt und Komponenten](img/gameobjectandcomponents.png)
 
 ---
 
@@ -45,7 +45,7 @@ Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobj
 Projektdateien findest du in Unity unter *"Project"* > *"Assets"*. Mit *"Create"* kannst du dort neue Ordner und Dateien anlegen. Natürlich kannst du in Unity auch mit [Drag and Drop](https://de.wikipedia.org/wiki/Drag_and_Drop#/media/File:Drag-and-drop-de.svg) Dateien importieren.
 
 
-![Asset Ordner](/img/assetfolder.png)
+![Asset Ordner](img/assetfolder.png)
 
 
 Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner angelegt werden. 
@@ -64,7 +64,8 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 
 
 !!!success "Arbeitsauftrag"
-    Lege die Datei [elef.png](/img/elef.png) im Ordner *"Sprites"* ab.
+    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab.
+
 ##Erste Schritte in C*#*
 
 ###Hallo Elli!
