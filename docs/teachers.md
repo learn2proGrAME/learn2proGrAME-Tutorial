@@ -7,7 +7,7 @@
 
 **Voraussetzungen: [DigiKomp(DK) 31., 3.3](https://digikomp.at/index.php?id=585&L=0)** 
 
-**Inhalte[^1]:**
+**Inhalte:**
 
 * Objekt-orientierte Programmierung
     * Datenstrukturen
@@ -55,7 +55,8 @@
 **Ergebnisse: [DK 1.4, 4.1, 4.2, 4.3, 4.4](https://digikomp.at/index.php?id=585&L=0)**
 
 
-[^1]: Siehe auch: Kramer, M., Hubwieser, P., & Brinda, T. (2016). A competency structure model of object-oriented programming. In Learning and Teaching in Computing and Engineering (LaTICE), 2016 International Conference on (pp. 1-8). IEEE.
+!!! quote "Siehe auch:" 
+    Kramer, M., Hubwieser, P., & Brinda, T. (2016). A competency structure model of object-oriented programming. In Learning and Teaching in Computing and Engineering (LaTICE), 2016 International Conference on (pp. 1-8). IEEE.
 
 --- 
 
