@@ -59,3 +59,4 @@ markdown_extensions:
       guess_lang: true
   - toc:
       permalink: true
+  - footnotes
