@@ -21,9 +21,12 @@
 	Lege ein neues Projekt in Unity an. Es ist ein 2D-Spiel. Nenne es "Hallo Elli".
 	
 !!!bug "ACHTUNG"
-    Merke dir, **wo** du dein Projekt am Computer anlegst. 
-	
+    Merke dir, **wo** du dein Projekt am Computer anlegst.
+		
 	Wenn du weißt, wo dein Projekt ist, kannst du es leicht kopieren oder auf deinem USB Stick speichern.
+
+???tip "TIPP"
+	Du kannst auch in Unity über den Menüpunkt *"Assets"* > *"Im _Dateimanager_ anzeigen"* die Dateien deines Projekts im Dateisystem auf deinem Computer anzeigen lassen.
 
 
 ###Spiel starten (und stoppen)
