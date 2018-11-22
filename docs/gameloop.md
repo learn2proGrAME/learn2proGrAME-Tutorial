@@ -4,7 +4,7 @@
 
 In einer Spielschleife werden neben Kollisionsabfragen und der Bewegungsteuerung sogar noch viel grundlegendere Dinge, wie etwa das Zeichnen des Spieleinhalts erledigt. Eine Spielschleife ist eine Schleife, die fortlaufend wieder wiederholt wird und eine Handvoll wichtiger Grundfunktionen für ein Spiel beinhaltet. Eine typische Spielschleife sieht vom Konzept her etwa folgendermaßen aus:
 
-![Grafik einer Spielschleife](/img/GameLoop.png)
+![Grafik einer Spielschleife](img/GameLoop.png)
 
 ##Weshalb benötigt man eine Spielschleife?
 Die Spielschleife sorgt dafür, dass Ereignisse, die zum Spiel gehören, fortlaufend stattfinden. 
