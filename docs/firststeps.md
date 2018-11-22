@@ -31,7 +31,7 @@ Spielobjekte können von unterschiedlicher Art sein. Die Art wird in einer [Klas
 Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente verliehen. Bei 2D-Spielen heißt diese Rigidbody2D. Ebenso werden Grenzen eines Spielobjekts (für Kollisionsabfragen) durch eine Komponente - Collider - angegeben.
 
 
-C*#*-Skripte werden einem Spielobjekt über *"Add Component"* > *"New Script"* > *"C*#*-Script"* "angeheftet". 
+C*#*-Skripte werden einem Spielobjekt über *"Add Component"* > *"New Script"* "angeheftet". 
 
 Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobjekts oder überhaupt auf andere Spielobjekte in einer Szene zugreifen kannst. Weiters können Eingaben durch Keyboard, Maus oder GamePad verwendet  oder andere Aspekte der Unity [Spiel-Engine](https://de.wikipedia.org/wiki/Spiel-Engine) verändert werden. Somit kannst du gezielt die Spiellogik für dein Spiel programmieren. 
 
