@@ -38,6 +38,9 @@ Das besondere an Skripten ist, dass du darin auf andere Komponenten des Spielobj
 
 ![Spielobjekt und Komponenten](img/gameobjectandcomponents.png)
 
+!!! success "Übung"
+	Beschreibe in eigenen Worten, wofür die Spielobjekt-Komponenten im obigen Bild verwendet werden. SpriteRenderer2D ist bereits beschrieben.
+
 ---
 
 ###Projektdateien
