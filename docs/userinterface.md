@@ -33,6 +33,10 @@
 
 ###Spiel starten (und stoppen)
 
+
+!!!bug "ACHTUNG"
+    Alle Änderungen, die du in Unity vornimmst, während das Spiel gestartet ist, werden NICHT übernommen, sobald du das Spiel wieder stoppst!
+
 ###Speichern
 
 
