@@ -36,7 +36,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * Further resources/*Weiterführende Resourcen* 
     * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
-### Writing Style Guideline/Schreib-Stil Leitfaden<sup>[1](#myfootnote1)</sup>
+### Writing Style Guidelines/Schreib-Stil Leitlinien<sup>[1](#myfootnote1)</sup>
 
 * rather simple than complicated (short sentences, frequently used words, terms are defined, demonstrative)/*eher einfach als kompliziert (kurze Sätze, häufig verwendete Wörter, Fachbegriffe werden erklärt, anschaulich)*
 * rather ordered (in sequence, captions, “common thread”)/*eher geordnet (nach der Reihe, Überschriften, “roter Faden”)*
