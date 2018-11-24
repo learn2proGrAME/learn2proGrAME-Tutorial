@@ -15,14 +15,14 @@ Requirements/*Anforderungen*: Python >2.7
 
 If you have [pip](https://pypi.org/project/pip/) installed, you can/*Falls [pip](https://pypi.org/project/pip/) bereits installiert ist, kann man*: 
 
-"pip install mkdocs"
+`pip install mkdocs`
 
-"pip install mkdocs-material"
+`pip install mkdocs-material`
 
 ### Workflow
 
-Through "*mkdocs serve*" tutorial-documentation can be previewed locally. 
-"*mkdocs serve*" *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
+Through `*mkdocs serve*` tutorial-documentation can be previewed locally. 
+`*mkdocs serve*` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
 
 ### Basic Page Structure / Grundlegende Seitenstruktur
 
