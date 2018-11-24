@@ -6,7 +6,7 @@ Basic Tutorial/*Grundlagentutorial*
 
 ### Installation
 
-The tutorial is written using [mkdocs](https://www.mkdocs.org) using the [material theme](https://squidfunk.github.io/mkdocs-material/).
+The tutorial is written using [mkdocs](https://www.mkdocs.org) with the [material theme](https://squidfunk.github.io/mkdocs-material/).
 Please refer to the project webpages for install instructions.
 
 *Das Tutorial wird mit [mkdocs](https://www.mkdocs.org) unter Verwendung der [material theme](https://squidfunk.github.io/mkdocs-material/) geschrieben. Installationsanweisungen finden sich auf den jeweiligen Projektwebseiten.*
