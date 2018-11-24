@@ -21,8 +21,8 @@ If you have [pip](https://pypi.org/project/pip/) installed, you can/*Falls [pip]
 
 ### Workflow
 
-Through `*mkdocs serve*` tutorial-documentation can be previewed locally. 
-`*mkdocs serve*` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
+Through `mkdocs serve` tutorial-documentation can be previewed locally. 
+`mkdocs serve` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
 
 ### Basic Page Structure / Grundlegende Seitenstruktur
 
