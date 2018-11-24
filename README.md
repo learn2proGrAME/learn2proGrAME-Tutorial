@@ -29,7 +29,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 ### Chapter Structure / Kapitelstruktur
 
-* Title/*Titel*
+* Caption/*Überschrift*
 * Learning goals/*Lernziele*
 * Main Content/*Hauptinhalte*
     * including exercises, work assignments, hints, special notices, references or quotes/*beinhaltet Übungen, Arbeitsaufträge, Tipps, besondere Hinweise (Achtung), Referenzen oder Zitate*
