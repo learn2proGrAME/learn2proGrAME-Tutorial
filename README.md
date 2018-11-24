@@ -48,4 +48,4 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 **Thanks to all supporters and contributors! *Danke an alle UnterstützerInnen und Mitwirkenden!***
 
 
-<a name="myfootnote1">1</a>: See/Siehe: Tausch & Tausch (1998). Educational psychology (orig.: Erziehungspsychologie). Hogrefe, Göttingen. p. 266-277.
+<sub><a name="myfootnote1">1</a>: Tausch & Tausch (1998). Educational psychology (orig.: Erziehungspsychologie). Hogrefe, Göttingen. p. 266-277.</sub>
