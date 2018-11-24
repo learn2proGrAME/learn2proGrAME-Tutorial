@@ -36,5 +36,13 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * Further resources/*Weiterführende Resourcen* 
     * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
+### Writing Style/Schreib-Stil
+
+* rather simple than complicated (short sentences, frequently used words, terms are defined, demonstrative)/*eher einfach als kompliziert (kurze Sätze, häufig verwendete Wörter, Fachbegriffe werden erklärt, anschaulich)*
+* rather ordered (in sequence, captions, “common thread”)/*eher geordnet (nach der Reihe, Überschriften, “roter Faden”)*
+* rather short and concise (essential content, attuned to learning goals)/*eher kurz und prägnant (Kerninhalte, ausgerichtet auf Lernziele)*
+* additional incentives (interesting, varied, relatable)/*Zusätzliche Anregungen(interessant, abwechslungsreich, man kann sich damit in Beziehung setzen)*
+
+See/Siehe: Tausch & Tausch (1998). Educational psychology (orig.: Erziehungspsychologie). Hogrefe, Göttingen. p. 266-277.
 
 **Thanks to all supporters and contributors! *Danke an alle UnterstützerInnen und Mitwirkenden!***
