@@ -2,7 +2,7 @@
 Basic Tutorial/*Grundlagentutorial*
 
 
-## How to Contribute/Wie mitwirken?
+## How to Contribute/*Wie mitwirken*?
 
 ### Installation
 
