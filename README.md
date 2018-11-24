@@ -38,10 +38,10 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 ### Writing Style Guidelines/Schreib-Stil Leitlinien<sup>[1](#myfootnote1)</sup>
 
-* rather simple than complicated (short sentences, frequently used words, terms are defined, demonstrative)/*eher einfach als kompliziert (kurze Sätze, häufig verwendete Wörter, Fachbegriffe werden erklärt, anschaulich)*
-* rather ordered (in sequence, captions, “common thread”)/*eher geordnet (nach der Reihe, Überschriften, “roter Faden”)*
-* rather short and concise (essential content, attuned to learning goals)/*eher kurz und prägnant (Kerninhalte, ausgerichtet auf Lernziele)*
-* additional incentives (interesting, varied, relatable)/*Zusätzliche Anregungen (interessant, abwechslungsreich, man kann sich damit in Beziehung setzen)*
+* rather **simple** than complicated (short sentences, frequently used words, terms are defined, demonstrative)/*eher einfach als kompliziert (kurze Sätze, häufig verwendete Wörter, Fachbegriffe werden erklärt, anschaulich)*
+* rather **ordered** (in sequence, captions, “common thread”)/*eher geordnet (nach der Reihe, Überschriften, “roter Faden”)*
+* rather short and **concise** (essential content, attuned to learning goals)/*eher kurz und prägnant (Kerninhalte, ausgerichtet auf Lernziele)*
+* additional **incentives** (interesting, varied, relatable)/*Zusätzliche Anregungen (interessant, abwechslungsreich, man kann sich damit in Beziehung setzen)*
 
 
 
