@@ -27,7 +27,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 `mkdocs serve` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
 
-### Basic Chapter Structure / Grundlegende Kapitelstruktur
+### Chapter Structure / Kapitelstruktur
 
 * Title/*Titel*
 * Learning goals/*Lernziele*
