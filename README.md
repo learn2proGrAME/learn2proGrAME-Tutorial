@@ -37,4 +37,4 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
     * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
 
-**Thanks to all supporters and contributors! *Danke an alle Unterstützer und Mitwirkenden!***
+**Thanks to all supporters and contributors! *Danke an alle UnterstützerInnen und Mitwirkenden!***
