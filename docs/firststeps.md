@@ -67,11 +67,22 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 
 
 !!!success "Arbeitsauftrag"
-    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab.
+    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Hefte dem neu erzeugten GameObject ein C#-Skript namens "HalloElli.cs" an.
 
 ##Erste Schritte in C*#*
 
+C*#* (C Sharp) ist (in erster Linie) eine [objektorientierte](classes.md) Programmiersprache. Unity-Skripte kann man in C*#* (oder in [Javascript](https://de.wikipedia.org/wiki/JavaScript)) schreiben.
+
 ###Hallo Elli!
+
+!!!success "Arbeitsauftrag"
+    Öffne das C#-Skript "HalloElli.cs" in Visual Studio per Doppelklick auf diese Datei im Unity Projekt Panel. 
+
+Bist du bereit für dein erstes C*#*-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. Du kannst die Tastenkombination `strg + c` (gleichzeitig drücken) zum Kopieren und `strg + v` zum Einfügen verwenden.
+
+
+
+
 
 ###Programmstruktur in C*#*
 
