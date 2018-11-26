@@ -14,3 +14,11 @@ Antwort: "Möglich ist das schon, aber die Spielschleife von Spieleentwicklungsw
 Ein weiteres Problem ist, dass das Spiel auf unterschiedlicher Hardware unterschiedlich schnell läuft. Um eine professionelle Implementierung einer Spielschleife kommt man in der Spieleentwicklung nicht herum. 
 
 
+##Einklinken in die Spielschleife in Unity
+
+Folgende Funktionen eines Spielobjekt-Skripts werden in der Unity-Spielschleife ausgeführt:
+
+
+
+
+Eine genaue Beschreibung der Funktionen findest du in der [offiziellen Unity Programmier-Referenz](https://docs.unity3d.com/ScriptReference/).

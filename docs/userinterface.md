@@ -14,8 +14,26 @@
 
 ##Unity Bedienoberfläche
 
+Als Analogie für das Erschaffen eines Spiels kannst du dir vorstellen, einen Film zu machen. Unity besteht aus Menüs und Panels (=Bedienfelder), die verschiedene Aspekte des Spiel-projekts umfassen. 
+Wie im Film bestehen in Unity Spiele aus einer oder mehrerer **Szene(n)**. 
 
-###Ebenen
+* Im **Hierarchy Panel** findest du alle GameObjects - Requisiten -, die du in der Szene, an der du gerade arbeitest, verwendest. Diese sind hierarchisch - nach Zugehörigkeit und nach der Reihe - geordnet. Die Reihenfolge kannst du per Drag and Drop verändern. 
+
+* Im **Inspector Panel** kannst du Eigenschaften eines GameObjects verändern, sowie Komponenten an ein GameObject "anheften".
+
+* Die Szene, an der du momentan arbeitest, wird im **Scene Panel** angezeigt. Hier kannst du Requisiten aus dem Hierarchie-Panel in der Szene anordnen. 
+
+* Das **Game Panel** zeigt deine aktuelle Szene aus der Kameraperspektive. In diesem Panel kannst du dein Spiel testen, sobald du es startest.
+
+* Wie es beim Filme-machen ein Requisiten-Lager gibt, so bietet Unity das **Project Panel**. Hier sind alle **Assets** - alle "Güter" oder Resourcen - deines Spiel-projekts auffindbar. Das Projekt-Panel ist als Dateisystem organisiert. Hier sammelst du alle Grafiken für dein Spiel, sowie alle Soundeffekte, Spielobjekt-Prototypen oder Szenenaufbauten deiner Spiel-Szenen. Um mehr Übersicht zu haben, können Assets in Ordnern gespeichert werden. Assets werden als GameObjects, Komponenten oder Komponenteneigenschaften in einer Szene verwendet.
+
+![Unity User Interfacen](img/unityInterface.png)
+
+Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden GameObjects in der Folge angezeigt, in der sie erzeugt werden. Per Drag and Drop können diese neu angeordnet werden oder gruppiert werden.
+
+!!!tip "Tipp"
+    Sowohl das Szenen-Panel wie auch das Projekt-Panel haben eine Suchfunktion.
+
 
 ###Neues Projekt anlegen
 
