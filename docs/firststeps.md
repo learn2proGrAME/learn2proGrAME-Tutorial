@@ -71,7 +71,7 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 
 ##Erste Schritte in C*#*
 
-C*#* (C Sharp) ist (in erster Linie) eine [objektorientierte](classes.md) Programmiersprache. Unity-Skripte kann man in C*#* (oder in [Javascript](https://de.wikipedia.org/wiki/JavaScript)) schreiben.
+[C*#* (C Sharp)](https://de.wikipedia.org/wiki/C-Sharp) ist (in erster Linie) eine [objektorientierte](classes.md) Programmiersprache. Unity-Skripte kann man in C*#* (oder in [Javascript](https://de.wikipedia.org/wiki/JavaScript)) schreiben.
 
 ###Hallo Elli!
 
