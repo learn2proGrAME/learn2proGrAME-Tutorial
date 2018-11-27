@@ -702,7 +702,7 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 </details>
 <div class="admonition success">
 <p class="admonition-title">Arbeitsauftrag</p>
-<p>Lege die Datei <a href="../img/elef.png">elef.png</a> im Ordner <em>"Sprites"</em> ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Hefte dem neu erzeugten GameObject ein C#-Skript namens "HalloElli.cs" an.</p>
+<p>Lege die Datei <a href="../img/elef.png">elef.png</a> im Ordner <em>"Sprites"</em> ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.</p>
 </div>
 <h2 id="erste-schritte-in-c">Erste Schritte in C<em>#</em><a class="headerlink" href="#erste-schritte-in-c" title="Permanent link">&para;</a></h2>
 <p><a href="https://de.wikipedia.org/wiki/C-Sharp">C<em>#</em> (C Sharp)</a> ist (in erster Linie) eine <a href="../classes/">objektorientierte</a> Programmiersprache. Unity-Skripte kann man in C<em>#</em> (oder in <a href="https://de.wikipedia.org/wiki/JavaScript">Javascript</a>) schreiben.</p>
@@ -712,7 +712,78 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <p>Öffne das C#-Skript "HalloElli.cs" in Visual Studio per Doppelklick auf diese Datei im Unity Projekt Panel. </p>
 </div>
 <p>Bist du bereit für dein erstes C<em>#</em>-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. Du kannst die Tastenkombination <code>strg + c</code> (gleichzeitig drücken) zum Kopieren und <code>strg + v</code> zum Einfügen verwenden.</p>
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">halloelli</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+    <span class="kt">int</span> <span class="n">punkte</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span>
+
+    <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo Elli!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Zurück in Unity, drücke auf Start.</p>
+<p><img alt="Stop" src="../img/stop.png" /></p>
+<p><img alt="Start" src="../img/start.png" /></p>
+<p>Anschließend, öffne das <strong>Console Panel</strong>. In diesem werden Rückmeldungen des Programms, wie etwa <strong>Debug</strong>-Nachrichten ausgegeben.</p>
+<p><img alt="Console Panel" src="../img/consolePanel.png" /></p>
+<p>Nun, klicke das GameObject Elli an. Im Inspector findest du neben dem GameObject Namen eine Tick-Box. Klicke die Tick-Box an.</p>
+<p><img alt="Inspector Tag and Tick Box" src="../img/inspectorTag.png" /></p>
+<p><img alt="Inspector Disable Tick" src="../img/tickDisable.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Notiere die Ausgabe in der Konsole.</p>
+</div>
 <h3 id="programmstruktur-in-c">Programmstruktur in C<em>#</em><a class="headerlink" href="#programmstruktur-in-c" title="Permanent link">&para;</a></h3>
+<p>Nachfolgend findest du die typische Programmstruktur eines C<em>#</em>-Skripts (mit Erklärungen): </p>
+<div class="codehilite"><pre><span></span><span class="c1">//BIBLIOTHEKEN = PROGRAMMTEILE, DIE IN DAS SCRIPT IMPORTIERT WERDEN</span>
+<span class="k">using</span> <span class="nn">System</span><span class="p">;</span> <span class="c1">//using = EIN SCHLÜSSELWORT IN C#; using System HEIßT: verwende alle Klassen im Namespace(= Programmateil) System</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span> <span class="c1">//DIESE BIBLIOTHEK ERMÖGLICHT ETWA DEN ZUGRIFF AUF DIE UNITY SPIEL-ENGINE</span>
+
+
+<span class="c1">//EINE KLASSE = class bezeichnung {... Inhalte der Klasse ...}</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">halloelli</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="c1">//DIESE KLASSE &quot;ERBT&quot; VON MonoBehaviour - IST ALSO FÜR EIN GAMEOBJECT </span>
+<span class="p">{</span>
+    <span class="c1">//KLASSEN-ATTRIBUTE (EIGENSCHAFTEN) WERDEN IN VARIABLEN GEFASST</span>
+    <span class="kt">int</span> <span class="n">punkte</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span>
+
+    <span class="c1">//FUNKTION(EN) DER KLASSE</span>
+    <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">//STATEMENT(S) - AUSDRÜCKE</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo Elli!&quot;</span><span class="p">);</span>
+
+        <span class="p">/*</span> <span class="n">Dies</span>
+         <span class="p">*</span> <span class="n">ist</span> <span class="n">ein</span>
+         <span class="p">*</span> <span class="n">mehrzeiliges</span>
+         <span class="p">*</span> <span class="n">Kommentar</span>
+         <span class="p">*</span> <span class="p">/</span>
+
+        <span class="c1">//Dies ist ein einzeiliges Kommentar</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<ul>
+<li>Groß- und Kleinschreibung wird beachtet!</li>
+<li>Alle Statements und Ausdrücke werden mit ; beendet!</li>
+<li>Jedes C<em>#</em>-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)</li>
+</ul>
+</div>
 <h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
                 
                   
