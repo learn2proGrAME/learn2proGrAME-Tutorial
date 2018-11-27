@@ -67,7 +67,7 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 
 
 !!!success "Arbeitsauftrag"
-    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Hefte dem neu erzeugten GameObject ein C#-Skript namens "HalloElli.cs" an.
+    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.
 
 ##Erste Schritte in C*#*
 
@@ -80,12 +80,84 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 
 Bist du bereit für dein erstes C*#*-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. Du kannst die Tastenkombination `strg + c` (gleichzeitig drücken) zum Kopieren und `strg + v` zum Einfügen verwenden.
 
+``` c# 
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class halloelli : MonoBehaviour {
+	
+	int punkte = 1;
+	string troeten = "Tröööt."
 
+	void OnDisable()
+	{
+		Debug.Log ("Hallo Elli!");
+	}
+}
+```
 
+Zurück in Unity, drücke auf Start.
+
+![Stop](img/stop.png)
+
+![Start](img/start.png)
+
+Anschließend, öffne das **Console Panel**. In diesem werden Rückmeldungen des Programms, wie etwa **Debug**-Nachrichten ausgegeben.
+
+![Console Panel](img/consolePanel.png)
+
+Nun, klicke das GameObject Elli an. Im Inspector findest du neben dem GameObject Namen eine Tick-Box. Klicke die Tick-Box an.
+
+![Inspector Tag and Tick Box](img/inspectorTag.png)
+
+![Inspector Disable Tick](img/tickDisable.png)
+
+!!!success "Arbeitsauftrag"
+    Notiere die Ausgabe in der Konsole.
+   
 
 ###Programmstruktur in C*#*
 
+Nachfolgend findest du die typische Programmstruktur eines C*#*-Skripts (mit Erklärungen): 
 
+``` c#
+//BIBLIOTHEKEN = PROGRAMMTEILE, DIE IN DAS SCRIPT IMPORTIERT WERDEN
+using System; //using = EIN SCHLÜSSELWORT IN C#; using System HEIßT: verwende alle Klassen im Namespace(= Programmateil) System
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine; //DIESE BIBLIOTHEK ERMÖGLICHT ETWA DEN ZUGRIFF AUF DIE UNITY SPIEL-ENGINE
+
+
+//EINE KLASSE = class bezeichnung {... Inhalte der Klasse ...}
+public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour - IST ALSO FÜR EIN GAMEOBJECT 
+{
+	//KLASSEN-ATTRIBUTE (EIGENSCHAFTEN) WERDEN IN VARIABLEN GEFASST
+	int punkte = 1;
+	string troeten = "Tröööt."
+
+	//FUNKTION(EN) DER KLASSE
+	void OnDisable()
+	{
+		//STATEMENT(S) - AUSDRÜCKE
+		Debug.Log ("Hallo Elli!");
+
+		/* Dies
+		 * ist ein
+		 * mehrzeiliges
+		 * Kommentar
+		 * /
+
+		//Dies ist ein einzeiliges Kommentar
+	}
+}
+```
+
+!!!bug "ACHTUNG"
+    
+	* Groß- und Kleinschreibung wird beachtet!
+	* Alle Statements und Ausdrücke werden mit ; beendet!
+	* Jedes C*#*-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)
 
 ##Weiterführende Resourcen
