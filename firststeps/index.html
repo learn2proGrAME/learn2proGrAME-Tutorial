@@ -385,8 +385,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../debugging/" title="Debugging" class="md-nav__link">
-      Debugging
+    <a href="../debugging/" title="Fehler und De-Bugging" class="md-nav__link">
+      Fehler und De-Bugging
     </a>
   </li>
 
@@ -698,11 +698,19 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <li><em>Material</em>: für physikalische Materialeigenschaften</li>
 </ul>
 </div>
-<details class="tip"><summary>Tipp</summary><p>Du gelangst per Rechtsklick auf den <em>"Assets"</em>-Ordner zu einem Menü, in dem du ebenso <em>"Create"</em> findest.</p>
-</details>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Du gelangst per Rechtsklick auf den <em>"Assets"</em>-Ordner zu einem Menü, in dem du ebenso <em>"Create"</em> findest.</p>
+</div>
+<p>Um ein neues Script für ein GameObject zu erstellen, mache folgendes:
+<img alt="Neuens Skript Ablauf" src="../img/newscriptablauf.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Arbeitsauftrag</p>
-<p>Lege die Datei <a href="../img/elef.png">elef.png</a> im Ordner <em>"Sprites"</em> ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.</p>
+<p>Lege die Sprite-Datei <a href="../img/elef.png">elef.png</a> im Ordner <em>"Sprites"</em> in deinem Unity Projekt ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Ein <strong>Sprite</strong> ist eine 2D Grafik. Das heißt, diese Grafik hat 2 Dimensionen. Sie kann auf der x- und der y-Achse positioniert und skaliert(=vergrößert und verkleinert) werden. Eine Tiefendimension (z-Achse), die man etwa bei 3D-Spielen verwendet, fehlt.</p>
 </div>
 <h2 id="erste-schritte-in-c">Erste Schritte in C<em>#</em><a class="headerlink" href="#erste-schritte-in-c" title="Permanent link">&para;</a></h2>
 <p><a href="https://de.wikipedia.org/wiki/C-Sharp">C<em>#</em> (C Sharp)</a> ist (in erster Linie) eine <a href="../classes/">objektorientierte</a> Programmiersprache. Unity-Skripte kann man in C<em>#</em> (oder in <a href="https://de.wikipedia.org/wiki/JavaScript">Javascript</a>) schreiben.</p>
@@ -711,7 +719,7 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <p class="admonition-title">Arbeitsauftrag</p>
 <p>Öffne das C#-Skript "HalloElli.cs" in Visual Studio per Doppelklick auf diese Datei im Unity Projekt Panel. </p>
 </div>
-<p>Bist du bereit für dein erstes C<em>#</em>-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. Du kannst die Tastenkombination <code>strg + c</code> (gleichzeitig drücken) zum Kopieren und <code>strg + v</code> zum Einfügen verwenden.</p>
+<p>Bist du bereit für dein erstes C<em>#</em>-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. </p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
@@ -720,7 +728,7 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <span class="k">public</span> <span class="k">class</span> <span class="nc">halloelli</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
 
     <span class="kt">int</span> <span class="n">punkte</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
-    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span>
+    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span><span class="p">;</span>
 
     <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
     <span class="p">{</span>
@@ -730,6 +738,10 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 </pre></div>
 
 
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Du kannst die Tastenkombination <code>strg + c</code> (gleichzeitig drücken) zum Kopieren und <code>strg + v</code> zum Einfügen verwenden.</p>
+</div>
 <p>Zurück in Unity, drücke auf Start.</p>
 <p><img alt="Stop" src="../img/stop.png" /></p>
 <p><img alt="Start" src="../img/start.png" /></p>
@@ -756,7 +768,7 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <span class="p">{</span>
     <span class="c1">//KLASSEN-ATTRIBUTE (EIGENSCHAFTEN) WERDEN IN VARIABLEN GEFASST</span>
     <span class="kt">int</span> <span class="n">punkte</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
-    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span>
+    <span class="kt">string</span> <span class="n">troeten</span> <span class="p">=</span> <span class="s">&quot;Tröööt.&quot;</span><span class="p">;</span>
 
     <span class="c1">//FUNKTION(EN) DER KLASSE</span>
     <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
@@ -764,11 +776,11 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
         <span class="c1">//STATEMENT(S) - AUSDRÜCKE</span>
         <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo Elli!&quot;</span><span class="p">);</span>
 
-        <span class="p">/*</span> <span class="n">Dies</span>
-         <span class="p">*</span> <span class="n">ist</span> <span class="n">ein</span>
-         <span class="p">*</span> <span class="n">mehrzeiliges</span>
-         <span class="p">*</span> <span class="n">Kommentar</span>
-         <span class="p">*</span> <span class="p">/</span>
+        <span class="cm">/* Dies</span>
+<span class="cm">         * ist ein</span>
+<span class="cm">         * mehrzeiliges</span>
+<span class="cm">         * Kommentar</span>
+<span class="cm">         */</span>
 
         <span class="c1">//Dies ist ein einzeiliges Kommentar</span>
     <span class="p">}</span>
@@ -780,11 +792,22 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
 <p class="admonition-title">ACHTUNG</p>
 <ul>
 <li>Groß- und Kleinschreibung wird beachtet!</li>
-<li>Alle Statements und Ausdrücke werden mit ; beendet!</li>
+<li>Alle Statements und Ausdrücke werden mit <code>;</code> beendet!</li>
 <li>Jedes C<em>#</em>-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)</li>
 </ul>
 </div>
 <h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="http://openbook.rheinwerk-verlag.de/visual_csharp_2010/visual_csharp_2010_02_001.htm#mj44271ecc5b941bd18cde47caff03832a">Grundlagen der Sprache C<em>#</em> (aus dem Visual C<em>#</em> Handbuch)</a></p>
+</li>
+<li>
+<p><a href="https://www.raywenderlich.com/772-introduction-to-unity-getting-started-part-1-2">Introduction to Unity Tutorial Teil 1 (Ray Wenderlich, Englisch)</a></p>
+</li>
+<li>
+<p><a href="https://www.raywenderlich.com/770-introduction-to-unity-getting-started-part-2-2">Introduction to Unity Tutorial Teil 2 (Ray Wenderlich, Englisch)</a></p>
+</li>
+</ul>
                 
                   
                 
@@ -820,13 +843,13 @@ Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente 
           </a>
         
         
-          <a href="../debugging/" title="Debugging" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../debugging/" title="Fehler und De-Bugging" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Weiter
                 </span>
-                Debugging
+                Fehler und De-Bugging
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
