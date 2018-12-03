@@ -78,7 +78,8 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
 !!!success "Arbeitsauftrag"
     Öffne das C#-Skript "HalloElli.cs" in Visual Studio per Doppelklick auf diese Datei im Unity Projekt Panel. 
 
-Bist du bereit für dein erstes C*#*-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. Du kannst die Tastenkombination `strg + c` (gleichzeitig drücken) zum Kopieren und `strg + v` zum Einfügen verwenden.
+Bist du bereit für dein erstes C*#*-Skript? Kopiere nachfolgenden Programmcode nach "HalloElli.cs" und ersetze dessen Inhalte. 
+
 
 ``` c# 
 using System;
@@ -97,6 +98,9 @@ public class halloelli : MonoBehaviour {
 	}
 }
 ```
+
+!!!tip "Tipp"
+    Du kannst die Tastenkombination `strg + c` (gleichzeitig drücken) zum Kopieren und `strg + v` zum Einfügen verwenden.
 
 Zurück in Unity, drücke auf Start.
 
@@ -135,7 +139,7 @@ public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour -
 {
 	//KLASSEN-ATTRIBUTE (EIGENSCHAFTEN) WERDEN IN VARIABLEN GEFASST
 	int punkte = 1;
-	string troeten = "Tröööt."
+	string troeten = "Tröööt.";
 
 	//FUNKTION(EN) DER KLASSE
 	void OnDisable()
@@ -147,7 +151,7 @@ public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour -
 		 * ist ein
 		 * mehrzeiliges
 		 * Kommentar
-		 * /
+		 */
 
 		//Dies ist ein einzeiliges Kommentar
 	}
@@ -157,7 +161,7 @@ public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour -
 !!!bug "ACHTUNG"
     
 	* Groß- und Kleinschreibung wird beachtet!
-	* Alle Statements und Ausdrücke werden mit ; beendet!
+	* Alle Statements und Ausdrücke werden mit ```;``` beendet!
 	* Jedes C*#*-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)
 
 ##Weiterführende Resourcen

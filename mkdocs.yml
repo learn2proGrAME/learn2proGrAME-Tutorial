@@ -7,7 +7,7 @@ nav:
     - Einleitung: index.md
     - Bedienoberflächen: userinterface.md
     - Erste Schritte: firststeps.md
-    - Debugging: debugging.md
+    - Fehler und De-Bugging: debugging.md
     - Variablen: variables.md
     - Operatoren: operators.md
     - Funktionen: functions.md
