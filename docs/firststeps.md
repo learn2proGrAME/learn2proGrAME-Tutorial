@@ -62,12 +62,21 @@ Um sich Übersicht über die verwendeten Dateien zu verschaffen, können Ordner 
     * *Material*: für physikalische Materialeigenschaften
 
 
-??? tip "Tipp"
+!!!tip "Tipp"
     Du gelangst per Rechtsklick auf den *"Assets"*-Ordner zu einem Menü, in dem du ebenso *"Create"* findest.
 
 
+Um ein neues Script für ein GameObject zu erstellen, mache folgendes:
+![Neuens Skript Ablauf](img/newscriptablauf.png)
+
 !!!success "Arbeitsauftrag"
-    Lege die Datei [elef.png](img/elef.png) im Ordner *"Sprites"* ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.
+    Lege die Sprite-Datei [elef.png](img/elef.png) im Ordner *"Sprites"* in deinem Unity Projekt ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.
+	
+!!!tip "Tipp"
+    Ein **Sprite** ist eine 2D Grafik. Das heißt, diese Grafik hat 2 Dimensionen. Sie kann auf der x- und der y-Achse positioniert und skaliert(=vergrößert und verkleinert) werden. Eine Tiefendimension (z-Achse), die man etwa bei 3D-Spielen verwendet, fehlt.
+
+
+
 
 ##Erste Schritte in C*#*
 
@@ -90,7 +99,7 @@ using UnityEngine;
 public class halloelli : MonoBehaviour {
 	
 	int punkte = 1;
-	string troeten = "Tröööt."
+	string troeten = "Tröööt.";
 
 	void OnDisable()
 	{
@@ -165,3 +174,9 @@ public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour -
 	* Jedes C*#*-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)
 
 ##Weiterführende Resourcen
+
+* [Grundlagen der Sprache C*#* (aus dem Visual C*#* Handbuch)](http://openbook.rheinwerk-verlag.de/visual_csharp_2010/visual_csharp_2010_02_001.htm#mj44271ecc5b941bd18cde47caff03832a)
+
+* [Introduction to Unity Tutorial Teil 1 (Ray Wenderlich, Englisch)](https://www.raywenderlich.com/772-introduction-to-unity-getting-started-part-1-2)
+
+* [Introduction to Unity Tutorial Teil 2 (Ray Wenderlich, Englisch)](https://www.raywenderlich.com/770-introduction-to-unity-getting-started-part-2-2)

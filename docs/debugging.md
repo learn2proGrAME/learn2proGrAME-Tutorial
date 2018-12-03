@@ -3,6 +3,7 @@
 !!! Abstract "Lernziele"
     Hier lernst du, wie du etwas in Unity "rückgängig machen" kannst. Außerdem lernst du den Begriff "De-Bugging" kennen. Du lernst, wo dir in Unity Programmierfehler angezeigt werden und wie du damit umgehen kannst.
 
+----
 Das Schöne am Programmieren ist: Fehler machen gehört dazu!
 
 Fehler sind super Lernmöglichkeiten!
@@ -56,18 +57,46 @@ Hast du eine **Fehlerbeschreibung** und eine **Zeilenangabe**, kannst du die Zei
 * Oder Groß- und Kleinschreibung bei Bezeichnungen nicht eingehalten?
 
 
-Beispiel!!!
+!!!success "Arbeitsauftrag"
+    Füge folgenden Programm-Teil in deinem halloelli.cs Skript nach 
+	
+	```void OnDisable()
+    {
+        Debug.Log ("Hallo Elli!");
+    }```  ein:
+	
+	
+	```
+	void OnEnable()
+	{
+		Debug.Log("Elli ist wieder sichtbar!")
+	}
+	```
+	
+	Finde den Fehler und verbessere den Quellcode.
 
 ###Breakpoints
 
-Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drückst, können **Breakpoints (Haltepunkte)** gesetzt werden. Hierfür klickst du in Visual Studio auf die Zeielnnummer, wo du einen Haltepunkt setzen willst. 
+Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drückst, können **Breakpoints (Haltepunkte)** gesetzt werden. Hierfür klickst du in Visual Studio auf die Zeilennummer, wo du einen Haltepunkt setzen willst. 
 
-![Breakpoints](...)
+![Breakpoints](img/breakpointSetzen.gif)
 
 Anschließend kannst du dein Spiel in Unity starten. Sobald die Ausführung deines Programms an die Stelle kommt, wo dein Haltepunkt gesetzt ist, bleibt es stehen.
 
 Nun kannst du die Inhalte von Variablen im aktuellen Zustand beim Haltepunkt einsehen, indem du den Mauszeiger auf die Variable legst. 
 
-![Variable Inspection](...animatedgif...)
+Mit der Taste "Nächste Anweisung anzeigen" kannst das Programm nach einem Haltepunkt weiterlaufen lassen.
 
-Mit der "Weiter"-Taste kannst du ...
+
+![Variable Inspection](img/breakpointVerwenden.gif)
+
+
+##Weiterführende Resourcen
+
+* [Unity Forum](https://forum.unity.com)
+
+* [Unity User Manual](https://docs.unity3d.com/Manual/index.html)
+
+* [StackOverflow](https://stackoverflow.com/questions/tagged/unity3d)
+
+* [Tutorial für Fortgeschrittene zum De-Buggen in Visual Studio (englisch)](https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger?view=vs-2017)
