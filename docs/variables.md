@@ -33,14 +33,14 @@ Man kann sich das etwa wie ein Postfach vorstellen, auf dem eine Address-Bezeich
 
 ##Deklarieren und Initialisieren
 
-**Deklarieren** bedeutet, dass man eine Variable benennt und ihr einen **Datentyp** zuordnet. 
+* **Deklarieren** bedeutet, dass man eine Variable benennt und ihr einen **Datentyp** zuordnet. 
 
 Datentypen bezeichnen die Form der Daten, also was die Nullen und Einser in einer Bit-Folge jeweils bedeuten.
 
 !!!tip "Tipp"
     Ein Bit ist die kleinste Einheit, mit der Computer rechnen. Ein Bit ist entweder 0 oder 1. Mit Bits kann man [im Binärsystem rechnen](https://www.studienkreis.de/mathematik/zweiersystem/). 
 
-**Initialisieren** bedeutet, dass man einer Variable einen Wert zuweist.
+* **Initialisieren** bedeutet, dass man einer Variable einen Wert zuweist.
 
 !!!success "Übung"
     Analysiere folgenden Quellcode. In welcher Zeile wird eine Variable deklariert? Wo wird eine Variable deklariert und initialisiert?
