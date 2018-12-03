@@ -77,7 +77,7 @@ Hast du eine **Fehlerbeschreibung** und eine **Zeilenangabe**, kannst du die Zei
 
 ###Breakpoints
 
-Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drückst, können **Breakpoints (Haltepunkte)** gesetzt werden. Hierfür klickst du in Visual Studio auf die Zeilennummer, wo du einen Haltepunkt setzen willst. 
+Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drückst, können **Breakpoints (Haltepunkte)** gesetzt werden. Hierfür klickst du in Visual Studio links neben die Zeilennummer, wo du einen Haltepunkt setzen willst. 
 
 ![Breakpoints](img/breakpointSetzen.gif)
 
