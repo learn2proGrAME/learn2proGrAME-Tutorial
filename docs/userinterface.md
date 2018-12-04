@@ -40,6 +40,8 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 !!!success "Arbeitsauftrag"
 	Lege ein neues Projekt in Unity an. Es ist ein 2D-Spiel. Nenne es "Hallo Elli".
 	
+![Projekt oeffnen](img/ProjektOeffnen.png)
+	
 !!!bug "ACHTUNG"
     Merke dir, **wo** du dein Projekt am Computer anlegst.
 		
@@ -60,9 +62,12 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 
 ###Speichern
 
-
-Was passiert, wenn man auf Speichern klickt?
+![Speichern in Unity](img/unitySpeichern.gif)
 
 ##Visual Studio Bedienoberfläche
+
+Visual Studio ist eine Programmierumgebung. C*#*-Skripte können in Visual Studio geschrieben werden.
+
+![Visual Studio Oberflaeche](img/VSUI.png)
 
 ##Weiterführende Resourcen
