@@ -56,8 +56,36 @@ Datentypen bezeichnen die Form der Daten, also was die Nullen und Einser in eine
 
 Datentypen zeigen an, welche Art von Daten einer Variable zugewiesen werden können. Sie zeigen an, wie Daten (also Folgen von Nullen und Einsen) interpretiert werden sollen.
 
+Wichtige Datentypen sind:
+
+| Datentyp                       | Steht für                       | Umfang                                     | Default Wert                            |
+| ------------------------------ | ------------------------------- | ------------------------------------------ | --------------------------------------- |
+| bool                           | Boolean (wahr oder falsch       | True/False                                 | False                                   |
+| int                            | 32-bit Integer (Ganze Zahlen)   | -2147483648 bis 2147483647                 | 0                                       |
+| float                          | 31-bit Float (Gleitkommazahlen) | -3,4mal10hoch38 bis 3,4mal10hoch38             | 0.0f                                    |
+| double                         | 64-bit Gleitkommazahlen         | (+/-)5,0mal10hoch-324 bis (+/-)1,7mal10hoch308 | 0.0D                                    |
+| string                         | Text                            | "Text"                                     | null (string ist ein Referenz-Datentyp) |
+| Sonderfall: Klassenbezeichnung | Objekte einer Klasse            | Eigenschaften der Instanz einer Klasse     | null                                    |
+
+
+!!!success "Arbeitsauftrag"
+    Ergänze die Funktion ```OnDisable()``` im Skript halloelli.cs um zwei Variablen: ```string spiel``` und ```int preis```. Weise der Variable "spiel" den Wert ```"Elli Dance"``` zu. Weise der Variable "preis" den Wert ```5``` zu. Ergänze Debug.Log() um folgenden string: ```"Das Spiel" + spiel + "kostet" + preis + "Euro."```
+	
+!!!tip "Tipp"
+    ```+``` ist der Additions-Operator. Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
 
 ###Umwandlung von Datentypen
+
+Datentypen können manchmal in andere Datentypen umgewandelt werden. Folgende Funktionen ermöglichen neben anderen eine Typ-Umwandlung:
+
+```.ToInt(), .ToBool(), .ToString()```
+
+Ein Beispiel:
+
+``` c#
+int i = 75;
+string zahl = i.ToString();
+```
 
 ## Variablen-Bereich (Scope)
 
