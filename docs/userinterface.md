@@ -47,7 +47,7 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 		
 	Wenn du weißt, wo dein Projekt ist, kannst du es leicht kopieren oder auf deinem USB Stick speichern.
 
-???tip "TIPP"
+!!!tip "TIPP"
 	Du kannst auch in Unity über den Menüpunkt *"Assets"* > *"Im _Dateimanager_ anzeigen"* die Dateien deines Projekts im Dateisystem auf deinem Computer anzeigen lassen.
 
 
