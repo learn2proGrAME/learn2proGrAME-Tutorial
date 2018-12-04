@@ -670,7 +670,72 @@ Man kann sich das etwa wie ein Postfach vorstellen, auf dem eine Address-Bezeich
 
 <h2 id="datentypen">Datentypen<a class="headerlink" href="#datentypen" title="Permanent link">&para;</a></h2>
 <p>Datentypen zeigen an, welche Art von Daten einer Variable zugewiesen werden können. Sie zeigen an, wie Daten (also Folgen von Nullen und Einsen) interpretiert werden sollen.</p>
+<p>Wichtige Datentypen sind:</p>
+<table>
+<thead>
+<tr>
+<th>Datentyp</th>
+<th>Steht für</th>
+<th>Umfang</th>
+<th>Default Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td>Boolean (wahr oder falsch</td>
+<td>True/False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32-bit Integer (Ganze Zahlen)</td>
+<td>-2147483648 bis 2147483647</td>
+<td>0</td>
+</tr>
+<tr>
+<td>float</td>
+<td>31-bit Float (Gleitkommazahlen)</td>
+<td>-3,4mal10hoch38 bis 3,4mal10hoch38</td>
+<td>0.0f</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64-bit Gleitkommazahlen</td>
+<td>(+/-)5,0mal10hoch-324 bis (+/-)1,7mal10hoch308</td>
+<td>0.0D</td>
+</tr>
+<tr>
+<td>string</td>
+<td>Text</td>
+<td>"Text"</td>
+<td>null (string ist ein Referenz-Datentyp)</td>
+</tr>
+<tr>
+<td>Sonderfall: Klassenbezeichnung</td>
+<td>Objekte einer Klasse</td>
+<td>Eigenschaften der Instanz einer Klasse</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>OnDisable()</code> im Skript halloelli.cs um zwei Variablen: <code>string spiel</code> und <code>int preis</code>. Weise der Variable "spiel" den Wert <code>"Elli Dance"</code> zu. Weise der Variable "preis" den Wert <code>5</code> zu. Ergänze Debug.Log() um folgenden string: <code>"Das Spiel" + spiel + "kostet" + preis + "Euro."</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p><code>+</code> ist der Additions-Operator. Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.</p>
+</div>
 <h3 id="umwandlung-von-datentypen">Umwandlung von Datentypen<a class="headerlink" href="#umwandlung-von-datentypen" title="Permanent link">&para;</a></h3>
+<p>Datentypen können manchmal in andere Datentypen umgewandelt werden. Folgende Funktionen ermöglichen neben anderen eine Typ-Umwandlung:</p>
+<p><code>.ToInt(), .ToBool(), .ToString()</code></p>
+<p>Ein Beispiel:</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">75</span><span class="p">;</span>
+<span class="kt">string</span> <span class="n">zahl</span> <span class="p">=</span> <span class="n">i</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</pre></div>
+
+
 <h2 id="variablen-bereich-scope">Variablen-Bereich (Scope)<a class="headerlink" href="#variablen-bereich-scope" title="Permanent link">&para;</a></h2>
 <h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
                 
