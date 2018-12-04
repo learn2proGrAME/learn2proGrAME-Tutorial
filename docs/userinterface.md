@@ -78,3 +78,9 @@ Damit geschriebener Code in Unity ausgeführt werden kann, musst du dein Skript 
     Eine Tastenkombination für Speichern (in Visual Studio) ist: ```strg + s```
 
 ##Weiterführende Resourcen
+
+* [Unity User Interface (englisch)](https://docs.unity3d.com/Manual/LearningtheInterface.html)
+
+* [Unity Hauptfenster (englisch)](https://docs.unity3d.com/Manual/UsingTheEditor.html)
+
+* [Visual Studio Grundlagen](http://www.csharpme.de/entwicklungsumgebung.php)
