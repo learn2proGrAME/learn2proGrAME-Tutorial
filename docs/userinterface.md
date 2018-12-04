@@ -62,6 +62,8 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 
 ###Speichern
 
+In Unity können Szeneneinstellungen mit "Save Scene" gespeichert werden. Projekteinstellungen werden mit "Save Project" gespeichert.
+
 ![Speichern in Unity](img/unitySpeichern.gif)
 
 ##Visual Studio Bedienoberfläche
@@ -69,5 +71,10 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 Visual Studio ist eine Programmierumgebung. C*#*-Skripte können in Visual Studio geschrieben werden.
 
 ![Visual Studio Oberflaeche](img/VSUI.png)
+
+Damit geschriebener Code in Unity ausgeführt werden kann, musst du dein Skript in Visual Studio speichern.
+
+!!!tip "Tipp"
+    Eine Tastenkombination für Speichern (in Visual Studio) ist: ```strg + s```
 
 ##Weiterführende Resourcen
