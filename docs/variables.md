@@ -40,7 +40,7 @@ Datentypen bezeichnen die Form der Daten, also was die Nullen und Einser in eine
 !!!tip "Tipp"
     Ein Bit ist die kleinste Einheit, mit der Computer rechnen. Ein Bit ist entweder 0 oder 1. Mit Bits kann man [im Binärsystem rechnen](https://www.studienkreis.de/mathematik/zweiersystem/). 
 
-* **Initialisieren** bedeutet, dass man einer Variable einen Wert zuweist.
+* **Initialisieren** bedeutet, dass man einer Variable das erste Mal einen Wert zuweist.
 
 !!!success "Übung"
     Analysiere folgenden Quellcode. In welcher Zeile wird eine Variable deklariert? Wo wird eine Variable deklariert und initialisiert?
@@ -62,7 +62,7 @@ Wichtige Datentypen sind:
 | ------------------------------ | ------------------------------- | ------------------------------------------ | --------------------------------------- |
 | bool                           | Boolean (wahr oder falsch       | True/False                                 | False                                   |
 | int                            | 32-bit Integer (Ganze Zahlen)   | -2147483648 bis 2147483647                 | 0                                       |
-| float                          | 31-bit Float (Gleitkommazahlen) | -3,4mal10hoch38 bis 3,4mal10hoch38             | 0.0f                                    |
+| float                          | 32-bit Float (Gleitkommazahlen) | -3,4mal10hoch38 bis 3,4mal10hoch38             | 0.0f                                    |
 | double                         | 64-bit Gleitkommazahlen         | (+/-)5,0mal10hoch-324 bis (+/-)1,7mal10hoch308 | 0.0D                                    |
 | string                         | Text                            | "Text"                                     | null (string ist ein Referenz-Datentyp) |
 | Sonderfall: Klassenbezeichnung | Objekte einer Klasse            | Eigenschaften der Instanz einer Klasse     | null                                    |
