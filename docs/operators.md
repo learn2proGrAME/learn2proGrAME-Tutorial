@@ -1,55 +1,63 @@
 # Operatoren  - Beispiele überarbeiten
 
 !!!abstract "Lernziele"
-    In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in deinem Projekt verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, schau in diesem Kapitel nach.
+    In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in deinem Projekt verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.
     
 
 Ein Operator repräsentiert eine Aktion die man mit einer Variable oder einem ganzen Objekt in C*#* durchführen kann. Man könnte sagen, man lässt die zwei Objekte miteinander agieren. Das Ergebnis bestimmt die Art Operator.
 
-Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.
+<!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
+
 ## Arithmetische Operatoren
 Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!
 
-!!!danger "Vorsicht"
-Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts, aber ignorieren die Punkt vor Strich Regel!
-Du kennst Klammern verwenden um die Reihenfolge der Berechnung anzugeben, denn wie in der Mathematik werden Begriffe in Klammern zuerst berechnet. Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.
+!!!bug "Achtung"
+    Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts, aber ignorieren die Punkt vor Strich Regel!
+    Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.-->
 
 
 ### = Operator 
 
-= ist der Zuweisungsoperator. Er speichert in deiner Variable das was auf der **rechten** Seite davon im Programmcode steht. 
+= ist der **Zuweisungsoperator**. Er speichert was **rechts** davon steht in die Variable links davon. 
 
-!!! tip "Hinweis" Beim Initialisieren einer Variable verwenden wir auch den Zuweisungsoperatoren, denn wir geben ihr einen Wert.
+<!--!!!tip "Tipp" 
+    Zum Initialisieren einer Variable kannst du auch den Zuweisungsoperatoren verwenden.-->
 
 Den Zuweisungsoperator = verwendet man folgendermaßen:
-```
+
+``` c#
+//1. Teil
+//Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.
+//In *name* ist "Kein Name" gespeichert. 
 String name = "Kein Name";
+//In *lieblingszahl* ist die Zahl 1 gespeichert.
 int lieblingszahl = 1;
 
+//2. Teil
+//Wir weisen wir dem String *name* "Ossi der Elefant" mit dem Zuweisungsoperator = zu.
 name = "Ossi der Elefant";
+//Ab sofort steht in name "Ossi der Elefant" anstatt "Null".
+
+
+//Wir weisen dem Integer *lieblingszahl* die Zahl 3 zu.
 x = 3
+//Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.
 
-Debug.Log ("Hallo ich bin " + name+ " und meine Lieblingszahl ist" + lieblingszahl;);
+
+Debug.Log ("Hallo ich bin " + name+ " und meine Lieblingszahl ist" + lieblingszahl);
 ```
-Im ersten Block:
-Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.
-In *name* ist "Kein Name" gespeichert. 
-In *lieblingszahl* ist die Zahl 1 gespeichert.
 
-Zweiter Block:
-Wir weisen wir dem String *name* "Ossi der Elefant" mit dem Zuweisungsoperator = zu.
-Ab sofort steht in name "Ossi der Elefant" anstatt "Kein Name".
-Wir weisen dem Integer *lieblingszahl* die Zahl 3 zu.
-Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.
+!!!success "Arbeitsauftrag"
+    Ergänze die Funktion ```OnDisable()``` in HalloElli.cs mit oben stehendem Programm-Code.
 
-
-Wenn wir das über die Debug Konsole ausgeben steht dort: *Hallo ich bin Ossi der Elefant und meine Lieblingszahl ist 3.* 
+In der Konsole steht nach Aufruf: *Hallo ich bin Ossi der Elefant und meine Lieblingszahl ist 3.* 
 Wir sehen also, die Werte in x und name sind jetzt anders weil wir neue Werte mit = zugewiesen haben.
 
 ### + Operator
 
-Den Additionsoperator + verwendet man um 2 Variablen zu addieren.
-```
+Der Additionsoperator + addiert Variablen.
+
+``` c#
 int a = 1;      
 int b = 2;      
 int c = 0;
@@ -60,14 +68,20 @@ Debug.Log (b+3);
 
 c = a+b;
 ```
-Im Debug Log steht jetzt *3 5*. 
+
+!!!success "Arbeitsauftrag"
+    Ergänze die Funktion ```OnEnable()``` in HalloElli.cs mit oben stehendem Programm-Code.
+
+In der Konsole steht nach Aufruf *3 5*. 
 3 ist das Ergebnis von *a+b* was wir in c gespeichert haben und ausgeben. 
 5 ist das Ergebnis von *b+3* denn in b ist 2 gespeichert.
 
-!!! success "Aufgabe" Verwende den Additionsparameter + um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach "c + a+b" einfügst ist das Ergebnis anders. Warum?
+!!!success "Arbeitsauftrag" 
+    Verwende den Additionsparameter + um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach "c + a+b" einfügst ist das Ergebnis anders. Warum?
 
-Wir können den Additionsoperator + auch verwenden um Strings zu kombinieren.
-```
+Du kannst den Additionsoperator + auch verwenden, um Strings zu kombinieren.
+
+``` c#
 String teil1 = "Wasch";
 String teil2 = "maschine";
 
