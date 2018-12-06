@@ -12,6 +12,10 @@ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder O
 
 <!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
 
+##Operatoren Übersicht
+
+<!-- TABELLE MIT KURZBESCHREIBUNGEN-->
+
 
 ## Arithmetische Operatoren
 Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!
