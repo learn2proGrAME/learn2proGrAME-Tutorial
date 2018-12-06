@@ -12,7 +12,7 @@ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder O
 
 <!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
 
-##Operatoren Übersicht
+##Übersicht
 
 <!-- TABELLE MIT KURZBESCHREIBUNGEN-->
 
