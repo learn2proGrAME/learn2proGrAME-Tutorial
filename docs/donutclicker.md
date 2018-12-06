@@ -33,7 +33,7 @@ Lade etwa das Bild [krapfen.png](img/krapfen.png) auf deinen Computer und speich
 
 Für die Spiellogik kannst du in Krapfenklicker ein leeres GameObject einfügen. Dafür machst du wieder einen Rechtsklick auf das Hierarchie Panel und wählst *Create Empty*. Nenne das GameObject *"GameController"*. Füge dem GameController GameObject ein Skript hinzu. Nenne das Skript ebenfalls *"GameController"*. 
 
-Füge folgenden Quellcode in "GameController.cs" ein:
+Füge folgenden Quellcode in der Datei "GameController.cs" ein:
 
 ``` c#
 using System.Collections;

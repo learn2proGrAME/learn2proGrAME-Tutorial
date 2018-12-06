@@ -1,4 +1,4 @@
-# Operatoren  - Beispiele überarbeiten
+# Operatoren
 
 !!!abstract "Lernziele"
     In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in deinem Projekt verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.
