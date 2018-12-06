@@ -342,9 +342,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Spiel - Krapfenklicker
+      </label>
+    
     <a href="./" title="Spiel - Krapfenklicker" class="md-nav__link md-nav__link--active">
       Spiel - Krapfenklicker
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#szenenaufbau" title="Szenenaufbau" class="md-nav__link">
+    Szenenaufbau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spiellogik" title="Spiellogik" class="md-nav__link">
+    Spiellogik
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fertigstellen" title="Fertigstellen" class="md-nav__link">
+    Fertigstellen
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -474,6 +517,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#szenenaufbau" title="Szenenaufbau" class="md-nav__link">
+    Szenenaufbau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spiellogik" title="Spiellogik" class="md-nav__link">
+    Spiellogik
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fertigstellen" title="Fertigstellen" class="md-nav__link">
+    Fertigstellen
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -488,6 +561,65 @@
                 
                 
                 <h1 id="krapfenklicker-das-spiel">Krapfenklicker - Das Spiel<a class="headerlink" href="#krapfenklicker-das-spiel" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel erstellst du dein erstes Spiel - Krapfenklicker. Du lernst, wie du Variablen, Operatoren und Funktionen für das Programmieren der Spiellogik einsetzen kannst.</p>
+</div>
+<p>Das Spielprinzip von Krapfenklicker ist: SpielerInnen drücken so schnell sie können auf einen Knopf (Button) und erhalten dafür Punkte. </p>
+<h2 id="szenenaufbau">Szenenaufbau<a class="headerlink" href="#szenenaufbau" title="Permanent link">&para;</a></h2>
+<p>Unity bietet Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interface), so wie etwa Text, Benutzereingabe oder Buttons. Um ein User Interface Spielobjekt einzufügen, machst du einen Rechtsklick auf das Hierarchie Panel. Im Kontextmenü wählst du <em>UI</em>. Dort findest du die User Interface GameObjects.</p>
+<p>Für Krapfenklicker brauchen wir einen <em>"Button"</em>. Wähle also <em>"UI"&gt;"Button"</em> aus dem Kontextmenü. Nenne den Button "ClickButton".</p>
+<p><img alt="UI Button Auswahl" src="../img/uibuttonselection.png" /></p>
+<p>Platziere den Button in der Mitte der Szene. </p>
+<p><img alt="Platzierunsauswahl" src="../img/platzierung.png" /></p>
+<p>Weiters brauchst du noch einen Text für die Punkteanzeige. Wähle hierfür im Hierarchie Panel Kontextmenü <em>"UI"&gt;"Text"</em>. Platziere den Text am linken oberen Rand der Szene.</p>
+<p>Du kannst das Button Bild austauschen, indem du in der <em>"Image"</em>-Komponente des ClickButtons das <em>"Source Image"</em> änderst. </p>
+<p><img alt="Source Image" src="../img/sourceimage.png" /></p>
+<p>Lade etwa das Bild <a href="../img/krapfen.png">krapfen.png</a> auf deinen Computer und speichere es im <em>"Sprites"</em>-Ordner (Diesen Ordner kannst du im <em>"Assets"</em>-Ordner anlegen). Ziehe anschließend das <em>"krapfen"</em>-Sprite auf das <em>"Source Image"</em> deines Buttons. Verändere die Größe des Buttons, sodass dieser etwa zwei Drittel der Szene groß ist.</p>
+<p><img alt="Groesse veraendern" src="../img/groessetool.png" /></p>
+<h2 id="spiellogik">Spiellogik<a class="headerlink" href="#spiellogik" title="Permanent link">&para;</a></h2>
+<p>Für die Spiellogik kannst du in Krapfenklicker ein leeres GameObject einfügen. Dafür machst du wieder einen Rechtsklick auf das Hierarchie Panel und wählst <em>Create Empty</em>. Nenne das GameObject <em>"GameController"</em>. Füge dem GameController GameObject ein Skript hinzu. Nenne das Skript ebenfalls <em>"GameController"</em>. </p>
+<p>Füge folgenden Quellcode in "GameController.cs" ein:</p>
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine.UI</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GameController</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="n">Text</span> <span class="n">meinHighscore</span><span class="p">;</span> <span class="c1">//DIES IST DIE VARIABLE, DURCH DIE DAS TEXTFELD VERWENDET WERDEN KANN</span>
+    <span class="k">public</span> <span class="n">Button</span> <span class="n">clickButton</span><span class="p">;</span> <span class="c1">//DIES IST DIE VARIABLE, DURCH DIE DER BUTTON IM SKRIPT VERWENDET WERDEN KANN</span>
+
+    <span class="c1">//HIER DIE VARIABLE FÜR DEN PUNKTESTAND</span>
+    <span class="k">private</span> <span class="kt">int</span> <span class="c1">//ERGÄNZE HIER</span>
+
+    <span class="c1">//DIESE FUNKTION WIRD AUSGEFÜHRT, WENN DER BUTTON GEKLICKT WIRD. </span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">buttonclick</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">highscore</span> <span class="p">=</span> <span class="c1">//ERGÄNZE HIER</span>
+        <span class="n">meinHighscore</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Highscore: &quot;</span> <span class="p">+</span> <span class="c1">//ERGÄNZE HIER: ACHTUNG DATENTYP-UMWANDLUNG NOTWENDIG</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die fehlenden Code-Teile.</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Damit die buttonclick() Funktion ausgeführt wird, muss diese dem Button-GameObject zugewiesen werden.</p>
+</div>
+<p>Wähle im Hierarchie Panel den Button aus. Im Inspektor findest du eine GameObject Komponente <em>"Button (Script)"</em>. Dort ist eine Liste an Befehlen, die ausgeführt werden, wenn der Button gedrückt wird. </p>
+<p><img alt="Liste OnClick für Button" src="../img/onclicklist.png" /></p>
+<p>Drücke auf <em>"+"</em>. Wähle im ersten Menü <em>"Runtime Only"</em>. Ziehe die Datei "GameController.cs" aus dem Assets-Ordner unter <em>"Runtime Only"</em>. Wähle zuletzt die Funktion <em>"buttonclick"</em> aus dem <em>"GameController"-Menü</em> im Menü neben <em>"Runtime Only"</em>.</p>
+<p><img alt="Zuweisung Animated Gif" src="img/krapfenklickerKlickZuweisung.gif" /></p>
+<h2 id="fertigstellen">Fertigstellen<a class="headerlink" href="#fertigstellen" title="Permanent link">&para;</a></h2>
+<p>Abschließend sollen die Punkte in der Punkteanzeige angezeigt werden. Damit du im "GameController"-Skript auf dein Textfeld zugreifen kannst, musst du das Textfeld per Drag and Drop an die <em>"meinHighscore"</em>-Variable anheften.</p>
+<p><img alt="Anheften meinHighscore" src="img/meinHighscoreAnheften.gif" /></p>
+<p>Fertig!!!! Und jetzt Punkte sammeln :)</p>
                 
                   
                 
