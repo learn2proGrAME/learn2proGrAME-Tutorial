@@ -699,146 +699,184 @@
                 <h1 id="operatoren-beispiele-uberarbeiten">Operatoren  - Beispiele überarbeiten<a class="headerlink" href="#operatoren-beispiele-uberarbeiten" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p class="admonition-title">Lernziele</p>
-<p>In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in deinem Projekt verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, schau in diesem Kapitel nach.</p>
+<p>In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in deinem Projekt verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.</p>
 </div>
-<p>Ein Operator repräsentiert eine Aktion die man mit einer Variable oder einem ganzen Objekt in C<em>#</em> durchführen kann. Man könnte sagen, man lässt die zwei Objekte miteinander agieren. Das Ergebnis bestimmt die Art Operator.</p>
-<p>Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.</p>
+<hr />
+<p>Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. </p>
+<!--Das Ergebnis bestimmt die Art Operator.-->
+
+<!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
+
 <h2 id="arithmetische-operatoren">Arithmetische Operatoren<a class="headerlink" href="#arithmetische-operatoren" title="Permanent link">&para;</a></h2>
 <p>Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!</p>
-<div class="admonition danger">
-<p class="admonition-title">Vorsicht</p>
-</div>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
 <p>Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts, aber ignorieren die Punkt vor Strich Regel!
-Du kennst Klammern verwenden um die Reihenfolge der Berechnung anzugeben, denn wie in der Mathematik werden Begriffe in Klammern zuerst berechnet. Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.</p>
+Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.--></p>
+</div>
 <h3 id="operator">= Operator<a class="headerlink" href="#operator" title="Permanent link">&para;</a></h3>
-<p>= ist der Zuweisungsoperator. Er speichert in deiner Variable das was auf der <strong>rechten</strong> Seite davon im Programmcode steht. </p>
-<p>!!! tip "Hinweis" Beim Initialisieren einer Variable verwenden wir auch den Zuweisungsoperatoren, denn wir geben ihr einen Wert.</p>
-<p>Den Zuweisungsoperator = verwendet man folgendermaßen:</p>
-<div class="codehilite"><pre><span></span>String name = &quot;Kein Name&quot;;
-int lieblingszahl = 1;
+<p><code>=</code> ist der <strong>Zuweisungsoperator</strong>. Er speichert was <strong>rechts</strong> davon steht in die Variable links davon. </p>
+<!--!!!tip "Tipp" 
+    Zum Initialisieren einer Variable kannst du auch den Zuweisungsoperatoren verwenden.-->
 
-name = &quot;Ossi der Elefant&quot;;
-x = 3
+<p>Den Zuweisungsoperator <code>=</code> verwendet man folgendermaßen:</p>
+<div class="codehilite"><pre><span></span><span class="c1">//1. Teil</span>
+<span class="c1">//Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.</span>
+<span class="c1">//In *name* ist &quot;Kein Name&quot; gespeichert. </span>
+<span class="n">String</span> <span class="n">name</span> <span class="p">=</span> <span class="s">&quot;Kein Name&quot;</span><span class="p">;</span>
+<span class="c1">//In *lieblingszahl* ist die Zahl 1 gespeichert.</span>
+<span class="kt">int</span> <span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
 
-Debug.Log (&quot;Hallo ich bin &quot; + name+ &quot; und meine Lieblingszahl ist&quot; + lieblingszahl;);
+<span class="c1">//2. Teil</span>
+<span class="c1">//Wir weisen wir dem String *name* &quot;Ossi der Elefant&quot; mit dem Zuweisungsoperator = zu.</span>
+<span class="n">name</span> <span class="p">=</span> <span class="s">&quot;Elli der Elefant&quot;</span><span class="p">;</span>
+<span class="c1">//Ab sofort steht in name &quot;Elli der Elefant&quot; anstatt &quot;Null&quot;.</span>
+
+
+<span class="c1">//Wir weisen dem Integer *lieblingszahl* die Zahl 3 zu.</span>
+<span class="n">x</span> <span class="p">=</span> <span class="m">3</span>
+<span class="c1">//Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.</span>
+
+
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo ich bin &quot;</span> <span class="p">+</span> <span class="n">name</span><span class="p">+</span> <span class="s">&quot; und meine Lieblingszahl ist&quot;</span> <span class="p">+</span> <span class="n">lieblingszahl</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im ersten Block:
-Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.
-In <em>name</em> ist "Kein Name" gespeichert. 
-In <em>lieblingszahl</em> ist die Zahl 1 gespeichert.</p>
-<p>Zweiter Block:
-Wir weisen wir dem String <em>name</em> "Ossi der Elefant" mit dem Zuweisungsoperator = zu.
-Ab sofort steht in name "Ossi der Elefant" anstatt "Kein Name".
-Wir weisen dem Integer <em>lieblingszahl</em> die Zahl 3 zu.
-Ab sofort steht in <em>lieblingszahl</em> die Zahl 3 anstatt 1.</p>
-<p>Wenn wir das über die Debug Konsole ausgeben steht dort: <em>Hallo ich bin Ossi der Elefant und meine Lieblingszahl ist 3.</em> 
-Wir sehen also, die Werte in x und name sind jetzt anders weil wir neue Werte mit = zugewiesen haben.</p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>OnDisable()</code> in HalloElli.cs mit oben stehendem Programm-Code.</p>
+</div>
+<p>In der Konsole steht nach Aufruf: <em>"Hallo ich bin Elli der Elefant und meine Lieblingszahl ist 3."</em> 
+Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt anders weil wir neue Werte mit <code>=</code> zugewiesen haben.</p>
 <h3 id="operator_1">+ Operator<a class="headerlink" href="#operator_1" title="Permanent link">&para;</a></h3>
-<p>Den Additionsoperator + verwendet man um 2 Variablen zu addieren.</p>
-<div class="codehilite"><pre><span></span>int a = 1;      
-int b = 2;      
-int c = 0;
+<p>Der <strong>Additionsoperator</strong> <code>+</code> addiert Variablen.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>      
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>      
+<span class="kt">int</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
 
-Debug.Log (a+b);
-Debug.Log (&quot; &quot;);
-Debug.Log (b+3);
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">a</span><span class="p">+</span><span class="n">b</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">b</span><span class="p">+</span><span class="m">3</span><span class="p">);</span>
 
-c = a+b;
+<span class="n">c</span> <span class="p">=</span> <span class="n">a</span><span class="p">+</span><span class="n">b</span><span class="p">;</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>3 5</em>. 
-3 ist das Ergebnis von <em>a+b</em> was wir in c gespeichert haben und ausgeben. 
-5 ist das Ergebnis von <em>b+3</em> denn in b ist 2 gespeichert.</p>
-<p>!!! success "Aufgabe" Verwende den Additionsparameter + um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach "c + a+b" einfügst ist das Ergebnis anders. Warum?</p>
-<p>Wir können den Additionsoperator + auch verwenden um Strings zu kombinieren.</p>
-<div class="codehilite"><pre><span></span>String teil1 = &quot;Wasch&quot;;
-String teil2 = &quot;maschine&quot;;
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>OnEnable()</code> in HalloElli.cs mit oben stehendem Programm-Code.</p>
+</div>
+<p>In der Konsole steht nach Aufruf <em>"3 5"</em>. 
+3 ist das Ergebnis von <em>"a+b"</em> was wir in c gespeichert haben und ausgeben. 
+5 ist das Ergebnis von <em>"b+3"</em> denn in b ist 2 gespeichert.</p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Verwende den Additionsparameter <code>+</code> um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach <code>c + a+b</code> einfügst ist das Ergebnis anders. Warum?</p>
+</div>
+<p>Du kannst den Additionsoperator <code>+</code> auch verwenden, um Strings zu kombinieren.</p>
+<div class="codehilite"><pre><span></span><span class="n">String</span> <span class="n">teil1</span> <span class="p">=</span> <span class="s">&quot;Wasch&quot;</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">teil2</span> <span class="p">=</span> <span class="s">&quot;maschine&quot;</span><span class="p">;</span>
 
-Debug.Log (teil1 + teil2);
-Debug.Log (&quot; Bohr&quot; +teil2);
-Debug Log (&quot;Süßes&quot; + &quot; oder &quot; + &quot;Saures&quot;);
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">teil1</span> <span class="p">+</span> <span class="n">teil2</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot; Bohr&quot;</span> <span class="p">+</span><span class="n">teil2</span><span class="p">);</span>
+<span class="n">Debug</span> <span class="nf">Log</span> <span class="p">(</span><span class="s">&quot;Süßes&quot;</span> <span class="p">+</span> <span class="s">&quot; oder &quot;</span> <span class="p">+</span> <span class="s">&quot;Saures&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt: <em>Waschmaschine Bohrmaschine Süßes oder Saures</em></p>
-<p>!!! tip "Hinweis" Wenn du Strings kombinierst um einen Satz zu erstellen musst du darauf achten auch Leerzeichen anzufügen, sonst kleben deine Wörter zusammen.</p>
+<p>In der Konsole steht jetzt: <em>Waschmaschine Bohrmaschine Süßes oder Saures</em></p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Wenn du Strings kombinierst, um einen Satz zu erstellen, musst du Leerzeichen anfügen. Sonst kleben die Wörter zusammen.</p>
+</div>
 <h3 id="-operator">- Operator<a class="headerlink" href="#-operator" title="Permanent link">&para;</a></h3>
-<p>Den Additionsoperator + verwendet man um 2 Variablen zu subtrahieren</p>
-<div class="codehilite"><pre><span></span>int a = 3; 
-a = a - 2;
-Debug.Log(a);
+<p>Den <strong>Subtraktionsoperator</strong> <code>-</code> verwendet man um 2 Variablen zu subtrahieren</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span> 
+<span class="n">a</span> <span class="p">=</span> <span class="n">a</span> <span class="p">-</span> <span class="m">2</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>1</em>. </p>
+<p>In der Konsole steht nach Ausführen <em>1</em>. </p>
 <h3 id="operator_2">* Operator<a class="headerlink" href="#operator_2" title="Permanent link">&para;</a></h3>
-<p>Den Multiplikationsoperator * verwendet man um 2 Variablen zu multiplizieren.</p>
-<div class="codehilite"><pre><span></span>int a = 3
-int b = a*5;
-Debug.Log(b);
+<p>Den <strong>Multiplikationsoperator</strong> <code>*</code> verwendet man um 2 Variablen zu multiplizieren.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">*</span><span class="m">5</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>15</em>.  </p>
-<p>Ohne Klammern:</p>
-<div class="codehilite"><pre><span></span>int a = 3
-int b = a+2*5;
-Debug.Log(b);
+<p>In der Konsole steht nach Ausführen <em>15</em>.  </p>
+<ul>
+<li>Ohne Klammern:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">+</span><span class="m">2</span><span class="p">*</span><span class="m">5</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>25</em>.  </p>
-<p>Mit Klammern:</p>
-<div class="codehilite"><pre><span></span>int a = 3
-int b = a+(2*5);
-Debug.Log(b);
+<p>In der Konsole steht nach Ausführen <em>25</em>.  </p>
+<ul>
+<li>Mit Klammern:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">+(</span><span class="m">2</span><span class="p">*</span><span class="m">5</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>13</em>.  </p>
+<p>In der Konsole steht nach Ausführen <em>13</em>.  </p>
 <h3 id="operator_3">/ Operator<a class="headerlink" href="#operator_3" title="Permanent link">&para;</a></h3>
-<p>Den Divisionsoperator / verwendet man um 2 Variablen miteinander zu dividieren. 
-Es wird immer die Zahl auf der linken Seite durch die Zahl auf der rechten Seite dividiert.</p>
-<div class="codehilite"><pre><span></span>int a = 15
-int b = a/3;
-Debug.Log(b);
+<p>Den <strong>Divisionsoperator</strong> <code>/</code> verwendet man um 2 Variablen miteinander zu dividieren. </p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Es wird immer die Zahl auf der linken Seite durch die Zahl auf der rechten Seite dividiert.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>5</em>.  </p>
-<div class="codehilite"><pre><span></span>int a = 15
-int b = a/3+2;
-Debug.Log(b);
+<p>In der Konsole steht nach Ausführen <em>5</em>.  </p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>7</em>. </p>
-<div class="codehilite"><pre><span></span>int a = 15
-int b = a/(3+2);
-Debug.Log(b);
+<p>In der Konsole steht nach Ausführen <em>7</em>. </p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/(</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>3</em>.  </p>
+<p>In der Konsole steht nach Ausführen <em>3</em>.  </p>
 <h3 id="operator_4">% Operator<a class="headerlink" href="#operator_4" title="Permanent link">&para;</a></h3>
-<p>Den Modulo Operator % wird verwendet um Division mit Rest durchzuführen. Das Ergebnis dieser Berechnung ist aber <strong>nur der Restbetrag</strong>.</p>
-<div class="codehilite"><pre><span></span>int a = 10
-int b = 10%3
-Debug.Log(b);
+<p>Der <strong>Modulo</strong> Operator <code>%</code> wird verwendet, um eine Division mit Rest durchzuführen. Das Ergebnis dieser Berechnung ist aber <strong>nur der Restbetrag</strong>.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">10</span><span class="p">%</span><span class="m">3</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Im Debug Log steht jetzt <em>1</em>, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der Modulo operator % liefert nur den Rest zurück.</p>
+<p>In der Konsole steht nach Ausführen <em>1</em>, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der <strong>Modulo</strong> Operator <code>%</code> liefert nur den Rest zurück.</p>
 <h2 id="logische-operatoren">Logische Operatoren<a class="headerlink" href="#logische-operatoren" title="Permanent link">&para;</a></h2>
-<p>Logische Operatoren unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen angeben ob etwas Wahr oder Falsch ist, wir nennen diesen Wahr oder Falsch Zustand ein boolean. Mit Logischen Operatoren können wir zwei Aussagen zusammensetzen und Abfragen ob das Ergebnis beider Aussagen Wahr oder Falsch ist.</p>
-<p>Wie wir die Ergebnisse von logischen Operatoren verwenden lernen wir genauer im Kapitel Verzweigungen.</p>
+<p><strong>Logische Operatoren</strong> 
+<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> geben an, ob eine Verknüpfung von Wahrheitswerten Wahr oder Falsch ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Ein Zustand, der entweder wahr oder falsch ist, ist ein <strong>Boolean</strong>. </p>
+</div>
+<p>Logischen Operatoren sind besonders wichtig bei <a href="../conditionals/">Verzweigungen</a>.</p>
 <h3 id="nicht-operator">NICHT Operator ( ! )<a class="headerlink" href="#nicht-operator" title="Permanent link">&para;</a></h3>
 <h3 id="und-operator">UND Operator ( &amp;&amp; )<a class="headerlink" href="#und-operator" title="Permanent link">&para;</a></h3>
 <h3 id="oder-operator">ODER Operator ( || )<a class="headerlink" href="#oder-operator" title="Permanent link">&para;</a></h3>
-<p>!!! danger "Vorsicht!" Wenn du etwas berechnest, aber das Ergebnis nicht sofort weiterverwendest oder einer Variablen zuweist verschwindet es noch vor deinem nächste Programmierbefehl.</p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Wenn du etwas berechnest, aber das Ergebnis nicht sofort weiterverwendest (oder einer Variablen zuweist) verschwindet es noch vor deinem nächsten Programmierbefehl.</p>
+</div>
                 
                   
                 
