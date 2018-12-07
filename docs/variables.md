@@ -47,8 +47,8 @@ Datentypen bezeichnen die Form der Daten, also was die Nullen und Einser in eine
 	
 	
 ```
-	int x;
-	int y = 2;
+	int ersteVariable;
+	int zweiteVariable = 2;
 ```
    
 
@@ -72,7 +72,7 @@ Wichtige Datentypen sind:
     Ergänze die Funktion ```OnDisable()``` im Skript halloelli.cs um zwei Variablen: ```string spiel``` und ```int preis```. Weise der Variable "spiel" den Wert ```"Elli Dance"``` zu. Weise der Variable "preis" den Wert ```5``` zu. Ergänze Debug.Log() um folgenden string: ```"Das Spiel" + spiel + "kostet" + preis + "Euro."```
 	
 !!!tip "Tipp"
-    ```+``` ist der Additions-Operator. Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
+    ```+``` ist der [Additions-Operator](operators.md). Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
 
 ###Umwandlung von Datentypen
 

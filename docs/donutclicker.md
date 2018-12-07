@@ -8,7 +8,7 @@ Das Spielprinzip von Krapfenklicker ist: SpielerInnen drücken so schnell sie k�
 
 ##Szenenaufbau
 
-Unity bietet Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interface), so wie etwa Text, Benutzereingabe oder Buttons. Um ein User Interface Spielobjekt einzufügen, machst du einen Rechtsklick auf das Hierarchie Panel. Im Kontextmenü wählst du *UI*. Dort findest du die User Interface GameObjects.
+Unity bietet Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interfaces), etwa Text, Benutzereingabe oder Buttons. Um ein User Interface Spielobjekt einzufügen, machst du einen Rechtsklick auf das Hierarchie Panel. Im Kontextmenü wählst du *UI*. Dort findest du die User Interface GameObjects.
 
 Für Krapfenklicker brauchen wir einen *"Button"*. Wähle also *"UI">"Button"* aus dem Kontextmenü. Nenne den Button "ClickButton".
 
@@ -24,16 +24,16 @@ Du kannst das Button Bild austauschen, indem du in der *"Image"*-Komponente des 
 
 ![Source Image](img/sourceimage.png)
 
-Lade etwa das Bild [krapfen.png](img/krapfen.png) auf deinen Computer und speichere es im *"Sprites"*-Ordner (Diesen Ordner kannst du im *"Assets"*-Ordner anlegen). Ziehe anschließend das *"krapfen"*-Sprite auf das *"Source Image"* deines Buttons. Verändere die Größe des Buttons, sodass dieser etwa zwei Drittel der Szene groß ist.
+Lade etwa das Bild [krapfen.png](img/krapfen.png) auf deinen Computer und speichere es im *"Sprites"*-Ordner (Diesen Ordner kannst du im *"Assets"*-Ordner anlegen). Ziehe anschließend das *"krapfen"*-Sprite per Drag and Drop auf das *"Source Image"* deines Buttons. Verändere die Größe des Buttons, sodass dieser etwa zwei Drittel der Szene groß ist.
 
 ![Groesse veraendern](img/groessetool.png)
 
 
 ##Spiellogik
 
-Für die Spiellogik kannst du in Krapfenklicker ein leeres GameObject einfügen. Dafür machst du wieder einen Rechtsklick auf das Hierarchie Panel und wählst *Create Empty*. Nenne das GameObject *"GameController"*. Füge dem GameController GameObject ein Skript hinzu. Nenne das Skript ebenfalls *"GameController"*. 
+Für die Spiellogik kannst du in Krapfenklicker ein leeres GameObject einfügen. Dafür machst du wieder einen Rechtsklick auf das Hierarchie Panel und wählst *"Create Empty"*. Nenne das GameObject *"GameController"*. Füge dem GameController GameObject ein Skript hinzu. Nenne das Skript ebenfalls *"GameController"*. 
 
-Füge folgenden Quellcode in der Datei "GameController.cs" ein:
+Überschreibe den Quellcode in der Datei "GameController.cs" mit:
 
 ``` c#
 using System.Collections;
@@ -64,13 +64,14 @@ public class GameController : MonoBehaviour {
     Ergänze die fehlenden Code-Teile.
 
 !!!bug "ACHTUNG"
-    Damit die buttonclick() Funktion ausgeführt wird, muss diese dem Button-GameObject zugewiesen werden.
+    Damit die ```buttonclick()``` Funktion ausgeführt wird, muss diese dem GameObject *"ClickButton"* zugewiesen werden.
 
-Wähle im Hierarchie Panel den Button aus. Im Inspektor findest du eine GameObject Komponente *"Button (Script)"*. Dort ist eine Liste an Befehlen, die ausgeführt werden, wenn der Button gedrückt wird. 
+Wie kannst du ```buttonclick()``` deinem Button zuweisen?
+Wähle im Hierarchie Panel den Button (namens *"ClickButton"*) aus. Im Inspektor findest du eine GameObject Komponente *"Button (Script)"*. Dort ist eine Liste, in der du Funktionen angeben kannst, die ausgeführt werden sollen, wenn der Button gedrückt wird. 
 
 ![Liste OnClick für Button](img/onclicklist.png)
 
-Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*. Ziehe die Datei "GameController.cs" aus dem Assets-Ordner unter *"Runtime Only"*. Wähle zuletzt die Funktion *"buttonclick"* aus dem *"GameController"-Menü* im Menü neben *"Runtime Only"*.
+Das funktioniert so: Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*. Ziehe die Datei "GameController.cs" aus dem Assets-Ordner unter *"Runtime Only"*. Wähle zuletzt die Funktion *"buttonclick"* aus dem *"GameController"-Menü* im Menü neben *"Runtime Only"*.
 
 ![Zuweisung Animated Gif](img/krapfenklickerKlickZuweisung.gif)
 
