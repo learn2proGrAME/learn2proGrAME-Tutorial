@@ -96,6 +96,8 @@ Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgese
 
 ##Weiterführende Resourcen
 
-* [Variables and Functions Tutorial (englisch)](https://unity3d.com/learn/tutorials/topics/scripting/variables-and-functions)
+* [Variablen schnell erklärt (Video)](https://www.youtube.com/watch?v=U14WiZ0ua_0)
+
+* [Unity Variables and Functions Tutorial (englisch)](https://unity3d.com/learn/tutorials/topics/scripting/variables-and-functions)
 
 * [Scope and Access Control in Unity Tutorial  (englisch)](https://unity3d.com/learn/tutorials/topics/scripting/scope-and-access-modifiers)
