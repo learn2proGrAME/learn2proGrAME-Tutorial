@@ -7,7 +7,7 @@
 
 <!--!!! Abstract "Hinweis"
     In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.-->
------
+<!-- ----- -->
 
 ##Wofür braucht man Funktionen?
 

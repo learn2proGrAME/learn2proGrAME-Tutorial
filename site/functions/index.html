@@ -580,16 +580,17 @@
 <p>In diesem Kapitel lernst du was Funktionen beim Programmieren sind. Du lernst, wofür Funktionen verwendet werden, was <strong>Parameter</strong> und <strong>Rückgabewerte</strong> sind und wie du deine eigenen Funktionen schreiben kannst.</p>
 </div>
 <hr />
-<div class="admonition abstract">
-<p class="admonition-title">Hinweis</p>
-<p>In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.</p>
-</div>
+<!--!!! Abstract "Hinweis"
+    In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.-->
+
 <hr />
 <h2 id="wofur-braucht-man-funktionen">Wofür braucht man Funktionen?<a class="headerlink" href="#wofur-braucht-man-funktionen" title="Permanent link">&para;</a></h2>
-<p>Funktionen bzw. Methoden kann man sich beispielsweise als kleine <em>Unterprogramme</em> vorstellen.
-Angenommen du musst für dein Spiel den Abstand zwischen zwei Objekten berechnen. (Diese Berechnung benötigt man in den meisten Spielen sehr häufig)
-Eine Möglichkeit wäre, den dafür nötigen Code einfach jedes Mal einzutippen oder mit Copy-Paste überall einzufügen, wo du ihn benötigst. Das wäre aber nicht nur sehr viel unnötige Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später draufkommst, dass deine Berechnung einen Fehler enthält musst du an allen Stellen im Programm den Fehler ausbessern.</p>
-<p>Bessere Möglichkeit: Du erstellst eine Funktion, die den Abstand zwischen zwei Punkten berechnet.</p>
+<p>Funktionen (bzw. Methoden) sind kleine <em>Unterprogramme</em>.</p>
+<p>Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.</p>
+<p>Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst. 
+Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.</p>
+<p>Eine bessere Möglichkeit ist: </p>
+<p>Du erstellst eine <strong>Funktion</strong>, die den Abstand zwischen zwei Punkten berechnet.</p>
 <div class="codehilite"><pre><span></span>   <span class="c1">// Diese Funktion berechnet den Abstand zwischen zwei Punkten.</span>
    <span class="c1">// x1,y1  ... Koordinaten des ersten Punkts</span>
    <span class="c1">// x2,y2  ... Koordinaten des zweiten Punkts</span>
@@ -603,16 +604,16 @@ Eine Möglichkeit wäre, den dafür nötigen Code einfach jedes Mal einzutippen 
 </pre></div>
 
 
-<p>Anstatt nun jedes Mal diese Berechnung <em>händisch</em> durchzuführen, kannst du jedes Mal wenn du den Abstand zwischen zwei Punkten berechnen willst diese Funktion aufrufen.</p>
+<p>Anstatt nun jedes Mal diese Berechnung <em>händisch</em> durchzuführen, kannst du diese Funktion aufrufen.</p>
 <div class="codehilite"><pre><span></span>  <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Abstand</span><span class="p">(</span><span class="n">elli</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">elli</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
 </pre></div>
 
 
-<p>Außerdem musst du, wenn du später den Code ändern willst, die Änderungen nur an einer Stelle, nämlich im Code der Funktion durchführen.</p>
+<p>Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktion, durchführen.</p>
 <h2 id="funktionen-ohne-ruckgabewert">Funktionen ohne Rückgabewert<a class="headerlink" href="#funktionen-ohne-ruckgabewert" title="Permanent link">&para;</a></h2>
 <h2 id="funktionen-mit-ruckgabewert">Funktionen mit Rückgabewert<a class="headerlink" href="#funktionen-mit-ruckgabewert" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Anmerkung</p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
 <p>Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe <em>Funktion</em>, <em>Prozedur</em> und <em>Methode</em>.
 Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann <em>Prozedur</em>.
 Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.</p>
