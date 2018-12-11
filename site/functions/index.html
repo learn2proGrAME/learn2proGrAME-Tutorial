@@ -349,6 +349,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#wofur-braucht-man-funktionen" title="Wofür braucht man Funktionen?" class="md-nav__link">
+    Wofür braucht man Funktionen?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
     Funktionen ohne Rückgabewert
   </a>
@@ -521,6 +528,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#wofur-braucht-man-funktionen" title="Wofür braucht man Funktionen?" class="md-nav__link">
+    Wofür braucht man Funktionen?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
     Funktionen ohne Rückgabewert
   </a>
@@ -561,9 +575,53 @@
                 
                 
                 <h1 id="funktionen">Funktionen<a class="headerlink" href="#funktionen" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du was Funktionen beim Programmieren sind. Du lernst, wofür Funktionen verwendet werden, was <strong>Parameter</strong> und <strong>Rückgabewerte</strong> sind und wie du deine eigenen Funktionen schreiben kannst.</p>
+</div>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Hinweis</p>
+<p>In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.</p>
+</div>
+<hr />
+<h2 id="wofur-braucht-man-funktionen">Wofür braucht man Funktionen?<a class="headerlink" href="#wofur-braucht-man-funktionen" title="Permanent link">&para;</a></h2>
+<p>Funktionen bzw. Methoden kann man sich beispielsweise als kleine <em>Unterprogramme</em> vorstellen.
+Angenommen du musst für dein Spiel den Abstand zwischen zwei Objekten berechnen. (Diese Berechnung benötigt man in den meisten Spielen sehr häufig)
+Eine Möglichkeit wäre, den dafür nötigen Code einfach jedes Mal einzutippen oder mit Copy-Paste überall einzufügen, wo du ihn benötigst. Das wäre aber nicht nur sehr viel unnötige Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später draufkommst, dass deine Berechnung einen Fehler enthält musst du an allen Stellen im Programm den Fehler ausbessern.</p>
+<p>Bessere Möglichkeit: Du erstellst eine Funktion, die den Abstand zwischen zwei Punkten berechnet.</p>
+<div class="codehilite"><pre><span></span>   <span class="c1">// Diese Funktion berechnet den Abstand zwischen zwei Punkten.</span>
+   <span class="c1">// x1,y1  ... Koordinaten des ersten Punkts</span>
+   <span class="c1">// x2,y2  ... Koordinaten des zweiten Punkts</span>
+   <span class="c1">// return ... Der Abstand zwischen den Punkten</span>
+   <span class="k">public</span> <span class="kt">int</span> <span class="nf">Abstand</span><span class="p">(</span><span class="kt">float</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y2</span><span class="p">){</span>
+     <span class="c1">//Berechne den Abstand mithilfe des Satzes von Pythagoras c=Wurzel(a^2+b^2)</span>
+     <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Mathf</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">((</span><span class="n">x1</span><span class="p">-</span><span class="n">x2</span><span class="p">)*(</span><span class="n">x1</span><span class="p">-</span><span class="n">x2</span><span class="p">)+(</span><span class="n">y1</span><span class="p">-</span><span class="n">y2</span><span class="p">)*(</span><span class="n">y1</span><span class="p">-</span><span class="n">y2</span><span class="p">));</span> <span class="c1">//Anm.: Mathf.Sqrt(float f) ist ebenfalls eine Funktion. Sie berechnet die Quadratwurzel einer Zahl f.</span>
+
+     <span class="k">return</span> <span class="n">entfernung</span><span class="p">;</span>
+   <span class="p">}</span>
+</pre></div>
+
+
+<p>Anstatt nun jedes Mal diese Berechnung <em>händisch</em> durchzuführen, kannst du jedes Mal wenn du den Abstand zwischen zwei Punkten berechnen willst diese Funktion aufrufen.</p>
+<div class="codehilite"><pre><span></span>  <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Abstand</span><span class="p">(</span><span class="n">elli</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">elli</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Außerdem musst du, wenn du später den Code ändern willst, die Änderungen nur an einer Stelle, nämlich im Code der Funktion durchführen.</p>
 <h2 id="funktionen-ohne-ruckgabewert">Funktionen ohne Rückgabewert<a class="headerlink" href="#funktionen-ohne-ruckgabewert" title="Permanent link">&para;</a></h2>
 <h2 id="funktionen-mit-ruckgabewert">Funktionen mit Rückgabewert<a class="headerlink" href="#funktionen-mit-ruckgabewert" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Anmerkung</p>
+<p>Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe <em>Funktion</em>, <em>Prozedur</em> und <em>Methode</em>.
+Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann <em>Prozedur</em>.
+Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.</p>
+</div>
+<hr />
 <h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://unity3d.com/learn/tutorials/topics/scripting/variables-and-functions">Variables and Functions Tutorial (englisch)</a></li>
+</ul>
                 
                   
                 

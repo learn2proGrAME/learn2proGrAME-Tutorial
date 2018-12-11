@@ -5,17 +5,23 @@
     In diesem Kapitel lernst du was Funktionen beim Programmieren sind. Du lernst, wofür Funktionen verwendet werden, was **Parameter** und **Rückgabewerte** sind und wie du deine eigenen Funktionen schreiben kannst.
 -----
 
-!!! Abstract "Hinweis"
-    In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.
+<!--!!! Abstract "Hinweis"
+    In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.-->
 -----
 
 ##Wofür braucht man Funktionen?
 
-Funktionen bzw. Methoden kann man sich beispielsweise als kleine *Unterprogramme* vorstellen.
-Angenommen du musst für dein Spiel den Abstand zwischen zwei Objekten berechnen. (Diese Berechnung benötigt man in den meisten Spielen sehr häufig)
-Eine Möglichkeit wäre, den dafür nötigen Code einfach jedes Mal einzutippen oder mit Copy-Paste überall einzufügen, wo du ihn benötigst. Das wäre aber nicht nur sehr viel unnötige Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später draufkommst, dass deine Berechnung einen Fehler enthält musst du an allen Stellen im Programm den Fehler ausbessern.
+Funktionen (bzw. Methoden) sind kleine *Unterprogramme*.
 
-Bessere Möglichkeit: Du erstellst eine Funktion, die den Abstand zwischen zwei Punkten berechnet.
+
+Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.
+
+Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst. 
+Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.
+
+Eine bessere Möglichkeit ist: 
+
+Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.
 
 ```csharp
    // Diese Funktion berechnet den Abstand zwischen zwei Punkten.
@@ -29,13 +35,13 @@ Bessere Möglichkeit: Du erstellst eine Funktion, die den Abstand zwischen zwei 
      return entfernung;
    }
 ```
-Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du jedes Mal wenn du den Abstand zwischen zwei Punkten berechnen willst diese Funktion aufrufen.
+Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du diese Funktion aufrufen.
 
 ```csharp
   float entfernung = Abstand(elli.x, elli.y, ossi.x, ossi.y);
 ```
 
-Außerdem musst du, wenn du später den Code ändern willst, die Änderungen nur an einer Stelle, nämlich im Code der Funktion durchführen.
+Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktion, durchführen.
 
 ##Funktionen ohne Rückgabewert
 
@@ -43,7 +49,7 @@ Außerdem musst du, wenn du später den Code ändern willst, die Änderungen nur
 
 ##Funktionen mit Rückgabewert
 
-!!! Abstract "Anmerkung"
+!!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
     Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann *Prozedur*.
     Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.
