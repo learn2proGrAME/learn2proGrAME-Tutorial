@@ -24,30 +24,73 @@ Eine bessere Möglichkeit ist:
 Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.
 
 ```csharp
-   // Diese Funktion berechnet den Abstand zwischen zwei Punkten.
-   // x1,y1  ... Koordinaten des ersten Punkts
-   // x2,y2  ... Koordinaten des zweiten Punkts
-   // return ... Der Abstand zwischen den Punkten
-   public int Abstand(float x1, float y1, float x2, float y2){
-     //Berechne den Abstand mithilfe des Satzes von Pythagoras c=Wurzel(a^2+b^2)
-     float entfernung = Mathf.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)); //Anm.: Mathf.Sqrt(float f) ist ebenfalls eine Funktion. Sie berechnet die Quadratwurzel einer Zahl f.
+   //Diese Funktion berechnet den Abstand zwischen zwei Objekten
+   public float Abstand(GameObject object1, GameObject object2)
+    {
+        float abstand = Vector3.Distance(object1.transform.position, object2.transform.position);
 
-     return entfernung;
-   }
+        return abstand;
+    }
 ```
 Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du diese Funktion aufrufen.
 
 ```csharp
-  float entfernung = Abstand(elli.x, elli.y, ossi.x, ossi.y);
+  float entfernung = Abstand(elli, ossi);
 ```
 
 Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktion, durchführen.
 
-##Funktionen ohne Rückgabewert
+##Aufbau einer Funktion
 
+![Header](img/funktionsHeader.png) 
 
+Der **Zugriffsmodifikator** legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
+
+Eine Funktion kann beliebig viele **Parameter** haben. **Parameter** legen genauer fest, was die Funktion tun soll. In unserem Beispiel wird über die **Parameter** festgelegt, von welchen zwei Spielobjekten der Abstand berechnet werden soll.  
+Die **Parameter** stehen im Body der Funktion als [Variablen](variables.md) zur Verfügung.
 
 ##Funktionen mit Rückgabewert
+
+Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück. 
+
+Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](variables.md) speichern, oder direkt in einem *if*-Statement verwenden:
+
+```csharp
+	if(Abstand(elli, pilz) < 100){
+		
+	}
+```
+
+
+##Funktionen ohne Rückgabewert
+
+Nicht immer benötigt man eine Funktion mit Rückgabewert.  
+Für so ein Funktion gibt man als Rückgabetyp ```void``` an, außerdem benötigt man das Schlüsselwort ```return``` nicht.
+
+Ein Beispiel aus dem Bouncyfant-Game:
+```csharp
+	// Springen
+    protected void Springen(KeyCode Taste)
+    {
+        // Herausfinden, ob der Elefant irgendwo steht, von wo er abspringen kann
+        bool springenmoeglich = amBoden();
+
+        /* Wenn der Pfeil nach oben gedrückt wird und Springen möglich, 
+         * d.h. der Elefant hat etwas, von wo er aus wegspringen kann,
+         * dann bekommt der Elefantenkörper einen Impuls (Addforce), 
+         * entsprechend der von uns gewählten Sprungkraft 
+         */
+        if (Input.GetKey(Taste) && springenmoeglich)
+            Elefantenkoerper.AddForce(Vector2.up * Sprungkraft);
+
+        /*
+         * Wenn der Elefant gerade springt, dann springen auf nicht möglich setzen.
+         * Nicht = Rufzeichen(!). 
+         */
+        Animation.SetBool("Springen", !springenmoeglich);
+    }
+``` 
+
 
 !!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
