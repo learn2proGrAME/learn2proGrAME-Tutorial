@@ -43,16 +43,23 @@ Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du die
 
 Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktion, durchführen.
 
+---- 
+
 ##Funktionen ohne Rückgabewert
 
 
+---- 
 
 ##Funktionen mit Rückgabewert
+
+
+---- 
 
 !!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
     Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann *Prozedur*.
     Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.
+
 -----
 
 ##Weiterführende Resourcen
