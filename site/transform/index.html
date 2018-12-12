@@ -384,6 +384,33 @@
     Krapfenklicker Erweiterung
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcomponent-rechtecke-und-vektoren" title="GetComponent(), Rechtecke und Vektoren" class="md-nav__link">
+    GetComponent(), Rechtecke und Vektoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-neu-erstellen" title="Vektoren neu erstellen" class="md-nav__link">
+    Vektoren neu erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-und-spielobjekt-eigenschaften" title="Vektoren und Spielobjekt-Eigenschaften" class="md-nav__link">
+    Vektoren und Spielobjekt-Eigenschaften
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -525,6 +552,33 @@
     Krapfenklicker Erweiterung
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcomponent-rechtecke-und-vektoren" title="GetComponent(), Rechtecke und Vektoren" class="md-nav__link">
+    GetComponent(), Rechtecke und Vektoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-neu-erstellen" title="Vektoren neu erstellen" class="md-nav__link">
+    Vektoren neu erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-und-spielobjekt-eigenschaften" title="Vektoren und Spielobjekt-Eigenschaften" class="md-nav__link">
+    Vektoren und Spielobjekt-Eigenschaften
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -551,8 +605,8 @@
 <p class="admonition-title">Lernziele</p>
 <p>Hier lernst du die wichtigste Spielobjekt-Komponente in Unity kennen: <strong>Transform</strong>.</p>
 </div>
+<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong> (oder <strong>RectTransform</strong> bei User Interface GameObjects).</p>
 <hr />
-<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong>.</p>
 <h2 id="eigenschaften-von-transform">Eigenschaften von Transform<a class="headerlink" href="#eigenschaften-von-transform" title="Permanent link">&para;</a></h2>
 <p>Mit <strong>Transform</strong> können</p>
 <ul>
@@ -561,7 +615,8 @@
 <li>die Größe, oder <strong>Skalierung</strong>, </li>
 </ul>
 <p>eines Spielobjekts definiert werden.</p>
-<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
+<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. </p>
+<p>In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
 <ul>
 <li>
 <p>Bei <strong>Position</strong> stehen diese Werte jeweils für eine Koordinate im Koordinatensystem der <strong>Szene</strong>.</p>
@@ -574,13 +629,71 @@
 </li>
 </ul>
 <p>Klarerweise können die Werte der Eigenschaften der Transform-Komponente in einem C<em>#</em>-Skript verändert werden.</p>
+<hr />
 <h2 id="krapfenklicker-erweiterung">Krapfenklicker Erweiterung<a class="headerlink" href="#krapfenklicker-erweiterung" title="Permanent link">&para;</a></h2>
-<p>Natürlich soll die Mehlspeise größer werden, wenn man darauf klickt! Wie kann man das programmieren?</p>
+<p>Die Mehlspeise soll größer werden, wenn man darauf klickt! </p>
+<p>Wie kann man das programmieren?</p>
 <p><img alt="Donut Clicker Extension" src="../img/donutclickerextension.gif" /></p>
 <p>Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: <code>public Button clickButton;</code>.</p>
 <div class="admonition bug">
 <p class="admonition-title">ACHTUNG</p>
 <p><code>public</code> bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die <a href="../donutclicker/">Fertigstellung des Krapfenklicker Spiels</a>!</p>
+</div>
+<hr />
+<h3 id="getcomponent-rechtecke-und-vektoren">GetComponent(), Rechtecke und Vektoren<a class="headerlink" href="#getcomponent-rechtecke-und-vektoren" title="Permanent link">&para;</a></h3>
+<p>Ok, wie kann man aber jetzt die Größe der Mehlspeise verändern?</p>
+<p>Dafür benötigst du zuerst die aktuelle Größe der Mehlspeise. Diese bekommst du aus der Komponente <strong>Transform</strong>.
+Die Komponente Transform (oder bei einem Button <strong>RectTransform</strong>) bekommst du mit:</p>
+<div class="codehilite"><pre><span></span><span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;()</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Übung</p>
+<ul>
+<li>Erkundige dich in der <a href="https://docs.unity3d.com/ScriptReference/">Unity Scripting Referenz</a>, wozu die Funktion <code>GetComponent</code> dient.</li>
+<li>Was bedeuten <a href="http://codekicker.de/fragen/csharp-bedeuten-spitzen-Klammern-generics-list-typ-typisierend/660">die Klammern <code>&lt;</code> und <code>&gt;</code> in C<em>#</em></a>?</li>
+</ul>
+</div>
+<p>"Rect" steht für Rectangle, und das heißt: Rechteck. </p>
+<p>Bedienflächen wie Buttons werden in Unity in einem Rechteck in der Szene platziert. </p>
+<p>Ein Rechteck (<a href="https://docs.unity3d.com/ScriptReference/Rect.html">rect</a>) hat in Unity folgende Eigenschaften: einen Startpunkt (als x- und y-Koordinate) und eine Größe (size), die als 2-dimensionaler <em>Vektor</em> angegeben wird - also auch mit einem x- und einem y-Wert für die Länge auf der X-Achse und auf der Y-Achse.   </p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p><strong>Vektoren</strong> sind Bewegungen in einem Koordinatensystem. Sie haben eine <strong>Länge</strong>, eine <strong>Richtung</strong> und eine <strong>Orientierung</strong>.</p>
+</div>
+<p>Da Vektoren in Unity für Größenänderungen, Positionsänderungen, Geschwindigkeit und anderes verwendet werden, gibt es eigene Referenz-Datentypen (oder <a href="../classes/">Klassen</a>) dafür: </p>
+<ul>
+<li><code>Vector2</code> (für 2D Vektoren) bzw. </li>
+<li><code>Vector3</code> (für 3D Vektoren).</li>
+</ul>
+<p>Um die aktuelle Größe der Mehlspeise zu speichern, schreibst du daher:</p>
+<div class="codehilite"><pre><span></span><span class="n">Vector2</span> <span class="n">meineGroesse</span> <span class="p">=</span> <span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;().</span><span class="n">rect</span><span class="p">.</span><span class="n">size</span><span class="p">;</span>
+</pre></div>
+
+
+<hr />
+<h3 id="vektoren-neu-erstellen">Vektoren neu erstellen<a class="headerlink" href="#vektoren-neu-erstellen" title="Permanent link">&para;</a></h3>
+<p>Um die Mehlspeise bei jedem Button-Klick zu vergrößern, brauchst du als nächstes einen Wachstumsfaktor. Dieser gibt an, um wieviel die Mehlspeise je in die X-, und Y-Richtung wachsen soll.</p>
+<p>Der Wachstumsfaktor wird in einen <em>neuen</em> 2D-Vektor gespeichert:</p>
+<div class="codehilite"><pre><span></span><span class="n">Vector2</span> <span class="n">wachstumsFaktor</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span> <span class="p">(</span><span class="m">10.0f</span><span class="p">,</span> <span class="m">10.0f</span><span class="p">);</span> <span class="c1">//In der runden Klammer werden dem neuen Vektor x-, und y-Werte des 2D Vektors als Paramter im Datentyp Float übergeben.</span>
+</pre></div>
+
+
+<hr />
+<h3 id="vektoren-und-spielobjekt-eigenschaften">Vektoren und Spielobjekt-Eigenschaften<a class="headerlink" href="#vektoren-und-spielobjekt-eigenschaften" title="Permanent link">&para;</a></h3>
+<p>Schließlich wird der Wachstumsfaktor zur aktuellen Mehlspeisgröße addiert. Du kannst den Größenunterschied in der Eigenschaft  <a href="https://docs.unity3d.com/ScriptReference/RectTransform-sizeDelta.html"><code>sizeDelta</code></a> des "ClickButton"s speichern:</p>
+<div class="codehilite"><pre><span></span><span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;</span> <span class="p">().</span><span class="n">sizeDelta</span> <span class="p">=</span> <span class="n">meineGroesse</span><span class="p">+</span><span class="n">wachstumsFaktor</span><span class="p">;</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>public void buttonclick()</code> im Skript "GameController.cs" im Krapfenklicker Spiel, sodass die Mehlspeise bei jedem Buttonklick ein wenig größer wird.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Wenn man ein Programm überarbeitet, wird dies häufig <a href="https://de.wikipedia.org/wiki/Refactoring"><strong>Refactoring</strong></a> genannt. <strong>Refactoring</strong> bedeutet die Verbesserung von Quellcode.</p>
 </div>
                 
                   

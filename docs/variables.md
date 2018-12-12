@@ -3,11 +3,13 @@
 !!! Abstract "Lernziele"
     In diesem Kapitel lernst du was Variablen beim Programmieren sind. Du lernst, wie du eine Variable erzeugen kannst durch **Deklarieren** und **Initialisieren**. Außerdem lernst du, was **Datentypen** sind.
 
------
+
 
 ![Variable Initialisierung](img/variablenBeschr.png)
 
 Das bedeutet: *Der Integer-Variable "meineVariable" wird der Wert 1 zugewiesen.* Man kann auch sagen: *Die Integer-Variable "meineVariable" wird mit dem Wert 1 initialisiert.*
+
+-----
 
 ##Wozu Variablen?
 
@@ -30,6 +32,7 @@ Man kann sich das etwa wie ein Postfach vorstellen, auf dem eine Address-Bezeich
 
 ![Variable](img/variableMetaphor.png) 
 
+-----
 
 ##Deklarieren und Initialisieren
 
@@ -51,6 +54,7 @@ Datentypen bezeichnen die Form der Daten, also was die Nullen und Einser in eine
 	int zweiteVariable = 2;
 ```
    
+-----
 
 ## Datentypen
 
@@ -74,6 +78,8 @@ Wichtige Datentypen sind:
 !!!tip "Tipp"
     ```+``` ist der [Additions-Operator](operators.md). Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
 
+-----
+
 ###Umwandlung von Datentypen
 
 Datentypen können manchmal in andere Datentypen umgewandelt werden. Folgende Funktionen ermöglichen neben anderen eine Typ-Umwandlung:
@@ -87,12 +93,15 @@ int i = 75;
 string zahl = i.ToString();
 ```
 
+-----
+
 ## Variablen-Bereich (Scope)
 
 Variablen, die **außerhalb** eines Code-Blocks - gekennzeichnet durch ```{ ... }``` - deklariert (also angegeben) werden, **können im Code-Block verwendet** werden. Variablen, die **im Code-Block angegeben** werden, können **nur dort verwendet** werden.
 
 Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgesetzt, so können auch Objekte darauf zugreifen, denen das Skript nicht "angeheftet" ist. Wenn eine Variable ```private``` ist, so kann nur das GameObject, dem das Skript angeheftet ist, darauf zugreifen.  
 
+-----
 
 ##Weiterführende Resourcen
 

@@ -3,7 +3,7 @@
 !!!abstract "Lernziele"
     In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.
 
-----  
+ 
 
 Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. 
 
@@ -12,10 +12,13 @@ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder O
 
 <!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
 
+---- 
+
 ##Übersicht
 
 <!-- TABELLE MIT KURZBESCHREIBUNGEN-->
 
+---- 
 
 ## Arithmetische Operatoren
 Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!
@@ -24,6 +27,7 @@ Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast
     Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts, aber ignorieren die Punkt vor Strich Regel!
     Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.-->
 
+---- 
 
 ### = Operator 
 
@@ -61,6 +65,8 @@ Debug.Log ("Hallo ich bin " + name+ " und meine Lieblingszahl ist" + lieblingsza
 
 In der Konsole steht nach Aufruf: *"Hallo ich bin Elli der Elefant und meine Lieblingszahl ist 3."* 
 Wir sehen also, die Werte in ```x``` und ```name``` sind jetzt anders weil wir neue Werte mit ```=``` zugewiesen haben.
+
+---- 
 
 ### + Operator
 
@@ -104,6 +110,7 @@ In der Konsole steht jetzt: *Waschmaschine Bohrmaschine Süßes oder Saures*
 !!!tip "Tipp" 
     Wenn du Strings kombinierst, um einen Satz zu erstellen, musst du Leerzeichen anfügen. Sonst kleben die Wörter zusammen.
 	
+---- 
 
 ### - Operator
 Den **Subtraktionsoperator** ```-``` verwendet man um 2 Variablen zu subtrahieren
@@ -115,6 +122,7 @@ Debug.Log(a);
 ```
 In der Konsole steht nach Ausführen *1*. 
 
+---- 
 
 ### * Operator
 Den **Multiplikationsoperator** ```*``` verwendet man um 2 Variablen zu multiplizieren.
@@ -147,6 +155,7 @@ Debug.Log(b);
 ```
 In der Konsole steht nach Ausführen *13*.  
 
+---- 
 
 ### / Operator
 Den **Divisionsoperator** ```/``` verwendet man um 2 Variablen miteinander zu dividieren. 
@@ -176,6 +185,8 @@ Debug.Log(b);
 ```
 In der Konsole steht nach Ausführen *3*.  
 
+---- 
+
 ### % Operator
 
 Der **Modulo** Operator ```%``` wird verwendet, um eine Division mit Rest durchzuführen. Das Ergebnis dieser Berechnung ist aber **nur der Restbetrag**.
@@ -187,7 +198,7 @@ Debug.Log(b);
 ```
 In der Konsole steht nach Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der **Modulo** Operator ```%``` liefert nur den Rest zurück.
 
-
+---- 
 
 ## Logische Operatoren
 
@@ -200,9 +211,19 @@ In der Konsole steht nach Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 1 Re
 
 Logischen Operatoren sind besonders wichtig bei [Verzweigungen](conditionals.md).
 
+---- 
+
 ### NICHT Operator ( ! )
+
+---- 
+
 ### UND Operator ( && )
+
+---- 
+
 ### ODER Operator ( || )
+
+---- 
 
 
 !!!bug "ACHTUNG" 

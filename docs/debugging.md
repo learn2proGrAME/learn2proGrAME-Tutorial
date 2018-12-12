@@ -3,12 +3,14 @@
 !!! Abstract "Lernziele"
     Hier lernst du, wie du etwas in Unity "rückgängig machen" kannst. Außerdem lernst du den Begriff "De-Bugging" kennen. Du lernst, wo dir in Unity Programmierfehler angezeigt werden und wie du damit umgehen kannst.
 
-----
+
 Das Schöne am Programmieren ist: Fehler machen gehört dazu!
 
 Fehler sind super Lernmöglichkeiten!
 
 [Auch Profis machen Fehler.](https://dzone.com/articles/why-expert-developers-still-make-mistakes-1)
+
+----
 
 ##Es klappt nicht! Was nun?
 
@@ -29,6 +31,7 @@ Unity gibt in der Konsole Warnungen und Fehlermeldungen aus, sobald du das Spiel
 
 Warnungen und Fehlermeldungen beinhalten üblicherweise je eine **Fehlerbeschreibung** (auf Englisch) UND eine **Zeilenangabe**, auf welcher Zeile (und in welchem Skript) der Fehler aufgetreten ist. 
 
+----
 
 ##De-Bugging in Unity?
 
@@ -47,6 +50,8 @@ Hast du eine **Fehlerbeschreibung**, aber verstehst noch nicht, was da steht?
 **De-Bugging** bedeutet, dass du Computer-Programm-Fehler (Bugs) ausbesserst. 
 
 [Hier ist ein Bild vom ersten echten "Bug", der jemals in einem Computerprogramm gefunden wurde! ;)](https://www.wired.com/wp-content/uploads/blogs/geekdad/wp-content/uploads/2009/09/computerbug.jpg)
+
+----
 
 ##De-Bugging in Visual Studio
 
@@ -75,6 +80,8 @@ Hast du eine **Fehlerbeschreibung** und eine **Zeilenangabe**, kannst du die Zei
 	
 	Finde den Fehler und verbessere den Quellcode.
 
+----
+
 ###Breakpoints
 
 Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drückst, können **Breakpoints (Haltepunkte)** gesetzt werden. Hierfür klickst du in Visual Studio links neben die Zeilennummer, wo du einen Haltepunkt setzen willst. 
@@ -90,6 +97,7 @@ Mit der Taste "Nächste Anweisung anzeigen" kannst das Programm nach einem Halte
 
 ![Variable Inspection](img/breakpointVerwenden.gif)
 
+----
 
 ##Weiterführende Resourcen
 

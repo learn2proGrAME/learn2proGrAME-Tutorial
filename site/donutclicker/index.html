@@ -566,6 +566,7 @@
 <p>In diesem Kapitel erstellst du dein erstes Spiel - Krapfenklicker. Du lernst, wie du Variablen, Operatoren und Funktionen für das Programmieren der Spiellogik einsetzen kannst.</p>
 </div>
 <p>Das Spielprinzip von Krapfenklicker ist: SpielerInnen drücken so schnell sie können auf einen Knopf (Button) und erhalten dafür Punkte. </p>
+<hr />
 <h2 id="szenenaufbau">Szenenaufbau<a class="headerlink" href="#szenenaufbau" title="Permanent link">&para;</a></h2>
 <p>Unity bietet Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interfaces), etwa Text, Benutzereingabe oder Buttons. Um ein User Interface Spielobjekt einzufügen, machst du einen Rechtsklick auf das Hierarchie Panel. Im Kontextmenü wählst du <em>UI</em>. Dort findest du die User Interface GameObjects.</p>
 <p>Für Krapfenklicker brauchen wir einen <em>"Button"</em>. Wähle also <em>"UI"&gt;"Button"</em> aus dem Kontextmenü. Nenne den Button "ClickButton".</p>
@@ -577,6 +578,7 @@
 <p><img alt="Source Image" src="../img/sourceimage.png" /></p>
 <p>Lade etwa das Bild <a href="../img/krapfen.png">krapfen.png</a> auf deinen Computer und speichere es im <em>"Sprites"</em>-Ordner (Diesen Ordner kannst du im <em>"Assets"</em>-Ordner anlegen). Ziehe anschließend das <em>"krapfen"</em>-Sprite per Drag and Drop auf das <em>"Source Image"</em> deines Buttons. Verändere die Größe des Buttons, sodass dieser etwa zwei Drittel der Szene groß ist.</p>
 <p><img alt="Groesse veraendern" src="../img/groessetool.png" /></p>
+<hr />
 <h2 id="spiellogik">Spiellogik<a class="headerlink" href="#spiellogik" title="Permanent link">&para;</a></h2>
 <p>Für die Spiellogik kannst du in Krapfenklicker ein leeres GameObject einfügen. Dafür machst du wieder einen Rechtsklick auf das Hierarchie Panel und wählst <em>"Create Empty"</em>. Nenne das GameObject <em>"GameController"</em>. Füge dem GameController GameObject ein Skript hinzu. Nenne das Skript ebenfalls <em>"GameController"</em>. </p>
 <p>Überschreibe den Quellcode in der Datei "GameController.cs" mit:</p>
@@ -617,6 +619,7 @@ Wähle im Hierarchie Panel den Button (namens <em>"ClickButton"</em>) aus. Im In
 <p><img alt="Liste OnClick für Button" src="../img/onclicklist.png" /></p>
 <p>Das funktioniert so: Drücke auf <em>"+"</em>. Wähle im ersten Menü <em>"Runtime Only"</em>. Ziehe das GameObject "GameController" aus dem Hierarchie Panel unter <em>"Runtime Only"</em>. Wähle zuletzt die Funktion <em>"buttonclick"</em> aus dem <em>"GameController"-Menü</em> im Menü neben <em>"Runtime Only"</em>.</p>
 <p><img alt="Zuweisung Animated Gif" src="../img/krapfenklickerKlickZuweisung.gif" /></p>
+<hr />
 <h2 id="fertigstellen">Fertigstellen<a class="headerlink" href="#fertigstellen" title="Permanent link">&para;</a></h2>
 <p>Abschließend sollen die Punkte in der Punkteanzeige angezeigt werden. Damit du im "GameController"-Skript auf dein Textfeld zugreifen kannst, musst du das Textfeld per Drag and Drop an die <em>"meinHighscore"</em>-Variable anheften.</p>
 <p><img alt="Anheften meinHighscore" src="../img/meinHighscoreAnheften.gif" /></p>

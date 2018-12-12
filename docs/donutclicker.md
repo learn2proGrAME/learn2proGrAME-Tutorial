@@ -6,6 +6,8 @@
 
 Das Spielprinzip von Krapfenklicker ist: SpielerInnen drücken so schnell sie können auf einen Knopf (Button) und erhalten dafür Punkte. 
 
+---- 
+
 ##Szenenaufbau
 
 Unity bietet Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interfaces), etwa Text, Benutzereingabe oder Buttons. Um ein User Interface Spielobjekt einzufügen, machst du einen Rechtsklick auf das Hierarchie Panel. Im Kontextmenü wählst du *UI*. Dort findest du die User Interface GameObjects.
@@ -28,6 +30,7 @@ Lade etwa das Bild [krapfen.png](img/krapfen.png) auf deinen Computer und speich
 
 ![Groesse veraendern](img/groessetool.png)
 
+----
 
 ##Spiellogik
 
@@ -75,6 +78,7 @@ Das funktioniert so: Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*.
 
 ![Zuweisung Animated Gif](img/krapfenklickerKlickZuweisung.gif)
 
+----
 
 ##Fertigstellen
 

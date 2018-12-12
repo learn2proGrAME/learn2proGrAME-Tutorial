@@ -53,7 +53,7 @@ Die **Parameter** stehen im Body der Funktion als [Variablen](variables.md) zur 
 
 Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück. 
 
-Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](variables.md) speichern, oder direkt in einem *if*-Statement verwenden:
+Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](variables.md) speichern oder direkt in einem *if*-Statement verwenden:
 
 ```csharp
 	if(Abstand(elli, pilz) < 100){
@@ -91,11 +91,11 @@ Ein Beispiel aus dem Bouncyfant-Game:
     }
 ``` 
 
-
 !!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
     Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann *Prozedur*.
     Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.
+
 -----
 
 ##Weiterführende Resourcen
