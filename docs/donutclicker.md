@@ -71,7 +71,7 @@ Wähle im Hierarchie Panel den Button (namens *"ClickButton"*) aus. Im Inspektor
 
 ![Liste OnClick für Button](img/onclicklist.png)
 
-Das funktioniert so: Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*. Ziehe die Datei "GameController.cs" aus dem Assets-Ordner unter *"Runtime Only"*. Wähle zuletzt die Funktion *"buttonclick"* aus dem *"GameController"-Menü* im Menü neben *"Runtime Only"*.
+Das funktioniert so: Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*. Ziehe das GameObject "GameController" aus dem Hierarchie Panel unter *"Runtime Only"*. Wähle zuletzt die Funktion *"buttonclick"* aus dem *"GameController"-Menü* im Menü neben *"Runtime Only"*.
 
 ![Zuweisung Animated Gif](img/krapfenklickerKlickZuweisung.gif)
 
