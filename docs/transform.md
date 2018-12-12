@@ -5,7 +5,7 @@
 
 ----
 
-Jedes Spielobjekt (GameObject) in Unity hat die Komponente **Transform**.
+Jedes Spielobjekt (GameObject) in Unity hat die Komponente **Transform** (oder **RectTransform** bei User Interface GameObjects).
 
 ##Eigenschaften von Transform
 
@@ -17,7 +17,9 @@ Mit **Transform** können
 
 eines Spielobjekts definiert werden.
 
-Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. In 2D-Spielen sind vor allem x-, und y-Werte wichtig.
+Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. 
+
+In 2D-Spielen sind vor allem x-, und y-Werte wichtig.
 
 * Bei **Position** stehen diese Werte jeweils für eine Koordinate im Koordinatensystem der **Szene**.
 
@@ -29,7 +31,9 @@ Klarerweise können die Werte der Eigenschaften der Transform-Komponente in eine
 
 ##Krapfenklicker Erweiterung
 
-Natürlich soll die Mehlspeise größer werden, wenn man darauf klickt! Wie kann man das programmieren?
+Die Mehlspeise größer werden, wenn man darauf klickt! 
+
+Wie kann man das programmieren?
 
 ![Donut Clicker Extension](img/donutclickerextension.gif)
 

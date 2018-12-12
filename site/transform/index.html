@@ -547,8 +547,41 @@
                 
                 
                 <h1 id="unity-transform-spielobjektkomponente">Unity Transform Spielobjektkomponente<a class="headerlink" href="#unity-transform-spielobjektkomponente" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>Hier lernst du die wichtigste Spielobjekt-Komponente in Unity kennen: <strong>Transform</strong>.</p>
+</div>
+<hr />
+<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong>.</p>
 <h2 id="eigenschaften-von-transform">Eigenschaften von Transform<a class="headerlink" href="#eigenschaften-von-transform" title="Permanent link">&para;</a></h2>
+<p>Mit <strong>Transform</strong> können</p>
+<ul>
+<li>die <strong>Position</strong> eines Spielobjekts, </li>
+<li><strong>Drehungen</strong> und </li>
+<li>die Größe, oder <strong>Skalierung</strong>, </li>
+</ul>
+<p>eines Spielobjekts definiert werden.</p>
+<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
+<ul>
+<li>
+<p>Bei <strong>Position</strong> stehen diese Werte jeweils für eine Koordinate im Koordinatensystem der <strong>Szene</strong>.</p>
+</li>
+<li>
+<p>Bei <strong>Rotation</strong> stehen die Werte für die Drehung des Spielobjekts um die X-Achse, die Y-Achse und die Z-Achse. Die Werte werden hierbei als Winkel <em>in Grad</em> angegeben. In 2D-Spielen kann vor allem eine Drehung um die Z-Achse effektiv eingesetzt werden.</p>
+</li>
+<li>
+<p>Bei <strong>Scale</strong> geht es um die relative Größe eines Spielobjekts. Standardmäßig ist hier der Wert 1 gesetzt. Werte sind hier als Veränderungs-Faktoren zum Standardwert zu verstehen.</p>
+</li>
+</ul>
+<p>Klarerweise können die Werte der Eigenschaften der Transform-Komponente in einem C<em>#</em>-Skript verändert werden.</p>
 <h2 id="krapfenklicker-erweiterung">Krapfenklicker Erweiterung<a class="headerlink" href="#krapfenklicker-erweiterung" title="Permanent link">&para;</a></h2>
+<p>Natürlich soll die Mehlspeise größer werden, wenn man darauf klickt! Wie kann man das programmieren?</p>
+<p><img alt="Donut Clicker Extension" src="../img/donutclickerextension.gif" /></p>
+<p>Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: <code>public Button clickButton;</code>.</p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p><code>public</code> bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die <a href="../donutclicker/">Fertigstellung des Krapfenklicker Spiels</a>!</p>
+</div>
                 
                   
                 
