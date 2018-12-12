@@ -552,7 +552,7 @@
 <p>Hier lernst du die wichtigste Spielobjekt-Komponente in Unity kennen: <strong>Transform</strong>.</p>
 </div>
 <hr />
-<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong>.</p>
+<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong> (oder <strong>RectTransform</strong> bei User Interface GameObjects).</p>
 <h2 id="eigenschaften-von-transform">Eigenschaften von Transform<a class="headerlink" href="#eigenschaften-von-transform" title="Permanent link">&para;</a></h2>
 <p>Mit <strong>Transform</strong> können</p>
 <ul>
@@ -561,7 +561,8 @@
 <li>die Größe, oder <strong>Skalierung</strong>, </li>
 </ul>
 <p>eines Spielobjekts definiert werden.</p>
-<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
+<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. </p>
+<p>In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
 <ul>
 <li>
 <p>Bei <strong>Position</strong> stehen diese Werte jeweils für eine Koordinate im Koordinatensystem der <strong>Szene</strong>.</p>
@@ -575,7 +576,8 @@
 </ul>
 <p>Klarerweise können die Werte der Eigenschaften der Transform-Komponente in einem C<em>#</em>-Skript verändert werden.</p>
 <h2 id="krapfenklicker-erweiterung">Krapfenklicker Erweiterung<a class="headerlink" href="#krapfenklicker-erweiterung" title="Permanent link">&para;</a></h2>
-<p>Natürlich soll die Mehlspeise größer werden, wenn man darauf klickt! Wie kann man das programmieren?</p>
+<p>Die Mehlspeise größer werden, wenn man darauf klickt! </p>
+<p>Wie kann man das programmieren?</p>
 <p><img alt="Donut Clicker Extension" src="../img/donutclickerextension.gif" /></p>
 <p>Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: <code>public Button clickButton;</code>.</p>
 <div class="admonition bug">
