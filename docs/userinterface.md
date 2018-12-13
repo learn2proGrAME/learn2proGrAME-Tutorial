@@ -34,6 +34,7 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 !!!tip "Tipp"
     Sowohl das Szenen-Panel wie auch das Projekt-Panel haben eine Suchfunktion.
 
+----
 
 ###Neues Projekt anlegen
 
@@ -50,6 +51,7 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 !!!tip "TIPP"
 	Du kannst auch in Unity über den Menüpunkt *"Assets"* > *"Im _Dateimanager_ anzeigen"* die Dateien deines Projekts im Dateisystem auf deinem Computer anzeigen lassen.
 
+----
 
 ###Spiel starten (und stoppen)
 
@@ -60,11 +62,15 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 !!!bug "ACHTUNG"
     Alle Änderungen, die du in Unity vornimmst, während das Spiel gestartet ist, werden NICHT übernommen, sobald du das Spiel wieder stoppst!
 
+----
+
 ###Speichern
 
 In Unity können Szeneneinstellungen mit "Save Scene" gespeichert werden. Projekteinstellungen werden mit "Save Project" gespeichert.
 
 ![Speichern in Unity](img/unitySpeichern.gif)
+
+----
 
 ##Visual Studio Bedienoberfläche
 
@@ -76,6 +82,8 @@ Damit geschriebener Code in Unity ausgeführt werden kann, musst du dein Skript 
 
 !!!tip "Tipp"
     Eine Tastenkombination für Speichern (in Visual Studio) ist: ```strg + s```
+
+----
 
 ##Weiterführende Resourcen
 

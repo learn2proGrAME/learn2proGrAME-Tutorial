@@ -77,6 +77,7 @@ Um ein neues Script für ein GameObject zu erstellen, mache folgendes:
 
 
 
+----
 
 ##Erste Schritte in C*#*
 
@@ -172,6 +173,8 @@ public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour -
 	* Groß- und Kleinschreibung wird beachtet!
 	* Alle Statements und Ausdrücke werden mit ```;``` beendet!
 	* Jedes C*#*-Programm startet mit einer main-Funktion! (Diese wird von Unity im Hintergrund aufgerufen, wenn du dein Spiel startest.)
+
+----
 
 ##Weiterführende Resourcen
 
