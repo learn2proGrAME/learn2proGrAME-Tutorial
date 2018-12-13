@@ -16,12 +16,13 @@ Funktionen (bzw. Methoden) sind kleine *Unterprogramme*.
 
 Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.
 
-Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst. 
+Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.
 Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.
 
-Eine bessere Möglichkeit ist: 
+Eine bessere Möglichkeit ist:
 
-Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.
+Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.  
+Die Erstellung einer Funktion man als *Definition*.
 
 ```csharp
    //Diese Funktion berechnet den Abstand zwischen zwei Objekten
@@ -32,7 +33,9 @@ Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.
         return abstand;
     }
 ```
-Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du diese Funktion aufrufen.
+
+Anstatt nun jedes Mal diese Berechnung *händisch* durchzuführen, kannst du diese Funktion verwenden.  
+Das Ausführen einer Funktion bezeichnet man als *Aufruf*.
 
 ```csharp
   float entfernung = Abstand(elli, ossi);
@@ -42,7 +45,7 @@ Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktio
 
 ##Aufbau einer Funktion
 
-![Header](img/funktionsHeader.png) 
+![Header](img/funktionsHeader.png)
 
 Der **Zugriffsmodifikator** legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
 
@@ -51,13 +54,13 @@ Die **Parameter** stehen im Body der Funktion als [Variablen](variables.md) zur 
 
 ##Funktionen mit Rückgabewert
 
-Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück. 
+Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück.
 
 Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](variables.md) speichern oder direkt in einem *if*-Statement verwenden:
 
 ```csharp
 	if(Abstand(elli, pilz) < 100){
-		
+
 	}
 ```
 
@@ -75,21 +78,21 @@ Ein Beispiel aus dem Bouncyfant-Game:
         // Herausfinden, ob der Elefant irgendwo steht, von wo er abspringen kann
         bool springenmoeglich = amBoden();
 
-        /* Wenn der Pfeil nach oben gedrückt wird und Springen möglich, 
+        /* Wenn der Pfeil nach oben gedrückt wird und Springen möglich,
          * d.h. der Elefant hat etwas, von wo er aus wegspringen kann,
-         * dann bekommt der Elefantenkörper einen Impuls (Addforce), 
-         * entsprechend der von uns gewählten Sprungkraft 
+         * dann bekommt der Elefantenkörper einen Impuls (Addforce),
+         * entsprechend der von uns gewählten Sprungkraft
          */
         if (Input.GetKey(Taste) && springenmoeglich)
             Elefantenkoerper.AddForce(Vector2.up * Sprungkraft);
 
         /*
          * Wenn der Elefant gerade springt, dann springen auf nicht möglich setzen.
-         * Nicht = Rufzeichen(!). 
+         * Nicht = Rufzeichen(!).
          */
         Animation.SetBool("Springen", !springenmoeglich);
     }
-``` 
+```
 
 !!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
