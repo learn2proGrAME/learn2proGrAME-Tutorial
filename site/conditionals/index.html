@@ -385,12 +385,19 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wenn-dann" title="Wenn - Dann" class="md-nav__link">
-    Wenn - Dann
+  <a href="#wenn-if-sonst-else" title="Wenn (if) - Sonst (else)" class="md-nav__link">
+    Wenn (if) - Sonst (else)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
+    Ein Beispiel
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#vergleichsoperatoren" title="Vergleichsoperatoren" class="md-nav__link">
@@ -400,8 +407,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
-    Ein Beispiel
+  <a href="#logische-operatoren" title="Logische Operatoren" class="md-nav__link">
+    Logische Operatoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verknupfungen-von-bedingungen-beispiel" title="Verknüpfungen von Bedingungen - Beispiel" class="md-nav__link">
+    Verknüpfungen von Bedingungen - Beispiel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verschachtelte-bedingungen-beispiel" title="Verschachtelte Bedingungen - Beispiel" class="md-nav__link">
+    Verschachtelte Bedingungen - Beispiel
   </a>
   
 </li>
@@ -534,12 +555,19 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wenn-dann" title="Wenn - Dann" class="md-nav__link">
-    Wenn - Dann
+  <a href="#wenn-if-sonst-else" title="Wenn (if) - Sonst (else)" class="md-nav__link">
+    Wenn (if) - Sonst (else)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
+    Ein Beispiel
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#vergleichsoperatoren" title="Vergleichsoperatoren" class="md-nav__link">
@@ -549,8 +577,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
-    Ein Beispiel
+  <a href="#logische-operatoren" title="Logische Operatoren" class="md-nav__link">
+    Logische Operatoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verknupfungen-von-bedingungen-beispiel" title="Verknüpfungen von Bedingungen - Beispiel" class="md-nav__link">
+    Verknüpfungen von Bedingungen - Beispiel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verschachtelte-bedingungen-beispiel" title="Verschachtelte Bedingungen - Beispiel" class="md-nav__link">
+    Verschachtelte Bedingungen - Beispiel
   </a>
   
 </li>
@@ -587,10 +629,191 @@
                 
                 
                 <h1 id="verzweigungen">Verzweigungen<a class="headerlink" href="#verzweigungen" title="Permanent link">&para;</a></h1>
-<h2 id="wenn-dann">Wenn - Dann<a class="headerlink" href="#wenn-dann" title="Permanent link">&para;</a></h2>
-<h3 id="vergleichsoperatoren">Vergleichsoperatoren<a class="headerlink" href="#vergleichsoperatoren" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du <strong>Verzweigungen</strong> kennen. <strong>If (Wenn)</strong> Abfragen erlauben, den Programmfluss zu steuern. Du lernst, wie diese Kontrollstruktur erzeugt werden kann, und wie <strong>Bedingungen</strong> formuliert werden.</p>
+</div>
+<p><img alt="Verzweigung" src="../img/conditional.png" /></p>
+<hr />
+<h2 id="wenn-if-sonst-else">Wenn (if) - Sonst (else)<a class="headerlink" href="#wenn-if-sonst-else" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">Bedingung</span><span class="p">)</span> <span class="c1">//kann wahr oder falsch sein</span>
+<span class="p">{</span>
+    <span class="c1">//Hier schreibst du, was passieren soll, wenn die Bedingung wahr ist</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="c1">//Hier schreibst du, was passieren soll, wenn die Bedingung falsch ist</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <h3 id="ein-beispiel">Ein Beispiel<a class="headerlink" href="#ein-beispiel" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="n">String</span> <span class="n">passwort</span> <span class="p">=</span> <span class="s">&quot;meinPasswort&quot;</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">passwort</span> <span class="p">==</span> <span class="s">&quot;PASS&quot;</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Access granted.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Access denied.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>OnDisable()</code> im Projekt "HalloElli" in "HalloElli.cs" mit oben angeführtem Beispiel. Verändere den Programmcode, sodass in der Konsole beim Ausführen der Funktion "Access granted." steht. </p>
+</div>
+<hr />
+<h3 id="vergleichsoperatoren">Vergleichsoperatoren<a class="headerlink" href="#vergleichsoperatoren" title="Permanent link">&para;</a></h3>
+<p>Um als Bedingung zwei Ausdrücke miteinander zu vergleichen, können Vergleichsoperatoren verwendet werden. In C<em>#</em> kannst du folgende Vergleichsoperatoren verwenden:</p>
+<table>
+<thead>
+<tr>
+<th>Vergleichsoperator</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>ist gleich</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>ist ungleich</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>ist größer als</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>ist kleiner als</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>ist größer gleich</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>ist kleiner gleich</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Ein Vergleich gibt als Ergebnis einen Wahrheitswert (wahr/falsch) - einen Boolean - zurück.</p>
+</div>
+<hr />
+<h3 id="logische-operatoren">Logische Operatoren<a class="headerlink" href="#logische-operatoren" title="Permanent link">&para;</a></h3>
+<p><a href="../operators/">Logische Operatoren</a> ermöglichen komplexere Bedingungen, indem Verknüpfungen von Wahrheitswerten erstellt werden können.
+Häufig verwendete logische Operatoren sind:</p>
+<table>
+<thead>
+<tr>
+<th>Logische Operatoren</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!</code></td>
+<td>nicht</td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>und</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>oder</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="verknupfungen-von-bedingungen-beispiel">Verknüpfungen von Bedingungen - Beispiel<a class="headerlink" href="#verknupfungen-von-bedingungen-beispiel" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">elefantenAnzahl</span><span class="p">;</span><span class="c1">//die Variable &quot;elefantenAnzahl&quot; wird deklariert</span>
+<span class="n">elefantenAnzahl</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span><span class="c1">//die Variable &quot;elefantenAnzahl&quot; wird mit dem Integer-Wert 8 initialisiert.</span>
+
+<span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span> <span class="c1">//Funkionsdefinition</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">elefantenAnzahl</span> <span class="p">&gt;</span> <span class="p">-</span><span class="m">1</span> <span class="p">&amp;&amp;</span> <span class="n">elefantenAnzahl</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">elefantenAnzahl</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Keine Elefanten hier.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">elefantenAnzahl</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="c1">//Ein oder mehrere Else If können eine If-Abfrage ergänzen.</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Ein Elefant im Spiel.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Juhu! Endlich mehrere Elefanten!&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Bisher können nur 0 bis 4 Elefanten im Spiel sein.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Übung</p>
+<p>Was ist der Unterschied zwischen mehreren <strong>if</strong>-Abfragen hintereinander und mehreren <strong>else if</strong>-Abfragen hintereinander nach einem <strong>if</strong>?</p>
+</div>
+<hr />
+<h3 id="verschachtelte-bedingungen-beispiel">Verschachtelte Bedingungen - Beispiel<a class="headerlink" href="#verschachtelte-bedingungen-beispiel" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="kt">bool</span> <span class="n">ersterWahrheitswert</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="kt">bool</span> <span class="n">zweiterWahrheitswert</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">spielerInnen</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+
+<span class="c1">//In der nachfolgenden Verzweigung ist der &quot;ersterWahrheitswert&quot; die erste Bedingung der ODER-Verknüpfung, die Klammer der zweite.</span>
+<span class="c1">//Nur wenn sowohl &quot;zweiterWahrheitswert&quot; wahr ist und &quot;spielerInnen&quot; größer 1 ist, ist die zweite Bedingung wahr.</span>
+<span class="c1">//ODER bedeutet, dass eine der beiden Bedingungen wahr sein muss, damit die Verknüpfung wahr ist.</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ersterWahrheitswert</span> <span class="p">||</span> <span class="p">(</span><span class="n">zweiterWahrheitswert</span> <span class="p">&amp;&amp;</span> <span class="n">spielerInnen</span> <span class="p">&gt;</span> <span class="m">1</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;Stimmt!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>OnDisable()</code> im Projekt "HalloElli" in "HalloElli.cs" mit oben angeführtem Beispiel. Verändere den Programmcode.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>De-Bugge folgenden Quellcode, sodass auf der Konsole 42 ausgegeben wird.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="kt">bool</span> <span class="n">sollFortsetzen</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">wert</span> <span class="p">=</span> <span class="m">46</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="n">sollFortsetzen</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sollFortsetzen</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">neuerWert</span> <span class="p">=</span> <span class="m">6</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">((</span><span class="n">wert</span> <span class="p">+</span> <span class="n">neuerWert</span><span class="p">)</span> <span class="p">+</span> <span class="s">&quot; = 42.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Beachte den Gültigkeits-Bereich der Varialben! Siehe dazu auch <a href="../variables/">Variablen-Bereich (Scope)</a>.</p>
+</div>
+<hr />
 <h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://unity3d.com/learn/tutorials/topics/scripting/if-statements">IF-Statements Video-Tutorial in Unity (englisch)</a></li>
+</ul>
                 
                   
                 
