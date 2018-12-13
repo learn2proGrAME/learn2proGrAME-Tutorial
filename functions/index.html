@@ -356,8 +356,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
-    Funktionen ohne Rückgabewert
+  <a href="#aufbau-einer-funktion" title="Aufbau einer Funktion" class="md-nav__link">
+    Aufbau einer Funktion
   </a>
   
 </li>
@@ -365,6 +365,13 @@
         <li class="md-nav__item">
   <a href="#funktionen-mit-ruckgabewert" title="Funktionen mit Rückgabewert" class="md-nav__link">
     Funktionen mit Rückgabewert
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
+    Funktionen ohne Rückgabewert
   </a>
   
 </li>
@@ -535,8 +542,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
-    Funktionen ohne Rückgabewert
+  <a href="#aufbau-einer-funktion" title="Aufbau einer Funktion" class="md-nav__link">
+    Aufbau einer Funktion
   </a>
   
 </li>
@@ -544,6 +551,13 @@
         <li class="md-nav__item">
   <a href="#funktionen-mit-ruckgabewert" title="Funktionen mit Rückgabewert" class="md-nav__link">
     Funktionen mit Rückgabewert
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funktionen-ohne-ruckgabewert" title="Funktionen ohne Rückgabewert" class="md-nav__link">
+    Funktionen ohne Rückgabewert
   </a>
   
 </li>
@@ -588,34 +602,69 @@
 <h2 id="wofur-braucht-man-funktionen">Wofür braucht man Funktionen?<a class="headerlink" href="#wofur-braucht-man-funktionen" title="Permanent link">&para;</a></h2>
 <p>Funktionen (bzw. Methoden) sind kleine <em>Unterprogramme</em>.</p>
 <p>Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.</p>
-<p>Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst. 
+<p>Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.
 Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.</p>
-<p>Eine bessere Möglichkeit ist: </p>
-<p>Du erstellst eine <strong>Funktion</strong>, die den Abstand zwischen zwei Punkten berechnet.</p>
-<div class="codehilite"><pre><span></span>   <span class="c1">// Diese Funktion berechnet den Abstand zwischen zwei Punkten.</span>
-   <span class="c1">// x1,y1  ... Koordinaten des ersten Punkts</span>
-   <span class="c1">// x2,y2  ... Koordinaten des zweiten Punkts</span>
-   <span class="c1">// return ... Der Abstand zwischen den Punkten</span>
-   <span class="k">public</span> <span class="kt">int</span> <span class="nf">Abstand</span><span class="p">(</span><span class="kt">float</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y2</span><span class="p">){</span>
-     <span class="c1">//Berechne den Abstand mithilfe des Satzes von Pythagoras c=Wurzel(a^2+b^2)</span>
-     <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Mathf</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">((</span><span class="n">x1</span><span class="p">-</span><span class="n">x2</span><span class="p">)*(</span><span class="n">x1</span><span class="p">-</span><span class="n">x2</span><span class="p">)+(</span><span class="n">y1</span><span class="p">-</span><span class="n">y2</span><span class="p">)*(</span><span class="n">y1</span><span class="p">-</span><span class="n">y2</span><span class="p">));</span> <span class="c1">//Anm.: Mathf.Sqrt(float f) ist ebenfalls eine Funktion. Sie berechnet die Quadratwurzel einer Zahl f.</span>
+<p>Eine bessere Möglichkeit ist:</p>
+<p>Du erstellst eine <strong>Funktion</strong>, die den Abstand zwischen zwei Punkten berechnet.<br />
+Die Erstellung einer Funktion man als <em>Definition</em>.</p>
+<div class="codehilite"><pre><span></span>   <span class="c1">//Diese Funktion berechnet den Abstand zwischen zwei Objekten</span>
+   <span class="k">public</span> <span class="kt">float</span> <span class="nf">Abstand</span><span class="p">(</span><span class="n">GameObject</span> <span class="n">object1</span><span class="p">,</span> <span class="n">GameObject</span> <span class="n">object2</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">abstand</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">object1</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">,</span> <span class="n">object2</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">);</span>
 
-     <span class="k">return</span> <span class="n">entfernung</span><span class="p">;</span>
-   <span class="p">}</span>
+        <span class="k">return</span> <span class="n">abstand</span><span class="p">;</span>
+    <span class="p">}</span>
 </pre></div>
 
 
-<p>Anstatt nun jedes Mal diese Berechnung <em>händisch</em> durchzuführen, kannst du diese Funktion aufrufen.</p>
-<div class="codehilite"><pre><span></span>  <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Abstand</span><span class="p">(</span><span class="n">elli</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">elli</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">ossi</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+<p>Anstatt nun jedes Mal diese Berechnung <em>händisch</em> durchzuführen, kannst du diese Funktion verwenden.<br />
+Das Ausführen einer Funktion bezeichnet man als <em>Aufruf</em>.</p>
+<div class="codehilite"><pre><span></span>  <span class="kt">float</span> <span class="n">entfernung</span> <span class="p">=</span> <span class="n">Abstand</span><span class="p">(</span><span class="n">elli</span><span class="p">,</span> <span class="n">ossi</span><span class="p">);</span>
 </pre></div>
 
 
 <p>Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktion, durchführen.</p>
-<hr />
-<h2 id="funktionen-ohne-ruckgabewert">Funktionen ohne Rückgabewert<a class="headerlink" href="#funktionen-ohne-ruckgabewert" title="Permanent link">&para;</a></h2>
-<hr />
+<h2 id="aufbau-einer-funktion">Aufbau einer Funktion<a class="headerlink" href="#aufbau-einer-funktion" title="Permanent link">&para;</a></h2>
+<p><img alt="Header" src="../img/funktionsHeader.png" /></p>
+<p>Der <strong>Zugriffsmodifikator</strong> legt fest, von welchen Klassen man auf die Funktion zugreifen kann.</p>
+<p>Eine Funktion kann beliebig viele <strong>Parameter</strong> haben. <strong>Parameter</strong> legen genauer fest, was die Funktion tun soll. In unserem Beispiel wird über die <strong>Parameter</strong> festgelegt, von welchen zwei Spielobjekten der Abstand berechnet werden soll.<br />
+Die <strong>Parameter</strong> stehen im Body der Funktion als <a href="../variables/">Variablen</a> zur Verfügung.</p>
 <h2 id="funktionen-mit-ruckgabewert">Funktionen mit Rückgabewert<a class="headerlink" href="#funktionen-mit-ruckgabewert" title="Permanent link">&para;</a></h2>
-<hr />
+<p>Das Schlüsselwort <code>return</code> beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück.</p>
+<p>Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion <code>Abstand()</code> in einer <a href="../variables/">Variable</a> speichern oder direkt in einem <em>if</em>-Statement verwenden:</p>
+<div class="codehilite"><pre><span></span>    <span class="k">if</span><span class="p">(</span><span class="n">Abstand</span><span class="p">(</span><span class="n">elli</span><span class="p">,</span> <span class="n">pilz</span><span class="p">)</span> <span class="p">&lt;</span> <span class="m">100</span><span class="p">){</span>
+
+    <span class="p">}</span>
+</pre></div>
+
+
+<h2 id="funktionen-ohne-ruckgabewert">Funktionen ohne Rückgabewert<a class="headerlink" href="#funktionen-ohne-ruckgabewert" title="Permanent link">&para;</a></h2>
+<p>Nicht immer benötigt man eine Funktion mit Rückgabewert.<br />
+Für so ein Funktion gibt man als Rückgabetyp <code>void</code> an, außerdem benötigt man das Schlüsselwort <code>return</code> nicht.</p>
+<p>Ein Beispiel aus dem Bouncyfant-Game:</p>
+<div class="codehilite"><pre><span></span>    <span class="c1">// Springen</span>
+    <span class="k">protected</span> <span class="k">void</span> <span class="nf">Springen</span><span class="p">(</span><span class="n">KeyCode</span> <span class="n">Taste</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// Herausfinden, ob der Elefant irgendwo steht, von wo er abspringen kann</span>
+        <span class="kt">bool</span> <span class="n">springenmoeglich</span> <span class="p">=</span> <span class="n">amBoden</span><span class="p">();</span>
+
+        <span class="cm">/* Wenn der Pfeil nach oben gedrückt wird und Springen möglich,</span>
+<span class="cm">         * d.h. der Elefant hat etwas, von wo er aus wegspringen kann,</span>
+<span class="cm">         * dann bekommt der Elefantenkörper einen Impuls (Addforce),</span>
+<span class="cm">         * entsprechend der von uns gewählten Sprungkraft</span>
+<span class="cm">         */</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">GetKey</span><span class="p">(</span><span class="n">Taste</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">springenmoeglich</span><span class="p">)</span>
+            <span class="n">Elefantenkoerper</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="n">Vector2</span><span class="p">.</span><span class="n">up</span> <span class="p">*</span> <span class="n">Sprungkraft</span><span class="p">);</span>
+
+        <span class="cm">/*</span>
+<span class="cm">         * Wenn der Elefant gerade springt, dann springen auf nicht möglich setzen.</span>
+<span class="cm">         * Nicht = Rufzeichen(!).</span>
+<span class="cm">         */</span>
+        <span class="n">Animation</span><span class="p">.</span><span class="n">SetBool</span><span class="p">(</span><span class="s">&quot;Springen&quot;</span><span class="p">,</span> <span class="p">!</span><span class="n">springenmoeglich</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+
+
 <div class="admonition bug">
 <p class="admonition-title">ACHTUNG</p>
 <p>Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe <em>Funktion</em>, <em>Prozedur</em> und <em>Methode</em>.
