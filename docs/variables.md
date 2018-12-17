@@ -99,7 +99,7 @@ string zahl = i.ToString();
 
 Variablen, die **außerhalb** eines Code-Blocks - gekennzeichnet durch ```{ ... }``` - deklariert (also angegeben) werden, **können im Code-Block verwendet** werden. Variablen, die **im Code-Block angegeben** werden, können **nur dort verwendet** werden.
 
-Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgesetzt, so können auch Objekte darauf zugreifen, denen das Skript nicht "angeheftet" ist. Wenn eine Variable ```private``` ist, so kann nur das GameObject, dem das Skript angeheftet ist, darauf zugreifen.  
+Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgesetzt, so können auch Objekte darauf zugreifen, denen das Skript nicht "angeheftet" ist. Wenn eine Variable ```private``` ist, so kann nur das GameObject, dem das Skript angeheftet ist, darauf zugreifen. [Mehr dazu](accessmodifiers.md)
 
 -----
 
