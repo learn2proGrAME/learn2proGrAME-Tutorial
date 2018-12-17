@@ -11,6 +11,7 @@ nav:
     - Variablen: variables.md
     - Operatoren: operators.md
     - Funktionen: functions.md
+    - Zugriffsmodifikatoren: accessmodifiers.md
     - Spiel - Krapfenklicker: donutclicker.md
     - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
@@ -19,7 +20,6 @@ nav:
     - Schleifen: loops.md
     - Die Spiel-Schleife: gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: classes.md
-    - Zugriffsmodifikatoren: accessmodifiers.md
     - Über learn2proGrAME: about.md
     - Für Lehrpersonen: teachers.md 
 

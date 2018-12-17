@@ -60,7 +60,7 @@ Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` i
 
 ```csharp
 	if(Abstand(elli, pilz) < 100){
-
+	
 	}
 ```
 
@@ -75,7 +75,7 @@ zwei Beispielel:
 	 //  Diese Funktion erhöht den Punktestand und aktualisiert den Text des Punktestands.
     public void ErhoehePunktestand(int punkte)
     {
-        punkteStand += punkte;
+        punkteStand = punkteStand + punkte;
         AktualisierePunktestandText();
     }
 	
