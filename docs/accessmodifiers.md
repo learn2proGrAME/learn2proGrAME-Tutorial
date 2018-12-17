@@ -67,6 +67,11 @@ public class Player {
 }
 ``` 
 
+!!!Bug "Achtung"
+	Wenn man für Klassenvariablen oder Methoden keine Zugriffsmodifikatoren angibt, werden diese implizit auf *private* gesetzt.
+---
+
+
 !!!Tip "Faustregel"
 	Zugriffsmodifikatoren sollten, wenn möglich immer möglichst restriktiv verwendet werden.  
 	Das heißt *public* sollte man nur dann verwenden, wenn man einen guten Grund dafür hat.
