@@ -47,7 +47,7 @@ Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktio
 
 ![Header](img/funktionsHeader.png)
 
-Der **Zugriffsmodifikator** legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
+Der [Zugriffsmodifikator](accessmodifiers.md) legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
 
 Eine Funktion kann beliebig viele **Parameter** haben. **Parameter** legen genauer fest, was die Funktion tun soll. In unserem Beispiel wird über die **Parameter** festgelegt, von welchen zwei Spielobjekten der Abstand berechnet werden soll.  
 Die **Parameter** stehen im Body der Funktion als [Variablen](variables.md) zur Verfügung.
@@ -70,29 +70,24 @@ Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` i
 Nicht immer benötigt man eine Funktion mit Rückgabewert.  
 Für so ein Funktion gibt man als Rückgabetyp ```void``` an, außerdem benötigt man das Schlüsselwort ```return``` nicht.
 
-Ein Beispiel aus dem Bouncyfant-Game:
+zwei Beispielel:
 ```csharp
-	// Springen
-    protected void Springen(KeyCode Taste)
+	 //  Diese Funktion erhöht den Punktestand und aktualisiert den Text des Punktestands.
+    public void ErhoehePunktestand(int punkte)
     {
-        // Herausfinden, ob der Elefant irgendwo steht, von wo er abspringen kann
-        bool springenmoeglich = amBoden();
-
-        /* Wenn der Pfeil nach oben gedrückt wird und Springen möglich,
-         * d.h. der Elefant hat etwas, von wo er aus wegspringen kann,
-         * dann bekommt der Elefantenkörper einen Impuls (Addforce),
-         * entsprechend der von uns gewählten Sprungkraft
-         */
-        if (Input.GetKey(Taste) && springenmoeglich)
-            Elefantenkoerper.AddForce(Vector2.up * Sprungkraft);
-
-        /*
-         * Wenn der Elefant gerade springt, dann springen auf nicht möglich setzen.
-         * Nicht = Rufzeichen(!).
-         */
-        Animation.SetBool("Springen", !springenmoeglich);
+        punkteStand += punkte;
+        AktualisierePunktestandText();
     }
+	
+	//  Diese Funktion aktualisiert den angezeigten Text des Punktestands. 
+    //  Sie muss immer aufgerufen werden, nachdem sich die Punkte geändert haben.
+    private void AktualisierePunktestandText()
+    {
+        scoreText.text = "Score: " + punkteStand;
+    }
+
 ```
+
 
 !!!bug "ACHTUNG"
     Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
@@ -104,3 +99,5 @@ Ein Beispiel aus dem Bouncyfant-Game:
 ##Weiterführende Resourcen
 
 * [Variables and Functions Tutorial (englisch)](https://unity3d.com/learn/tutorials/topics/scripting/variables-and-functions)
+
+* [Scope and Access Control in Unity Tutorial  (englisch)](https://unity3d.com/learn/tutorials/topics/scripting/scope-and-access-modifiers)
