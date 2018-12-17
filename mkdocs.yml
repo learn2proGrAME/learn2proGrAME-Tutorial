@@ -19,6 +19,7 @@ nav:
     - Schleifen: loops.md
     - Die Spiel-Schleife: gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: classes.md
+    - Zugriffsmodifikatoren: accessmodifiers.md
     - Über learn2proGrAME: about.md
     - Für Lehrpersonen: teachers.md 
 
