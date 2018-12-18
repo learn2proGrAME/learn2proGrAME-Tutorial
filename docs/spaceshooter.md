@@ -85,7 +85,7 @@ Vielleicht ist dir aufgefallen, dass wir die Variable geschwindigkeit noch gar n
 
 Speichere das Script und gehe wieder in Unity.
 
-Im Ordner *Assets/Prefabs* findest du die Vorlage für die Asteroiden. Wenn du sie auswählst siehst du, dass das Script *Asteroid.cs* bereits angehängt ist. Wenn du nun noch die geschwindigkeit auf einen Wert größer als 0 setzt, bist du mit diesem Teil fertig.
+Im Ordner *Assets/Vorlagen* findest du die Vorlage für die Asteroiden. Wenn du sie auswählst siehst du, dass das Script *Asteroid.cs* bereits angehängt ist. Wenn du nun noch die geschwindigkeit auf einen Wert größer als 0 setzt, bist du mit diesem Teil fertig.
 
 [geschwindigkeitSetzen](img/asteroid1.png)
 
@@ -138,7 +138,7 @@ Bevor wir implementieren, was geschehen soll, müssen wir überprüfen womit der
 Füge ein *if-Statement* in der Methode `OnTriggerEnter()` ein, das überprüft ob die Variable `other.tag` gleich "Geschoß" ist. Um zu überprüfen ob `other` ein Lasergeschoß ist.
 
 !!!tip "Hinweis"
-	Man kann in Unity jedem Gameobject und jeder Vorlage (Prefab) einen *tag* zuweisen. In diesem Spiel wurde z.B. den Lasergeschoßen der *tag* "Geschoß" und den Asteroiden der *tag* "Hindernis" gegeben.
+	Man kann in Unity jedem Gameobject und jeder Vorlage einen *tag* zuweisen. In diesem Spiel wurde z.B. den Lasergeschoßen der *tag* "Geschoß" und den Asteroiden der *tag* "Hindernis" gegeben.
 
 ### 5.2. Geschoß und Asteroid löschen
 
@@ -170,7 +170,7 @@ Rufe nun in der Methode `OnTriggerEnter()` im Asteroid-Skript die Funktion `Erho
 
 Lege als erstes eine *public* Variable vom Typ *AudioClip* am Beginn der Klasse an und speichere das Skript.
 
-Gehe in Unity auf *Assets/Prefabs* und wähle Asteroid aus. Im Inspektor siehst du die Variable für den AudioClip.
+Gehe in Unity auf *Assets/Vorlagen* und wähle Asteroid aus. Im Inspektor siehst du die Variable für den AudioClip.
 
 Klicke auf die Zielscheibe rechts daneben und wähle "Explosion1" aus.
 
