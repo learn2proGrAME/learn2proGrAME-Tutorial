@@ -11,9 +11,9 @@ nav:
     - Variablen: variables.md
     - Operatoren: operators.md
     - Spiel - Krapfenklicker: donutclicker.md
+    - Transform Spielobjektkomponente: transform.md
     - Funktionen: functions.md
     - Zugriffsmodifikatoren: accessmodifiers.md
-    - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
     - Spiel - Asteroidshooter: spaceshooter.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
