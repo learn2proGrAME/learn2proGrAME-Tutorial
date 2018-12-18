@@ -24,7 +24,7 @@ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder O
 Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!
 
 !!!bug "ACHTUNG"
-    Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts, aber ignorieren die Punkt vor Strich Regel!
+    Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
     Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.-->
 
 ---- 
@@ -61,7 +61,7 @@ Debug.Log ("Hallo ich bin " + name+ " und meine Lieblingszahl ist" + lieblingsza
 ```
 
 !!!success "Arbeitsauftrag"
-    Ergänze die Funktion ```OnDisable()``` in HalloElli.cs mit oben stehendem Programm-Code.
+    Ergänze die Funktion ```OnDisable()``` in "HalloElli.cs" mit oben stehendem Programm-Code.
 
 In der Konsole steht nach Aufruf: *"Hallo ich bin Elli der Elefant und meine Lieblingszahl ist 3."* 
 Wir sehen also, die Werte in ```x``` und ```name``` sind jetzt anders weil wir neue Werte mit ```=``` zugewiesen haben.
