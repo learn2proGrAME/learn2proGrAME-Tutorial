@@ -11,9 +11,11 @@ nav:
     - Variablen: variables.md
     - Operatoren: operators.md
     - Funktionen: functions.md
+    - Zugriffsmodifikatoren: accessmodifiers.md
     - Spiel - Krapfenklicker: donutclicker.md
     - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
+    - Spiel - Asteroidshooter: spaceshooter.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
     - Figuren zeichnen in GIMP: drawingingimp.md
     - Schleifen: loops.md
