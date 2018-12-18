@@ -6,6 +6,7 @@
 In Asteroidshooter fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert dein Raumschiff.
 
 Das Spiel ist beinahe schon fertig. Lediglich die Programmierung der Asteroiden fehlt noch.
+
 ----
 
 ## 1. Projekt downloaden
@@ -33,8 +34,7 @@ Du kannst mit den Pfeiltasten herumfliegen und mit der Leertaste schießen.
 Ansonsten ist das Spiel aber noch recht langweilig.
 
 
-Wenn du während das Spiel läuft in die Scene-View schaust, siehst du dass schon Asteroiden am oberen Spielfeldrand erzeugt werden.  
-Allerdings tun diese noch nichts.
+Wenn du während das Spiel läuft in die Scene-View schaust, siehst du, dass am oberen Spielfeldrand schon Asteroiden erzeugt werden. Allerdings tun diese noch nichts.
 
 ----
 
@@ -46,7 +46,7 @@ Als erstes kümmern wir uns darum, dass die Asteroiden in Bewegung gesetzt werde
 
 Öffne unter *Assets/Scripts* das Script **Asteroid**  
 
-Da wir die eingebaute Physic-Engine von Unity verwenden, benötigen wir für die Bewegung einen Rigidbody.
+Da wir die eingebaute Physic-Engine von Unity verwenden, benötigen wir für die Bewegung einen **Rigidbody**.
 
 Erstelle als erstes eine *private* Variable vom Typ *Rigidbody* in der dieser gespeichert wird.
 
@@ -81,13 +81,14 @@ Verwende hierfür den Befehl `rb.velocity = new Vector3 (0, 0, -geschwindigkeit)
 
 Füge diesen Befehl ebenfalls in der `Start()` Methode nach dem Initialisieren von `rb` ein.
 
-Vielleicht ist dir aufgefallen, dass wir die Variable geschwindigkeit noch gar nicht initialisiert haben. Das ist kein Problem. Da diese *public* ist, kann man ihren Wert im Inspector von Unity festlegen.
+!!!tip "Hinweis"
+	Vielleicht ist dir aufgefallen, dass wir die Variable geschwindigkeit noch gar nicht initialisiert haben. Das ist kein Problem. Da diese *public* ist, kann man ihren Wert im Inspector von Unity festlegen.
 
 Speichere das Script und gehe wieder in Unity.
 
 Im Ordner *Assets/Vorlagen* findest du die Vorlage für die Asteroiden. Wenn du sie auswählst siehst du, dass das Script *Asteroid.cs* bereits angehängt ist. Wenn du nun noch die geschwindigkeit auf einen Wert größer als 0 setzt, bist du mit diesem Teil fertig.
 
-[geschwindigkeitSetzen](img/asteroid1.png)
+![geschwindigkeitSetzen](img/asteroid1.png)
 
 Vergiss nicht zu testen und probiere ein paar unterschiedliche Werte für die Geschwindigkeit aus!
 
@@ -117,18 +118,18 @@ Teste!
 
 ## 5. Kollisionen
 
-Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört.
+Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört. Allerdings kann man sie noch nicht abschießen. 
 
-Allerdings kann man sie noch nicht abschießen.  
 In diesem Teil wirst du folgende Dinge programmieren:
 
-Wenn ein Asteroid mit einem Lasergschoß kollidiert:
-	1. Das Lasergeschoß  und der Asteroid werden gelöscht
-	2. Der Punktestand wird erhöht
-	3. Ein Sound wird abgespielt
+Wenn ein Asteroid mit einem Lasergeschoß kollidiert ...
+
+1. ... werden Lasergeschoß  und der Asteroid gelöscht
+2. ... wird der Punktestand erhöht
+3. ... wird ein Sound abgespielt
 
 !!!Tip "Hinweis"
-	Der meiste Code in diesem Teil wird in der Methode ```csharp OnTriggerEnter(Collider other) ``` eingefügt. Diese Methode wird (etwas vereinfacht gesagt) von Unity immer dann aufgerufen, wenn eine Kollision stattfindet.
+	Der meiste Code in diesem Teil wird in der Methode ``` OnTriggerEnter(Collider other) ``` eingefügt. Diese Methode wird (etwas vereinfacht gesagt) von Unity immer dann aufgerufen, wenn eine Kollision stattfindet.
 	Der Parameter `other` ist hierbei der Collider des GameObjects mit dem kollidiert wird.
 
 ### 5.1. Was kollidiert?
@@ -138,7 +139,7 @@ Bevor wir implementieren, was geschehen soll, müssen wir überprüfen womit der
 Füge ein *if-Statement* in der Methode `OnTriggerEnter()` ein, das überprüft ob die Variable `other.tag` gleich "Geschoß" ist. Um zu überprüfen ob `other` ein Lasergeschoß ist.
 
 !!!tip "Hinweis"
-	Man kann in Unity jedem Gameobject und jeder Vorlage einen *tag* zuweisen. In diesem Spiel wurde z.B. den Lasergeschoßen der *tag* "Geschoß" und den Asteroiden der *tag* "Hindernis" gegeben.
+	Man kann in Unity jedem Gameobject und jeder Vorlage einen **tag** zuweisen. Dieser **tag** ist als *String* Variable `tag` in jedem GameObject verfügbar. In diesem Spiel wurde z.B. den Lasergeschoßen der **tag** "Geschoß" und den Asteroiden der **tag** "Hindernis" gegeben.
 
 ### 5.2. Geschoß und Asteroid löschen
 
@@ -152,29 +153,29 @@ Der GameController stellt die Methode `ErhoehePunktestand(int punkte)` zur Verf�
 
 Bevor du diese Funktion aufrufen kannst, benötigst du allerdings eine Variable mit einer Referenz auf den GameController.
 
-	1. Erstelle eine *private* Variable vom Typ *GameController* am Beginn der Klasse und nenne sie "gameController".
-	2. Initialisiere in der Methode `Start()` die Variable für den GameController mithilfe der Funktion ```csharp FindeGameController() ```
+1. Erstelle eine *private* Variable vom Typ *GameController* am Beginn der Klasse und nenne sie "gameController".
+2. Initialisiere in der Methode `Start()` die Variable für den GameController mithilfe der Funktion ``` FindeGameController() ```
 
-	```csharp
-		gameController = FindeGameController();
-	```
+```csharp
+	gameController = FindeGameController();
+```
 
 
 Rufe nun in der Methode `OnTriggerEnter()` im Asteroid-Skript die Funktion `ErhoehePunktestand(int punkte)` des GameControllers auf und gib als Parameter z.B. *10* an.
 
 !!!tip "Hinweis"
 	Um eine Funktion in einem anderen Objekt aufzurufen, verwende: *variablenname-des-objekts.FunktionsName()*
-	Also z.B. ```csharp gameController.ErhoehePunktestand(10); ```
+	Also z.B. ``` gameController.ErhoehePunktestand(10); ```
 
 ### 5.4. Sound abspielen
 
 Lege als erstes eine *public* Variable vom Typ *AudioClip* am Beginn der Klasse an und speichere das Skript.
 
-Gehe in Unity auf *Assets/Vorlagen* und wähle Asteroid aus. Im Inspektor siehst du die Variable für den AudioClip.
+Gehe in Unity auf *Assets/Vorlagen* und wähle *Asteroid* aus. Im Inspektor siehst du die Variable für den AudioClip.
 
 Klicke auf die Zielscheibe rechts daneben und wähle "Explosion1" aus.
 
-!!!bug "TODO: screenshot einfügen"
+![sound initalisieren](img/linkSound.png)
 
 Zum Abspielen des Sounds gibt es im GameController die Methode ```csharp SpieleSound(AudioClip sound, float lautstaerke) ```
 

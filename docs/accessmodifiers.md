@@ -18,7 +18,7 @@ Die drei wichtigsten Zugriffsmodifikatoren sind:
 
 * **public** - Zugriff von überall
 * **private** - Zugriff nur innerhalb der Klasse
-* **protected** - Zugriff innerhalb der Klasse und von allen Klassen die von dieser Klasse erben. (Mehr zu Vererbung unter [Objektorientierte Programmierung](classes.md)
+* **protected** - Zugriff innerhalb der Klasse und von allen Klassen die von dieser Klasse erben. (Mehr zu Vererbung unter [Objektorientierte Programmierung](classes.md))
 
 !!!Tip "Tipp"
     *public* Variablen können in Unity auch im Inspector eingesehen und verändert werden.
