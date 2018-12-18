@@ -10,8 +10,8 @@ nav:
     - Fehler und De-Bugging: debugging.md
     - Variablen: variables.md
     - Operatoren: operators.md
-    - Spiel - Krapfenklicker: donutclicker.md
     - Funktionen: functions.md
+    - Spiel - Krapfenklicker: donutclicker.md
     - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
