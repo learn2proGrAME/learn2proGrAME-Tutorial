@@ -1,9 +1,9 @@
-# Asteroidshooter das Spiel
+# Space-Asteroids das Spiel
 
 !!!abstract "Lernziele"
-	In diesem Kapitel wirst du mithilfe des Gelernten aus den vorigen Kapiteln die letzten Teile des Spiels Asteroidshooter selber programmieren.
+	In diesem Kapitel wirst du mithilfe des Gelernten aus den vorigen Kapiteln die letzten Teile des Spiels Space-Asteroids selber programmieren.
 
-In Asteroidshooter fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert dein Raumschiff.
+In Space-Asteroids fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert dein Raumschiff.
 
 Das Spiel ist beinahe schon fertig. Lediglich die Programmierung der Asteroiden fehlt noch.
 
@@ -118,7 +118,7 @@ Teste!
 
 ## 5. Kollisionen
 
-Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört. Allerdings kann man sie noch nicht abschießen. 
+Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört. Allerdings kann man sie noch nicht abschießen.
 
 In diesem Teil wirst du folgende Dinge programmieren:
 

@@ -15,14 +15,14 @@ nav:
     - Funktionen: functions.md
     - Zugriffsmodifikatoren: accessmodifiers.md
     - Verzweigungen: conditionals.md
-    - Spiel - Asteroidshooter: spaceshooter.md
+    - Spiel - Space-Asteroids: spaceshooter.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
     - Figuren zeichnen in GIMP: drawingingimp.md
     - Schleifen: loops.md
     - Die Spiel-Schleife: gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: classes.md
     - Über learn2proGrAME: about.md
-    - Für Lehrpersonen: teachers.md 
+    - Für Lehrpersonen: teachers.md
 
 
 # Repository
@@ -44,7 +44,7 @@ theme:
     code: 'Roboto Mono'
   highlightjs: true
   logo: 'img/elliLogo.png'
-     
+
 
 # Customization
 extra:
