@@ -475,6 +475,40 @@
     Einklinken in die Spielschleife in Unity
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixedupdate" title="FixedUpdate()" class="md-nav__link">
+    FixedUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" title="Update()" class="md-nav__link">
+    Update()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lateupdate" title="LateUpdate()" class="md-nav__link">
+    LateUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-resourcen" title="Weiterführende Resourcen" class="md-nav__link">
+    Weiterführende Resourcen
+  </a>
+  
 </li>
       
       
@@ -563,6 +597,40 @@
     Einklinken in die Spielschleife in Unity
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixedupdate" title="FixedUpdate()" class="md-nav__link">
+    FixedUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" title="Update()" class="md-nav__link">
+    Update()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lateupdate" title="LateUpdate()" class="md-nav__link">
+    LateUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-resourcen" title="Weiterführende Resourcen" class="md-nav__link">
+    Weiterführende Resourcen
+  </a>
+  
 </li>
       
       
@@ -589,13 +657,38 @@
 <p>In einer Spielschleife werden neben Kollisionsabfragen und der Bewegungsteuerung sogar noch viel grundlegendere Dinge, wie etwa das Zeichnen des Spieleinhalts erledigt. Eine Spielschleife ist eine Schleife, die fortlaufend wieder wiederholt wird und eine Handvoll wichtiger Grundfunktionen für ein Spiel beinhaltet. Eine typische Spielschleife sieht vom Konzept her etwa folgendermaßen aus:</p>
 <p><img alt="Grafik einer Spielschleife" src="../img/GameLoop.png" /></p>
 <h2 id="weshalb-benotigt-man-eine-spielschleife">Weshalb benötigt man eine Spielschleife?<a class="headerlink" href="#weshalb-benotigt-man-eine-spielschleife" title="Permanent link">&para;</a></h2>
-<p>Die Spielschleife sorgt dafür, dass Ereignisse, die zum Spiel gehören, fortlaufend stattfinden. 
-Frage: "Kann man die Spielschleife nicht einfach selbst mit einer While-Schleife implementieren?" 
+<p>Die Spielschleife sorgt dafür, dass Ereignisse, die zum Spiel gehören, fortlaufend stattfinden.
+Frage: "Kann man die Spielschleife nicht einfach selbst mit einer While-Schleife implementieren?"
 Antwort: "Möglich ist das schon, aber die Spielschleife von Spieleentwicklungswerkzeugen beinhaltet auch Geschwindigkeitsoptimierungen, d.h. sie trägt die Verantwortung dafür, dass Spiele in der uns bekannten Geschwindigkeit auf gängiger Hardware ablaufen können. Mit einer selbstgemachten, nicht-optimierten Spielschleife, kann es leicht passieren, dass Spieler und Spielerinnen in einem halbwegs komplexen Spiel gerade mal alle 30 Sekunden einen Schritt machen können - Nicht gerade der größte Spielspaß!"</p>
-<p>Ein weiteres Problem ist, dass das Spiel auf unterschiedlicher Hardware unterschiedlich schnell läuft. Um eine professionelle Implementierung einer Spielschleife kommt man in der Spieleentwicklung nicht herum. </p>
+<p>Ein weiteres Problem ist, dass das Spiel auf unterschiedlicher Hardware unterschiedlich schnell läuft. Um eine professionelle Implementierung einer Spielschleife kommt man in der Spieleentwicklung nicht herum.</p>
 <h2 id="einklinken-in-die-spielschleife-in-unity">Einklinken in die Spielschleife in Unity<a class="headerlink" href="#einklinken-in-die-spielschleife-in-unity" title="Permanent link">&para;</a></h2>
 <p>Folgende Funktionen eines Spielobjekt-Skripts werden in der Unity-Spielschleife ausgeführt:</p>
+<ol>
+<li><strong>FixedUpdate()</strong></li>
+<li><strong>Update()</strong></li>
+<li><strong>LateUpdate()</strong></li>
+</ol>
+<h3 id="fixedupdate">FixedUpdate()<a class="headerlink" href="#fixedupdate" title="Permanent link">&para;</a></h3>
+<p><strong>FixedUpdate()</strong> wird  in einem fixen Zeitintervall (Standardmäßig 50 Mal pro Sekunde) aufgerufen . <strong>FixedUpdate()</strong> sollte man immer dann verwenden, wenn man mit Objekten der Physics-Engine interagiert. Also z.B. wenn man die Geschwindigkeit eines RigidBodys verändert.</p>
+<h3 id="update">Update()<a class="headerlink" href="#update" title="Permanent link">&para;</a></h3>
+<p><strong>Update()</strong> wird einmal pro Frame aufgerufen. Das heißt diese Funktion wird öfter aufgerufen, wenn die Framerate höher ist. Typische Aufgaben, die man in <strong>Update()</strong> durchführt sind z.B.</p>
+<ul>
+<li>das Abfragen des Userinputs</li>
+<li>Bewegung von Nicht-Physikobjekten</li>
+<li>Timer</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Wenn man in <em>Update()</em> Bewegungen implementiert, sollte man diese immer mit <code>Time.deltaTime</code> multiplizieren. Sonst bewegt sich das Objekt bei einer höheren Framerate schneller als bei einer niedrigen. (Time.deltaTime gibt die vergangene Zeit seit dem letzten Frame an)<br />
+<strong>Fun Fact:</strong> In dem Spiel <em>Fallout 76</em> ist genau dies schlecht implementiert und die Bewegungsgeschwindigkeit an die Framerate gebunden. Um zu verhindern, dass sich Spieler_innen mit einem besonders schnellen PC zu schnell bewegen, wurde das Problem in einem Patch durch Festlegen einer maximalen Framerate von 63 FPS "gefixt". <a href="https://www.altchar.com/games-news/582054/fallout-76-patch-fixes-speed-hacking-and-unlocks-fps">Link</a></p>
+</div>
+<h3 id="lateupdate">LateUpdate()<a class="headerlink" href="#lateupdate" title="Permanent link">&para;</a></h3>
+<p>Ist genau wie <strong>Update()</strong> mit dem Unterschied, dass es in der Gameloop später aufgerufen wird. Diese Funktion wird eher selten verwendet, kann jedoch praktisch sein, wenn man etwas unbedingt nach dem Aufrufen von <strong>Update()</strong> ausgeführt werden soll. Ein typischer Anwendungsfall ist die Bewegung einer Kamera, die einem Objekt folgen soll, dessen Position sich in <strong>Update()</strong> verändert.</p>
+<hr />
+<h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
 <p>Eine genaue Beschreibung der Funktionen findest du in der <a href="https://docs.unity3d.com/ScriptReference/">offiziellen Unity Programmier-Referenz</a>.</p>
+<p><a href="https://unity3d.com/de/learn/tutorials/topics/scripting/update-and-fixedupdate">Video zum Unterschied zwischen Update() und FixedUpdate()</a></p>
+<p><a href="https://docs.unity3d.com/Manual/ExecutionOrder.html">Genaue Execution-Order der Unity Gameloop</a></p>
                 
                   
                 
