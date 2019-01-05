@@ -12,12 +12,12 @@ nav:
     - Operatoren: operators.md
     - Spiel - Krapfenklicker: donutclicker.md
     - Transform Spielobjektkomponente: transform.md
-    - Funktionen: functions.md
-    - Zugriffsmodifikatoren: accessmodifiers.md
     - Verzweigungen: conditionals.md
-    - Spiel - Asteroidshooter: spaceshooter.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
     - Figuren zeichnen in GIMP: drawingingimp.md
+    - Funktionen: functions.md
+    - Zugriffsmodifikatoren: accessmodifiers.md
+    - Spiel - Asteroidshooter: spaceshooter.md
     - Schleifen: loops.md
     - Die Spiel-Schleife: gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: classes.md
