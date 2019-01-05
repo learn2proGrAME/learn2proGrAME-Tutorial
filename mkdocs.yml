@@ -13,6 +13,7 @@ nav:
     - Spiel - Krapfenklicker: donutclicker.md
     - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
+    - Spiel - Space-Asteroids: spaceshooter.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
     - Figuren zeichnen in GIMP: drawingingimp.md
     - Funktionen: functions.md
@@ -22,7 +23,7 @@ nav:
     - Die Spiel-Schleife: gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: classes.md
     - Über learn2proGrAME: about.md
-    - Für Lehrpersonen: teachers.md 
+    - Für Lehrpersonen: teachers.md
 
 
 # Repository
@@ -44,7 +45,7 @@ theme:
     code: 'Roboto Mono'
   highlightjs: true
   logo: 'img/elliLogo.png'
-     
+
 
 # Customization
 extra:
