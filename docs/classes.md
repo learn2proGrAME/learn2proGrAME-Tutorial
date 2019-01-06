@@ -1,19 +1,47 @@
 #Objekt-orientiertes Programmieren - Grundlagen
 
+!!!abstract "Lernziele"
+    In diesem Kapitel werden grundlegende Konzepte der Objekt-orientierten Programmierung, nämlich **Klasse**, **Instanz** und **Konstruktor** vorgestellt.
+
+---
+
+
+
 ##Klasse und Instanz
 
+![Klasse und Instanz](img/classAndInstance.png)
 
-##Eigenschaften
+Während eine Klasse ein Objekt mit **Eigenschaften** und **Funktionen** beschreibt, haben Eigenschaften der Instanz eines Objekts Werte. Ist eine Instanz zur Laufzeit eines Programms erzeugt worden, hat diese somit auch je einen bestimmten Zustand.
+
+In C*#* kann eine Klasse folgendermaßen angegeben werden:
+``` C#
+    class Elefant : MonoBehavior
+	{
+	    ...
+	}
+``` 
+
+###Der Konstruktor
+
+Zum Erzeugen einer Instanz einer Klasse (also eines Objekts mit Werten aus einer Objektbeschreibung), wird die Konstruktor-Methode verwendet:
+
+``` C#
+    Elefant elli = new Elefant();
+``` 
 
 
-##Funktionen
+Das Schlüsselwort **new** gefolgt von der Konstruktor-Methode erzeugt eine neue Instanz einer Klasse. Die Instanz wird in eine Variable gespeichert. Der Datentyp der Variable ist die Klassenbezeichnung.
 
-
-##Ein Beispiel
-
-
-##Weiterführende Informationen
-
+Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert werden:
+``` C#
+    class Elefant : MonoBehavior
+	{
+		public Elefant() //Das ist die Konstruktor-Methode. Sie hat dieselbe Bezeichnung wie die Klasse.
+		{
+		    ... //Hier können der Instanz Werte bei der Erzeugung zugewiesen werden.
+		}
+	}
+``` 
 
 ##BouncyFant - Intro
 
