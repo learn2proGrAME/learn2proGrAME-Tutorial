@@ -389,6 +389,40 @@
     Ellis' großes Abenteuer - Ein Text-basiertes Adventurespiel
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-geschichte" title="Die Geschichte" class="md-nav__link">
+    Die Geschichte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#szenenaufbau" title="Szenenaufbau" class="md-nav__link">
+    Szenenaufbau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiellogik" title="Spiellogik" class="md-nav__link">
+    Spiellogik
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-resourcen" title="Weiterführende Resourcen" class="md-nav__link">
+    Weiterführende Resourcen
+  </a>
+  
 </li>
       
       
@@ -408,8 +442,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../drawingingimp/" title="Figuren zeichnen in GIMP" class="md-nav__link">
-      Figuren zeichnen in GIMP
+    <a href="../drawingingimp/" title="Grafiken gestalten in GIMP" class="md-nav__link">
+      Grafiken gestalten in GIMP
     </a>
   </li>
 
@@ -535,6 +569,40 @@
     Ellis' großes Abenteuer - Ein Text-basiertes Adventurespiel
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-geschichte" title="Die Geschichte" class="md-nav__link">
+    Die Geschichte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#szenenaufbau" title="Szenenaufbau" class="md-nav__link">
+    Szenenaufbau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiellogik" title="Spiellogik" class="md-nav__link">
+    Spiellogik
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-resourcen" title="Weiterführende Resourcen" class="md-nav__link">
+    Weiterführende Resourcen
+  </a>
+  
 </li>
       
       
@@ -557,7 +625,119 @@
                 
                 
                 <h1 id="ellis-groes-abenteuer">Ellis' großes Abenteuer<a class="headerlink" href="#ellis-groes-abenteuer" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du mit Hilfe von <a href="../variables/">Variablen</a> und <a href="../conditionals/">Verzweigungen</a> ein Text-basiertes <a href="https://de.wikipedia.org/wiki/Adventure">Adventure</a> Spiel zu programmieren.</p>
+</div>
+<p>In diesem Spiel können Befehle in ein Textfeld geschrieben werden. Diese werden durch <strong>Bedingungen</strong>, wie etwa <strong>Vergleiche von Variablen</strong>, ausgewertet. <strong>Wenn</strong> eine Bedingung zutrifft, <strong>dann</strong> verändern sich Spielzustände.</p>
+<hr />
 <h2 id="ellis-groes-abenteuer-ein-text-basiertes-adventurespiel">Ellis' großes Abenteuer - Ein Text-basiertes Adventurespiel<a class="headerlink" href="#ellis-groes-abenteuer-ein-text-basiertes-adventurespiel" title="Permanent link">&para;</a></h2>
+<h3 id="die-geschichte">Die Geschichte<a class="headerlink" href="#die-geschichte" title="Permanent link">&para;</a></h3>
+<p>Eine Maschine zerstört den Wald, in dem Elli lebt. Die Elefantin macht sich auf, um Ihren Wald zu retten. Dafür muss sie zuerst einen großen Fluss überqueren.</p>
+<h3 id="szenenaufbau">Szenenaufbau<a class="headerlink" href="#szenenaufbau" title="Permanent link">&para;</a></h3>
+<p>Erstelle ein neues 2D Unity-Projekt. Nenne es "Elli's großes Abenteuer".</p>
+<p>Für das Adventure Spiel werden folgende Spielobjekte (GameObjects) für BenutzerInnen-Schnittstellen (User Interfaces) benötigt:</p>
+<ul>
+<li><em>"Image"</em></li>
+<li><em>"Button"</em></li>
+<li><em>"InputField"</em></li>
+<li><em>"Text"</em>: Nenne dieses Spielobjekt "SpielText"</li>
+</ul>
+<p>Hierbei ist die Anordnung der User Interface Elemente wichtig. Das Bild (<em>"Image"</em>) sollte im Hintergrund sein. Die Steuerelemente (<em>"InputField"</em>, <em>"Button"</em>, <em>"Spieltext"</em>) sollten im Vordergrund sein.</p>
+<p>Das Spielfeld kann wie folgt angeordnet werden:
+<img alt="Spielfeld Anordung" src="../img/elliadventuregamefield.png" /></p>
+<p>Darüber hinaus musst du mit Rechtsklick in das Hierarchie-Panel über "Create Empty" ein neues Spielobjekt erzeugen. Nenne es "GameController".</p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ändere den Button-Text auf "Ausführen".</p>
+</div>
+<p><img alt="Button Ausführen" src="../img/ellibuttonausfuehren.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ändere den Platzhalter-Text des Eingabefelds (<em>"InputField"</em>) auf "Text eingeben...".</p>
+</div>
+<p><img alt="InputField Text" src="../img/elliplaceholdertext.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ändere den Text in "SpielText" auf "Du bist auf einem Feld. Vor dir ist ein Fluss. Vielleicht solltest du dich mal umschauen. Also: Schau".</p>
+</div>
+<p><img alt="SpielText Text" src="../img/ellitextfirst.png" /></p>
+<p>Das <em>"Image"</em>-Spielobjekt ist eine Art Bilderrahmen. Du kannst im Inspektor ein Bild über <em>"Image (Script)"</em> &gt; <em>"Source Image"</em> per <a href="https://de.wikipedia.org/wiki/Drag_and_Drop#/media/File:Drag-and-drop-de.svg">Drag and Drop</a> zuweisen.</p>
+<p><img alt="Image SourceImage" src="../img/ellisourceimage.png" /></p>
+<p>Für das erste Rätsel in diesem Adventure-Spiel (Wie kommt Elli über den Fluss?) brauchst du 3 Bilder: </p>
+<ol>
+<li>Das Startbild, auf dem Elli, ein Fluss und ein großer Stein erkennbar sind. </li>
+<li>Ein Bild, auf dem der Stein nicht sichtbar ist (weil Elli diesen trägt).</li>
+<li>Ein Bild, auf dem der Stein im Wasser und Elli auf der anderen Seite des Flusses zu sehen ist.</li>
+</ol>
+<p>Lade die drei Bilder auf deinen Computer herunter: <a href="../img/ellistartpictures.zip">Elli's Abenteuer Start-Bilder</a></p>
+<p>Lade die Bilder als "Assets" in dein Unity-Projekt. (Falls du das noch nicht gemacht hast, erstelle zuvor im Assets-Ordner 4 Unterordner: <em>"Sprites"</em>, <em>"Scripts"</em>, <em>"Vorlagen"</em> und <em>"Material"</em>. Die 3 Grafiken können im <em>"Sprites"</em>-Ordner abgelegt werden.)</p>
+<p>Weise dem <em>"Image"</em>-Spielobjekt die Grafik <em>"ElliStart.png"</em> zu.</p>
+<p><img alt="Elli Adventure vollständiges UI" src="../img/elliuicompleted.png" /></p>
+<h3 id="spiellogik">Spiellogik<a class="headerlink" href="#spiellogik" title="Permanent link">&para;</a></h3>
+<p>Füge dem <em>"GameController"</em> Spielobjekt ein Skript hinzu. Nenne das Skript ebenfalls "GameController".</p>
+<p>Überschreibe den Quellcode in der Datei "GameController.cs" mit:</p>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">GameController</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> 
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">InputField</span> <span class="n">Eingabefeld</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">Text</span> <span class="n">TextBox</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">Image</span> <span class="n">bilderrahmen</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">Sprite</span> <span class="n">startSpielzustand</span><span class="p">;</span> 
+    <span class="k">public</span> <span class="n">Sprite</span> <span class="n">spielzustand2</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">Sprite</span> <span class="n">spielzustand3</span><span class="p">;</span>
+
+    <span class="n">haeltSteinMitRuessel</span> <span class="p">=</span> <span class="c1">//Ergänze hier den Datentyp und den Wert!</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">ausfuehren</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Eingabefeld</span><span class="p">.</span><span class="n">text</span> <span class="p">==</span> <span class="s">&quot;Hebe Stein&quot;</span><span class="p">)</span> 
+        <span class="p">{</span>
+            <span class="n">TextBox</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Du hast den Stein aufgehoben. Sieht aus, als könnte man diesen in den Fluss werfen.&quot;</span><span class="p">;</span>
+            <span class="n">bilderrahmen</span><span class="p">.</span><span class="n">sprite</span> <span class="p">=</span> <span class="n">spielzustand</span><span class="p">??;</span> <span class="c1">//Ergänze die passende Grafik!</span>
+            <span class="c1">//Ändere den Wert der Variable &quot;haeltSteinMitRuessel&quot;!</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span> <span class="p">==</span> <span class="s">&quot;Überquere Fluss&quot;</span><span class="p">)</span>  <span class="c1">//Ergänze hier!</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">//Ergänze die Bedingung, die erfüllt sein muss!</span>
+                <span class="n">TextBox</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Du hast den Stein ins Wasser geworfen. Du hast den Fluss überquert.&quot;</span><span class="p">;</span>
+                <span class="n">bilderrahmen</span><span class="p">.</span><span class="n">sprite</span> <span class="p">=</span> <span class="n">spielzustand</span><span class="p">??;</span> <span class="c1">//Ergänze die passende Grafik!</span>
+            <span class="p">}</span> 
+            <span class="c1">// Ergänze hier das &quot;Sonst&quot; der if-Abfrage!</span>
+            <span class="p">{</span>
+                 <span class="p">=</span> <span class="s">&quot;Oh nein, der Fluss ist zu reißend. Du musst etwas in den Fluss werfen. Gibt es hier etwas, das aufheben kann?&quot;</span><span class="p">;</span> 
+                 <span class="c1">//Ergänze hier!</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">Eingabefeld</span><span class="p">.</span><span class="n">text</span> <span class="p">==</span> <span class="s">&quot;Schau&quot;</span><span class="p">)</span> 
+        <span class="p">{</span>
+            <span class="n">TextBox</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Vor dir ist ein reißender Fluss, den du überqueren musst. Da liegt auch ein Stein, vielleicht kann man den heben?&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Damit du das Skript im Spiel verwenden kannst, musst du zwei Arbeitsschritte machen:</p>
+<ol>
+<li>
+<p>Verknüpfe den Aufruf der Funktion "ausfuehren" mit "On Click" des Buttons "Ausführen". (Eine Erklärung, wie das geht, findest du beim <a href="../donutclicker/">Krapfenklicker</a> Spiel!)</p>
+</li>
+<li>
+<p>Verknüpfe die <em>public</em> Variablen im Skript mit GameObjects und Grafiken in Unity.</p>
+</li>
+</ol>
+<p><img alt="GameController References" src="../img/elligamecontrollerreferences.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Vervollständige das GameController-Skript und teste dein Spiel!</p>
+</div>
+<h2 id="weiterfuhrende-resourcen">Weiterführende Resourcen<a class="headerlink" href="#weiterfuhrende-resourcen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Adventure_game">Textadventures Wikipedia-Eintrag (englisch)</a></li>
+<li><a href="https://www.grumpygamer.com">Grumpy Gamer Weblog (englisch)</a> (Der Blog von <a href="https://de.wikipedia.org/wiki/Ron_Gilbert">Ron Gilbert</a>)</li>
+</ul>
                 
                   
                 
@@ -593,13 +773,13 @@
           </a>
         
         
-          <a href="../drawingingimp/" title="Figuren zeichnen in GIMP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../drawingingimp/" title="Grafiken gestalten in GIMP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Weiter
                 </span>
-                Figuren zeichnen in GIMP
+                Grafiken gestalten in GIMP
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
