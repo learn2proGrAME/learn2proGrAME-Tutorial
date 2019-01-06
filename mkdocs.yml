@@ -14,7 +14,7 @@ nav:
     - Transform Spielobjektkomponente: transform.md
     - Verzweigungen: conditionals.md
     - Spiel - Ellis' großes Abenteuer: adventure.md
-    - Figuren zeichnen in GIMP: drawingingimp.md
+    - Grafiken gestalten in GIMP: drawingingimp.md
     - Funktionen: functions.md
     - Zugriffsmodifikatoren: accessmodifiers.md
     - Spiel - Space-Asteroids: spaceshooter.md
