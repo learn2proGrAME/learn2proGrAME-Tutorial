@@ -62,7 +62,8 @@ Lade die drei Bilder auf deinen Computer herunter: [Elli's Abenteuer Start-Bilde
 
 Lade die Bilder als "Assets" in dein Unity-Projekt. (Falls du das noch nicht gemacht hast, erstelle zuvor im Assets-Ordner 4 Unterordner: *"Sprites"*, *"Scripts"*, *"Vorlagen"* und *"Material"*. Die 3 Grafiken können im *"Sprites"*-Ordner abgelegt werden.)
 
-Weise dem *"Image"*-Spielobjekt die Grafik *"ElliStart.png"* zu.
+!!!success "Arbeitsauftrag"
+    Weise dem *"Image"*-Spielobjekt die Grafik *"ellistart.png"* zu.
 
 ![Elli Adventure vollständiges UI](img/elliuicompleted.png)
 

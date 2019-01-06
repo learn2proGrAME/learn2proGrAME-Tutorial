@@ -72,8 +72,8 @@ public class Player {
 ---
 
 
-!!!Tip "Faustregel"
-	Zugriffsmodifikatoren sollten, wenn möglich immer möglichst restriktiv verwendet werden.  
+!!!Tip "Tipp"
+	Zugriffsmodifikatoren sollten, wenn möglich immer möglichst eingeschränkt verwendet werden.  
 	Das heißt *public* sollte man nur dann verwenden, wenn man einen guten Grund dafür hat.
 
 	Ein Programm wird nämlich sehr schnell sehr unübersichtlich, wenn Variablen von vielen verschiedenen Stellen aus bearbeitet werden.  
