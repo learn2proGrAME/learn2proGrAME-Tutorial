@@ -1,4 +1,4 @@
-#Zugriffsmodifikatoren (access modifiers)
+#Zugriffskontrolle durch Zugriffsmodifikatoren (access modifiers)
 
 !!! Abstract "Lernziele"
     In diesem Kapitel lernst du, was Zugriffsmodifikatoren von [Variablen](variables.md) und [Funktionen (Methoden)](functions.md) sind und wann du welche Art verwenden solltest.

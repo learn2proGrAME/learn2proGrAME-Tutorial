@@ -17,11 +17,14 @@ Die GIMP-BenutzerInnen-Oberfläche umfasst folgende Elemente:
 
 Hier wird ein Überblick üder die BenutzerInnen-Oberfläche von GIMP gegeben: [GIMP Benutzeroberfläche](https://docs.gimp.org/de/gimp-concepts-main-windows.html)
 
+---
+
 ###Ebenen
 
 Um Grafiken in einem Bild zu kombinieren, können in GIMP **Ebenen** verwendet werden.
 Hier findest du eine Erklärung zur Verwendung von Ebenen in GIMP: [GIMP Ebenen](https://gimp-werkstatt.de/ebenen.php)
 
+---
 
 ##Erstellen einer Spielfigur
 
@@ -34,7 +37,7 @@ Die Erstellung dieser Spielfigur-Grafik wird in einem Video-Tutorial erklärt.
 * [Spielfigur erstellen: Teil 3](https://www.youtube.com/watch?v=Qedi32KdSZo)
 * [Spielfigur erstellen: Teil 4](https://www.youtube.com/watch?v=bNsFNWxXt_0)
 
-
+---
 
 ##Ellis' Abenteuer - Ergänzung
 
@@ -42,6 +45,8 @@ Die Erstellung dieser Spielfigur-Grafik wird in einem Video-Tutorial erklärt.
     Erweitere das Spiel "Elli's großes Abenteuer" um ein Rätsel. Erstelle die hierfür notwendigen Grafiken in GIMP. Passe das GameController-Skript an.
 
 Eine GIMP-Datei, aus der die Startgrafiken für Elli's Abenteuer erzeugt wurden, kannst du hier herunterladen: [Elli Adventure GIMP Grafik](img/ellisadventure.xcf)
+
+---
 
 ##Weiterführende Resourcen
 

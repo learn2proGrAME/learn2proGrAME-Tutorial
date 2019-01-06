@@ -13,6 +13,8 @@ In diesem Spiel können Befehle in ein Textfeld geschrieben werden. Diese werden
 
 Eine Maschine zerstört den Wald, in dem Elli lebt. Die Elefantin macht sich auf, um Ihren Wald zu retten. Dafür muss sie zuerst einen großen Fluss überqueren.
 
+---
+
 ###Szenenaufbau
 
 Erstelle ein neues 2D Unity-Projekt. Nenne es "Elli's großes Abenteuer".
@@ -66,6 +68,8 @@ Lade die Bilder als "Assets" in dein Unity-Projekt. (Falls du das noch nicht gem
     Weise dem *"Image"*-Spielobjekt die Grafik *"ellistart.png"* zu.
 
 ![Elli Adventure vollständiges UI](img/elliuicompleted.png)
+
+---
 
 ###Spiellogik
 
@@ -124,6 +128,9 @@ Damit du das Skript im Spiel verwenden kannst, musst du zwei Arbeitsschritte mac
 
 !!!success "Arbeitsauftrag"
     Vervollständige das GameController-Skript und teste dein Spiel!
+	
+---
+
 
 ##Weiterführende Resourcen
 
