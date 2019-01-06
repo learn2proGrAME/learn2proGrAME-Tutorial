@@ -1,15 +1,18 @@
-# Space-Asteroids das Spiel
+# Space-Asteroids
 
 !!!abstract "Lernziele"
 	In diesem Kapitel wirst du mithilfe des Gelernten aus den vorigen Kapiteln die letzten Teile des Spiels Space-Asteroids selber programmieren.
 
-In Space-Asteroids fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert dein Raumschiff.
+In Space-Asteroids fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert das Raumschiff.
 
-Das Spiel ist beinahe schon fertig. Lediglich die Programmierung der Asteroiden fehlt noch.
 
 ----
 
-## 1. Projekt downloaden
+!!!success "Arbeitsauftrag"
+	Vervollständige das Unity-Projekt. Lediglich die Programmierung der Asteroiden fehlt noch.
+   
+
+## Projekt downloaden
 
 1. Gehe auf [https://github.com/learn2proGrAME/SpaceShooter](https://github.com/learn2proGrAME/SpaceShooter)
 
@@ -25,7 +28,7 @@ Das Spiel ist beinahe schon fertig. Lediglich die Programmierung der Asteroiden 
 
 	![open project2](img/openUnity2.png)
 
-## 2. Teste das Spiel
+## Teste das Spiel
 
 Klicke auf den Play-Button in Unity und teste das Spiel
 
@@ -38,9 +41,9 @@ Wenn du während das Spiel läuft in die Scene-View schaust, siehst du, dass am 
 
 ----
 
-## 3. Die Bewegung
+## Bewegung der Asteroiden
 
-### 3.1. Die benötigten Variablen deklarieren
+### Die benötigten Variablen deklarieren
 
 Als erstes kümmern wir uns darum, dass die Asteroiden in Bewegung gesetzt werden. Sie sollen senkrecht vom oberen Rand des Spielfelds zum unteren Rand fliegen.
 
@@ -60,7 +63,7 @@ Lege außerdem noch eine *public* Variable für die Geschwindigkeit an mit der d
 	public float geschwindigkeit;
 ```
 
-### 3.2. Bewegung!
+### Bewegung im Spiel
 
 Bevor du den Asteroiden in Bewegung setzen kannst, musst du die Variable des Rigidbodys initialisieren.  
 
@@ -94,7 +97,7 @@ Vergiss nicht zu testen und probiere ein paar unterschiedliche Werte für die Ge
 
 ----
 
-## 4. Rotation
+## Rotation der Asteroiden
 
 Die Asteroiden bewegen sich nun zwar, allerdings sehen sie noch ein bisschen leblos aus. Lassen wir sie rotieren!
 
@@ -116,7 +119,7 @@ Teste!
 
 ----
 
-## 5. Kollisionen
+## Kollision
 
 Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört. Allerdings kann man sie noch nicht abschießen.
 
@@ -132,7 +135,7 @@ Wenn ein Asteroid mit einem Lasergeschoß kollidiert ...
 	Der meiste Code in diesem Teil wird in der Methode ``` OnTriggerEnter(Collider other) ``` eingefügt. Diese Methode wird (etwas vereinfacht gesagt) von Unity immer dann aufgerufen, wenn eine Kollision stattfindet.
 	Der Parameter `other` ist hierbei der Collider des GameObjects mit dem kollidiert wird.
 
-### 5.1. Was kollidiert?
+### Was kollidiert?
 
 Bevor wir implementieren, was geschehen soll, müssen wir überprüfen womit der Asteroid überhaupt kollidiert.
 
@@ -141,13 +144,13 @@ Füge ein *if-Statement* in der Methode `OnTriggerEnter()` ein, das überprüft 
 !!!tip "Hinweis"
 	Man kann in Unity jedem Gameobject und jeder Vorlage einen **tag** zuweisen. Dieser **tag** ist als *String* Variable `tag` in jedem GameObject verfügbar. In diesem Spiel wurde z.B. den Lasergeschoßen der **tag** "Geschoß" und den Asteroiden der **tag** "Hindernis" gegeben.
 
-### 5.2. Geschoß und Asteroid löschen
+### Geschoß und Asteroid löschen
 
 Um in Unity ein Gameobject zu löschen verwendet man die Funktion `Destroy(GameObject)`. Diese löscht das Gameobjekt, das als Parameter angegeben wird am Ende des aktuellen Spielframes.
 
 Rufe nun zweimal die Funktion `Destroy()` auf. Gib einmal `other.gameObject` und einmal `gameObject` als Parameter an.
 
-### 5.3. Punktestand erhöhen
+### Punktestand erhöhen
 
 Der GameController stellt die Methode `ErhoehePunktestand(int punkte)` zur Verfügung.
 
@@ -167,7 +170,7 @@ Rufe nun in der Methode `OnTriggerEnter()` im Asteroid-Skript die Funktion `Erho
 	Um eine Funktion in einem anderen Objekt aufzurufen, verwende: *variablenname-des-objekts.FunktionsName()*
 	Also z.B. ``` gameController.ErhoehePunktestand(10); ```
 
-### 5.4. Sound abspielen
+### Sound abspielen
 
 Lege als erstes eine *public* Variable vom Typ *AudioClip* am Beginn der Klasse an und speichere das Skript.
 
@@ -183,7 +186,7 @@ Rufe diese Methode innerhalb von `OnTriggerEnter` auf und gib als Parameter die 
 
 ----
 
-### 5.5 Fertiger SourceCode
+## Vollständiger SourceCode
 
 Dein fertiger Sourcecode sollte in etwa so aussehen:
 

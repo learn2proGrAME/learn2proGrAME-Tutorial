@@ -36,11 +36,12 @@ Die Erstellung dieser Spielfigur-Grafik wird in einem Video-Tutorial erklärt.
 
 
 
-##Ellis' Abenteuer - Erweiterungspaket
+##Ellis' Abenteuer - Ergänzung
 
 !!!success "Arbeitsauftrag"
     Erweitere das Spiel "Elli's großes Abenteuer" um ein Rätsel. Erstelle die hierfür notwendigen Grafiken in GIMP. Passe das GameController-Skript an.
 
+Eine GIMP-Datei, aus der die Startgrafiken für Elli's Abenteuer erzeugt wurden, kannst du hier herunterladen: [Elli Adventure GIMP Grafik](img/ellisadventure.xcf)
 
 ##Weiterführende Resourcen
 

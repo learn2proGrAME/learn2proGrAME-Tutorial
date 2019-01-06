@@ -6,7 +6,7 @@
 
 ##Klassenvariablen
 
-**Klassenvariablen** sind [Variablen](variables.md), die in einer Klasse außerhalb von [Funktionen](functions.md) deklariert werden.  
+**Klassenvariablen** sind [Variablen](variables.md), die in einer [Klasse](classes.md) außerhalb von [Funktionen](functions.md) deklariert werden.  
 ![classvariable](img/classvariables.png)
 Hier sind `minGeschwindigkeit` und `maxGeschwindigkeit` **Klassenvariablen**.  
 `rotationsgeschwindigkeit` ist keine Klassenvariable, da sie in der Funktion `Start()` deklariert wurde. Sie ist eine **lokale Variable**, die nur innerhalb der Methode verfügbar ist.

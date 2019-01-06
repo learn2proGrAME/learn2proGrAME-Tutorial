@@ -68,8 +68,63 @@ Weise dem *"Image"*-Spielobjekt die Grafik *"ElliStart.png"* zu.
 
 ###Spiellogik
 
+Füge dem *"GameController"* Spielobjekt ein Skript hinzu. Nenne das Skript ebenfalls "GameController".
 
+Überschreibe den Quellcode in der Datei "GameController.cs" mit:
+``` c#
+public class GameController : MonoBehaviour 
+{
+	public InputField Eingabefeld;
+	public Text TextBox;
+	public Image bilderrahmen;
+	public Sprite startSpielzustand; 
+	public Sprite spielzustand2;
+	public Sprite spielzustand3;
+
+	haeltSteinMitRuessel = //Ergänze hier den Datentyp und den Wert!
+
+	public void ausfuehren()
+	{
+		if (Eingabefeld.text == "Hebe Stein") 
+		{
+			TextBox.text = "Du hast den Stein aufgehoben. Sieht aus, als könnte man diesen in den Fluss werfen.";
+			bilderrahmen.sprite = spielzustand??; //Ergänze die passende Grafik!
+			//Ändere den Wert der Variable "haeltSteinMitRuessel"!
+		}
+
+		if ( == "Überquere Fluss")  //Ergänze hier!
+		{
+			if () { //Ergänze die Bedingung, die erfüllt sein muss!
+				TextBox.text = "Du hast den Stein ins Wasser geworfen. Du hast den Fluss überquert.";
+				bilderrahmen.sprite = spielzustand??; //Ergänze die passende Grafik!
+			} 
+			// Ergänze hier das "Sonst" der if-Abfrage!
+			{
+				 = "Oh nein, der Fluss ist zu reißend. Du musst etwas in den Fluss werfen. Gibt es hier etwas, das aufheben kann?"; 
+				 //Ergänze hier!
+			}
+		}
+
+		if (Eingabefeld.text == "Schau") 
+		{
+			TextBox.text = "Vor dir ist ein reißender Fluss, den du überqueren musst. Da liegt auch ein Stein, vielleicht kann man den heben?";
+		}
+	}
+}
+```
+
+Damit du das Skript im Spiel verwenden kannst, musst du zwei Arbeitsschritte machen:
+
+1. Verknüpfe den Aufruf der Funktion "ausfuehren" mit "On Click" des Buttons "Ausführen". (Eine Erklärung, wie das geht, findest du beim [Krapfenklicker](donutclicker.md) Spiel!)
+
+2. Verknüpfe die *public* Variablen im Skript mit GameObjects und Grafiken in Unity.
+
+![GameController References](img/elligamecontrollerreferences.png)
+
+!!!success "Arbeitsauftrag"
+    Vervollständige das GameController-Skript und teste dein Spiel!
 
 ##Weiterführende Resourcen
 
-
+* [Textadventures Wikipedia-Eintrag (englisch)](https://en.wikipedia.org/wiki/Adventure_game)
+* [Grumpy Gamer Weblog (englisch)](https://www.grumpygamer.com) (Der Blog von [Ron Gilbert](https://de.wikipedia.org/wiki/Ron_Gilbert))
