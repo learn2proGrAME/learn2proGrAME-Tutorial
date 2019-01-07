@@ -91,10 +91,8 @@ Debug.Log (teil1 + teil2);
 Debug.Log (" Bohr" +teil2);
 Debug Log ("Süßes" + " oder " + "Saures");
 ```
-In der Konsole steht jetzt: 
-*Waschmaschine
-Bohrmaschine 
-Süßes oder Saures*
+In der Konsole steht jetzt: *Waschmaschine Bohrmaschine Süßes oder Saures*
+
 !!!success "Arbeitsauftrag" 
     Verwende den Additionsparameter ```+``` um einzelne Wörter (```Strings```) zu einem Satz zu verbinden. Gib dein Ergebnis mit Debug.Log() aus. 
 !!!tip "Tipp" 
