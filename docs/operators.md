@@ -1,11 +1,9 @@
 # Operatoren
 
 !!!abstract "Lernziele"
-    In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.
+    In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in einem Programm verwendest. Wenn du nicht mehr weißt was die Operatoren tun, kannst du in diesem Kapitel nachschauen.
 
- 
-
-Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. 
+ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. 
 
 
 <!--Das Ergebnis bestimmt die Art Operator.-->
@@ -14,63 +12,56 @@ Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder O
 
 ---- 
 
-##Übersicht
+##Wozu Operatoren?
 
-<!-- TABELLE MIT KURZBESCHREIBUNGEN-->
+Mit Operatoren kannst du deine Variablen verändern bzw. neu berechnen. Operatoren entsprechen immer einer Rechenmethode in der Mathematik.
 
----- 
+
 
 ## Arithmetische Operatoren
 Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!
-
 !!!bug "ACHTUNG"
-    Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
-    Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.-->
-
+    Arithmetische Operatoren rechnen in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
+    Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsches berechnet wird.-->
+    
+| **Operator** | **Rechenmethode**|
+| + | Addition |
+| - | Subtraktion |
+| * | Multiplikation |
+| / | Division |
+| % | Modulo (Rest d. Division) |
 ---- 
 
 ### = Operator 
 
-```=``` ist der **Zuweisungsoperator**. Er speichert was **rechts** davon steht in die Variable links davon. 
+```=``` ist der **Zuweisungsoperator**. Du verwendest ihn um ein Ergebnis einer Variable zuzuweisen, d.h. das Ergebnis speichern. Der Operator speichert was **rechts** vom ```=``` steht in die Variable links davon. 
+
+``` c#
+// = speichert den Wert 3 in der Variable x ab.
+x = 3; 
+```
 
 <!--!!!tip "Tipp" 
-    Zum Initialisieren einer Variable kannst du auch den Zuweisungsoperatoren verwenden.-->
+    Zum Initialisieren einer Variable verwendenn wir auch denZuweisungsoperatoren verwenden.-->
 
 Den Zuweisungsoperator ```=``` verwendet man folgendermaßen:
 
 ``` c#
-//1. Teil
-//Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.
-//In *name* ist "Kein Name" gespeichert. 
-String name = "Kein Name";
-//In *lieblingszahl* ist die Zahl 1 gespeichert.
+//Wir erstellen eine Variable "lieblingszahl" mit dem Wert 1.
 int lieblingszahl = 1;
-
-//2. Teil
-//Wir weisen wir dem String *name* "Ossi der Elefant" mit dem Zuweisungsoperator = zu.
-name = "Elli der Elefant";
-//Ab sofort steht in name "Elli der Elefant" anstatt "Null".
-
-
-//Wir weisen dem Integer *lieblingszahl* die Zahl 3 zu.
-x = 3
+//Wir verwenden = und weisen lieblingszahl einen neuen Wert zu.
+lieblingszahl = 3;
 //Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.
-
-
-Debug.Log ("Hallo ich bin " + name+ " und meine Lieblingszahl ist" + lieblingszahl);
+Debug.Log ("Hallo, meine Lieblingszahl ist" + lieblingszahl);
 ```
-
-!!!success "Arbeitsauftrag"
-    Ergänze die Funktion ```OnDisable()``` in "HalloElli.cs" mit oben stehendem Programm-Code.
-
-In der Konsole steht nach Aufruf: *"Hallo ich bin Elli der Elefant und meine Lieblingszahl ist 3."* 
-Wir sehen also, die Werte in ```x``` und ```name``` sind jetzt anders weil wir neue Werte mit ```=``` zugewiesen haben.
+In der Konsole steht nach Aufruf: *"Hallo, meine Lieblingszahl ist 3"* 
+Wir sehen also, der Wert ```lieblingszahl``` und ```name``` sind jetzt anders weil einen neuen Wert mit dem Operator ```=``` zugewiesen haben.
 
 ---- 
 
-### + Operator
+### ```+``` Operator
 
-Der **Additionsoperator** ```+``` addiert Variablen.
+Der **Additionsoperator** ```+``` addiert Variablen. Du kannst damit die Summe von Variablen berechnen.
 
 ``` c#
 int a = 1;      
@@ -83,10 +74,6 @@ Debug.Log (b+3);
 
 c = a+b;
 ```
-
-!!!success "Arbeitsauftrag"
-    Ergänze die Funktion ```OnEnable()``` in HalloElli.cs mit oben stehendem Programm-Code.
-
 In der Konsole steht nach Aufruf *"3 5"*. 
 3 ist das Ergebnis von *"a+b"* was wir in c gespeichert haben und ausgeben. 
 5 ist das Ergebnis von *"b+3"* denn in b ist 2 gespeichert.
@@ -104,16 +91,18 @@ Debug.Log (teil1 + teil2);
 Debug.Log (" Bohr" +teil2);
 Debug Log ("Süßes" + " oder " + "Saures");
 ```
-
-In der Konsole steht jetzt: *Waschmaschine Bohrmaschine Süßes oder Saures*
-
+In der Konsole steht jetzt: 
+*Waschmaschine
+Bohrmaschine 
+Süßes oder Saures*
+!!!success "Arbeitsauftrag" 
+    Verwende den Additionsparameter ```+``` um einzelne Wörter (```Strings```) zu einem Satz zu verbinden. Gib dein Ergebnis mit Debug.Log() aus. 
 !!!tip "Tipp" 
     Wenn du Strings kombinierst, um einen Satz zu erstellen, musst du Leerzeichen anfügen. Sonst kleben die Wörter zusammen.
-	
 ---- 
 
-### - Operator
-Den **Subtraktionsoperator** ```-``` verwendet man um 2 Variablen zu subtrahieren
+### ```-``` Operator
+Den **Subtraktionsoperator** ```-``` verwendet man um 2 Variablen zu subtrahieren. Die Rechte Zahl wird von der Linken abgezogen.
 
 ``` c#
 int a = 3; 
@@ -124,8 +113,8 @@ In der Konsole steht nach Ausführen *1*.
 
 ---- 
 
-### * Operator
-Den **Multiplikationsoperator** ```*``` verwendet man um 2 Variablen zu multiplizieren.
+### ```*``` Operator
+Den **Multiplikationsoperator** ```*``` verwendet man um 2 Variablen zu multiplizieren. Vergiss nicht Klammern zu verwenden damit du auch wirklich das berechnest was du vor hast.
 
 ``` c#
 int a = 3;
@@ -135,55 +124,39 @@ Debug.Log(b);
 
 In der Konsole steht nach Ausführen *15*.  
 
-
-
-
 * Ohne Klammern:
 ``` c#
 int a = 3;
 int b = a+2*5;
 Debug.Log(b);
 ```
-In der Konsole steht nach Ausführen *25*.  
-
-
-* Mit Klammern:
-``` c#
-int a = 3;
-int b = a+(2*5);
-Debug.Log(b);
-```
-In der Konsole steht nach Ausführen *13*.  
+In der Konsole steht nach dem Ausführen *25*.  
 
 ---- 
 
-### / Operator
+### ```/``` Operator
 Den **Divisionsoperator** ```/``` verwendet man um 2 Variablen miteinander zu dividieren. 
-
-!!!bug "ACHTUNG"
-    Es wird immer die Zahl auf der linken Seite durch die Zahl auf der rechten Seite dividiert.
-
-
 ``` c#
 int a = 15;
 int b = a/3;
 Debug.Log(b);
 ```
 In der Konsole steht nach Ausführen *5*.  
-
+!!!bug "ACHTUNG"
+    Es gilt Punkt vor Strich Rechnung. Pass also auf, dass du die richtigen Klammern setzt.
 ``` c#
 int a = 15;
 int b = a/3+2;
 Debug.Log(b);
 ```
-In der Konsole steht nach Ausführen *7*. 
+In der Konsole steht nach dem Ausführen *7*. 
 
 ``` c#
 int a = 15;
 int b = a/(3+2);
 Debug.Log(b);
 ```
-In der Konsole steht nach Ausführen *3*.  
+In der Konsole steht nach dem Ausführen *3*.  
 
 ---- 
 
@@ -196,35 +169,54 @@ int a = 10;
 int b = 10%3;
 Debug.Log(b);
 ```
-In der Konsole steht nach Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der **Modulo** Operator ```%``` liefert nur den Rest zurück.
+In der Konsole steht nach dem Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der **Modulo** Operator ```%``` liefert nur den Rest zurück.
 
 ---- 
 
 ## Logische Operatoren
 
 **Logische Operatoren** 
-<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> geben an, ob eine Verknüpfung von Wahrheitswerten Wahr oder Falsch ist.
+<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (```boolean```) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
+Logischen Operatoren sind besonders wichtig bei [Verzweigungen](conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.
 
-!!!tip "Tipp"
-    Ein Zustand, der entweder wahr oder falsch ist, ist ein **Boolean**. 
-
-
-Logischen Operatoren sind besonders wichtig bei [Verzweigungen](conditionals.md).
-
----- 
-
-### NICHT Operator ( ! )
+| Operator | Funktion |
+| && | UND|
+| || | ODER |
+| ! | NICHT |
+| == | GLEICH |
+| != | UNGLEICH |
 
 ---- 
+### ```&&``` Operator (UND)
+Der ```&&``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt müssen allee mit ```&&``` verknüpften Aussagen ```true``` sein.
+``` c#
+int a = 2
+(a < 3) && ( a < 5)   // Dieser Ausdruck ergibt true, weil beide Aussagen wahr sind.
 
-### UND Operator ( && )
-
+(a < 1) && ( a < 5)   // Dieser Ausdruck ergibt false, weil zumindest eine der beiden Aussagen falsch ist.
+```
 ---- 
 
-### ODER Operator ( || )
+### ```|| ``` Operator (ODER)
+Der ```||``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt muss mindestens eine Aussage ```true``` sein. Nur wenn keine einzige ```true``` Aussage ist, ist der gesamte Begriff false.
+``` c#
+int a = 2
+(a < 3) || ( a < 5)   // Dieser Ausdruck ergibt true, da zumindest eine Aussage wahr ist.
+(a < 1) || ( a > 100)   // Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.
+```
+---- 
+### ```!``` Operator (NICHT)
+Wenn du den ! Operator vor einen Ausdruck schreibst, drehst du du das Ergebnis um wie am Gegenteil Tag.
+``` c#
+int a = 2
+(a < 0)   // Dieser Ausdruck ergibt false.
+!(a < 0)  // Dieser Ausdruck ergibt true, weil der NOT Operator das Ergebnis umdreht.
 
+(a < 1) || ( a > 100)   // Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.
+```
+---- 
+### ```==``` Operator (GLEICH)
+
+### ```!=``` Operator (NICHT GLEICH)
 ---- 
 
-
-!!!bug "ACHTUNG" 
-    Wenn du etwas berechnest, aber das Ergebnis nicht sofort weiterverwendest (oder einer Variablen zuweist) verschwindet es noch vor deinem nächsten Programmierbefehl.
