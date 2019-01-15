@@ -337,15 +337,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubersicht" title="Übersicht" class="md-nav__link">
-    Übersicht
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arithmetische-operatoren" title="Arithmetische Operatoren" class="md-nav__link">
-    Arithmetische Operatoren
+  <a href="#wozu-operatoren" title="Wozu Operatoren?" class="md-nav__link">
+    Wozu Operatoren?
   </a>
   
     <nav class="md-nav">
@@ -407,22 +400,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nicht-operator" title="NICHT Operator ( ! )" class="md-nav__link">
-    NICHT Operator ( ! )
+  <a href="#ampamp-operator-und" title="&amp;&amp; Operator (UND)" class="md-nav__link">
+    &amp;&amp; Operator (UND)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#und-operator" title="UND Operator ( &amp;&amp; )" class="md-nav__link">
-    UND Operator ( &amp;&amp; )
+  <a href="#operator-oder" title="|| Operator (ODER)" class="md-nav__link">
+    || Operator (ODER)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oder-operator" title="ODER Operator ( || )" class="md-nav__link">
-    ODER Operator ( || )
+  <a href="#operator-nicht" title="! Operator (NICHT)" class="md-nav__link">
+    ! Operator (NICHT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-gleich" title="== Operator (GLEICH)" class="md-nav__link">
+    == Operator (GLEICH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht-gleich" title="!= Operator (NICHT GLEICH)" class="md-nav__link">
+    != Operator (NICHT GLEICH)
   </a>
   
 </li>
@@ -620,15 +627,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubersicht" title="Übersicht" class="md-nav__link">
-    Übersicht
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arithmetische-operatoren" title="Arithmetische Operatoren" class="md-nav__link">
-    Arithmetische Operatoren
+  <a href="#wozu-operatoren" title="Wozu Operatoren?" class="md-nav__link">
+    Wozu Operatoren?
   </a>
   
     <nav class="md-nav">
@@ -690,22 +690,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nicht-operator" title="NICHT Operator ( ! )" class="md-nav__link">
-    NICHT Operator ( ! )
+  <a href="#ampamp-operator-und" title="&amp;&amp; Operator (UND)" class="md-nav__link">
+    &amp;&amp; Operator (UND)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#und-operator" title="UND Operator ( &amp;&amp; )" class="md-nav__link">
-    UND Operator ( &amp;&amp; )
+  <a href="#operator-oder" title="|| Operator (ODER)" class="md-nav__link">
+    || Operator (ODER)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oder-operator" title="ODER Operator ( || )" class="md-nav__link">
-    ODER Operator ( || )
+  <a href="#operator-nicht" title="! Operator (NICHT)" class="md-nav__link">
+    ! Operator (NICHT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-gleich" title="== Operator (GLEICH)" class="md-nav__link">
+    == Operator (GLEICH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht-gleich" title="!= Operator (NICHT GLEICH)" class="md-nav__link">
+    != Operator (NICHT GLEICH)
   </a>
   
 </li>
@@ -737,7 +751,7 @@
                 <h1 id="operatoren">Operatoren<a class="headerlink" href="#operatoren" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p class="admonition-title">Lernziele</p>
-<p>In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie verwenden kannst. Wenn du nicht mehr weißt welchen Operator du brauchst, kannst du in diesem Kapitel nachschauen.</p>
+<p>In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in einem Programm verwendest. Wenn du nicht mehr weißt was die Operatoren tun, kannst du in diesem Kapitel nachschauen.</p>
 </div>
 <p>Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. </p>
 <!--Das Ergebnis bestimmt die Art Operator.-->
@@ -745,55 +759,45 @@
 <!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
 
 <hr />
-<h2 id="ubersicht">Übersicht<a class="headerlink" href="#ubersicht" title="Permanent link">&para;</a></h2>
-<!-- TABELLE MIT KURZBESCHREIBUNGEN-->
-
-<hr />
-<h2 id="arithmetische-operatoren">Arithmetische Operatoren<a class="headerlink" href="#arithmetische-operatoren" title="Permanent link">&para;</a></h2>
-<p>Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast so wie ein Taschenrechner!</p>
+<h2 id="wozu-operatoren">Wozu Operatoren?<a class="headerlink" href="#wozu-operatoren" title="Permanent link">&para;</a></h2>
+<p>Mit Operatoren kannst du deine Variablen verändern bzw. neu berechnen. Operatoren entsprechen immer einer Rechenmethode in der Mathematik.</p>
 <div class="admonition bug">
 <p class="admonition-title">ACHTUNG</p>
-<p>Arithmetische Operatoren funktionieren in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
-Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsche berechnet wird.--></p>
+<p>Arithmetische Operatoren rechnen in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
+Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsches berechnet wird.--></p>
 </div>
+<p>| <strong>Operator</strong> | <strong>Rechenmethode</strong>|
+| + | Addition |
+| - | Subtraktion |
+| * | Multiplikation |
+| / | Division |
+| % | Modulo (Rest d. Division) |</p>
 <hr />
 <h3 id="operator">= Operator<a class="headerlink" href="#operator" title="Permanent link">&para;</a></h3>
-<p><code>=</code> ist der <strong>Zuweisungsoperator</strong>. Er speichert was <strong>rechts</strong> davon steht in die Variable links davon. </p>
-<!--!!!tip "Tipp" 
-    Zum Initialisieren einer Variable kannst du auch den Zuweisungsoperatoren verwenden.-->
-
-<p>Den Zuweisungsoperator <code>=</code> verwendet man folgendermaßen:</p>
-<div class="codehilite"><pre><span></span><span class="c1">//1. Teil</span>
-<span class="c1">//Wir deklarieren und initialisieren  zuerst einmal unsere Variablen int x und String name.</span>
-<span class="c1">//In *name* ist &quot;Kein Name&quot; gespeichert. </span>
-<span class="n">String</span> <span class="n">name</span> <span class="p">=</span> <span class="s">&quot;Kein Name&quot;</span><span class="p">;</span>
-<span class="c1">//In *lieblingszahl* ist die Zahl 1 gespeichert.</span>
-<span class="kt">int</span> <span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
-
-<span class="c1">//2. Teil</span>
-<span class="c1">//Wir weisen wir dem String *name* &quot;Ossi der Elefant&quot; mit dem Zuweisungsoperator = zu.</span>
-<span class="n">name</span> <span class="p">=</span> <span class="s">&quot;Elli der Elefant&quot;</span><span class="p">;</span>
-<span class="c1">//Ab sofort steht in name &quot;Elli der Elefant&quot; anstatt &quot;Null&quot;.</span>
-
-
-<span class="c1">//Wir weisen dem Integer *lieblingszahl* die Zahl 3 zu.</span>
-<span class="n">x</span> <span class="p">=</span> <span class="m">3</span>
-<span class="c1">//Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.</span>
-
-
-<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo ich bin &quot;</span> <span class="p">+</span> <span class="n">name</span><span class="p">+</span> <span class="s">&quot; und meine Lieblingszahl ist&quot;</span> <span class="p">+</span> <span class="n">lieblingszahl</span><span class="p">);</span>
+<p><code>=</code> ist der <strong>Zuweisungsoperator</strong>. Du verwendest ihn um ein Ergebnis einer Variable zuzuweisen, d.h. das Ergebnis speichern. Der Operator speichert was <strong>rechts</strong> vom <code>=</code> steht in die Variable links davon. </p>
+<div class="codehilite"><pre><span></span><span class="c1">// = speichert den Wert 3 in der Variable x ab.</span>
+<span class="n">x</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span> 
 </pre></div>
 
 
-<div class="admonition success">
-<p class="admonition-title">Arbeitsauftrag</p>
-<p>Ergänze die Funktion <code>OnDisable()</code> in "HalloElli.cs" mit oben stehendem Programm-Code.</p>
-</div>
-<p>In der Konsole steht nach Aufruf: <em>"Hallo ich bin Elli der Elefant und meine Lieblingszahl ist 3."</em> 
-Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt anders weil wir neue Werte mit <code>=</code> zugewiesen haben.</p>
+<!--!!!tip "Tipp" 
+    Zum Initialisieren einer Variable verwendenn wir auch denZuweisungsoperatoren verwenden.-->
+
+<p>Den Zuweisungsoperator <code>=</code> verwendet man folgendermaßen:</p>
+<div class="codehilite"><pre><span></span><span class="c1">//Wir erstellen eine Variable &quot;lieblingszahl&quot; mit dem Wert 1.</span>
+<span class="kt">int</span> <span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+<span class="c1">//Wir verwenden = und weisen lieblingszahl einen neuen Wert zu.</span>
+<span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="c1">//Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo, meine Lieblingszahl ist&quot;</span> <span class="p">+</span> <span class="n">lieblingszahl</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach Aufruf: <em>"Hallo, meine Lieblingszahl ist 3"</em> 
+Wir sehen also, der Wert <code>lieblingszahl</code> und <code>name</code> sind jetzt anders weil einen neuen Wert mit dem Operator <code>=</code> zugewiesen haben.</p>
 <hr />
-<h3 id="operator_1">+ Operator<a class="headerlink" href="#operator_1" title="Permanent link">&para;</a></h3>
-<p>Der <strong>Additionsoperator</strong> <code>+</code> addiert Variablen.</p>
+<h3 id="operator_1"><code>+</code> Operator<a class="headerlink" href="#operator_1" title="Permanent link">&para;</a></h3>
+<p>Der <strong>Additionsoperator</strong> <code>+</code> addiert Variablen. Du kannst damit die Summe von Variablen berechnen.</p>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>      
 <span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>      
 <span class="kt">int</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
@@ -806,10 +810,6 @@ Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt and
 </pre></div>
 
 
-<div class="admonition success">
-<p class="admonition-title">Arbeitsauftrag</p>
-<p>Ergänze die Funktion <code>OnEnable()</code> in HalloElli.cs mit oben stehendem Programm-Code.</p>
-</div>
 <p>In der Konsole steht nach Aufruf <em>"3 5"</em>. 
 3 ist das Ergebnis von <em>"a+b"</em> was wir in c gespeichert haben und ausgeben. 
 5 ist das Ergebnis von <em>"b+3"</em> denn in b ist 2 gespeichert.</p>
@@ -828,13 +828,17 @@ Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt and
 
 
 <p>In der Konsole steht jetzt: <em>Waschmaschine Bohrmaschine Süßes oder Saures</em></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Verwende den Additionsparameter <code>+</code> um einzelne Wörter (<code>Strings</code>) zu einem Satz zu verbinden. Gib dein Ergebnis mit Debug.Log() aus. </p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tipp</p>
 <p>Wenn du Strings kombinierst, um einen Satz zu erstellen, musst du Leerzeichen anfügen. Sonst kleben die Wörter zusammen.</p>
 </div>
 <hr />
-<h3 id="-operator">- Operator<a class="headerlink" href="#-operator" title="Permanent link">&para;</a></h3>
-<p>Den <strong>Subtraktionsoperator</strong> <code>-</code> verwendet man um 2 Variablen zu subtrahieren</p>
+<h3 id="-operator"><code>-</code> Operator<a class="headerlink" href="#-operator" title="Permanent link">&para;</a></h3>
+<p>Den <strong>Subtraktionsoperator</strong> <code>-</code> verwendet man um 2 Variablen zu subtrahieren. Die Rechte Zahl wird von der Linken abgezogen.</p>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span> 
 <span class="n">a</span> <span class="p">=</span> <span class="n">a</span> <span class="p">-</span> <span class="m">2</span><span class="p">;</span>
 <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
@@ -843,8 +847,8 @@ Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt and
 
 <p>In der Konsole steht nach Ausführen <em>1</em>. </p>
 <hr />
-<h3 id="operator_2">* Operator<a class="headerlink" href="#operator_2" title="Permanent link">&para;</a></h3>
-<p>Den <strong>Multiplikationsoperator</strong> <code>*</code> verwendet man um 2 Variablen zu multiplizieren.</p>
+<h3 id="operator_2"><code>*</code> Operator<a class="headerlink" href="#operator_2" title="Permanent link">&para;</a></h3>
+<p>Den <strong>Multiplikationsoperator</strong> <code>*</code> verwendet man um 2 Variablen zu multiplizieren. Vergiss nicht Klammern zu verwenden damit du auch wirklich das berechnest was du vor hast.</p>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">*</span><span class="m">5</span><span class="p">;</span>
 <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
@@ -861,45 +865,34 @@ Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt and
 </pre></div>
 
 
-<p>In der Konsole steht nach Ausführen <em>25</em>.  </p>
-<ul>
-<li>Mit Klammern:</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">+(</span><span class="m">2</span><span class="p">*</span><span class="m">5</span><span class="p">);</span>
-<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
-</pre></div>
-
-
-<p>In der Konsole steht nach Ausführen <em>13</em>.  </p>
+<p>In der Konsole steht nach dem Ausführen <em>25</em>.  </p>
 <hr />
-<h3 id="operator_3">/ Operator<a class="headerlink" href="#operator_3" title="Permanent link">&para;</a></h3>
+<h3 id="operator_3"><code>/</code> Operator<a class="headerlink" href="#operator_3" title="Permanent link">&para;</a></h3>
 <p>Den <strong>Divisionsoperator</strong> <code>/</code> verwendet man um 2 Variablen miteinander zu dividieren. </p>
-<div class="admonition bug">
-<p class="admonition-title">ACHTUNG</p>
-<p>Es wird immer die Zahl auf der linken Seite durch die Zahl auf der rechten Seite dividiert.</p>
-</div>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">;</span>
 <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>In der Konsole steht nach Ausführen <em>5</em>.  </p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Es gilt Punkt vor Strich Rechnung. Pass also auf, dass du die richtigen Klammern setzt.</p>
+</div>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">;</span>
 <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>In der Konsole steht nach Ausführen <em>7</em>. </p>
+<p>In der Konsole steht nach dem Ausführen <em>7</em>. </p>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/(</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">);</span>
 <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 </pre></div>
 
 
-<p>In der Konsole steht nach Ausführen <em>3</em>.  </p>
+<p>In der Konsole steht nach dem Ausführen <em>3</em>.  </p>
 <hr />
 <h3 id="operator_4">% Operator<a class="headerlink" href="#operator_4" title="Permanent link">&para;</a></h3>
 <p>Der <strong>Modulo</strong> Operator <code>%</code> wird verwendet, um eine Division mit Rest durchzuführen. Das Ergebnis dieser Berechnung ist aber <strong>nur der Restbetrag</strong>.</p>
@@ -909,27 +902,52 @@ Wir sehen also, die Werte in <code>x</code> und <code>name</code> sind jetzt and
 </pre></div>
 
 
-<p>In der Konsole steht nach Ausführen <em>1</em>, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der <strong>Modulo</strong> Operator <code>%</code> liefert nur den Rest zurück.</p>
+<p>In der Konsole steht nach dem Ausführen <em>1</em>, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der <strong>Modulo</strong> Operator <code>%</code> liefert nur den Rest zurück.</p>
 <hr />
 <h2 id="logische-operatoren">Logische Operatoren<a class="headerlink" href="#logische-operatoren" title="Permanent link">&para;</a></h2>
 <p><strong>Logische Operatoren</strong> 
-<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> geben an, ob eine Verknüpfung von Wahrheitswerten Wahr oder Falsch ist.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tipp</p>
-<p>Ein Zustand, der entweder wahr oder falsch ist, ist ein <strong>Boolean</strong>. </p>
-</div>
-<p>Logischen Operatoren sind besonders wichtig bei <a href="../conditionals/">Verzweigungen</a>.</p>
+<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (<code>boolean</code>) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
+Logischen Operatoren sind besonders wichtig bei <a href="../conditionals/">Verzweigungen</a>. Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.</p>
+<p>| Operator | Funktion |
+| &amp;&amp; | UND|
+| || | ODER |
+| ! | NICHT |
+| == | GLEICH |
+| != | UNGLEICH |</p>
 <hr />
-<h3 id="nicht-operator">NICHT Operator ( ! )<a class="headerlink" href="#nicht-operator" title="Permanent link">&para;</a></h3>
+<h3 id="ampamp-operator-und"><code>&amp;&amp;</code> Operator (UND)<a class="headerlink" href="#ampamp-operator-und" title="Permanent link">&para;</a></h3>
+<p>Der <code>&amp;&amp;</code> Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer <code>true</code> ergibt müssen allee mit <code>&amp;&amp;</code> verknüpften Aussagen <code>true</code> sein.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt true, weil beide Aussagen wahr sind.</span>
+
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil zumindest eine der beiden Aussagen falsch ist.</span>
+</pre></div>
+
+
 <hr />
-<h3 id="und-operator">UND Operator ( &amp;&amp; )<a class="headerlink" href="#und-operator" title="Permanent link">&para;</a></h3>
+<h3 id="operator-oder"><code>||</code> Operator (ODER)<a class="headerlink" href="#operator-oder" title="Permanent link">&para;</a></h3>
+<p>Der <code>||</code> Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer <code>true</code> ergibt muss mindestens eine Aussage <code>true</code> sein. Nur wenn keine einzige <code>true</code> Aussage ist, ist der gesamte Begriff false.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt true, da zumindest eine Aussage wahr ist.</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&gt;</span> <span class="m">100</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.</span>
+</pre></div>
+
+
 <hr />
-<h3 id="oder-operator">ODER Operator ( || )<a class="headerlink" href="#oder-operator" title="Permanent link">&para;</a></h3>
+<h3 id="operator-nicht"><code>!</code> Operator (NICHT)<a class="headerlink" href="#operator-nicht" title="Permanent link">&para;</a></h3>
+<p>Wenn du den ! Operator vor einen Ausdruck schreibst, drehst du du das Ergebnis um wie am Gegenteil Tag.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false.</span>
+<span class="p">!(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span>  <span class="c1">// Dieser Ausdruck ergibt true, weil der NOT Operator das Ergebnis umdreht.</span>
+
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&gt;</span> <span class="m">100</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.</span>
+</pre></div>
+
+
 <hr />
-<div class="admonition bug">
-<p class="admonition-title">ACHTUNG</p>
-<p>Wenn du etwas berechnest, aber das Ergebnis nicht sofort weiterverwendest (oder einer Variablen zuweist) verschwindet es noch vor deinem nächsten Programmierbefehl.</p>
-</div>
+<h3 id="operator-gleich"><code>==</code> Operator (GLEICH)<a class="headerlink" href="#operator-gleich" title="Permanent link">&para;</a></h3>
+<h3 id="operator-nicht-gleich"><code>!=</code> Operator (NICHT GLEICH)<a class="headerlink" href="#operator-nicht-gleich" title="Permanent link">&para;</a></h3>
+<hr />
                 
                   
                 
