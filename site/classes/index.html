@@ -473,33 +473,18 @@
     Klasse und Instanz
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eigenschaften" title="Eigenschaften" class="md-nav__link">
-    Eigenschaften
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-konstruktor" title="Der Konstruktor" class="md-nav__link">
+    Der Konstruktor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#funktionen" title="Funktionen" class="md-nav__link">
-    Funktionen
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
-    Ein Beispiel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weiterfuhrende-informationen" title="Weiterführende Informationen" class="md-nav__link">
-    Weiterführende Informationen
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -570,33 +555,18 @@
     Klasse und Instanz
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eigenschaften" title="Eigenschaften" class="md-nav__link">
-    Eigenschaften
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-konstruktor" title="Der Konstruktor" class="md-nav__link">
+    Der Konstruktor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#funktionen" title="Funktionen" class="md-nav__link">
-    Funktionen
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ein-beispiel" title="Ein Beispiel" class="md-nav__link">
-    Ein Beispiel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weiterfuhrende-informationen" title="Weiterführende Informationen" class="md-nav__link">
-    Weiterführende Informationen
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -627,11 +597,40 @@
                 
                 
                 <h1 id="objekt-orientiertes-programmieren-grundlagen">Objekt-orientiertes Programmieren - Grundlagen<a class="headerlink" href="#objekt-orientiertes-programmieren-grundlagen" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel werden grundlegende Konzepte der Objekt-orientierten Programmierung, nämlich <strong>Klasse</strong>, <strong>Instanz</strong> und <strong>Konstruktor</strong> vorgestellt.</p>
+</div>
+<hr />
 <h2 id="klasse-und-instanz">Klasse und Instanz<a class="headerlink" href="#klasse-und-instanz" title="Permanent link">&para;</a></h2>
-<h2 id="eigenschaften">Eigenschaften<a class="headerlink" href="#eigenschaften" title="Permanent link">&para;</a></h2>
-<h2 id="funktionen">Funktionen<a class="headerlink" href="#funktionen" title="Permanent link">&para;</a></h2>
-<h2 id="ein-beispiel">Ein Beispiel<a class="headerlink" href="#ein-beispiel" title="Permanent link">&para;</a></h2>
-<h2 id="weiterfuhrende-informationen">Weiterführende Informationen<a class="headerlink" href="#weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<p><img alt="Klasse und Instanz" src="../img/classAndInstance.png" /></p>
+<p>Während eine Klasse ein Objekt mit <strong>Eigenschaften</strong> und <strong>Funktionen</strong> beschreibt, haben Eigenschaften der Instanz eines Objekts Werte. Ist eine Instanz zur Laufzeit eines Programms erzeugt worden, hat diese somit auch je einen bestimmten Zustand.</p>
+<p>In C<em>#</em> kann eine Klasse folgendermaßen angegeben werden:</p>
+<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">:</span> <span class="n">MonoBehavior</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+</pre></div>
+
+
+<h3 id="der-konstruktor">Der Konstruktor<a class="headerlink" href="#der-konstruktor" title="Permanent link">&para;</a></h3>
+<p>Zum Erzeugen einer Instanz einer Klasse (also eines Objekts mit Werten aus einer Objektbeschreibung), wird die Konstruktor-Methode verwendet:</p>
+<div class="codehilite"><pre><span></span>    <span class="n">Elefant</span> <span class="n">elli</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Elefant</span><span class="p">();</span>
+</pre></div>
+
+
+<p>Das Schlüsselwort <strong>new</strong> gefolgt von der Konstruktor-Methode erzeugt eine neue Instanz einer Klasse. Die Instanz wird in eine Variable gespeichert. Der Datentyp der Variable ist die Klassenbezeichnung.</p>
+<p>Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert werden:</p>
+<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">:</span> <span class="n">MonoBehavior</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">Elefant</span><span class="p">()</span> <span class="c1">//Das ist die Konstruktor-Methode. Sie hat dieselbe Bezeichnung wie die Klasse.</span>
+        <span class="p">{</span>
+            <span class="p">...</span> <span class="c1">//Hier können der Instanz Werte bei der Erzeugung zugewiesen werden.</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div>
+
+
 <h2 id="bouncyfant-intro">BouncyFant - Intro<a class="headerlink" href="#bouncyfant-intro" title="Permanent link">&para;</a></h2>
 <p>Nach dem Grundlagentutorial hast du genug Infos und Programmiererfahrung gesammelt, um das <a href="http://example.com/" title="BouncyFant Tutorial">BouncyFant Tutorial</a> zu beginnen. Natürlich kannst du jederzeit auf das Grundlagentutorial zurückgreifen, wenn du es brauchst.</p>
 <p>Was wirst du im <a href="http://example.com/" title="BouncyFant Tutorial">BouncyFant Tutorial</a> lernen? </p>
