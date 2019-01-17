@@ -64,7 +64,7 @@ Um als Bedingung zwei Ausdrücke miteinander zu vergleichen, können Vergleichso
 
 ###Logische Operatoren
 
-[Logische Operatoren](operators.md) ermöglichen komplexere Bedingungen, indem Verknüpfungen von Wahrheitswerten erstellt werden können.
+[Logische Operatoren](../0160-operators/0160-operators.md) ermöglichen komplexere Bedingungen, indem Verknüpfungen von Wahrheitswerten erstellt werden können.
 Häufig verwendete logische Operatoren sind:
 
 | Logische Operatoren | Bedeutung          |
@@ -153,7 +153,7 @@ void OnDisable()
 ```
 
 !!!bug "ACHTUNG"
-    Beachte den Gültigkeits-Bereich der Varialben! Siehe dazu auch [Variablen-Bereich (Scope)](variables.md).
+    Beachte den Gültigkeits-Bereich der Varialben! Siehe dazu auch [Variablen-Bereich (Scope)](../0150-variables/0150-variables.md).
 
 ---
 

@@ -1,7 +1,7 @@
 #Ellis' großes Abenteuer
 
 !!! Abstract "Lernziele"
-    In diesem Kapitel lernst du mit Hilfe von [Variablen](variables.md) und [Verzweigungen](conditionals.md) ein Text-basiertes [Adventure](https://de.wikipedia.org/wiki/Adventure) Spiel zu programmieren.
+    In diesem Kapitel lernst du mit Hilfe von [Variablen](../0150-variables/0150-variables.md) und [Verzweigungen](../0190-conditionals/0190-conditionals.md) ein Text-basiertes [Adventure](https://de.wikipedia.org/wiki/Adventure) Spiel zu programmieren.
 
 In diesem Spiel können Befehle in ein Textfeld geschrieben werden. Diese werden durch **Bedingungen**, wie etwa **Vergleiche von Variablen**, ausgewertet. **Wenn** eine Bedingung zutrifft, **dann** verändern sich Spielzustände.
 
@@ -120,7 +120,7 @@ public class GameController : MonoBehaviour
 
 Damit du das Skript im Spiel verwenden kannst, musst du zwei Arbeitsschritte machen:
 
-1. Verknüpfe den Aufruf der Funktion "ausfuehren" mit "On Click" des Buttons "Ausführen". (Eine Erklärung, wie das geht, findest du beim [Krapfenklicker](donutclicker.md) Spiel!)
+1. Verknüpfe den Aufruf der Funktion "ausfuehren" mit "On Click" des Buttons "Ausführen". (Eine Erklärung, wie das geht, findest du beim [Krapfenklicker](../0170-donutclicker/0170-donutclicker.md) Spiel!)
 
 2. Verknüpfe die *public* Variablen im Skript mit GameObjects und Grafiken in Unity.
 

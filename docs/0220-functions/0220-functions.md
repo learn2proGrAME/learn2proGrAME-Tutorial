@@ -47,16 +47,16 @@ Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktio
 
 ![Header](img/funktionsHeader.png)
 
-Der [Zugriffsmodifikator](accessmodifiers.md) legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
+Der [Zugriffsmodifikator](../0230-accessmodifiers/0230-accessmodifiers.md) legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
 
 Eine Funktion kann beliebig viele **Parameter** haben. **Parameter** legen genauer fest, was die Funktion tun soll. In unserem Beispiel wird über die **Parameter** festgelegt, von welchen zwei Spielobjekten der Abstand berechnet werden soll.  
-Die **Parameter** stehen im Body der Funktion als [Variablen](variables.md) zur Verfügung.
+Die **Parameter** stehen im Body der Funktion als [Variablen](../0150-variables/0150-variables.md) zur Verfügung.
 
 ##Funktionen mit Rückgabewert
 
 Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück.
 
-Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](variables.md) speichern oder direkt in einem *if*-Statement verwenden:
+Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](../0150-variables/0150-variables.md) speichern oder direkt in einem *if*-Statement verwenden:
 
 ```csharp
 	if(Abstand(elli, pilz) < 100){

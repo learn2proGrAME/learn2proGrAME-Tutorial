@@ -4,7 +4,7 @@
     Hier lernst du, wie du mit Schleifen Programmcode wiederholen kannst.
 	
 
-Wo **Programmcode wiederholt** wird, können Schleifen verwendet werden. Spiele werden meist in einer [Spielschleife](gameloop.md) gestartet.
+Wo **Programmcode wiederholt** wird, können Schleifen verwendet werden. Spiele werden meist in einer [Spielschleife](../0260-gameloop/0260-gameloop.md) gestartet.
 
 !!!tip "Tipp"
     **Iteration** bedeutet **ein** *Schleifendurchlauf*.

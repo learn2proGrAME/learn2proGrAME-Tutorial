@@ -1,24 +1,24 @@
 #Zugriffskontrolle durch Zugriffsmodifikatoren (access modifiers)
 
 !!! Abstract "Lernziele"
-    In diesem Kapitel lernst du, was Zugriffsmodifikatoren von [Variablen](variables.md) und [Funktionen (Methoden)](functions.md) sind und wann du welche Art verwenden solltest.
+    In diesem Kapitel lernst du, was Zugriffsmodifikatoren von [Variablen](../0150-variables/0150-variables.md) und [Funktionen (Methoden)](../0220-functions/0220-functions.md) sind und wann du welche Art verwenden solltest.
 ---
 
 ##Klassenvariablen
 
-**Klassenvariablen** sind [Variablen](variables.md), die in einer [Klasse](classes.md) außerhalb von [Funktionen](functions.md) deklariert werden.  
+**Klassenvariablen** sind [Variablen](../0150-variables/0150-variables.md), die in einer [Klasse](../0270-classes/0270-classes.md) außerhalb von [Funktionen](../0220-functions/0220-functions.md) deklariert werden.  
 ![classvariable](img/classvariables.png)
 Hier sind `minGeschwindigkeit` und `maxGeschwindigkeit` **Klassenvariablen**.  
 `rotationsgeschwindigkeit` ist keine Klassenvariable, da sie in der Funktion `Start()` deklariert wurde. Sie ist eine **lokale Variable**, die nur innerhalb der Methode verfügbar ist.
 
 ##Was sind Zugriffsmodifikatoren?
 
-Zugriffsmodifikatoren legen fest von wo aus man auf eine **Klassenvariable** oder eine [Funktion](functions.md) zugreifen kann.  
+Zugriffsmodifikatoren legen fest von wo aus man auf eine **Klassenvariable** oder eine [Funktion](../0220-functions/0220-functions.md) zugreifen kann.  
 Die drei wichtigsten Zugriffsmodifikatoren sind:
 
 * **public** - Zugriff von überall
 * **private** - Zugriff nur innerhalb der Klasse
-* **protected** - Zugriff innerhalb der Klasse und von allen Klassen die von dieser Klasse erben. (Mehr zu Vererbung unter [Objektorientierte Programmierung](classes.md))
+* **protected** - Zugriff innerhalb der Klasse und von allen Klassen die von dieser Klasse erben. (Mehr zu Vererbung unter [Objektorientierte Programmierung](../0270-classes/0270-classes.md))
 
 !!!Tip "Tipp"
     *public* Variablen können in Unity auch im Inspector eingesehen und verändert werden.

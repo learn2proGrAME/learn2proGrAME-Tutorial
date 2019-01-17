@@ -1,0 +1,1 @@
+# Teil 1 - Neues Projekt erstellen und Assets einfügen

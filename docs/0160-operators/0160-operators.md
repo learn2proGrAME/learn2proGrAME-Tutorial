@@ -175,7 +175,7 @@ In der Konsole steht nach dem Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 
 
 **Logische Operatoren** 
 <!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (```boolean```) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
-Logischen Operatoren sind besonders wichtig bei [Verzweigungen](conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.
+Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.
 
 | Operator | Funktion |
 | && | UND|

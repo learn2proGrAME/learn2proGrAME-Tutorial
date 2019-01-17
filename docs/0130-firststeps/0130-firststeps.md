@@ -27,7 +27,7 @@ Ein bisschen allgemeiner könnte man daher sagen:
 
 In Unity besteht eine Szene aus einem oder mehreren Spielobjekt(en). Diese werden GameObject(s) genannt. Auch die Kamera, die eine Szene "filmt", ist ein GameObject. 
 
-Spielobjekte können von unterschiedlicher Art sein. Die Art wird in einer [Klasse](classes.md) festgelegt. Die Eigenschaften eines Spielobjekts werden durch Komponenten (Components) bestimmt. Jedes Spielobjekt hat etwa die Komponente [Transform](transform.md), mit Hilfe derer die Position, die Rotation und die Größe (oder Skalierung) des Spielobjekts bestimmt werden kann.
+Spielobjekte können von unterschiedlicher Art sein. Die Art wird in einer [Klasse](../0270-classes/0270-classes.md) festgelegt. Die Eigenschaften eines Spielobjekts werden durch Komponenten (Components) bestimmt. Jedes Spielobjekt hat etwa die Komponente [Transform](../0180-transform/0180-transform.md), mit Hilfe derer die Position, die Rotation und die Größe (oder Skalierung) des Spielobjekts bestimmt werden kann.
 Auch physikalische Eigenschaften werden einem Spielobjekt durch eine Komponente verliehen. Bei 2D-Spielen heißt diese Rigidbody2D. Ebenso werden Grenzen eines Spielobjekts (für Kollisionsabfragen) durch eine Komponente - Collider - angegeben.
 
 
@@ -70,7 +70,7 @@ Um ein neues Script für ein GameObject zu erstellen, mache folgendes:
 ![Neuens Skript Ablauf](img/newscriptablauf.png)
 
 !!!success "Arbeitsauftrag"
-    Lege die Sprite-Datei [elef.png](img/elef.png) im Ordner *"Sprites"* in deinem Unity Projekt ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.
+    Lege die Sprite-Datei [elef.png](../0900-img-all/elef.png) im Ordner *"Sprites"* in deinem Unity Projekt ab. Ziehe das neue Sprite anschließend vom Project Panel in das Hierarchy Panel. Nenne das neue GameObject "Elli". Hefte dem neu erzeugten GameObject Elli ein C#-Skript namens "HalloElli" an.
 	
 !!!tip "Tipp"
     Ein **Sprite** ist eine 2D Grafik. Das heißt, diese Grafik hat 2 Dimensionen. Sie kann auf der x- und der y-Achse positioniert und skaliert(=vergrößert und verkleinert) werden. Eine Tiefendimension (z-Achse), die man etwa bei 3D-Spielen verwendet, fehlt.
@@ -81,7 +81,7 @@ Um ein neues Script für ein GameObject zu erstellen, mache folgendes:
 
 ##Erste Schritte in C*#*
 
-[C*#* (C Sharp)](https://de.wikipedia.org/wiki/C-Sharp) ist (in erster Linie) eine [objektorientierte](classes.md) Programmiersprache. Unity-Skripte kann man in C*#* (oder in [Javascript](https://de.wikipedia.org/wiki/JavaScript)) schreiben.
+[C*#* (C Sharp)](https://de.wikipedia.org/wiki/C-Sharp) ist (in erster Linie) eine [objektorientierte](../0270-classes/0270-classes.md) Programmiersprache. Unity-Skripte kann man in C*#* (oder in [Javascript](https://de.wikipedia.org/wiki/JavaScript)) schreiben.
 
 ###Hallo Elli!
 
@@ -114,13 +114,13 @@ public class halloelli : MonoBehaviour {
 
 Zurück in Unity, drücke auf Start.
 
-![Stop](img/stop.png)
+![Stop](../0900-img-all/stop.png)
 
-![Start](img/start.png)
+![Start](../0900-img-all/start.png)
 
 Anschließend, öffne das **Console Panel**. In diesem werden Rückmeldungen des Programms, wie etwa **Debug**-Nachrichten ausgegeben.
 
-![Console Panel](img/consolePanel.png)
+![Console Panel](../0900-img-all/consolePanel.png)
 
 Nun, klicke das GameObject Elli an. Im Inspector findest du neben dem GameObject Namen eine Tick-Box. Klicke die Tick-Box an.
 

@@ -25,7 +25,7 @@ Ok... aber was, wenn du auf Start drückst, aber nichts passiert?
 
 Schau in der Konsole nach, was da geschrieben steht.
 
-![Konsolen-Panel](img/consolePanel.png)
+![Konsolen-Panel](../0900-img-all/consolePanel.png)
 
 Unity gibt in der Konsole Warnungen und Fehlermeldungen aus, sobald du das Spiel gestartet hast.
 

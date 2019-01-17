@@ -44,7 +44,7 @@ Wie kann man das programmieren?
 Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: ```public Button clickButton;```.
 
 !!!bug "ACHTUNG"
-    ```public``` bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die [Fertigstellung des Krapfenklicker Spiels](donutclicker.md)!
+    ```public``` bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die [Fertigstellung des Krapfenklicker Spiels](../0170-donutclicker/0170-donutclicker.md)!
 
 
 
@@ -73,7 +73,7 @@ Ein Rechteck ([rect](https://docs.unity3d.com/ScriptReference/Rect.html)) hat in
 !!!tip "Tipp"
     **Vektoren** sind Bewegungen in einem Koordinatensystem. Sie haben eine **Länge**, eine **Richtung** und eine **Orientierung**.
 
-Da Vektoren in Unity für Größenänderungen, Positionsänderungen, Geschwindigkeit und anderes verwendet werden, gibt es eigene Referenz-Datentypen (oder [Klassen](classes.md)) dafür: 
+Da Vektoren in Unity für Größenänderungen, Positionsänderungen, Geschwindigkeit und anderes verwendet werden, gibt es eigene Referenz-Datentypen (oder [Klassen](..//0270-classes/0270-classes.md)) dafür: 
 
 * ```Vector2``` (für 2D Vektoren) bzw. 
 * ```Vector3``` (für 3D Vektoren).

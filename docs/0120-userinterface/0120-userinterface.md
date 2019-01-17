@@ -55,9 +55,9 @@ Szenen in Unity sind hierarchisch - in Ebenen - organisiert. Prinzipiell werden 
 
 ###Spiel starten (und stoppen)
 
-![Stop](img/stop.png)
+![Stop](../0900-img-all/stop.png)
 
-![Start](img/start.png)
+![Start](../0900-img-all/start.png)
 
 !!!bug "ACHTUNG"
     Alle Änderungen, die du in Unity vornimmst, während das Spiel gestartet ist, werden NICHT übernommen, sobald du das Spiel wieder stoppst!

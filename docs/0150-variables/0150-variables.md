@@ -76,7 +76,7 @@ Wichtige Datentypen sind:
     Ergänze die Funktion ```OnDisable()``` im Skript halloelli.cs um zwei Variablen: ```string spiel``` und ```int preis```. Weise der Variable "spiel" den Wert ```"Elli Dance"``` zu. Weise der Variable "preis" den Wert ```5``` zu. Ergänze Debug.Log() um folgenden string: ```"Das Spiel" + spiel + "kostet" + preis + "Euro."```
 	
 !!!tip "Tipp"
-    ```+``` ist der [Additions-Operator](operators.md). Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
+    ```+``` ist der [Additions-Operator](../0160-operators/0160-operators.md). Bei Zahlen addiert dieser, strings werden durch diesen zusammengefügt.
 
 -----
 
@@ -99,7 +99,7 @@ string zahl = i.ToString();
 
 Variablen, die **außerhalb** eines Code-Blocks - gekennzeichnet durch ```{ ... }``` - deklariert (also angegeben) werden, **können im Code-Block verwendet** werden. Variablen, die **im Code-Block angegeben** werden, können **nur dort verwendet** werden.
 
-Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgesetzt, so können auch Objekte darauf zugreifen, denen das Skript nicht "angeheftet" ist. Wenn eine Variable ```private``` ist, so kann nur das GameObject, dem das Skript angeheftet ist, darauf zugreifen. [Mehr dazu](accessmodifiers.md)
+Wird einer Variable bei der Deklarierung das Schlüsselwort ```public``` vorgesetzt, so können auch Objekte darauf zugreifen, denen das Skript nicht "angeheftet" ist. Wenn eine Variable ```private``` ist, so kann nur das GameObject, dem das Skript angeheftet ist, darauf zugreifen. [Mehr dazu](../0230-accessmodifiers/0230-accessmodifiers.md)
 
 -----
 
