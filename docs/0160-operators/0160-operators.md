@@ -1,4 +1,4 @@
-# Operatoren
+﻿# Operatoren
 
 !!!abstract "Lernziele"
     In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in einem Programm verwendest. Wenn du nicht mehr weißt was die Operatoren tun, kannst du in diesem Kapitel nachschauen.
@@ -23,13 +23,16 @@ Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast
 !!!bug "ACHTUNG"
     Arithmetische Operatoren rechnen in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
     Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsches berechnet wird.-->
+
     
 | **Operator** | **Rechenmethode**|
+|---------------|----------------|
 | + | Addition |
 | - | Subtraktion |
 | * | Multiplikation |
 | / | Division |
 | % | Modulo (Rest d. Division) |
+
 ---- 
 
 ### = Operator 
