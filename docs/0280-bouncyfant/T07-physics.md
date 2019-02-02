@@ -19,7 +19,7 @@ Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel ei
 ### Skalieren
 Die Größe von Kiste und Kugel haben wir in unserem Spiel noch um den Faktor 1,55 jeweils auf der X- und Y-Achse skaliert.
 
-![skalieren](img/T07/T07-a-Kiste Collider und Rigidbody.png)
+![skalieren](img/T07/T07-a-Kiste Collider und Rigidbody.png){: style="height:50%;width:50%"}
 
 !!!Tip "Pro-Tipp:"
     Ganz allgemein ist es im Spiel sinnvoll, wenn man die Größe der Objekte im Spiel durch die Skalierung ändert. Diese Art der Größenänderung wirkt sich nämlich auch auf die Größe des Colliders aus.  Würden wir die Größe von Elli, jetzt wo wir bereits den Collider hinzugefügt haben, mit Hilfe der Pixelgröße (Pixels per Unit im Sprite) verkleinern, dann würde der Collider gleich groß bleiben. Das hätte zur Folge, dass Elli bereits an Objekten anstößt bevor sie diese berührt und nicht weiter kann, da der Collider bereits eine Kollision meldet.
@@ -95,7 +95,7 @@ public class Muell : MonoBehaviour {
 
 Wenn alles gespeichert ist, weisen wir im Inspector dem *Level01* die Vorlagen den Variablen *Kiste* und *Kugel* zu.
 
-![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png)
+![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png){: style="height:50%;width:50%"}
 
 ##Sourcecode
 Download Sourcecode Teil 07: http://comber.at/dev/BouncyFant07.zip
