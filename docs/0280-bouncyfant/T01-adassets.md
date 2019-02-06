@@ -99,3 +99,36 @@ Falls du dein eigenes Sprite verwendest, musst du die Einstellungen vielleicht a
 
 ![Animationsstufen justieren](img/T01/T01-i-Animationsstufen justieren.png)
 
+Nach dem Slicen geben wir den einzelnen Animationsstufen im Sprite Editor noch sinnvolle Namen. Hierfür klicken wir auf die jeweilige Animationstufe und geben den jeweiligen Namen ein, siehe Screenshot. (In unserem Fall Elefant_Stehen, Elefant_Gehen_1, Elefant_Gehen_2)
+
+!!!bug "Achtung!"
+    Bevor du den Sprite Editor schließt, musst du deine Änderungen mit “Apply” bestätigen und speichern.
+
+!!!bug "Achtung!"  
+    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst.
+
+![Animationsstufen benennen](img/T01/T01-i-Animationsstufen benennen.png)
+
+### Die Spielfigur zur Spielszene hinzufügen
+
+Unser Ziel ist es jetzt, einen stehenden Elefant als GameObject dem Spiel hinzuzufügen. Dazu klappen wir zuerst das Sprite Elefant auf (klicke auf den kleinen Pfeil links neben Elefant im Asset Panel, im Ordner *Sprites*). Dann siehst du die einzelnen Animationsstufen (Elefant_Gehen_1, Elefant_Gehen_2, Elefant_Stehen). Durch Ziehen der Animationsstufe *Elefant_Gehen* vom Asset Panel in das Hierarchy Panel fügen wir den Elefanten zum Spiel hinzu. Dabei wird auch gleich ein neues GameObject erstellt.
+
+Ist der Elefant hinzugefügt, passen wir noch die Größe an. Das können wir bewerkstelligen, indem wir das Sprite des Elefanten anklicken und im Inspector Panel bei *Pixels Per Unit* den Wert anpassen (in unserem Fall beispielsweise 300). Mit Apply wird das Ganze wieder bestätigt.
+
+![PPU von Spielfigur einstellen](img/T01/T01-k-Spritegröße adjustieren.png)
+
+### Speichern der Spieleszene
+
+Die Spielszene müssen wir zusätzlich zum Projekt speichern. Du kannst dir jede Spieleszene wie ein Level vorstellen. Wir bleiben aber vorerst bei einem Level. Die Spieleszene speichert man durch einen Klick auf *File->Save Scene* oder mit der Tastenkombination STRG + S. Das gesamte Projekt musst du darauf noch mit *File->Save* Project speichern!
+
+![Szene speichern](img/T01/T01-l-Szene speichern.png)
+
+Mit “Play” können wir das Spiel starten. Momentan tut sich noch nicht viel, da der Elefant sich noch nicht bewegt und auch Grafiken für den Hintergrund und für die anderen Objekte im Spiel müssen erst hinzugefügt werden. Wir können jedoch das Seitenverhältnis einstellen: Wir wählen bei BouncyFant das Verhältnis 4:3, da in dem Spiel viel gesprungen wird und wir deswegen mehr Platz nach oben, als zur Seite wollen.
+
+![Szene abspielen](img/T01/T01-m-Play Szene abspielen.png)
+
+#### Sourcecode	
+Download Sourcecode Teil 01: http://comber.at/dev/BouncyFant01.zip
+
+
+
