@@ -1,0 +1,1204 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+      
+      
+        <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0240-spaceshooter/0240-spaceshooter/">
+      
+      
+        <meta name="author" content="learn2proGrAME">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Spiel - Space-Asteroids - learn2proGrAME Grundlagentutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../../manifest.webmanifest">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#space-asteroids" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+          
+            <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                learn2proGrAME Grundlagentutorial
+              </span>
+              <span class="md-header-nav__topic">
+                Spiel - Space-Asteroids
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+      
+        <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
+      
+    </a>
+    learn2proGrAME Grundlagentutorial
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Einleitung" class="md-nav__link">
+      Einleitung
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0120-userinterface/0120-userinterface/" title="Bedienoberflächen" class="md-nav__link">
+      Bedienoberflächen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0130-firststeps/0130-firststeps/" title="Erste Schritte" class="md-nav__link">
+      Erste Schritte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0140-debugging/0140-debugging/" title="Fehler und De-Bugging" class="md-nav__link">
+      Fehler und De-Bugging
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0150-variables/0150-variables/" title="Variablen" class="md-nav__link">
+      Variablen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0160-operators/0160-operators/" title="Operatoren" class="md-nav__link">
+      Operatoren
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0170-donutclicker/0170-donutclicker/" title="Spiel - Krapfenklicker" class="md-nav__link">
+      Spiel - Krapfenklicker
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0180-transform/0180-transform/" title="Transform Spielobjektkomponente" class="md-nav__link">
+      Transform Spielobjektkomponente
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0190-conditionals/0190-conditionals/" title="Verzweigungen" class="md-nav__link">
+      Verzweigungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0200-adventure/0200-adventure/" title="Spiel - Ellis' großes Abenteuer" class="md-nav__link">
+      Spiel - Ellis' großes Abenteuer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0210-drawingingimp/0210-drawingingimp/" title="Grafiken gestalten in GIMP" class="md-nav__link">
+      Grafiken gestalten in GIMP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0220-functions/0220-functions/" title="Funktionen" class="md-nav__link">
+      Funktionen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0230-accessmodifiers/0230-accessmodifiers/" title="Zugriffskontrolle" class="md-nav__link">
+      Zugriffskontrolle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Spiel - Space-Asteroids
+      </label>
+    
+    <a href="./" title="Spiel - Space-Asteroids" class="md-nav__link md-nav__link--active">
+      Spiel - Space-Asteroids
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projekt-downloaden" title="Projekt downloaden" class="md-nav__link">
+    Projekt downloaden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teste-das-spiel" title="Teste das Spiel" class="md-nav__link">
+    Teste das Spiel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bewegung-der-asteroiden" title="Bewegung der Asteroiden" class="md-nav__link">
+    Bewegung der Asteroiden
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-benotigten-variablen-deklarieren" title="Die benötigten Variablen deklarieren" class="md-nav__link">
+    Die benötigten Variablen deklarieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bewegung-im-spiel" title="Bewegung im Spiel" class="md-nav__link">
+    Bewegung im Spiel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotation-der-asteroiden" title="Rotation der Asteroiden" class="md-nav__link">
+    Rotation der Asteroiden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kollision" title="Kollision" class="md-nav__link">
+    Kollision
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-kollidiert" title="Was kollidiert?" class="md-nav__link">
+    Was kollidiert?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gescho-und-asteroid-loschen" title="Geschoß und Asteroid löschen" class="md-nav__link">
+    Geschoß und Asteroid löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktestand-erhohen" title="Punktestand erhöhen" class="md-nav__link">
+    Punktestand erhöhen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound-abspielen" title="Sound abspielen" class="md-nav__link">
+    Sound abspielen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vollstandiger-sourcecode" title="Vollständiger SourceCode" class="md-nav__link">
+    Vollständiger SourceCode
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-nav__link">
+      Schleifen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0260-gameloop/0260-gameloop/" title="Die Spiel-Schleife" class="md-nav__link">
+      Die Spiel-Schleife
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0270-classes/0270-classes/" title="Objekt-orientiertes Programmieren - Grundlagen" class="md-nav__link">
+      Objekt-orientiertes Programmieren - Grundlagen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+    
+    <label class="md-nav__link" for="nav-18">
+      Spiel - BouncyFant
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-18">
+        Spiel - BouncyFant
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T00-introduction/" title="Einführung" class="md-nav__link">
+      Einführung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T01-adassets/" title="Teil 1 - Neues Projekt und Assets" class="md-nav__link">
+      Teil 1 - Neues Projekt und Assets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T02-animstat/" title="Teil 2 - Animationen und States" class="md-nav__link">
+      Teil 2 - Animationen und States
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T03-movement/" title="Teil 3 - Bewegung" class="md-nav__link">
+      Teil 3 - Bewegung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T04-levels/" title="Teil 4 - Levels, Collider" class="md-nav__link">
+      Teil 4 - Levels, Collider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T05-secondchar/" title="Teil 5 - Zweite Spielfigur" class="md-nav__link">
+      Teil 5 - Zweite Spielfigur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T06-jump/" title="Teil 6 - Jump Around" class="md-nav__link">
+      Teil 6 - Jump Around
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T07-physics/" title="Teil 7 - Physikwelt" class="md-nav__link">
+      Teil 7 - Physikwelt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T08-win/" title="Teil 8 - Gewinnbedingung" class="md-nav__link">
+      Teil 8 - Gewinnbedingung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
+      Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0290-about/0290-about/" title="Über learn2proGrAME" class="md-nav__link">
+      Über learn2proGrAME
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0300-teachers/0300-teachers/" title="Für Lehrpersonen" class="md-nav__link">
+      Für Lehrpersonen
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projekt-downloaden" title="Projekt downloaden" class="md-nav__link">
+    Projekt downloaden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teste-das-spiel" title="Teste das Spiel" class="md-nav__link">
+    Teste das Spiel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bewegung-der-asteroiden" title="Bewegung der Asteroiden" class="md-nav__link">
+    Bewegung der Asteroiden
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-benotigten-variablen-deklarieren" title="Die benötigten Variablen deklarieren" class="md-nav__link">
+    Die benötigten Variablen deklarieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bewegung-im-spiel" title="Bewegung im Spiel" class="md-nav__link">
+    Bewegung im Spiel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotation-der-asteroiden" title="Rotation der Asteroiden" class="md-nav__link">
+    Rotation der Asteroiden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kollision" title="Kollision" class="md-nav__link">
+    Kollision
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-kollidiert" title="Was kollidiert?" class="md-nav__link">
+    Was kollidiert?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gescho-und-asteroid-loschen" title="Geschoß und Asteroid löschen" class="md-nav__link">
+    Geschoß und Asteroid löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktestand-erhohen" title="Punktestand erhöhen" class="md-nav__link">
+    Punktestand erhöhen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound-abspielen" title="Sound abspielen" class="md-nav__link">
+    Sound abspielen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vollstandiger-sourcecode" title="Vollständiger SourceCode" class="md-nav__link">
+    Vollständiger SourceCode
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0240-spaceshooter/0240-spaceshooter.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="space-asteroids">Space-Asteroids<a class="headerlink" href="#space-asteroids" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel wirst du mithilfe des Gelernten aus den vorigen Kapiteln die letzten Teile des Spiels Space-Asteroids selber programmieren.</p>
+</div>
+<p>In Space-Asteroids fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du musst die Asteroiden abschießen oder ihnen ausweichen. Wenn du von einem getroffen wirst, explodiert das Raumschiff.</p>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Vervollständige das Unity-Projekt. Lediglich die Programmierung der Asteroiden fehlt noch.</p>
+</div>
+<h2 id="projekt-downloaden">Projekt downloaden<a class="headerlink" href="#projekt-downloaden" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Gehe auf <a href="https://github.com/learn2proGrAME/SpaceShooter">https://github.com/learn2proGrAME/SpaceShooter</a></p>
+</li>
+<li>
+<p>Klicke zuerst auf <strong>"Clone or Download"</strong> und dann auf <strong>"Download ZIP"</strong></p>
+<p><img alt="download" src="../img/githubDownload.png" /></p>
+</li>
+<li>
+<p>Nach dem Download entzippe das heruntergeladene Verzeichnis, öffne <strong>Unity</strong> und klicke auf <strong>"Open"</strong></p>
+<p><img alt="open project" src="../img/openUnity.png" /></p>
+</li>
+<li>
+<p>Gehe in das entpackte Verzeichnis und öffne das Projekt.</p>
+<p><img alt="open project2" src="../img/openUnity2.png" /></p>
+</li>
+</ol>
+<h2 id="teste-das-spiel">Teste das Spiel<a class="headerlink" href="#teste-das-spiel" title="Permanent link">&para;</a></h2>
+<p>Klicke auf den Play-Button in Unity und teste das Spiel</p>
+<p>Du kannst mit den Pfeiltasten herumfliegen und mit der Leertaste schießen.<br />
+Ansonsten ist das Spiel aber noch recht langweilig.</p>
+<p>Wenn du während das Spiel läuft in die Scene-View schaust, siehst du, dass am oberen Spielfeldrand schon Asteroiden erzeugt werden. Allerdings tun diese noch nichts.</p>
+<hr />
+<h2 id="bewegung-der-asteroiden">Bewegung der Asteroiden<a class="headerlink" href="#bewegung-der-asteroiden" title="Permanent link">&para;</a></h2>
+<h3 id="die-benotigten-variablen-deklarieren">Die benötigten Variablen deklarieren<a class="headerlink" href="#die-benotigten-variablen-deklarieren" title="Permanent link">&para;</a></h3>
+<p>Als erstes kümmern wir uns darum, dass die Asteroiden in Bewegung gesetzt werden. Sie sollen senkrecht vom oberen Rand des Spielfelds zum unteren Rand fliegen.</p>
+<p>Öffne unter <em>Assets/Scripts</em> das Script <strong>Asteroid</strong>  </p>
+<p>Da wir die eingebaute Physic-Engine von Unity verwenden, benötigen wir für die Bewegung einen <strong>Rigidbody</strong>.</p>
+<p>Erstelle als erstes eine <em>private</em> Variable vom Typ <em>Rigidbody</em> in der dieser gespeichert wird.</p>
+<div class="codehilite"><pre><span></span>    <span class="k">private</span> <span class="n">Rigidbody</span> <span class="n">rb</span><span class="p">;</span>
+</pre></div>
+
+
+<p>Lege außerdem noch eine <em>public</em> Variable für die Geschwindigkeit an mit der der Asteroid fliegen soll.</p>
+<div class="codehilite"><pre><span></span>    <span class="k">public</span> <span class="kt">float</span> <span class="n">geschwindigkeit</span><span class="p">;</span>
+</pre></div>
+
+
+<h3 id="bewegung-im-spiel">Bewegung im Spiel<a class="headerlink" href="#bewegung-im-spiel" title="Permanent link">&para;</a></h3>
+<p>Bevor du den Asteroiden in Bewegung setzen kannst, musst du die Variable des Rigidbodys initialisieren.  </p>
+<p>Mache dies in der <code>start()</code> Methode mit dem Befehl <code>GetComponent&lt;Rigidbody&gt;()</code></p>
+<p>Dein Code sollte so aussehen:</p>
+<div class="codehilite"><pre><span></span>     <span class="c1">//Start() wird von Unity aufgerufen, wenn das Object erzeugt wird.</span>
+    <span class="k">void</span> <span class="nf">Start</span><span class="p">(){</span>
+        <span class="c1">//Setze die Referenz auf den Rigidbody</span>
+        <span class="n">rb</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;</span> <span class="p">();</span>
+    <span class="p">}</span>
+</pre></div>
+
+
+<p>Nun müssen wir dem Rigidbody nur noch eine Geschwindigkeit geben.<br />
+Verwende hierfür den Befehl <code>rb.velocity = new Vector3 (0, 0, -geschwindigkeit);</code></p>
+<p>Füge diesen Befehl ebenfalls in der <code>Start()</code> Methode nach dem Initialisieren von <code>rb</code> ein.</p>
+<div class="admonition tip">
+<p class="admonition-title">Hinweis</p>
+<p>Vielleicht ist dir aufgefallen, dass wir die Variable geschwindigkeit noch gar nicht initialisiert haben. Das ist kein Problem. Da diese <em>public</em> ist, kann man ihren Wert im Inspector von Unity festlegen.</p>
+</div>
+<p>Speichere das Script und gehe wieder in Unity.</p>
+<p>Im Ordner <em>Assets/Vorlagen</em> findest du die Vorlage für die Asteroiden. Wenn du sie auswählst siehst du, dass das Script <em>Asteroid.cs</em> bereits angehängt ist. Wenn du nun noch die geschwindigkeit auf einen Wert größer als 0 setzt, bist du mit diesem Teil fertig.</p>
+<p><img alt="geschwindigkeitSetzen" src="../img/asteroid1.png" /></p>
+<p>Vergiss nicht zu testen und probiere ein paar unterschiedliche Werte für die Geschwindigkeit aus!</p>
+<hr />
+<h2 id="rotation-der-asteroiden">Rotation der Asteroiden<a class="headerlink" href="#rotation-der-asteroiden" title="Permanent link">&para;</a></h2>
+<p>Die Asteroiden bewegen sich nun zwar, allerdings sehen sie noch ein bisschen leblos aus. Lassen wir sie rotieren!</p>
+<p>Sie sollen mit einer bestimmten Geschwindigkeit um eine zufällige Achse rotieren.</p>
+<p>Erstelle eine <em>public</em> Variable vom Typ <em>float</em> für die Rotationsgeschwindigkeit und gib ihr einen sinnvollen Namen.</p>
+<p>Dann füge am Ende der Methode <code>start()</code> folgenden Befehl ein:</p>
+<div class="codehilite"><pre><span></span>    <span class="n">rb</span><span class="p">.</span><span class="n">angularVelocity</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">insideUnitSphere</span> <span class="p">*</span> <span class="n">rotationsgeschwindigkeit</span><span class="p">;</span>
+</pre></div>
+
+
+<p>Wobei <code>rotationsGeschwindigkeit</code> der von dir gewählte Variablenname sein muss.</p>
+<p>Speichere das Skript, gehe in Unity und setze die Rotationsgeschwindigkeit im Inspector so wie in Schritt 3.2.</p>
+<p>Teste!</p>
+<hr />
+<h2 id="kollision">Kollision<a class="headerlink" href="#kollision" title="Permanent link">&para;</a></h2>
+<p>Die Asteroiden fliegen herum, drehen sich und wenn sie das Raumschiff berühren wird dieses zerstört. Allerdings kann man sie noch nicht abschießen.</p>
+<p>In diesem Teil wirst du folgende Dinge programmieren:</p>
+<p>Wenn ein Asteroid mit einem Lasergeschoß kollidiert ...</p>
+<ol>
+<li>... werden Lasergeschoß  und der Asteroid gelöscht</li>
+<li>... wird der Punktestand erhöht</li>
+<li>... wird ein Sound abgespielt</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Hinweis</p>
+<p>Der meiste Code in diesem Teil wird in der Methode <code>OnTriggerEnter(Collider other)</code> eingefügt. Diese Methode wird (etwas vereinfacht gesagt) von Unity immer dann aufgerufen, wenn eine Kollision stattfindet.
+Der Parameter <code>other</code> ist hierbei der Collider des GameObjects mit dem kollidiert wird.</p>
+</div>
+<h3 id="was-kollidiert">Was kollidiert?<a class="headerlink" href="#was-kollidiert" title="Permanent link">&para;</a></h3>
+<p>Bevor wir implementieren, was geschehen soll, müssen wir überprüfen womit der Asteroid überhaupt kollidiert.</p>
+<p>Füge ein <em>if-Statement</em> in der Methode <code>OnTriggerEnter()</code> ein, das überprüft ob die Variable <code>other.tag</code> gleich "Geschoß" ist. Um zu überprüfen ob <code>other</code> ein Lasergeschoß ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Hinweis</p>
+<p>Man kann in Unity jedem Gameobject und jeder Vorlage einen <strong>tag</strong> zuweisen. Dieser <strong>tag</strong> ist als <em>String</em> Variable <code>tag</code> in jedem GameObject verfügbar. In diesem Spiel wurde z.B. den Lasergeschoßen der <strong>tag</strong> "Geschoß" und den Asteroiden der <strong>tag</strong> "Hindernis" gegeben.</p>
+</div>
+<h3 id="gescho-und-asteroid-loschen">Geschoß und Asteroid löschen<a class="headerlink" href="#gescho-und-asteroid-loschen" title="Permanent link">&para;</a></h3>
+<p>Um in Unity ein Gameobject zu löschen verwendet man die Funktion <code>Destroy(GameObject)</code>. Diese löscht das Gameobjekt, das als Parameter angegeben wird am Ende des aktuellen Spielframes.</p>
+<p>Rufe nun zweimal die Funktion <code>Destroy()</code> auf. Gib einmal <code>other.gameObject</code> und einmal <code>gameObject</code> als Parameter an.</p>
+<h3 id="punktestand-erhohen">Punktestand erhöhen<a class="headerlink" href="#punktestand-erhohen" title="Permanent link">&para;</a></h3>
+<p>Der GameController stellt die Methode <code>ErhoehePunktestand(int punkte)</code> zur Verfügung.</p>
+<p>Bevor du diese Funktion aufrufen kannst, benötigst du allerdings eine Variable mit einer Referenz auf den GameController.</p>
+<ol>
+<li>Erstelle eine <em>private</em> Variable vom Typ <em>GameController</em> am Beginn der Klasse und nenne sie "gameController".</li>
+<li>Initialisiere in der Methode <code>Start()</code> die Variable für den GameController mithilfe der Funktion <code>FindeGameController()</code></li>
+</ol>
+<div class="codehilite"><pre><span></span>    <span class="n">gameController</span> <span class="p">=</span> <span class="n">FindeGameController</span><span class="p">();</span>
+</pre></div>
+
+
+<p>Rufe nun in der Methode <code>OnTriggerEnter()</code> im Asteroid-Skript die Funktion <code>ErhoehePunktestand(int punkte)</code> des GameControllers auf und gib als Parameter z.B. <em>10</em> an.</p>
+<div class="admonition tip">
+<p class="admonition-title">Hinweis</p>
+<p>Um eine Funktion in einem anderen Objekt aufzurufen, verwende: <em>variablenname-des-objekts.FunktionsName()</em>
+Also z.B. <code>gameController.ErhoehePunktestand(10);</code></p>
+</div>
+<h3 id="sound-abspielen">Sound abspielen<a class="headerlink" href="#sound-abspielen" title="Permanent link">&para;</a></h3>
+<p>Lege als erstes eine <em>public</em> Variable vom Typ <em>AudioClip</em> am Beginn der Klasse an und speichere das Skript.</p>
+<p>Gehe in Unity auf <em>Assets/Vorlagen</em> und wähle <em>Asteroid</em> aus. Im Inspektor siehst du die Variable für den AudioClip.</p>
+<p>Klicke auf die Zielscheibe rechts daneben und wähle "Explosion1" aus.</p>
+<p><img alt="sound initalisieren" src="../img/linkSound.png" /></p>
+<p>Zum Abspielen des Sounds gibt es im GameController die Methode <code>csharp SpieleSound(AudioClip sound, float lautstaerke)</code></p>
+<p>Rufe diese Methode innerhalb von <code>OnTriggerEnter</code> auf und gib als Parameter die Variable für den Sound und <code>0.2f</code> an.</p>
+<hr />
+<h2 id="vollstandiger-sourcecode">Vollständiger SourceCode<a class="headerlink" href="#vollstandiger-sourcecode" title="Permanent link">&para;</a></h2>
+<p>Dein fertiger Sourcecode sollte in etwa so aussehen:</p>
+<div class="codehilite"><pre><span></span>    <span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+    <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+    <span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Asteroid</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+        <span class="c1">//Referenz auf den Rigidbody</span>
+        <span class="k">private</span> <span class="n">Rigidbody</span> <span class="n">rb</span><span class="p">;</span>
+
+        <span class="c1">//Die Geschwindigkeit mit der die Asteroiden fliegen</span>
+        <span class="k">public</span> <span class="kt">float</span> <span class="n">geschwindigkeit</span><span class="p">;</span>
+
+        <span class="c1">//Rotationsgeschwindigkeit</span>
+        <span class="k">public</span> <span class="kt">float</span> <span class="n">rotationsGeschwindigkeit</span><span class="p">;</span>
+
+        <span class="c1">//Referenz auf den GameController</span>
+        <span class="k">private</span> <span class="n">GameController</span> <span class="n">gameController</span><span class="p">;</span>
+
+        <span class="c1">//Der Sound der bei der Zerstörung eines Asteroiden abgespielt wird.</span>
+        <span class="k">public</span> <span class="n">AudioClip</span> <span class="n">explosionsSound</span><span class="p">;</span>
+
+
+        <span class="c1">//Start() wird von Unity aufgerufen, wenn das Object erzeugt wird.</span>
+        <span class="k">void</span> <span class="nf">Start</span><span class="p">(){</span>
+
+            <span class="c1">//Setze die Referenz auf den Rigidbody</span>
+            <span class="n">rb</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;</span> <span class="p">();</span>
+
+            <span class="c1">//Setze die Geschwindigkeit</span>
+            <span class="n">rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector3</span> <span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="n">geschwindigkeit</span><span class="p">);</span>
+
+            <span class="c1">//Setze die Rotationsgeschwindigkeit</span>
+            <span class="n">rb</span><span class="p">.</span><span class="n">angularVelocity</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">insideUnitSphere</span> <span class="p">*</span> <span class="n">rotationsGeschwindigkeit</span><span class="p">;</span>
+
+            <span class="c1">//Setze GameController-Referenz</span>
+            <span class="n">gameController</span> <span class="p">=</span> <span class="n">FindeGameController</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="c1">//OnTriggerEnter() wird von Unity aufgerufen, wenn ein anderer Collider mit dem eigenen Collider kollidiert.</span>
+        <span class="k">void</span> <span class="nf">OnTriggerEnter</span><span class="p">(</span><span class="n">Collider</span> <span class="n">other</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">//Überprüfe ob das andere Objekt ein Geschoß ist.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">tag</span> <span class="p">==</span> <span class="s">&quot;Geschoß&quot;</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="c1">//Lösche das Geschoß</span>
+                <span class="n">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+
+                <span class="c1">//Lösche den Asteroiden selbst</span>
+                <span class="n">Destroy</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+
+                <span class="c1">//erhöhe den Punktestand</span>
+                <span class="n">gameController</span><span class="p">.</span><span class="n">ErhoehePunktestand</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+
+                <span class="c1">//Spiele den explosionsSound ab</span>
+                <span class="n">gameController</span><span class="p">.</span><span class="n">SpieleSound</span><span class="p">(</span><span class="n">explosionsSound</span><span class="p">,</span> <span class="m">0.2f</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Diese Methode sucht nach dem GameController</span>
+        <span class="c1">// Wenn einer gefunden wird, wird eine Referenz darauf zurückgegeben.</span>
+        <span class="c1">// Wenn kein GameController vorhanden ist, wird das Spiel mit einer Fehlermeldung beendet.</span>
+        <span class="k">private</span> <span class="n">GameController</span> <span class="nf">FindeGameController</span><span class="p">()</span> <span class="p">{</span>
+
+            <span class="n">GameObject</span> <span class="n">gameControllerObject</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="n">FindWithTag</span><span class="p">(</span><span class="s">&quot;GameController&quot;</span><span class="p">);</span>
+
+            <span class="c1">//Befindet sich kein GameController im Spiel ist gameControllerObject == null</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">gameControllerObject</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="n">gameControllerObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">GameController</span><span class="p">&gt;();</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">Debug</span><span class="p">.</span><span class="n">LogError</span><span class="p">(</span><span class="s">&quot;Cannot find GameController Script&quot;</span><span class="p">);</span>
+                <span class="n">Application</span><span class="p">.</span><span class="n">Quit</span><span class="p">();</span>
+                <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../0230-accessmodifiers/0230-accessmodifiers/" title="Zugriffskontrolle" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Zugriffskontrolle
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Schleifen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 learn2proGrAME
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/learn2proGrAME" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

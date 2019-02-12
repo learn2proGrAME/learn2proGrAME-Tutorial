@@ -1,0 +1,972 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+      
+      
+        <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0180-transform/0180-transform/">
+      
+      
+        <meta name="author" content="learn2proGrAME">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Transform Spielobjektkomponente - learn2proGrAME Grundlagentutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../../manifest.webmanifest">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#unity-transform-spielobjektkomponente" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+          
+            <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                learn2proGrAME Grundlagentutorial
+              </span>
+              <span class="md-header-nav__topic">
+                Transform Spielobjektkomponente
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+      
+        <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
+      
+    </a>
+    learn2proGrAME Grundlagentutorial
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Einleitung" class="md-nav__link">
+      Einleitung
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0120-userinterface/0120-userinterface/" title="Bedienoberflächen" class="md-nav__link">
+      Bedienoberflächen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0130-firststeps/0130-firststeps/" title="Erste Schritte" class="md-nav__link">
+      Erste Schritte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0140-debugging/0140-debugging/" title="Fehler und De-Bugging" class="md-nav__link">
+      Fehler und De-Bugging
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0150-variables/0150-variables/" title="Variablen" class="md-nav__link">
+      Variablen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0160-operators/0160-operators/" title="Operatoren" class="md-nav__link">
+      Operatoren
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0170-donutclicker/0170-donutclicker/" title="Spiel - Krapfenklicker" class="md-nav__link">
+      Spiel - Krapfenklicker
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Transform Spielobjektkomponente
+      </label>
+    
+    <a href="./" title="Transform Spielobjektkomponente" class="md-nav__link md-nav__link--active">
+      Transform Spielobjektkomponente
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eigenschaften-von-transform" title="Eigenschaften von Transform" class="md-nav__link">
+    Eigenschaften von Transform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krapfenklicker-erweiterung" title="Krapfenklicker Erweiterung" class="md-nav__link">
+    Krapfenklicker Erweiterung
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcomponent-rechtecke-und-vektoren" title="GetComponent(), Rechtecke und Vektoren" class="md-nav__link">
+    GetComponent(), Rechtecke und Vektoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-neu-erstellen" title="Vektoren neu erstellen" class="md-nav__link">
+    Vektoren neu erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-und-spielobjekt-eigenschaften" title="Vektoren und Spielobjekt-Eigenschaften" class="md-nav__link">
+    Vektoren und Spielobjekt-Eigenschaften
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0190-conditionals/0190-conditionals/" title="Verzweigungen" class="md-nav__link">
+      Verzweigungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0200-adventure/0200-adventure/" title="Spiel - Ellis' großes Abenteuer" class="md-nav__link">
+      Spiel - Ellis' großes Abenteuer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0210-drawingingimp/0210-drawingingimp/" title="Grafiken gestalten in GIMP" class="md-nav__link">
+      Grafiken gestalten in GIMP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0220-functions/0220-functions/" title="Funktionen" class="md-nav__link">
+      Funktionen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0230-accessmodifiers/0230-accessmodifiers/" title="Zugriffskontrolle" class="md-nav__link">
+      Zugriffskontrolle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0240-spaceshooter/0240-spaceshooter/" title="Spiel - Space-Asteroids" class="md-nav__link">
+      Spiel - Space-Asteroids
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-nav__link">
+      Schleifen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0260-gameloop/0260-gameloop/" title="Die Spiel-Schleife" class="md-nav__link">
+      Die Spiel-Schleife
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0270-classes/0270-classes/" title="Objekt-orientiertes Programmieren - Grundlagen" class="md-nav__link">
+      Objekt-orientiertes Programmieren - Grundlagen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+    
+    <label class="md-nav__link" for="nav-18">
+      Spiel - BouncyFant
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-18">
+        Spiel - BouncyFant
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T00-introduction/" title="Einführung" class="md-nav__link">
+      Einführung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T01-adassets/" title="Teil 1 - Neues Projekt und Assets" class="md-nav__link">
+      Teil 1 - Neues Projekt und Assets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T02-animstat/" title="Teil 2 - Animationen und States" class="md-nav__link">
+      Teil 2 - Animationen und States
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T03-movement/" title="Teil 3 - Bewegung" class="md-nav__link">
+      Teil 3 - Bewegung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T04-levels/" title="Teil 4 - Levels, Collider" class="md-nav__link">
+      Teil 4 - Levels, Collider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T05-secondchar/" title="Teil 5 - Zweite Spielfigur" class="md-nav__link">
+      Teil 5 - Zweite Spielfigur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T06-jump/" title="Teil 6 - Jump Around" class="md-nav__link">
+      Teil 6 - Jump Around
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T07-physics/" title="Teil 7 - Physikwelt" class="md-nav__link">
+      Teil 7 - Physikwelt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T08-win/" title="Teil 8 - Gewinnbedingung" class="md-nav__link">
+      Teil 8 - Gewinnbedingung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
+      Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0290-about/0290-about/" title="Über learn2proGrAME" class="md-nav__link">
+      Über learn2proGrAME
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0300-teachers/0300-teachers/" title="Für Lehrpersonen" class="md-nav__link">
+      Für Lehrpersonen
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eigenschaften-von-transform" title="Eigenschaften von Transform" class="md-nav__link">
+    Eigenschaften von Transform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krapfenklicker-erweiterung" title="Krapfenklicker Erweiterung" class="md-nav__link">
+    Krapfenklicker Erweiterung
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcomponent-rechtecke-und-vektoren" title="GetComponent(), Rechtecke und Vektoren" class="md-nav__link">
+    GetComponent(), Rechtecke und Vektoren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-neu-erstellen" title="Vektoren neu erstellen" class="md-nav__link">
+    Vektoren neu erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektoren-und-spielobjekt-eigenschaften" title="Vektoren und Spielobjekt-Eigenschaften" class="md-nav__link">
+    Vektoren und Spielobjekt-Eigenschaften
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0180-transform/0180-transform.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="unity-transform-spielobjektkomponente">Unity Transform Spielobjektkomponente<a class="headerlink" href="#unity-transform-spielobjektkomponente" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>Hier lernst du die wichtigste Spielobjekt-Komponente in Unity kennen: <strong>Transform</strong>.</p>
+</div>
+<p>Jedes Spielobjekt (GameObject) in Unity hat die Komponente <strong>Transform</strong> (oder <strong>RectTransform</strong> bei User Interface GameObjects).</p>
+<hr />
+<h2 id="eigenschaften-von-transform">Eigenschaften von Transform<a class="headerlink" href="#eigenschaften-von-transform" title="Permanent link">&para;</a></h2>
+<p>Mit <strong>Transform</strong> können</p>
+<ul>
+<li>die <strong>Position</strong> eines Spielobjekts, </li>
+<li><strong>Drehungen</strong> und </li>
+<li>die Größe, oder <strong>Skalierung</strong>, </li>
+</ul>
+<p>eines Spielobjekts definiert werden.</p>
+<p>Alle 3 Eigenschaften haben einen x-, y-, und z-Wert. </p>
+<p>In 2D-Spielen sind vor allem x-, und y-Werte wichtig.</p>
+<ul>
+<li>
+<p>Bei <strong>Position</strong> stehen diese Werte jeweils für eine Koordinate im Koordinatensystem der <strong>Szene</strong>.</p>
+</li>
+<li>
+<p>Bei <strong>Rotation</strong> stehen die Werte für die Drehung des Spielobjekts um die X-Achse, die Y-Achse und die Z-Achse. Die Werte werden hierbei als Winkel <em>in Grad</em> angegeben. In 2D-Spielen kann vor allem eine Drehung um die Z-Achse effektiv eingesetzt werden.</p>
+</li>
+<li>
+<p>Bei <strong>Scale</strong> geht es um die relative Größe eines Spielobjekts. Standardmäßig ist hier der Wert 1 gesetzt. Werte sind hier als Veränderungs-Faktoren zum Standardwert zu verstehen.</p>
+</li>
+</ul>
+<p>Klarerweise können die Werte der Eigenschaften der Transform-Komponente in einem C<em>#</em>-Skript verändert werden.</p>
+<hr />
+<h2 id="krapfenklicker-erweiterung">Krapfenklicker Erweiterung<a class="headerlink" href="#krapfenklicker-erweiterung" title="Permanent link">&para;</a></h2>
+<p>Die Mehlspeise soll größer werden, wenn man darauf klickt! </p>
+<p>Wie kann man das programmieren?</p>
+<p><img alt="Donut Clicker Extension" src="../img/donutclickerextension.gif" /></p>
+<p>Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: <code>public Button clickButton;</code>.</p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p><code>public</code> bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die <a href="../../0170-donutclicker/0170-donutclicker/">Fertigstellung des Krapfenklicker Spiels</a>!</p>
+</div>
+<hr />
+<h3 id="getcomponent-rechtecke-und-vektoren">GetComponent(), Rechtecke und Vektoren<a class="headerlink" href="#getcomponent-rechtecke-und-vektoren" title="Permanent link">&para;</a></h3>
+<p>Ok, wie kann man aber jetzt die Größe der Mehlspeise verändern?</p>
+<p>Dafür benötigst du zuerst die aktuelle Größe der Mehlspeise. Diese bekommst du aus der Komponente <strong>Transform</strong>.
+Die Komponente Transform (oder bei einem Button <strong>RectTransform</strong>) bekommst du mit:</p>
+<div class="codehilite"><pre><span></span><span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;()</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Übung</p>
+<ul>
+<li>Erkundige dich in der <a href="https://docs.unity3d.com/ScriptReference/">Unity Scripting Referenz</a>, wozu die Funktion <code>GetComponent</code> dient.</li>
+<li>Was bedeuten <a href="http://codekicker.de/fragen/csharp-bedeuten-spitzen-Klammern-generics-list-typ-typisierend/660">die Klammern <code>&lt;</code> und <code>&gt;</code> in C<em>#</em></a>?</li>
+</ul>
+</div>
+<p>"Rect" steht für Rectangle, und das heißt: Rechteck. </p>
+<p>Bedienflächen wie Buttons werden in Unity in einem Rechteck in der Szene platziert. </p>
+<p>Ein Rechteck (<a href="https://docs.unity3d.com/ScriptReference/Rect.html">rect</a>) hat in Unity folgende Eigenschaften: einen Startpunkt (als x- und y-Koordinate) und eine Größe (size), die als 2-dimensionaler <em>Vektor</em> angegeben wird - also auch mit einem x- und einem y-Wert für die Länge auf der X-Achse und auf der Y-Achse.   </p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p><strong>Vektoren</strong> sind Bewegungen in einem Koordinatensystem. Sie haben eine <strong>Länge</strong>, eine <strong>Richtung</strong> und eine <strong>Orientierung</strong>.</p>
+</div>
+<p>Da Vektoren in Unity für Größenänderungen, Positionsänderungen, Geschwindigkeit und anderes verwendet werden, gibt es eigene Referenz-Datentypen (oder <a href="../../0270-classes/0270-classes/">Klassen</a>) dafür: </p>
+<ul>
+<li><code>Vector2</code> (für 2D Vektoren) bzw. </li>
+<li><code>Vector3</code> (für 3D Vektoren).</li>
+</ul>
+<p>Um die aktuelle Größe der Mehlspeise zu speichern, schreibst du daher:</p>
+<div class="codehilite"><pre><span></span><span class="n">Vector2</span> <span class="n">meineGroesse</span> <span class="p">=</span> <span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;().</span><span class="n">rect</span><span class="p">.</span><span class="n">size</span><span class="p">;</span>
+</pre></div>
+
+
+<hr />
+<h3 id="vektoren-neu-erstellen">Vektoren neu erstellen<a class="headerlink" href="#vektoren-neu-erstellen" title="Permanent link">&para;</a></h3>
+<p>Um die Mehlspeise bei jedem Button-Klick zu vergrößern, brauchst du als nächstes einen Wachstumsfaktor. Dieser gibt an, um wieviel die Mehlspeise je in die X-, und Y-Richtung wachsen soll.</p>
+<p>Der Wachstumsfaktor wird in einen <em>neuen</em> 2D-Vektor gespeichert:</p>
+<div class="codehilite"><pre><span></span><span class="n">Vector2</span> <span class="n">wachstumsFaktor</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span> <span class="p">(</span><span class="m">10.0f</span><span class="p">,</span> <span class="m">10.0f</span><span class="p">);</span> <span class="c1">//In der runden Klammer werden dem neuen Vektor x-, und y-Werte des 2D Vektors als Paramter im Datentyp Float übergeben.</span>
+</pre></div>
+
+
+<hr />
+<h3 id="vektoren-und-spielobjekt-eigenschaften">Vektoren und Spielobjekt-Eigenschaften<a class="headerlink" href="#vektoren-und-spielobjekt-eigenschaften" title="Permanent link">&para;</a></h3>
+<p>Schließlich wird der Wachstumsfaktor zur aktuellen Mehlspeisgröße addiert. Du kannst den Größenunterschied in der Eigenschaft  <a href="https://docs.unity3d.com/ScriptReference/RectTransform-sizeDelta.html"><code>sizeDelta</code></a> des "ClickButton"s speichern:</p>
+<div class="codehilite"><pre><span></span><span class="n">clickButton</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">RectTransform</span><span class="p">&gt;</span> <span class="p">().</span><span class="n">sizeDelta</span> <span class="p">=</span> <span class="n">meineGroesse</span><span class="p">+</span><span class="n">wachstumsFaktor</span><span class="p">;</span>
+</pre></div>
+
+
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Ergänze die Funktion <code>public void buttonclick()</code> im Skript "GameController.cs" im Krapfenklicker Spiel, sodass die Mehlspeise bei jedem Buttonklick ein wenig größer wird.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Wenn man ein Programm überarbeitet, wird dies häufig <a href="https://de.wikipedia.org/wiki/Refactoring"><strong>Refactoring</strong></a> genannt. <strong>Refactoring</strong> bedeutet die Verbesserung von Quellcode.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../0170-donutclicker/0170-donutclicker/" title="Spiel - Krapfenklicker" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Spiel - Krapfenklicker
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../0190-conditionals/0190-conditionals/" title="Verzweigungen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Verzweigungen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 learn2proGrAME
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/learn2proGrAME" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

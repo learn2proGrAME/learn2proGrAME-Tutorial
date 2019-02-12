@@ -4,7 +4,7 @@ site_description: 'Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierun
 site_author: 'learn2proGrAME'
 site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
 nav:
-    - Einleitung: 0110-index/0110-index.md
+    - Einleitung: index.md
     - Bedienoberflächen: 0120-userinterface/0120-userinterface.md
     - Erste Schritte: 0130-firststeps/0130-firststeps.md
     - Fehler und De-Bugging: 0140-debugging/0140-debugging.md

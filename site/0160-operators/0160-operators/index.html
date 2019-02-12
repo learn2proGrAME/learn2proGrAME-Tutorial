@@ -1,0 +1,1225 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+      
+      
+        <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0160-operators/0160-operators/">
+      
+      
+        <meta name="author" content="learn2proGrAME">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Operatoren - learn2proGrAME Grundlagentutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../../manifest.webmanifest">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#operatoren" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+          
+            <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                learn2proGrAME Grundlagentutorial
+              </span>
+              <span class="md-header-nav__topic">
+                Operatoren
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+      
+        <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
+      
+    </a>
+    learn2proGrAME Grundlagentutorial
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      learn2proGrAME/learn2proGrAME-Grundlagen
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Einleitung" class="md-nav__link">
+      Einleitung
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0120-userinterface/0120-userinterface/" title="Bedienoberflächen" class="md-nav__link">
+      Bedienoberflächen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0130-firststeps/0130-firststeps/" title="Erste Schritte" class="md-nav__link">
+      Erste Schritte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0140-debugging/0140-debugging/" title="Fehler und De-Bugging" class="md-nav__link">
+      Fehler und De-Bugging
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0150-variables/0150-variables/" title="Variablen" class="md-nav__link">
+      Variablen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Operatoren
+      </label>
+    
+    <a href="./" title="Operatoren" class="md-nav__link md-nav__link--active">
+      Operatoren
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wozu-operatoren" title="Wozu Operatoren?" class="md-nav__link">
+    Wozu Operatoren?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator" title="= Operator" class="md-nav__link">
+    = Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_1" title="+ Operator" class="md-nav__link">
+    + Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-operator" title="- Operator" class="md-nav__link">
+    - Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_2" title="* Operator" class="md-nav__link">
+    * Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_3" title="/ Operator" class="md-nav__link">
+    / Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_4" title="% Operator" class="md-nav__link">
+    % Operator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logische-operatoren" title="Logische Operatoren" class="md-nav__link">
+    Logische Operatoren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ampamp-operator-und" title="&amp;&amp; Operator (UND)" class="md-nav__link">
+    &amp;&amp; Operator (UND)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-oder" title="|| Operator (ODER)" class="md-nav__link">
+    || Operator (ODER)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht" title="! Operator (NICHT)" class="md-nav__link">
+    ! Operator (NICHT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-gleich" title="== Operator (GLEICH)" class="md-nav__link">
+    == Operator (GLEICH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht-gleich" title="!= Operator (NICHT GLEICH)" class="md-nav__link">
+    != Operator (NICHT GLEICH)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0170-donutclicker/0170-donutclicker/" title="Spiel - Krapfenklicker" class="md-nav__link">
+      Spiel - Krapfenklicker
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0180-transform/0180-transform/" title="Transform Spielobjektkomponente" class="md-nav__link">
+      Transform Spielobjektkomponente
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0190-conditionals/0190-conditionals/" title="Verzweigungen" class="md-nav__link">
+      Verzweigungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0200-adventure/0200-adventure/" title="Spiel - Ellis' großes Abenteuer" class="md-nav__link">
+      Spiel - Ellis' großes Abenteuer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0210-drawingingimp/0210-drawingingimp/" title="Grafiken gestalten in GIMP" class="md-nav__link">
+      Grafiken gestalten in GIMP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0220-functions/0220-functions/" title="Funktionen" class="md-nav__link">
+      Funktionen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0230-accessmodifiers/0230-accessmodifiers/" title="Zugriffskontrolle" class="md-nav__link">
+      Zugriffskontrolle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0240-spaceshooter/0240-spaceshooter/" title="Spiel - Space-Asteroids" class="md-nav__link">
+      Spiel - Space-Asteroids
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-nav__link">
+      Schleifen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0260-gameloop/0260-gameloop/" title="Die Spiel-Schleife" class="md-nav__link">
+      Die Spiel-Schleife
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0270-classes/0270-classes/" title="Objekt-orientiertes Programmieren - Grundlagen" class="md-nav__link">
+      Objekt-orientiertes Programmieren - Grundlagen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+    
+    <label class="md-nav__link" for="nav-18">
+      Spiel - BouncyFant
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-18">
+        Spiel - BouncyFant
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T00-introduction/" title="Einführung" class="md-nav__link">
+      Einführung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T01-adassets/" title="Teil 1 - Neues Projekt und Assets" class="md-nav__link">
+      Teil 1 - Neues Projekt und Assets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T02-animstat/" title="Teil 2 - Animationen und States" class="md-nav__link">
+      Teil 2 - Animationen und States
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T03-movement/" title="Teil 3 - Bewegung" class="md-nav__link">
+      Teil 3 - Bewegung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T04-levels/" title="Teil 4 - Levels, Collider" class="md-nav__link">
+      Teil 4 - Levels, Collider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T05-secondchar/" title="Teil 5 - Zweite Spielfigur" class="md-nav__link">
+      Teil 5 - Zweite Spielfigur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T06-jump/" title="Teil 6 - Jump Around" class="md-nav__link">
+      Teil 6 - Jump Around
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T07-physics/" title="Teil 7 - Physikwelt" class="md-nav__link">
+      Teil 7 - Physikwelt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T08-win/" title="Teil 8 - Gewinnbedingung" class="md-nav__link">
+      Teil 8 - Gewinnbedingung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
+      Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0290-about/0290-about/" title="Über learn2proGrAME" class="md-nav__link">
+      Über learn2proGrAME
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../0300-teachers/0300-teachers/" title="Für Lehrpersonen" class="md-nav__link">
+      Für Lehrpersonen
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wozu-operatoren" title="Wozu Operatoren?" class="md-nav__link">
+    Wozu Operatoren?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator" title="= Operator" class="md-nav__link">
+    = Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_1" title="+ Operator" class="md-nav__link">
+    + Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-operator" title="- Operator" class="md-nav__link">
+    - Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_2" title="* Operator" class="md-nav__link">
+    * Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_3" title="/ Operator" class="md-nav__link">
+    / Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator_4" title="% Operator" class="md-nav__link">
+    % Operator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logische-operatoren" title="Logische Operatoren" class="md-nav__link">
+    Logische Operatoren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ampamp-operator-und" title="&amp;&amp; Operator (UND)" class="md-nav__link">
+    &amp;&amp; Operator (UND)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-oder" title="|| Operator (ODER)" class="md-nav__link">
+    || Operator (ODER)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht" title="! Operator (NICHT)" class="md-nav__link">
+    ! Operator (NICHT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-gleich" title="== Operator (GLEICH)" class="md-nav__link">
+    == Operator (GLEICH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-nicht-gleich" title="!= Operator (NICHT GLEICH)" class="md-nav__link">
+    != Operator (NICHT GLEICH)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0160-operators/0160-operators.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="operatoren">Operatoren<a class="headerlink" href="#operatoren" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, was ein Operator ist. Du lernst verschiedene Operatoren kennen und lernst wie du sie in einem Programm verwendest. Wenn du nicht mehr weißt was die Operatoren tun, kannst du in diesem Kapitel nachschauen.</p>
+</div>
+<p>Ein Operator ist eine Aktion, die man mit einer oder mehreren Variable(n) oder Objekt(en) durchführen kann. </p>
+<!--Das Ergebnis bestimmt die Art Operator.-->
+
+<!--Wir beschäftigen uns jetzt mit den wichtigsten Operatoren, die wir beim Spieleprogrammieren brauchen.-->
+
+<hr />
+<h2 id="wozu-operatoren">Wozu Operatoren?<a class="headerlink" href="#wozu-operatoren" title="Permanent link">&para;</a></h2>
+<p>Mit Operatoren kannst du deine Variablen verändern bzw. neu berechnen. Operatoren entsprechen immer einer Rechenmethode in der Mathematik.</p>
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Arithmetische Operatoren rechnen in der Regel von Links nach Rechts. Es gilt Punkt vor Strich Rechnung!
+Du kannst Klammern verwenden, um die Reihenfolge der Berechnung anzugeben. Wie in Mathematik werden Begriffe in Klammern zuerst berechnet. <!--Es ist sehr wichtig Klammern zu setzen, damit nichts falsches berechnet wird.--></p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Operator</strong></th>
+<th><strong>Rechenmethode</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraktion</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplikation</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulo (Rest d. Division)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="operator">= Operator<a class="headerlink" href="#operator" title="Permanent link">&para;</a></h3>
+<p><code>=</code> ist der <strong>Zuweisungsoperator</strong>. Du verwendest ihn um ein Ergebnis einer Variable zuzuweisen, d.h. das Ergebnis speichern. Der Operator speichert was <strong>rechts</strong> vom <code>=</code> steht in die Variable links davon. </p>
+<div class="codehilite"><pre><span></span><span class="c1">// = speichert den Wert 3 in der Variable x ab.</span>
+<span class="n">x</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span> 
+</pre></div>
+
+
+<!--!!!tip "Tipp" 
+    Zum Initialisieren einer Variable verwendenn wir auch denZuweisungsoperatoren verwenden.-->
+
+<p>Den Zuweisungsoperator <code>=</code> verwendet man folgendermaßen:</p>
+<div class="codehilite"><pre><span></span><span class="c1">//Wir erstellen eine Variable &quot;lieblingszahl&quot; mit dem Wert 1.</span>
+<span class="kt">int</span> <span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+<span class="c1">//Wir verwenden = und weisen lieblingszahl einen neuen Wert zu.</span>
+<span class="n">lieblingszahl</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="c1">//Ab sofort steht in *lieblingszahl* die Zahl 3 anstatt 1.</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;Hallo, meine Lieblingszahl ist&quot;</span> <span class="p">+</span> <span class="n">lieblingszahl</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach Aufruf: <em>"Hallo, meine Lieblingszahl ist 3"</em> 
+Wir sehen also, der Wert <code>lieblingszahl</code> und <code>name</code> sind jetzt anders weil einen neuen Wert mit dem Operator <code>=</code> zugewiesen haben.</p>
+<hr />
+<h3 id="operator_1"><code>+</code> Operator<a class="headerlink" href="#operator_1" title="Permanent link">&para;</a></h3>
+<p>Der <strong>Additionsoperator</strong> <code>+</code> addiert Variablen. Du kannst damit die Summe von Variablen berechnen.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>      
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>      
+<span class="kt">int</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">a</span><span class="p">+</span><span class="n">b</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">b</span><span class="p">+</span><span class="m">3</span><span class="p">);</span>
+
+<span class="n">c</span> <span class="p">=</span> <span class="n">a</span><span class="p">+</span><span class="n">b</span><span class="p">;</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach Aufruf <em>"3 5"</em>. 
+3 ist das Ergebnis von <em>"a+b"</em> was wir in c gespeichert haben und ausgeben. 
+5 ist das Ergebnis von <em>"b+3"</em> denn in b ist 2 gespeichert.</p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Verwende den Additionsparameter <code>+</code> um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach <code>c + a+b</code> einfügst ist das Ergebnis anders. Warum?</p>
+</div>
+<p>Du kannst den Additionsoperator <code>+</code> auch verwenden, um Strings zu kombinieren.</p>
+<div class="codehilite"><pre><span></span><span class="n">String</span> <span class="n">teil1</span> <span class="p">=</span> <span class="s">&quot;Wasch&quot;</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">teil2</span> <span class="p">=</span> <span class="s">&quot;maschine&quot;</span><span class="p">;</span>
+
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="n">teil1</span> <span class="p">+</span> <span class="n">teil2</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot; Bohr&quot;</span> <span class="p">+</span><span class="n">teil2</span><span class="p">);</span>
+<span class="n">Debug</span> <span class="nf">Log</span> <span class="p">(</span><span class="s">&quot;Süßes&quot;</span> <span class="p">+</span> <span class="s">&quot; oder &quot;</span> <span class="p">+</span> <span class="s">&quot;Saures&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht jetzt: <em>Waschmaschine Bohrmaschine Süßes oder Saures</em></p>
+<div class="admonition success">
+<p class="admonition-title">Arbeitsauftrag</p>
+<p>Verwende den Additionsparameter <code>+</code> um einzelne Wörter (<code>Strings</code>) zu einem Satz zu verbinden. Gib dein Ergebnis mit Debug.Log() aus. </p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Wenn du Strings kombinierst, um einen Satz zu erstellen, musst du Leerzeichen anfügen. Sonst kleben die Wörter zusammen.</p>
+</div>
+<hr />
+<h3 id="-operator"><code>-</code> Operator<a class="headerlink" href="#-operator" title="Permanent link">&para;</a></h3>
+<p>Den <strong>Subtraktionsoperator</strong> <code>-</code> verwendet man um 2 Variablen zu subtrahieren. Die Rechte Zahl wird von der Linken abgezogen.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span> 
+<span class="n">a</span> <span class="p">=</span> <span class="n">a</span> <span class="p">-</span> <span class="m">2</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach Ausführen <em>1</em>. </p>
+<hr />
+<h3 id="operator_2"><code>*</code> Operator<a class="headerlink" href="#operator_2" title="Permanent link">&para;</a></h3>
+<p>Den <strong>Multiplikationsoperator</strong> <code>*</code> verwendet man um 2 Variablen zu multiplizieren. Vergiss nicht Klammern zu verwenden damit du auch wirklich das berechnest was du vor hast.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">*</span><span class="m">5</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach Ausführen <em>15</em>.  </p>
+<ul>
+<li>Ohne Klammern:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">+</span><span class="m">2</span><span class="p">*</span><span class="m">5</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach dem Ausführen <em>25</em>.  </p>
+<hr />
+<h3 id="operator_3"><code>/</code> Operator<a class="headerlink" href="#operator_3" title="Permanent link">&para;</a></h3>
+<p>Den <strong>Divisionsoperator</strong> <code>/</code> verwendet man um 2 Variablen miteinander zu dividieren. </p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<div class="admonition bug">
+<p class="admonition-title">ACHTUNG</p>
+<p>Es gilt Punkt vor Strich Rechnung. Pass also auf, dass du die richtigen Klammern setzt.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach dem Ausführen <em>7</em>. </p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="n">a</span><span class="p">/(</span><span class="m">3</span><span class="p">+</span><span class="m">2</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach dem Ausführen <em>3</em>.  </p>
+<hr />
+<h3 id="operator_4">% Operator<a class="headerlink" href="#operator_4" title="Permanent link">&para;</a></h3>
+<p>Der <strong>Modulo</strong> Operator <code>%</code> wird verwendet, um eine Division mit Rest durchzuführen. Das Ergebnis dieser Berechnung ist aber <strong>nur der Restbetrag</strong>.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">10</span><span class="p">%</span><span class="m">3</span><span class="p">;</span>
+<span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In der Konsole steht nach dem Ausführen <em>1</em>, denn 10 dividiert durch 3 ist 3 + 1 Rest. Der <strong>Modulo</strong> Operator <code>%</code> liefert nur den Rest zurück.</p>
+<hr />
+<h2 id="logische-operatoren">Logische Operatoren<a class="headerlink" href="#logische-operatoren" title="Permanent link">&para;</a></h2>
+<p><strong>Logische Operatoren</strong> 
+<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (<code>boolean</code>) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
+Logischen Operatoren sind besonders wichtig bei <a href="../../0190-conditionals/0190-conditionals/">Verzweigungen</a>. Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.</p>
+<p>| Operator | Funktion |
+| &amp;&amp; | UND|
+| || | ODER |
+| ! | NICHT |
+| == | GLEICH |
+| != | UNGLEICH |</p>
+<hr />
+<h3 id="ampamp-operator-und"><code>&amp;&amp;</code> Operator (UND)<a class="headerlink" href="#ampamp-operator-und" title="Permanent link">&para;</a></h3>
+<p>Der <code>&amp;&amp;</code> Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer <code>true</code> ergibt müssen allee mit <code>&amp;&amp;</code> verknüpften Aussagen <code>true</code> sein.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt true, weil beide Aussagen wahr sind.</span>
+
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil zumindest eine der beiden Aussagen falsch ist.</span>
+</pre></div>
+
+
+<hr />
+<h3 id="operator-oder"><code>||</code> Operator (ODER)<a class="headerlink" href="#operator-oder" title="Permanent link">&para;</a></h3>
+<p>Der <code>||</code> Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer <code>true</code> ergibt muss mindestens eine Aussage <code>true</code> sein. Nur wenn keine einzige <code>true</code> Aussage ist, ist der gesamte Begriff false.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&lt;</span> <span class="m">5</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt true, da zumindest eine Aussage wahr ist.</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&gt;</span> <span class="m">100</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.</span>
+</pre></div>
+
+
+<hr />
+<h3 id="operator-nicht"><code>!</code> Operator (NICHT)<a class="headerlink" href="#operator-nicht" title="Permanent link">&para;</a></h3>
+<p>Wenn du den ! Operator vor einen Ausdruck schreibst, drehst du du das Ergebnis um wie am Gegenteil Tag.</p>
+<div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">2</span>
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false.</span>
+<span class="p">!(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span>  <span class="c1">// Dieser Ausdruck ergibt true, weil der NOT Operator das Ergebnis umdreht.</span>
+
+<span class="p">(</span><span class="n">a</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span> <span class="n">a</span> <span class="p">&gt;</span> <span class="m">100</span><span class="p">)</span>   <span class="c1">// Dieser Ausdruck ergibt false, weil ALLE Aussagen falsch ist.</span>
+</pre></div>
+
+
+<hr />
+<h3 id="operator-gleich"><code>==</code> Operator (GLEICH)<a class="headerlink" href="#operator-gleich" title="Permanent link">&para;</a></h3>
+<h3 id="operator-nicht-gleich"><code>!=</code> Operator (NICHT GLEICH)<a class="headerlink" href="#operator-nicht-gleich" title="Permanent link">&para;</a></h3>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../0150-variables/0150-variables/" title="Variablen" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Variablen
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../0170-donutclicker/0170-donutclicker/" title="Spiel - Krapfenklicker" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Spiel - Krapfenklicker
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 learn2proGrAME
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/learn2proGrAME" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
