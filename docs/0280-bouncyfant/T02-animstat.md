@@ -45,7 +45,8 @@ Wenn man diesen Controller doppelt klickt öffnet sich der *Animator (Window/Ani
 Neue *States* kann ich mittels Rechtsklick  und *States-> Create/Empty* hinzufügen (siehe Screenshot unten).
 
 ![Animator2](img/T02/T02-e-Animator Neue Stats erzeugen.png)  
-Zuerst wollen wir einen Zustand namens Stehen erzeugen. Dann setzen wir diesen Zustand als Standard (rechte Maustaste/“Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet.
+Zuerst wollen wir einen Zustand namens Stehen erzeugen. Diesem müssen wir die *Stehen*-Animation zuweisen.  
+Dann setzen wir diesen Zustand als Standard (rechte Maustaste/“Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet.
 Mittels Rechtsklick auf den Zustand und Make Transition fügt man neue Übergänge zwischen den Zuständen hinzu.
 
 ![Animator3](img/T02/T02-f-Neue Transitions.png)
