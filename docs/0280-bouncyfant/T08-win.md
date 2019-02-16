@@ -37,9 +37,6 @@ Mittels Drag & Drop ziehen wir dann den Pilz einfach an die gewünschte Position
 ![Pilz in Szene einfügen](img/T08/T08-d-GameObject via Drag and Drop und Pixelgröße.png)
 
 Der Pilz bekommt nun einen 2D-Polygon-Collider: Dazu klickt man in der Spieleszene auf den Pilz und wählt im Inspector *Add Component/Physics 2D/Polygon Collider 2D*.
-Außerdem müssen wir bei diesem Collider *Is Trigger* anhaken, damit wir später damit auf Kollisionen überprüfen können.
-
-![Is Trigger setzen](img/T08/T08-f-Polygon Collider Trigger.png)
 
 ### Score
 Nun wollen wir den Text einbauen, der anzeigt, wie oft Elli bzw. Ossi gepunktet, also den Pilz erreicht haben. Glücklicherweise bietet Unity eine Funktion an, die es erlaubt Text auf einem sogenannten *User Interface* anzuzeigen.
@@ -58,7 +55,7 @@ Danach verändern wir noch die Position der Texte für die Punktestände.
 ![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen.png)
 ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png)
 
-Ihr könnt gerne die Position oder auch die Schriftgröße beliebig wählen. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
+Je nach Bildschirmgröße, kann es sein, dass man die Position anpassen muss, sodass der Text nicht außerhalb des Bilds ist. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
 
 !!!Info "Erklärung"
     Truncate bedeutet nämlich viel wie Abschneiden oder Wegschneiden. Die Größe des Textfeldes wird ja bei bei den Eigenschaften Rect Transform unter Width und Height angegeben. Ist nun der Text größer als die angegebene Höhe und Vertical Overflow auf Truncate gesetzt,  dann wird einfach der komplette Text weggeschnitten, da er über den Rand hinaus steht.
@@ -153,11 +150,12 @@ public virtual void Start(){
   // Laden des Punktestandes aus den Playerprefs und Anzeigen
   Punkte = PlayerPrefs.GetInt("Punkte" + Name);
   PunkteText.text = Name + " " + Punkte.ToString();
+  GewinnerText.text = "";
 }
 ```
 
 !!!Info "Das Schlüsselwort *virtual*"
-    Das Schlüsselwort *virtual* gibt an, dass diese Methode in den Child-Klassen überschrieben werden kann. Dies benötigen wir, da in *Elli.cs* und *Ossi.cs* *start()* schon definiert ist. Zu den überschreibenden Methoden in den Child-Klassen muss man dann das Schlüsselwort *overrides* angeben.
+    Das Schlüsselwort *virtual* gibt an, dass diese Methode in den Child-Klassen überschrieben werden kann. Dies benötigen wir, da in *Elli.cs* und *Ossi.cs* *start()* schon definiert ist. Zu den überschreibenden Methoden in den Child-Klassen muss man dann das Schlüsselwort *override* angeben.
 
 
 Der gesamte Quellcode von BouncyFant.cs sieht nun so aus:
@@ -185,6 +183,7 @@ public class BouncyFant : MonoBehaviour
       // Laden des Punktestandes aus den Playerprefs und Anzeigen
       Punkte = PlayerPrefs.GetInt("Punkte" + Name);
       PunkteText.text = Name + " " + Punkte.ToString();
+      GewinnerText.text = "";
     }
 
     // Prozedur zum Bewegen des Elefanten
@@ -303,25 +302,29 @@ Gehe in das Skript *Elli.cs* und füge zur Prozedur *Start()* das Schlüsselwort
     Um Methoden aus der Parentklasse aufzurufen verwende das Schlüsselwort *base*
 
 
-Der Code in für *Start()* in *Elli.cs* sollte nun so aussehen:
+Der Code für *Start()* in *Elli.cs* sollte nun so aussehen:
 
 **Elli.cs**
 ```C#
 // Anfangseinstellungen setzen
-    void override Start ()
-    {
-        // Den Namen setzen
-        Name = "Elli";
+public override void Start ()
+{
+  // Den Namen setzen
+  Name = "Elli";
 
-        // Elefant mit RigidBody verlinken
-        Elefantenkoerper = GetComponent<Rigidbody2D>();
+  // Elefant mit RigidBody verlinken
+  Elefantenkoerper = GetComponent<Rigidbody2D>();
 
-        // Eine Referenz auf den Animator hinzufügen
-        Animation = GetComponent<Animator>();
+  // Eine Referenz auf den Animator hinzufügen
+  Animation = GetComponent<Animator>();
 
-        //Start() in der Parentklasse (Baseclass) aufrufen um Punkte und Punktetext zu setzen
-        base.Start();
-    }
+  //Setzen von Ellis Farbe auf einen leichten Rotton - Color(Rot, Grün, Blau)
+  GetComponent<SpriteRenderer>().color = new Color(0.96f, 0.85f, 0.8f);
+
+  //Start() in der Parentklasse (Baseclass) aufrufen um Punkte und Punktetext zu setzen
+  base.Start();
+}
+
 ```
 
 Mache nun dasselbe für Ossi.cs.
@@ -336,7 +339,7 @@ Bei Ossi tun wir das gleiche, nur, dass wir dem Punkte Text -> TextPunkteOssi zu
 
 Zum Schluss müssen wir noch die Achsen beim Eventsystem (das beim Hinzufügen von TextPunkteElli und TextPunkteOssi automatisch erstellt worden ist) umbenennen. Sonst erhalten wir eine Fehlermeldung, dass die Achsen Horizontal und Vertical nicht existieren, weil wir sie zu Beginn in H-AchseElli bzw. V-AchseElli umbenannt haben. Daher nennen wir die Achsen des Eventsystems ebenso H-AchseElli und V-AchseElli.
 
-![Achsen setzen](img/T08/T08-i-Variablen den Feldern zuweisen.png)
+![Achsen setzen](img/T08/T08-h-Achsen Eventsystem.png)
 
 !!!Tip "Weiterführende Idee"
     Um die Kooperation der SpielerInnen zu fördern: Je schneller man die zehn Punkte beisammen hat, desto höher sind die Bonuspunkte, die man am Ende des Levels bekommt. Später kann es sogar sein, dass einige Levels gar nicht schaffbar sind, ohne das Elli und Ossi zusammen arbeiten. Eurer Fantasie sind dabei keine Grenzen gesetzt, be creative!
