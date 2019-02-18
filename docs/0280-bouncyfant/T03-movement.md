@@ -47,10 +47,10 @@ Da wir gerade die Projekteinstellungen geändert haben, ist es wichtig nun auch 
 
 Da Elli kein unbewegliches Objekt in unserem Spiel sein wird, brauchen wir eine Komponente(G), die uns hilft Elli zu bewegen, die Bewegungen zu berechnen und sogar die Physik auf sie wirken zu lassen. Glücklicherweise bietet Unity genau so eine Komponente an, die sich um all die Dinge, wie Bewegung, Berechnung physikalischer Vorgänge und Eigenschaften, Kollisionen, elastische Stöße und dergleichen kümmert. Diese Komponente nennt sich Rigidbody2D. Rigid bedeutet so viel wie “starr”, und dass der Körper starr ist, kommt uns sehr gelegen, denn wir brauchen uns nicht darum kümmern, eine ganze Skellettstruktur für Elli zu modellieren.  Einen Rigidbody2D erstellen wir, indem wir im Hierarchy Panel auf Elli draufklicken und dann im Inspector Panel auf der rechten Seite auf *Add Component -> Physics2D -> Rigidbody 2D* klicken.
 
-![add rigidbody component menu](img/T03/T03-d-Rigidbody hinzufügen 2.png)
+![add rigidbody component menu](img/T03/T03-d-Rigidbody hinzufuegen 2.png)
 <!-- ![roter Pfeil](img/T03/roter Pfeil.png) -->
 <!-- noch zu formatieren -->
-![add rigidbody component option](img/T03/T03-d-Rigidbody hinzufügen.png)
+![add rigidbody component option](img/T03/T03-d-Rigidbody hinzufuegen.png)
 
 Um die Bewegung zu programmieren, benötigen wir ein Script, das der Spielfigur Elli hinzugefügt wird. Dieses Script erstellen wir, indem wir im *Hierarchy Panel* auf Elli klicken und dann im Inspector Panel auf der rechten Seite auf A*dd Component -> NewScript -> Create and Add* (siehe Screenshot) klicken.
 

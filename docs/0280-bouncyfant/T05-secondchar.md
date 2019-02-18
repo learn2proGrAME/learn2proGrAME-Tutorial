@@ -120,7 +120,7 @@ Das neue GameObject benennen wir nun um, beispielsweise in "Ossi".
 
 Der Elefant Ossi benötigt ein eigenes Script. Durch das Duplizieren des Objekts Elli ist auch noch Elli Script in Ossi enthalten. Dieses Script löschen wir im Inspector.
 
-![Rename Gameobject](img/T05/T05-d-Ellis Script aus Ossis Repertoire löschen.png)
+![Rename Gameobject](img/T05/T05-d-Ellis Script aus Ossis Repertoire loeschen.png)
 
 Ossis neues Script erstellen wir via Add Component->New Script ebenfalls im Inspector. Doch einen Doppelklick auf das Script öffnet sich wieder Visual Studio.  Wann legen wir zuerst fest, dass Ossi  von der Klasse BouncyFant abgeleitet wird:
 ```public class Ossi : BouncyFant {```

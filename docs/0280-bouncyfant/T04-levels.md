@@ -221,7 +221,7 @@ public class Spielfeld : MonoBehaviour {
 
 Das Resultat sieht dann so aus:
 
-pic finished level
+![Fertiges Level](img/T04/T04-t-fertigesLevel.png){: style="height:60%;width:60%"}
 
 ## Hintergrund und Abschlussaufgaben
 

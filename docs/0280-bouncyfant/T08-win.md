@@ -25,7 +25,7 @@ Füge dem Spiel auf der obersten Plattform die Grafik (*freetileset_jungle\png\O
 !!!Info "Hinweis"
     Das Tileset findest du in unserem Moodle Kurs oder bei Open Game Art. Wenn du die vorigen Übungen gemacht hast, dann hast du es bereits gespeichert.
 
-![Pilz eingefügt](img/T08/T08-a-PilzEingefügt.png)
+![Pilz eingefügt](img/T08/T08-a-PilzEingefuegt.png)
 
 #### Lösung
 Mittels Rechtsklick in den *Assets-Bereich* und *Import Assets* wird der Pilz aus dem Pfad *freetileset_jungle\png\Object\Mushroom_2.jpg* importiert.
@@ -34,7 +34,7 @@ Mittels Rechtsklick in den *Assets-Bereich* und *Import Assets* wird der Pilz au
 
 Mittels Drag & Drop ziehen wir dann den Pilz einfach an die gewünschte Position im Szenenbereich.
 
-![Pilz in Szene einfügen](img/T08/T08-d-GameObject via Drag and Drop und Pixelgröße.png)
+![Pilz in Szene einfügen](img/T08/T08-d-GameObject via Drag and Drop und Pixelgroesse.png)
 
 Der Pilz bekommt nun einen 2D-Polygon-Collider: Dazu klickt man in der Spieleszene auf den Pilz und wählt im Inspector *Add Component/Physics 2D/Polygon Collider 2D*.
 
@@ -43,7 +43,7 @@ Nun wollen wir den Text einbauen, der anzeigt, wie oft Elli bzw. Ossi gepunktet,
 
 Mittels Rechtsklick im *Hierachy* Bereich *UI>Text*  fügen wir eine Textanzeige hinzu.
 
-![UI Text einfügen](img/T08/T08-e-TextEinfügen.png){: style="height:40%;width:40%"}
+![UI Text einfügen](img/T08/T08-e-TextEinfuegen.png){: style="height:40%;width:40%"}
 
 Hierbei wird ein Objekt *Canvas* erzeugt mit einem ChildObjekt *Text*. Wir benötigen insgesamt drei Texte, je einmal die Punkte für Elli und Ossi, sowie einen Text der bei Spielende erscheinen soll.
 Wir duplizieren also as Text-Objekt zweimal und benennen sieTextPunkteElli, TextPunkteOssi und TextGewinner.

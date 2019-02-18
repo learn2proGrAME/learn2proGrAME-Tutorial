@@ -74,7 +74,7 @@ Bedingung für den Übergang von Stehen zu Gehen:
 
 Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit die Bewegung nicht verzögert auftritt. *Has Exit Time* soll nicht ausgewählt sein, *Fixed Duration* ebenso nicht, die *Transition Duration* und das *Transition Offset* sollten auf 0 gesetzt werden. Diese Optionen würden bewirken, dass die Übergangsbedingung an eine Zeitdauer (duration) geknüpft ist (Fixed Duration) oder der Übergang verzögert oder mit einer gewissen Geschwindigkeit erfolgt (Transition Offset/Duration). Hier soll aber der Elefant sofort aufhören, die Beine zu bewegen, wenn er stehen bleibt.
 
-![Transition settings](img/T02/T02-j-Einstellungen Übergänge.png)
+![Transition settings](img/T02/T02-j-Einstellungen Uebergaenge.png)
 
 #### Sourcecode
 Download Sourcecode Teil 02: http://comber.at/dev/BouncyFant02.zip

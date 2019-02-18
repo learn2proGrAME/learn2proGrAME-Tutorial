@@ -62,13 +62,13 @@ In Unity fügen wir zuerst neue Ordner hinzu. Für Dein Projekt brauchst du folg
 
 Neue Ordner legt man mit Rechtsklick in das Asset Panel und dann durch einen Klick auf *Create -> Folder* an.
 
-![Asset Panel: neuer Ordner](img/T01/T01-c-Neue Ordner hinzufügen.png)
+![Asset Panel: neuer Ordner](img/T01/T01-c-Neue Ordner hinzufuegen.png)
 
 Um ein Asset zu unserem Spiel hinzuzufügen, müssen wir im Asset Panel rechtsklicken und dann *Import New Asset* auswählen.
 ![Asset Panel: Asset importieren](img/T01/T01-e-Sprites importieren III.png)
 
 Im nachfolgenden Fenster navigieren wir zu dem Ordner, in dem wir unsere heruntergeladenen Spielegrafiken gespeichert haben, wählen unsere Spielfigur aus und klicken auf Import. (Mehr zum Erstellen einer von dir erstellten Spielgrafik findest du in unserem GIMP-Tutorial auf Moodle oder auf unserem Youtube-Channel:
-![Asset Panel: Asset importieren](img/T01/T01-f-Dialog Öffnen Sprites importieren.png)
+![Asset Panel: Asset importieren](img/T01/T01-f-Dialog Oeffnen Sprites importieren.png)
 
 
 !!!bug "Achtung!"  
@@ -115,7 +115,7 @@ Unser Ziel ist es jetzt, einen stehenden Elefant als GameObject dem Spiel hinzuz
 
 Ist der Elefant hinzugefügt, passen wir noch die Größe an. Das können wir bewerkstelligen, indem wir das Sprite des Elefanten anklicken und im Inspector Panel bei *Pixels Per Unit* den Wert anpassen (in unserem Fall beispielsweise 300). Mit Apply wird das Ganze wieder bestätigt.
 
-![PPU von Spielfigur einstellen](img/T01/T01-k-Spritegröße adjustieren.png)
+![PPU von Spielfigur einstellen](img/T01/T01-k-Spritegroesse adjustieren.png)
 
 ### Speichern der Spieleszene
 
