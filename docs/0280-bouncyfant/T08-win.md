@@ -52,8 +52,7 @@ Wir duplizieren also as Text-Objekt zweimal und benennen sieTextPunkteElli, Text
 
 Danach verändern wir noch die Position der Texte für die Punktestände.
 
-![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen.png)
-![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png)
+![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen.png){: style="height:35%;width:35%"} ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png){: style="height:60%;width:60%"}
 
 Je nach Bildschirmgröße, kann es sein, dass man die Position anpassen muss, sodass der Text nicht außerhalb des Bilds ist. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
 
