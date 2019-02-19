@@ -180,16 +180,24 @@ In der Konsole steht nach dem Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 
 <!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (```boolean```) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
 Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.
 
+Neben grösser ```>``` und kleiner ```<``` und grössergleich ```>=``` und ```<=``` die du aus dem Mathematikunterricht kennst gibt es noch weitere Operatoren die wir beim Programmieren brauchen.
+
 | Operator | Funktion |
-| && | UND|
-| || | ODER |
-| ! | NICHT |
-| == | GLEICH |
-| != | UNGLEICH |
+|----------|----------|
+| ```&&``` | UND |
+| ```||``` | ODER |
+| ```!``` | NICHT |
+| ```==``` | GLEICH |
+| ```!=``` | UNGLEICH |
+
+
+!!!Tip "Tipp" 
+	Wenn es dir schwer fällt diese Operatoren zu verstehen, stell dir am besten immer die Frage:"Ist dieser Ausdruck wahr? Falls ja, ist das Ergebnis ```true```. Falls nein, ist das Ergebnis ```false```. Zum Beispiel bei dem Begriff ``` 5 < 10``` fragst du dich: "Ist 5 kleiner als 10?" - "Ja." Das Ergebnis ist also ```true```.
+
 
 ---- 
 ### ```&&``` Operator (UND)
-Der ```&&``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt müssen allee mit ```&&``` verknüpften Aussagen ```true``` sein.
+Der ```&&``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt müssen alle mit ```&&``` verknüpften Aussagen ```true``` sein.
 ``` c#
 int a = 2
 (a < 3) && ( a < 5)   // Dieser Ausdruck ergibt true, weil beide Aussagen wahr sind.
@@ -207,7 +215,7 @@ int a = 2
 ```
 ---- 
 ### ```!``` Operator (NICHT)
-Wenn du den ! Operator vor einen Ausdruck schreibst, drehst du du das Ergebnis um wie am Gegenteil Tag.
+Wenn du den ```!``` Operator vor einen Ausdruck schreibst, drehst du du das Ergebnis um wie am Gegenteil Tag.
 ``` c#
 int a = 2
 (a < 0)   // Dieser Ausdruck ergibt false.
@@ -217,7 +225,21 @@ int a = 2
 ```
 ---- 
 ### ```==``` Operator (GLEICH)
+Der ```==``` Operator prüft ob die Ausdrücke auf beiden Seiten identisch oder gleich sind. Er gibt ```true``` zurück wenn sie gleich sind und ```false``` wenn sie nicht gleich sind.
 
-### ```!=``` Operator (NICHT GLEICH)
+``` c#
+int a = 2
+(a == 2)   	// Dieser Ausdruck ergibt true.
+(10 == 10) 	// Auch das ergibt true.
+(a == 5) 	// Das ergibt false, weil der Wert in a (2) nicht gleich 5 ist.
+```
 ---- 
-
+### ```!=``` Operator (NICHT GLEICH)
+Der ```!=``` Operator prüft ob die Ausdrücke auf beiden Seiten nicht gleich sind. Er gibt ```false``` zurück wenn sie gleich sind und ```true``` wenn sie nicht gleich sind.
+``` c#
+int a = 2
+(a != 2)   	// Dieser Ausdruck ergibt false.
+(10 != 10) 	// Auch false.
+(a != 5) 	// Das ergibt true, weil der Wert in a (2) nicht gleich 5 ist.
+```
+---- 
