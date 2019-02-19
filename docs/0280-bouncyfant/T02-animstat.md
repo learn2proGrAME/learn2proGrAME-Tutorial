@@ -36,7 +36,7 @@ Durch das Erstellen der Animation per Drag & Drop wird automatisch ein Animation
 
 Zusätzlich muss noch eine Animation für den Zustand “Stehen” erzeugt werden. Dies geschieht mittels Rechtsklick auf “Elefant_Stehen” **-> Create -> Animation**.
 
-### Animator(G)
+### Animator
 
 Wenn man diesen Controller doppelt klickt öffnet sich der *Animator (Window/Animator)*. Im Animator sind verschiedene Zustände (*States*) und deren Übergänge definiert.
 
@@ -55,7 +55,7 @@ Ziel ist es, dass die Geh-Animation (die in dem entsprechenden Zustand ausgewäh
 
 ![Animator4](img/T02/T02-f-States Zielzustand.png)
 
-Man nennt verbundene Zustände State Machine(G) oder Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen. Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (wahr/falsch). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.
+Man nennt verbundene Zustände State Machine oder Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen. Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (wahr/falsch). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.
 
 ![Animator Parameter](img/T02/T02-g-Parameter erstellen Geschwindigkeit und Springen.png)
 

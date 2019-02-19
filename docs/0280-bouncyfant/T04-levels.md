@@ -73,7 +73,7 @@ Wir optimieren noch das Offset (Position) und die Werte bei Size (Größe). Bei 
 
 Alternativ kann man auch auf den Button neben Edit Collider klicken und den Collider durch Ziehen mit der Maus anpassen.
 
-![MISSIN IMG, Collider adjusting via Dragging](img/T04-i Anpassen Component Box Collider 3.png)
+![MISSIN IMG, Collider adjusting via Dragging](img/T04/T04-i Anpassen Component Box Collider 3.png) 
 
 Nachfolgend unser Plattformteil mit den Collider-Grenzen der zwei Box-Collider in grün.
 
@@ -86,10 +86,9 @@ Für das mittlere Plattformstück reicht ein einzelner Box Collider. Für das re
 ![Platform Middle](img/T04/T04-k-Mittleres Objekt Collidergrenenzen in gruen.png)
 ![Platform Right](img/T04/T04-l-rechtes Objekt Collidergrenenzen in gruen.png)
 
-Abschließend machen wir uns noch das weitere Gestalten des Levels leichter, indem wir ein neues Game Objekt erstellen in das wir alle drei Teile der Plattform hinein verschieben, so dass sie gruppiert sind. Dazu klicke ich mit der rechten Maustaste in das Hierarchy Panel und wähle aus dem Kontextmenü Create Empty. Das neue GameObject benennen wir dann gleich in Plattform um und schieben die einzelnen Plattformteile in das GameObject Plattform. Die so gruppierten Plattformen kann man nun einfach mit der rechten Maustaste duplizieren und beliebig am Spielfeld verteilen.
+Abschließend machen wir uns noch das weitere Gestalten des Levels leichter, indem wir ein neues Game Objekt erstellen in das wir alle drei Teile der Plattform hinein verschieben, so dass sie gruppiert sind. Dazu klicke ich mit der rechten Maustaste in das Hierarchy Panel und wähle aus dem Kontextmenü Create Empty. Das neue GameObject benennen wir dann gleich in "Plattform" um und schieben die einzelnen Plattformteile in das GameObject Plattform. Das geht am besten indem man alle 3 Plattformteile markiert indem man STRG hält und sie anklickt und anschließend auf das Gameobject Platform zieht. Am Screenshot unten, sieht man wie das Endergebnis aussehen soll. Die so gruppierten Plattformen kann man nun einfach mit der rechten Maustaste duplizieren und beliebig am Spielfeld verteilen.
 
 ![Create Empty Game Object](img/T04/T04-k-Plattform Gruppieren.png)
-![MOve into GameObject](img/T04/T04-k-Platform GameObject.png)
 ![Duplicate Platform](img/T04/T04-m-Duplicate Plattform.png)
 
 Am Ende sollte das Spielfeld in etwa so aussehen:
@@ -256,6 +255,6 @@ In der Hierarchy den Baum anklicken und im Inspector über Add Component->Physic
 	Wenn man möchte, dass die Objekte im Spielfeld ein wenig in der Baumkrone verschwinden, dann kann man die Größe des Objekts z.B. Tree_3 zuerst auf einen höheren Wert setzen (z.B. 110) und dann den Collider hinzufügen. Ein höherer Wert bei Pixelgröße bedeutet ja, dass der Baum kleiner dargestellt wird. Dadurch haben wir einen etwas kleineren Baum mit einem kleineren Collider. Wenn wir jetzt die Pixelgröße wieder auf den ursprünglichen Wert von 100 zurücksetzen, dann bleibt der Collider kleiner als die graphische Darstellung des Baums. Der Collider skaliert nämlich nur dann mit, wenn ich die Größe eines Spielobjekts via Transform/Scale ändere. Für das Finetuning könnte man noch das Offset des Polygon Colliders anpassen, z.B. indem wir Y=-0,1 setzen. Abschließend setzt man noch den Z-Wert des Baums auf einen niedrigeren Z-Wert, als den Wert der anderen Spielobjekte (z.B. -2).
 
 Sourcecode
-Download Sourcecode Teil 04: http://comber.at/dev/BouncyFant04.zip 
+Download Sourcecode Teil 04: [http://comber.at/dev/BouncyFant04.zip](http://comber.at/dev/BouncyFant04.zip)
 
 	

@@ -28,16 +28,16 @@ Dieser Abschnitt wiederholt denjenigen aus dem [Grundlagentutorial](/0120-userin
 
 In Unity gibt es 3 wichtige Bereiche, die wir über den Verlauf des Tutorials sehr oft verwenden werden. Wir empfehlen dir, dass du dir ein paar Minuten nimmst und dich mit ihnen vertraut machst.
 
-### Hierarchy Panel (G)
-Das Hierarchy Panel ist sozusagen eine Übersicht über alle Game Objects (G), die wir zu unserem Spiel hinzugefügt haben. Es ist eine Hierarchie, weil wir manchmal mehrere Game Objects zusammenpacken wollen. Eine Plattform auf der deine Figur springt könnte zum Beispiel aus mehrere Teilen bestehen, die wir dann auch zusammenpacken wollen.
+### Hierarchy Panel 
+Das Hierarchy Panel ist sozusagen eine Übersicht über alle Game Objects , die wir zu unserem Spiel hinzugefügt haben. Es ist eine Hierarchie, weil wir manchmal mehrere Game Objects zusammenpacken wollen. Eine Plattform auf der deine Figur springt könnte zum Beispiel aus mehrere Teilen bestehen, die wir dann auch zusammenpacken wollen.
 
-### Inspector Panel (G)
+### Inspector Panel 
 Im Inspector Panel können wir die Game Objects, die wir unserem Spiel hinzugefügt haben genauer inspizieren, daher auch der Name. Dort kannst du sogenannte Komponenten des ausgewählten Game Objects hinzufügen, entfernen und konfigurieren. Diese Komponenten erlauben uns coole Dinge wie zum Beispiel, eine Figur zu steuern, sie zu animieren, sie von Dingen abprallen zu lassen und viele weitere Dinge.
 
 !!!bug "Achtung!"  
     Je nachdem, was du markiert hast, sind die Dinge, die im Inspector Panel angezeigt werden, andere. Wenn du etwas nicht findest, schau zuerst ob du auch die richtige Sache markiert hast.
 
-### Asset-Bereich (G)
+### Asset-Bereich 
 Der Asset-Bereich ist unsere Sammlung aller Assets, also Dateien wie zum Beispiel Scripte, Bilder oder Musik, die wir in unser Projekt einbauen möchten. Wir müssen neue Assets immer zuerst in unser Projekt importieren, damit wir sie verwenden können, außer wir haben sie in Unity selbst erstellt.
 
 Du kannst das Aussehen des Asset-Bereichs ändern, indem man rechts unten die Zoomleiste bewegt (siehe Screenshot). Alternativ funktioniert auch STRG + Mausrad.
@@ -45,10 +45,10 @@ Du kannst das Aussehen des Asset-Bereichs ändern, indem man rechts unten die Zo
 ![Asset-Bereich](img/T01/T01-b-Arbeitsbereich Ansicht auf Listenansicht stellen.png)
 
 ## Neue Ordner und Assets hinzufügen
-Bevor wir in Unity unsere Ordnerstruktur anlegen, laden wir uns einmal ein paar Assets (G) aus dem Internet herunter und speichern diese in den entsprechenden Objektordner. Die Assets, mit denen wir arbeiten werden, finden wir an folgenden Orten:
+Bevor wir in Unity unsere Ordnerstruktur anlegen, laden wir uns einmal ein paar Assets  aus dem Internet herunter und speichern diese in den entsprechenden Objektordner. Die Assets, mit denen wir arbeiten werden, finden wir an folgenden Orten:
 
- - www.comber.at/dev/assets.zip
- - https://www.gameart2d.com/free-platformer-game-tileset.html
+ - [www.comber.at/dev/assets.zip](www.comber.at/dev/assets.zip)
+ - [https://www.gameart2d.com/free-platformer-game-tileset.html](https://www.gameart2d.com/free-platformer-game-tileset.html)
 
 Die Zip-Datei, die du heruntergeladen hast, musst du natürlich zuerst entpacken. Das kannst du mit Rechtsklick auf die Datei im Windows Explorer und dann einem Klick auf “Alles extrahieren” machen.
 Pass aber auf, wohin du die Dateien entpackst, damit du sie auch wieder findest.
@@ -60,7 +60,7 @@ In Unity fügen wir zuerst neue Ordner hinzu. Für Dein Projekt brauchst du folg
 - Sprites (für die Grafiken)
 - Vorlagen (für Spielobjekte, die wir als Vorlagen erstellen und verwenden)
 
-Neue Ordner legt man mit Rechtsklick in das Asset Panel und dann durch einen Klick auf *Create -> Folder* an.
+Neue Ordner legt man mit Rechtsklick in das Asset Panel und dann durch klicken auf *Create -> Folder* an.
 
 ![Asset Panel: neuer Ordner](img/T01/T01-c-Neue Ordner hinzufuegen.png)
 
@@ -72,11 +72,12 @@ Im nachfolgenden Fenster navigieren wir zu dem Ordner, in dem wir unsere herunte
 
 
 !!!bug "Achtung!"  
-    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst.
-Unity merkt sich immer den Pfad und Namen deines Asset im Projektordner, und nicht das Asset als Bild an sich. Wenn du die Dateien später verschiebst oder umbenennst und sich dadurch der Pfad ändert, kann es sein, dass dein Level nicht mehr funktioniert. Lege also den Elefanten also jetzt schon in den Ordner wo du ihn auch am Ende willst, also zum Beispiel den “Sprites” Ordner mit einem eindeutigen Namen wie “Elefant.png” ab.
+    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst. Unity merkt sich immer den Pfad und Namen deines Asset im Projektordner und nicht das Asset als Bild an sich. Wenn du die Dateien später verschiebst oder umbenennst und sich dadurch der Pfad ändert, kann es sein, dass dein Level nicht mehr funktioniert. Lege also den Elefanten also jetzt schon in den Ordner wo du ihn auch am Ende willst, also zum Beispiel den “Sprites” Ordner mit einem eindeutigen Namen wie “Elefant.png” ab.
+
+ Wenn du Assets importierst werden sie in deinen Projekt Ordner kopiert. Solltest du irgendwann etwas an deinem Asset verändern müssen, musst du die Version in deinem Projekt Ordner ändern.
 
 ## Das Sprite zerschneiden
-Wie du vielleicht schon gesehen hast, besteht unsere Elefantengrafik aus drei sehr ähnlichen Bildern. Wir nennen diese Bilder die Animationsstufen. Damit wir später die Animation (Beine, Rüssel und Schwanz bewegen sich beim Gehen) für den Elefanten erstellen können, müssen wir jetzt die einzelnen Animationsstufen des Elefanten aus dem Spritesheet(G) (also unsere Elefantengrafik) extrahieren. Man kann sich das so vorstellen, als ob man das Spritesheet zerschneiden würde. Bevor wir jedoch mit dem Zerschneiden des Spritesheets anfangen können, müssen wir noch den *Sprite Mode* von *Single* auf *Multiple* ändern. Damit teilen wir Unity mit, dass in unserem importierten Bild mehrere Animationsstufen eines Sprites vorhanden sind.
+Wie du vielleicht schon gesehen hast, besteht unsere Elefantengrafik aus drei sehr ähnlichen Bildern. Wir nennen diese Bilder die Animationsstufen. Damit wir später die Animation (Beine, Rüssel und Schwanz bewegen sich beim Gehen) für den Elefanten erstellen können, müssen wir jetzt die einzelnen Animationsstufen des Elefanten aus dem Spritesheet (also unsere Elefantengrafik) extrahieren. Man kann sich das so vorstellen, als ob man das Spritesheet zerschneiden würde. Bevor wir jedoch mit dem Zerschneiden des Spritesheets anfangen können, müssen wir noch den *Sprite Mode* von *Single* auf *Multiple* ändern. Damit teilen wir Unity mit, dass in unserem importierten Bild mehrere Animationsstufen eines Sprites vorhanden sind.
 
 Das Zerschneiden bewerkstelligen wir, indem wir den Elefanten-Sprite im Asset Panel markieren, und dann im Inspector Panel den *Sprite Editor* öffnen.
 
