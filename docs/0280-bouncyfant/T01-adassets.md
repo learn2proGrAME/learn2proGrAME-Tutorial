@@ -28,16 +28,16 @@ Dieser Abschnitt wiederholt denjenigen aus dem [Grundlagentutorial](/0120-userin
 
 In Unity gibt es 3 wichtige Bereiche, die wir über den Verlauf des Tutorials sehr oft verwenden werden. Wir empfehlen dir, dass du dir ein paar Minuten nimmst und dich mit ihnen vertraut machst.
 
-### Hierarchy Panel 
+### Hierarchy Panel
 Das Hierarchy Panel ist sozusagen eine Übersicht über alle Game Objects , die wir zu unserem Spiel hinzugefügt haben. Es ist eine Hierarchie, weil wir manchmal mehrere Game Objects zusammenpacken wollen. Eine Plattform auf der deine Figur springt könnte zum Beispiel aus mehrere Teilen bestehen, die wir dann auch zusammenpacken wollen.
 
-### Inspector Panel 
+### Inspector Panel
 Im Inspector Panel können wir die Game Objects, die wir unserem Spiel hinzugefügt haben genauer inspizieren, daher auch der Name. Dort kannst du sogenannte Komponenten des ausgewählten Game Objects hinzufügen, entfernen und konfigurieren. Diese Komponenten erlauben uns coole Dinge wie zum Beispiel, eine Figur zu steuern, sie zu animieren, sie von Dingen abprallen zu lassen und viele weitere Dinge.
 
 !!!bug "Achtung!"  
     Je nachdem, was du markiert hast, sind die Dinge, die im Inspector Panel angezeigt werden, andere. Wenn du etwas nicht findest, schau zuerst ob du auch die richtige Sache markiert hast.
 
-### Asset-Bereich 
+### Asset-Bereich
 Der Asset-Bereich ist unsere Sammlung aller Assets, also Dateien wie zum Beispiel Scripte, Bilder oder Musik, die wir in unser Projekt einbauen möchten. Wir müssen neue Assets immer zuerst in unser Projekt importieren, damit wir sie verwenden können, außer wir haben sie in Unity selbst erstellt.
 
 Du kannst das Aussehen des Asset-Bereichs ändern, indem man rechts unten die Zoomleiste bewegt (siehe Screenshot). Alternativ funktioniert auch STRG + Mausrad.
@@ -47,7 +47,7 @@ Du kannst das Aussehen des Asset-Bereichs ändern, indem man rechts unten die Zo
 ## Neue Ordner und Assets hinzufügen
 Bevor wir in Unity unsere Ordnerstruktur anlegen, laden wir uns einmal ein paar Assets  aus dem Internet herunter und speichern diese in den entsprechenden Objektordner. Die Assets, mit denen wir arbeiten werden, finden wir an folgenden Orten:
 
- - [www.comber.at/dev/assets.zip](www.comber.at/dev/assets.zip)
+ - [www.comber.at/dev/assets.zip](https://www.comber.at/dev/assets.zip)
  - [https://www.gameart2d.com/free-platformer-game-tileset.html](https://www.gameart2d.com/free-platformer-game-tileset.html)
 
 Die Zip-Datei, die du heruntergeladen hast, musst du natürlich zuerst entpacken. Das kannst du mit Rechtsklick auf die Datei im Windows Explorer und dann einem Klick auf “Alles extrahieren” machen.

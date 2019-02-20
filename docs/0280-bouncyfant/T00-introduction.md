@@ -41,4 +41,4 @@ Abbildung: Unser Spiel: Bouncy Fant
 # Optional: Erstelle eine eigene Spielfigur
 Du kannst mit Gimp, der gratis verfügbaren Alternative zu Photoshop, gute Grafiken für dein Projekt erstellen. Du kannst dieses Tutorial auch mit dem vorgegebenen Elefanten durcharbeiten oder dir jetzt einen eigene Spielfigur zeichnen.
 
-Mehr zum Erstellen einer Spielfigur findest du in unserem [GIMP-Tutorial](0210-drawingingimp/0210-drawingingimp.md) oder auf unserem Youtube-Channel: [learn to proGrAME Tutorial Videos](https://www.youtube.com/watch?v=C1rcqXZEk7M&list=PLwrS_Vh1B1U0EijF95WOlp0L5qMTJ-1QS).
+Mehr zum Erstellen einer Spielfigur findest du in unserem [GIMP-Tutorial](/0210-drawingingimp/0210-drawingingimp) oder auf unserem Youtube-Channel: [learn to proGrAME Tutorial Videos](https://www.youtube.com/watch?v=C1rcqXZEk7M&list=PLwrS_Vh1B1U0EijF95WOlp0L5qMTJ-1QS).
