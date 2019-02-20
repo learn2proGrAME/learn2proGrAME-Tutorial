@@ -9,7 +9,7 @@ Einen komplexen Sprite zerteilen. |
 Einen Sprite zu deinem Spiel hinzufügen. |   
 
 Wenn du Unity startest, erscheint zuerst ein Startfenster. Klicke dort auf “NEW”.
-Im späteren Verlauf des Projekts, kannst du einfach auf dein Projekt in der Liste klicken, oder es über die “OPEN” öffnen.
+Im späteren Verlauf des Projekts, kannst du einfach auf dein Projekt in der Liste klicken, oder es über “OPEN” öffnen.
 
 ![Neues Projekt](img/T01/T01-a-Neues Projekt.png)
 
@@ -72,7 +72,7 @@ Im nachfolgenden Fenster navigieren wir zu dem Ordner, in dem wir unsere herunte
 
 
 !!!bug "Achtung!"  
-    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst. Unity merkt sich immer den Pfad und Namen deines Asset im Projektordner und nicht das Asset als Bild an sich. Wenn du die Dateien später verschiebst oder umbenennst und sich dadurch der Pfad ändert, kann es sein, dass dein Level nicht mehr funktioniert. Lege also den Elefanten also jetzt schon in den Ordner wo du ihn auch am Ende willst, also zum Beispiel den “Sprites” Ordner mit einem eindeutigen Namen wie “Elefant.png” ab.
+    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst. Unity merkt sich immer den Pfad und Namen deines Asset im Projektordner und nicht das Asset als Bild an sich. Wenn du die Dateien später verschiebst oder umbenennst und sich dadurch der Pfad ändert, kann es sein, dass dein Level nicht mehr funktioniert. Lege den Elefanten am besten jetzt in den Ordner wo du ihn auch am Ende haben willst, also zum Beispiel den “Sprites” Ordner. Speicher dein Asset mit einem eindeutigen Namen wie “Elefant.png” ab.
 
  Wenn du Assets importierst werden sie in deinen Projekt Ordner kopiert. Solltest du irgendwann etwas an deinem Asset verändern müssen, musst du die Version in deinem Projekt Ordner ändern.
 
@@ -87,7 +87,6 @@ Falls wir hier gefragt werden, ob wir die Änderungen annehmen wollen, klicken w
 
 ![Sprite Editor apply](img/T01/T01-h-Apply.png)
 
-### Manuell zerschneiden
 Im Sprite Editor klicken wir nun auf *Slice*, um unser Spritesheet zu zerteilen. Nun gibt es mehrere Möglichkeiten ein Sprite zu zerteilen. Wenn man die Animationsstufen nebeneinander genau positioniert hat, dann ist es sinnvoll das Sprite manuell zuzuschneiden. Dazu wähle den Modus *Grid By Cell Count*. In diesem Modus wird das Sprite wie in einer Tabelle in Zeilen (R steht für Rows) und Spalten (C steht für Columns) aufgeteilt. Wir haben 3 Elefanten in einer Zeile. Wenn wir uns das jetzt als Tabelle vorstellen ist klar, wir haben 1 Zeile und 3 Spalten, das heißt wir schreiben bei R 1 und bei C 3. Zum Zerteilen bestätigen wir das Ganze mit *Slice*.
 
 ![Manuell slicen](img/T01/T01-i-Sprites zerteilen - manual slice.png)
@@ -96,6 +95,7 @@ Eine andere Möglichkeit ist, das Sprite automatisch zerteilen zu lassen. Dazu w
 
 ![Automatisch slicen](img/T01/T01-i-Sprites zerteilen.png)
 
+### Manuell zerschneiden
 Falls du dein eigenes Sprite verwendest, musst du die Einstellungen vielleicht anpassen. Es kann auch sein, dass das Ergebnis beim “Slicen” (=zerschneiden) nicht ganz perfekt ist. Du kannst dann auf die Animationsstufe klicken und sie mit den Blauen kreisen zurechtziehen.
 
 ![Animationsstufen justieren](img/T01/T01-i-Animationsstufen justieren.png)
@@ -124,9 +124,9 @@ Die Spielszene müssen wir zusätzlich zum Projekt speichern. Du kannst dir jede
 
 ![Szene speichern](img/T01/T01-l-Szene speichern.png)
 
-Mit “Play” können wir das Spiel starten. Momentan tut sich noch nicht viel, da der Elefant sich noch nicht bewegt und auch Grafiken für den Hintergrund und für die anderen Objekte im Spiel müssen erst hinzugefügt werden. Wir können jedoch das Seitenverhältnis einstellen: Wir wählen bei BouncyFant das Verhältnis 4:3, da in dem Spiel viel gesprungen wird und wir deswegen mehr Platz nach oben, als zur Seite wollen.
+Mit der “Playtaste” können wir das Spiel starten. Momentan tut sich noch nicht viel, da der Elefant sich noch nicht bewegt und auch Grafiken für den Hintergrund und für die anderen Objekte im Spiel müssen erst hinzugefügt werden. Wir können jedoch das Seitenverhältnis einstellen: Wir wählen bei BouncyFant das Verhältnis 4:3, da in dem Spiel viel gesprungen wird und wir deswegen mehr Platz nach oben, als zur Seite wollen.
 
 ![Szene abspielen](img/T01/T01-m-Play Szene abspielen.png)
 
 #### Sourcecode
-Download Sourcecode Teil 01: http://comber.at/dev/BouncyFant01.zip
+Download Sourcecode Teil 01: [http://comber.at/dev/BouncyFant01.zip](http://comber.at/dev/BouncyFant01.zip)

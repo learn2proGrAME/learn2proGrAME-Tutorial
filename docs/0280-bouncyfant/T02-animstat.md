@@ -11,7 +11,7 @@ Einen State im AnimationsController erstellen. |
 Variablen im AnimationsContoller erstellen |
 Bedingungen für die Übergänge einstellen |
 
-Überprüfe, ob du, wie in Teil 1 vorgegeben, den Animationsstufen die Namen Elefant_Gehen_1, Elefant_Gehen_2, Elefant_Stehen gegeben hast. Klicke auf Elefant, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
+Überprüfe, ob du, wie in [Teil 1](0280-bouncyfant/T01-adassets/) vorgegeben, den Animationsstufen die Namen **Elefant_Gehen_1**, **Elefant_Gehen_2** und **Elefant_Stehen** gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
 
 ## States und Animationen
 
@@ -42,20 +42,23 @@ Wenn man diesen Controller doppelt klickt öffnet sich der *Animator (Window/Ani
 
 ![Animator](img/T02/T02-d-Animator.png)
 
-Neue *States* kann ich mittels Rechtsklick  und *States-> Create/Empty* hinzufügen (siehe Screenshot unten).
+Neue *States* kann ich mittels Rechtsklick und dann durch Klicken auf *Create States -> Empty* hinzufügen (siehe Screenshot unten).
 
 ![Animator2](img/T02/T02-e-Animator Neue Stats erzeugen.png)  
 Zuerst wollen wir einen Zustand namens Stehen erzeugen. Diesem müssen wir die *Stehen*-Animation zuweisen.  
-Dann setzen wir diesen Zustand als Standard (rechte Maustaste/“Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet.
+Dann setzen wir diesen Zustand als Standard (Klick mit der rechten Maustaste auf einen State -> “Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet. Unsere Animation startet immer beim Default State.
 Mittels Rechtsklick auf den Zustand und Make Transition fügt man neue Übergänge zwischen den Zuständen hinzu.
 
 ![Animator3](img/T02/T02-f-Neue Transitions.png)
 
-Ziel ist es, dass die Geh-Animation (die in dem entsprechenden Zustand ausgewählt ist) aktiv ist, wenn der Elefant bewegt wird! Am Ende wollen wir die Zustände und Übergänge sowie am Screenshot verbunden zu haben.
+Ziel ist es, dass die Geh-Animation (die in dem entsprechenden Zustand ausgewählt ist) aktiv ist, wenn der Elefant bewegt wird! Am Ende wollen wir die Zustände und Übergänge so wie am Screenshot unten verbunden zu haben.
 
 ![Animator4](img/T02/T02-f-States Zielzustand.png)
 
-Man nennt verbundene Zustände State Machine oder Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen. Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (wahr/falsch). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.
+Man nennt verbundene Zustände eine State Machine oder einen Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen.
+
+### Parameter
+ Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (```true``` \ ```false```). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.
 
 ![Animator Parameter](img/T02/T02-g-Parameter erstellen Geschwindigkeit und Springen.png)
 
@@ -72,9 +75,10 @@ Bedingung für den Übergang von Stehen zu Gehen:
 
 ### Einstellungen bei den Übergängen
 
-Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit die Bewegung nicht verzögert auftritt. *Has Exit Time* soll nicht ausgewählt sein, *Fixed Duration* ebenso nicht, die *Transition Duration* und das *Transition Offset* sollten auf 0 gesetzt werden. Diese Optionen würden bewirken, dass die Übergangsbedingung an eine Zeitdauer (duration) geknüpft ist (Fixed Duration) oder der Übergang verzögert oder mit einer gewissen Geschwindigkeit erfolgt (Transition Offset/Duration). Hier soll aber der Elefant sofort aufhören, die Beine zu bewegen, wenn er stehen bleibt.
+Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit die Bewegung nicht verzögert auftritt. *Has Exit Time* soll nicht ausgewählt sein, *Fixed Duration* ebenso nicht, die *Transition Duration* und das *Transition Offset* sollten auf 0 gesetzt werden. Diese Optionen würden bewirken, dass die Übergangsbedingung an eine Zeitdauer (Duration) geknüpft ist (Fixed Duration) oder der Übergang verzögert oder mit einer gewissen Geschwindigkeit erfolgt (Transition Offset/Duration). Hier soll aber der Elefant sofort aufhören, die Beine zu bewegen, wenn er stehen bleibt.
+
 
 ![Transition settings](img/T02/T02-j-Einstellungen Uebergaenge.png)
 
 #### Sourcecode
-Download Sourcecode Teil 02: http://comber.at/dev/BouncyFant02.zip
+Download Sourcecode Teil 02: [http://comber.at/dev/BouncyFant02.zip](http://comber.at/dev/BouncyFant02.zip)

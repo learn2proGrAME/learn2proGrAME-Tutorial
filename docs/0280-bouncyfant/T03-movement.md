@@ -10,7 +10,7 @@ Das Script zu deiner Spielfigur hinzufügen. |
 
 ### Die Bewegung der Elefantin implementieren
 
-Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken.
+Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken. Alternativ kannst du auch den Namen anklicken und F2 drücken.
 
 ![Rename Gameobject](img/T03/T03-a-Elefant umbenennen.png)
 <!-- elefanti verwirrender name? -->
@@ -19,9 +19,9 @@ Zuerst kümmern wir uns um die Tasten-Eingabe für die Bewegung. Unter *Edit -> 
 
 ![Input Manager](img/T03/T03-b-Input Settings bearbeiten.png)
 
-Im Input Manager siehst du eine Horizontal Achse und eine Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit *“H-AchseElli”*  bzw. *“V-AchseElli”* benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.
+Im Input Manager siehst du eine Horizontal Achse und eine Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit **“H-AchseElli”**  bzw. **“V-AchseElli”** benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.
 
-Diese Positive/Negative Button macht Sinn sobald du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.
+Dieser Positive/Negative Button macht Sinn wenn du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.
 
 Du kannst also jetzt die Tasten für die jeweiligen Bewegungsrichtungen eintragen, so wie du denkst die Steuerung ist am Besten. Ein Beispiel hierfür wäre:
 
@@ -63,23 +63,33 @@ Das eben erstellte Script befindet sich nun im Projekt im Asset Panel. Wir versc
 
 Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen.
 
-### Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)
-#### Wiederholung von Grundlagen:
 
-**Kommentar**: In C-Sprachen sind Zeilen, die mit // beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer.
+#### Wiederholung der C# Grundlagen
 
-**Variablen**: eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur *Datentypen* für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
-String name = “Jenny”; integer alter = 12; alter = alter + 1;
-Diese beiden Variablen “name” und “alter” werden gleich bei der *Deklaration* (erste Definition) mit Werten belegt durch “=”. Das kann auch später passieren. Am Ende dieser Codezeile enthält die Variable “alter” den Wert 13.
+**Kommentar**: 
 
-**Funktionen**: beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
+In C-Sprachen sind Zeilen, die mit ```//``` beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer. KOmmentare werden grün angezeigt.
+
+**Variablen**: 
+
+Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur *Datentypen* für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
+``` c#
+	String name = “Jenny”;
+	integer alter = 12;
+	alter = alter + 1;
+```
+Diese beiden Variablen “name” und “alter” werden gleich bei der *Deklaration* (Das erste mal definieren) mit Werten belegt durch ```=```. Den Wert kann man später auch ändern.. Am Ende dieser Codestelle enthält die Variable “alter” den Wert 13.
+
+**Funktionen**: 
+
+Sie beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
 <!-- Definition von Algorithmus VB -->
-Eine Funktion ist deshalb so nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=*Parameter*), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword *return* ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion *integer addieren()*{... return a;} ist der return-Datentyp *integer*!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:
+Eine Funktion ist deshalb nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=*Parameter*), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword *return* ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion *integer addieren()*{... return a;} ist der return-Datentyp *integer*!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:
 
 ``` c#
 double a = 1.5;	//"double" ist der gängige Datentyp für Kommazahlen
 double b = 4.3;	//a und b werden unten als Parameter für die Funktion verwendet
-integer c = 0;		//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!
+integer c = 0;	//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!
 integer addieren_int(double  a, double b) {
 	return a + b; //das Zwischenergebnis ist hier 1.5 + 4.3 = 5.8
 }
@@ -160,7 +170,7 @@ public class [MeinScriptName]: MonoBehaviour {
 
 ![VS neues Script](img/T03/T03-g-Visual Studio Neues Script.png)
 
-Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile “// Anfangseinstellungen setzen”  und die Prozedur *Update* benennen wir in *FixedUpdate* um. FixedUpdate sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall *nicht* die Framerate (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook.
+Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile ```// Anfangseinstellungen setzen```  und die Prozedur ```Update``` benennen wir in ```FixedUpdate``` um. ```FixedUpdate``` sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall **nicht** die Framerate (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook.
 
 ``` c#
 // Anfangseinstellungen setzen
@@ -176,7 +186,7 @@ void FixedUpdate()
 }
 ```
 
-Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur *Gehen* Folgendes:
+Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur ```Gehen``` folgendes:
 Wir berechnen aus dem Wert, den wir aus der horizontalen Eingabe-Achse abfragen, die horizontale (seitliche) Bewegung des Elefantenkörpers.
 Wir bestimmen anhand der Bewegung des Elefantenkörpers die Blickrichtung.
 Wir übermitteln die Bewegungsgeschwindigkeit an die Animation in Unity.
@@ -317,5 +327,6 @@ Wenn wir nun auf Play drücken und das Spiel starten, dann fällt Elli ins boden
 
 ![Gravity scale](img/T03/T03-i-Gravity Scale 0.png)
 
-Sourcecode
-Download Sourcecode Teil 03: http://comber.at/dev/BouncyFant03.zip
+#### Sourcecode 
+Download Sourcecode Teil 03: [http://comber.at/dev/BouncyFant03.zip](http://comber.at/dev/BouncyFant03.zip)
+

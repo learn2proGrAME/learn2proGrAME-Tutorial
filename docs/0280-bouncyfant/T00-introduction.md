@@ -6,7 +6,7 @@ Hier lernst du, wie du dein erstes 2D-Spiel mit der Unity Engine entwickelst. Da
 ### Warum verwenden wir die Unity Engine?
 Wir verwenden die Unity Engine, weil sie viele Features von Haus aus eingebaut hat die wir für die Erstellung eines Spiels brauchen. Somit können wir uns mehr auf das Design von unserem Spiel und die grundlegende Programmierung konzentrieren. Unity hat zum Beispiel bereits eine richtig coole Physik Engine eingebaut, mit der wir lustige Effekte in unserem Spiel erschaffen können.
 
-Die Unity Engine wird auch von professionellen Spielentwicklern verwendet. So wurden zum Beispiel das Online Kartenspiel „Hearthstone“ von Blizzard, oder das beliebte Handygame „Temple Run“ mit Unity erstellt.  
+Die Unity Engine wird auch von professionellen Spielentwicklern verwendet. So wurden zum Beispiel das Online Kartenspiel „Hearthstone“ von Blizzard und das beliebte Handygame „Temple Run“ mit Unity erstellt.  
 
 ### Über das Tutorial
 In diesem Tutorial wirst du dich mit Unity und einigen Abschnitten Programmcode vertraut machen. Nach dem Absolvieren des Tutorials wird dir mehr Freiraum gegeben eigenständig zu entwickeln.

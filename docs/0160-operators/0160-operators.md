@@ -110,7 +110,7 @@ int a = 3;
 a = a - 2;
 Debug.Log(a);
 ```
-In der Konsole steht nach Ausführen *1*. 
+In der Konsole steht nach dem Ausführen *1*. 
 
 ---- 
 
@@ -123,7 +123,7 @@ int b = a*5;
 Debug.Log(b);
 ```
 
-In der Konsole steht nach Ausführen *15*.  
+In der Konsole steht nach dem Ausführen *15*.  
 
 * Ohne Klammern:
 ``` c#
@@ -142,7 +142,7 @@ int a = 15;
 int b = a/3;
 Debug.Log(b);
 ```
-In der Konsole steht nach Ausführen *5*.  
+In der Konsole steht nach dem Ausführen *5*.  
 !!!bug "ACHTUNG"
     Es gilt Punkt vor Strich Rechnung. Pass also auf, dass du die richtigen Klammern setzt.
 ``` c#
@@ -178,15 +178,24 @@ In der Konsole steht nach dem Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 
 
 **Logische Operatoren** 
 <!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (```boolean```) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
-Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll.
+Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll
 
-Neben grösser ```>``` und kleiner ```<``` und grössergleich ```>=``` und ```<=``` die du aus dem Mathematikunterricht kennst gibt es noch weitere Operatoren die wir beim Programmieren brauchen.
 
-| Operator | Funktion |
+
+| Vergleichsoperator | Bedeutung          |
+| ------------------ | ------------------ |
+| >                  | ist größer als     |
+| >                  | ist kleiner als    |
+| >=                 | ist größer gleich  |
+| <=                 | ist kleiner gleich |
+
+Neben den Vergleichsoperatoren in der oberen Tabelle die du bestimmt aus dem Mathematikunterricht kennst gibt es noch weitere Operatoren die wir beim Programmieren brauchen.
+
+| Vergleichsoperator | Funktion |
 |----------|----------|
 | ```&&``` | UND |
 | ```||``` | ODER |
-| ```!``` | NICHT |
+| ```!```  | NICHT |
 | ```==``` | GLEICH |
 | ```!=``` | UNGLEICH |
 
