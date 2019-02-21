@@ -108,6 +108,7 @@ Nach dem Slicen geben wir den einzelnen Animationsstufen im Sprite Editor noch s
 !!!bug "Achtung!"  
     Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst.
 
+### Animationsstufen benennen
 ![Animationsstufen benennen](img/T01/T01-i-Animationsstufen benennen.png)
 
 ### Die Spielfigur zur Spielszene hinzufügen

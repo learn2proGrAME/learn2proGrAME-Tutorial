@@ -20,16 +20,20 @@ Als erstes importieren wir die Landschafts-Assets. In unserem Moodle-Kurs findet
 ![Sprites importieren](img/T04/T01-e-Sprites importieren II.png)
 
 
-In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter https://www.gameart2d.com/free-platformer-game-tileset.html 
-Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf https://www.gameart2d.com/freebies.html. Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter https://www.gameart2d.com/license.html.    
+In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter [https://www.gameart2d.com/free-platformer-game-tileset.html](https://www.gameart2d.com/free-platformer-game-tileset.html) 
+
+Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf [https://www.gameart2d.com/freebies.html](https://www.gameart2d.com/freebies.html). 
+
+Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter [https://www.gameart2d.com/license.html](https://www.gameart2d.com/license.html).    
 
 ![Tiles importieren](img/T04/T04-a-Tilesets importieren.png)
 
 Im Heruntergeladenen Ordner navigieren gehen wir zu freetileset/png/Tiles, importieren die Dateien mit den Nummern 2, 13, 14 und 15 und benennen Sie folgendermaßen um:
-2 -> Boden 
-13 -> Plattform_Links
-14 -> Plattform_Mitte
-15 -> Plattform_Rechts
+
+ * 2 -> Boden 
+ * 13 -> Plattform_Links
+ * 14 -> Plattform_Mitte
+ * 15 -> Plattform_Rechts
 
 Das Ergebnis sollte in etwa so aussehen:
 

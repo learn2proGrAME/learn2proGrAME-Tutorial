@@ -11,7 +11,7 @@ Einen State im AnimationsController erstellen. |
 Variablen im AnimationsContoller erstellen |
 Bedingungen für die Übergänge einstellen |
 
-Überprüfe, ob du, wie in [Teil 1](0280-bouncyfant/T01-adassets/) vorgegeben, den Animationsstufen die Namen **Elefant_Gehen_1**, **Elefant_Gehen_2** und **Elefant_Stehen** gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
+Überprüfe, ob du, wie in [Teil 1](../T01-adassets/#animationsstufen-benennen) vorgegeben, den Animationsstufen die Namen **Elefant_Gehen_1**, **Elefant_Gehen_2** und **Elefant_Stehen** gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
 
 ## States und Animationen
 
