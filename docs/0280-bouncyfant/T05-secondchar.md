@@ -1,5 +1,5 @@
 # Teil 5 - Zweite Spielfigur erstellen
-  
+
 In diesem Kapitel wirst du...  |    Erledigt?
 -------------------------------|----------------
 Die Steuerung deiner Figur einstellen. |
@@ -17,7 +17,7 @@ In diesem Kapitel erstellen wir eine zweite Spielfigur. Wir möchten jedoch nich
 
 ![Parent and Child Diagram](img/T05/T05-a-Neues Parent und Child Klasse.png)
 
-Dazu ist es hilfreich über die grundlegenden Prinzipien der objektorientierten Programmierung Bescheid zu wissen. Wer sich noch einmal die Grundlagen der objektorientierten Programmierung durchlesen möchte, kann diese in unserem Moodle-Kurs unter diesem Link finden: Lernmaterialien über objektorientierte Programmierung 
+Dazu ist es hilfreich über die grundlegenden Prinzipien der objektorientierten Programmierung Bescheid zu wissen. Wer sich noch einmal die Grundlagen der objektorientierten Programmierung durchlesen möchte, kann diese in unserem Moodle-Kurs unter diesem Link finden: Lernmaterialien über objektorientierte Programmierung
 
 #### Einführende Übung
 Überlegt in Gruppen zu je vier Personen, welche Vorteile eine Vorlage einer Spielfigur, von der dann die weiteren Spielfiguren abgeleitet sind, bringt. Notiert eure Ergebnisse auf einem Medium (Papier, PC, Smartphone) eurer Wahl.
@@ -25,7 +25,7 @@ Dazu ist es hilfreich über die grundlegenden Prinzipien der objektorientierten 
 ##### Mögliche Vorteile (Beispielantworten)
  * Der Quellcode wird strukturierter und übersichtlicher.
  * Man kann durch Vererbung gemeinsame Eigenschaften und gemeinsames Verhalten teilen Muss den Quellcode nicht doppelt implementieren/kopieren.
- * Änderungen in der Vorlage wirken sich automatisch auf die abgeleiteten Objekte aus. Man muss nicht jede Änderung für jede Spielfigur durchführen. 
+ * Änderungen in der Vorlage wirken sich automatisch auf die abgeleiteten Objekte aus. Man muss nicht jede Änderung für jede Spielfigur durchführen.
 
 ### Ein neues Objekt “BouncyFant” erstellen
 Das neue Objekt, dass wir benötigen, realisieren wir einfach in einem Script. Dazu erstellen wir in unserem Script-Verzeichnis das Script BouncyFant.cs.
@@ -58,7 +58,7 @@ public class BouncyFant : MonoBehaviour {
 
         /* Blickrichtung des Elefanten bestimmen.
             * Der Vektor für die Blickrichtung soll ein Vektor sein,
-            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1) 
+            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1)
             * der horizontalen Bewegungsrichtung (Mathf.Sign(h)) ergibt.
             * Der y-Wert des Elefanten bleibt gleich, daher transform.localScale.y.       
             */
@@ -66,7 +66,7 @@ public class BouncyFant : MonoBehaviour {
 
         /* Die Geschwindigkeit wird auf den Absolutbetrag der horizontalen
             * Bewegung gesetzt. Negative Geschwindigkeit gibt es nicht.
-            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich 
+            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich
             * 10km/h in einer Rückwärtsbewegung und nicht "-10km/h" ;)
             */
         Animation.SetFloat("Geschwindigkeit", Mathf.Abs(h));
@@ -77,7 +77,7 @@ public class BouncyFant : MonoBehaviour {
 
 Damit Elli die Methoden und Variablen der Parent-Klasse BouncyFant  auch nutzen kann, teilen wir dem Compiler mit, dass Elli eine Child-Klasse von BouncyFant ist.Dies bewerkstelligen wir, indem wir die oberste Zeile der Klasse Elli ändern.
 ``` public class Elli : BouncyFant { ```
-	
+
 Die Klasse Elli sieht nun so aus:
 
 ``` c#
@@ -86,7 +86,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Elli : BouncyFant {
-    // Anfangseinstellungen setzen 
+    // Anfangseinstellungen setzen
     void Start ()
     {
         // Den Namen setzen
@@ -116,7 +116,7 @@ Jetzt können wir  uns bereits um Ellis Begleiter kümmern. Zuallererst klicken 
 
 ![Rename Gameobject](img/T05/T05-c-Duplicate Elli.png)
 
-Das neue GameObject benennen wir nun um, beispielsweise in "Ossi". 
+Das neue GameObject benennen wir nun um, beispielsweise in "Ossi".
 
 Der Elefant Ossi benötigt ein eigenes Script. Durch das Duplizieren des Objekts Elli ist auch noch Elli Script in Ossi enthalten. Dieses Script löschen wir im Inspector.
 
@@ -135,7 +135,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ossi : BouncyFant {
-    // Anfangseinstellungen setzen 
+    // Anfangseinstellungen setzen
     void Start()
     {
         // Den Namen setzen
@@ -161,11 +161,11 @@ public class Ossi : BouncyFant {
 
 Gerne könnt ihr probieren, wie das Spiel läuft, wenn ihr die Eingabe Achse nicht ändert. Dann steuern sich die Elefanten wunderbar synchron - beide mit den Tasten A und D.
 
-Jetzt wo wir schon die Eingabe Achse geändert haben sollten wir auch gleich in den Projekteigenschaften die veränderte Achse definieren. Das bewerkstelligen wir wieder in den Input Settings. 
- 
+Jetzt wo wir schon die Eingabe Achse geändert haben sollten wir auch gleich in den Projekteigenschaften die veränderte Achse definieren. Das bewerkstelligen wir wieder in den Input Settings.
+
  ![Rename Gameobject](img/T05/T03-b-Input Settings bearbeiten.png)
- 
-In den Input Settings (im Inspector) finden wir zwei weitere Achsen, die Horizontal und Vertical heißen. 
+
+In den Input Settings (im Inspector) finden wir zwei weitere Achsen, die Horizontal und Vertical heißen.
 
 ![Rename Gameobject](img/T05/T05-e-Input Achsen Ossi.png)
 ![Rename Gameobject](img/T05/T05-f-Input Achsen Ossi umbenannt.png)
@@ -189,5 +189,7 @@ Diese Achsen benennen wir in H-AchseOssi und V-AchseOssi um und ändern folgende
 
 Das war's auch schon. Jetzt sind beide Elefanten unabhängig voneinander steuerbar, Elli mit den Tasten A und D und Ossi mit den Pfeiltasten.
 
+---
+
 ##### Sourcecode
-Download Sourcecode Teil 05: [http://comber.at/dev/BouncyFant05.zip](http://comber.at/dev/BouncyFant05.zip)
+[Download Sourcecode Teil 05](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T05/Bouncy%20Fant%2005.zip)

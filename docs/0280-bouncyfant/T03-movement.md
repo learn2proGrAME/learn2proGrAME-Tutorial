@@ -43,7 +43,7 @@ Da wir gerade die Projekteinstellungen geändert haben, ist es wichtig nun auch 
 
 ![save project](img/T03/T03-c-Projekt speichern.png)
 
-### Rigidbody2D 
+### Rigidbody2D
 
 Da Elli kein unbewegliches Objekt in unserem Spiel sein wird, brauchen wir eine Komponente, die uns hilft Elli zu bewegen, die Bewegungen zu berechnen und sogar die Physik auf sie wirken zu lassen. Glücklicherweise bietet Unity genau so eine Komponente an, die sich um all die Dinge, wie Bewegung, Berechnung physikalischer Vorgänge und Eigenschaften, Kollisionen, elastische Stöße und dergleichen kümmert. Diese Komponente nennt sich Rigidbody2D. Rigid bedeutet so viel wie “starr”, und dass der Körper starr ist, kommt uns sehr gelegen, denn wir brauchen uns nicht darum kümmern, eine ganze Skellettstruktur für Elli zu modellieren.  Einen Rigidbody2D erstellen wir, indem wir im Hierarchy Panel auf Elli draufklicken und dann im Inspector Panel auf der rechten Seite auf *Add Component -> Physics2D -> Rigidbody 2D* klicken.
 
@@ -66,11 +66,11 @@ Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir könne
 
 #### Wiederholung der C# Grundlagen
 
-**Kommentar**: 
+**Kommentar**:
 
 In C-Sprachen sind Zeilen, die mit ```//``` beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer. KOmmentare werden grün angezeigt.
 
-**Variablen**: 
+**Variablen**:
 
 Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur *Datentypen* für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
 ``` c#
@@ -80,7 +80,7 @@ Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gi
 ```
 Diese beiden Variablen “name” und “alter” werden gleich bei der *Deklaration* (Das erste mal definieren) mit Werten belegt durch ```=```. Den Wert kann man später auch ändern.. Am Ende dieser Codestelle enthält die Variable “alter” den Wert 13.
 
-**Funktionen**: 
+**Funktionen**:
 
 Sie beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
 <!-- Definition von Algorithmus VB -->
@@ -327,6 +327,7 @@ Wenn wir nun auf Play drücken und das Spiel starten, dann fällt Elli ins boden
 
 ![Gravity scale](img/T03/T03-i-Gravity Scale 0.png)
 
-#### Sourcecode 
-Download Sourcecode Teil 03: [http://comber.at/dev/BouncyFant03.zip](http://comber.at/dev/BouncyFant03.zip)
+---
 
+#### Sourcecode
+[Download Sourcecode Teil 03](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T03/Bouncy%20Fant%2003.zip)

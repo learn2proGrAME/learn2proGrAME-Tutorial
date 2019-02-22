@@ -80,5 +80,7 @@ Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit d
 
 ![Transition settings](img/T02/T02-j-Einstellungen Uebergaenge.png)
 
+---
+
 #### Sourcecode
-Download Sourcecode Teil 02: [http://comber.at/dev/BouncyFant02.zip](http://comber.at/dev/BouncyFant02.zip)
+[Download Sourcecode Teil 02](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T02/Bouncy%20Fant%2002.zip)
