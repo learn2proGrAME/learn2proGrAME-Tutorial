@@ -1,13 +1,15 @@
 # Teil 6 - Jump around!
 
-!!! Abstract "Ziel"
-    Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ------------
-Eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist. |
-Eine Methode implementieren, die die Elefanten springen lässt |
-Physikalische Materialien in Unity kennenlernen |
-Ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht |
+Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
+Dafür wirst du ...
+
+* ... eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist.
+* ... eine Methode implementieren, die die Elefanten springen lässt.
+* ... ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht
+
+!!! Abstract "Lernziele"
+    In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst um die Elefanten elastisch zu machen.
+
 
 ## Springen
 
@@ -21,9 +23,6 @@ Erstelle zuallererst in BouncyFant.cs eine Variable für die Sprungkraft. Diese 
     public float MaxGeschwindigkeit = 10;
     public float Sprungkraft = 300;
 ```
-
-!!!Tip "Anmerkung"
-    Anm: Solltet ihr dieses Spiel mit eurer Biologielehrerin programmieren, dann setzt die Variable Sprungkraft immer auf 0. ;-)
 
 ### Feststellen, ob sich der Elefant am Boden befindet
 Die Elefanten sollen grundsätzlich nur dann springen können, wenn sie auf einem Objekt stehen, von welchem sie abspringen können.  Könnten Ossi und Elli nämlich aus der Luft nochmal los springen, wäre das ziemlich gecheatet.  Es spricht aber nichts dagegen, dass man in einem anderen Spiel, einem anderen Level unseres Spiels oder bei Boostern, so ein Feature (z.B. Double Jump, oder ein Art Flappybird-Mechanik) einbaut.
