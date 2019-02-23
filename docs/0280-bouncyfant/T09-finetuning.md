@@ -1,6 +1,6 @@
 # Teil 9 - Finetuning
 
-!!!Abstract "Ziele"
+!!!Abstract "Ziel"
     Einen Platform Effector hinzufügen, damit die Figur nicht an der Wand hängen bleibt.
 
 In diesem Kapitel wirst du... | Erledigt?

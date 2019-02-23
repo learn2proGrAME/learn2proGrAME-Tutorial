@@ -1,6 +1,6 @@
 # Teil 6 - Jump around!
 
-!!! Abstract "Ziele"
+!!! Abstract "Ziel"
     Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
 In diesem Kapitel wirst du... | Erledigt?
 ----------------------------- | ------------
