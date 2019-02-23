@@ -8,7 +8,7 @@ Dafür wirst du ...
 * ... ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht
 
 !!! Abstract "Lernziele"
-    In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst um die Elefanten elastisch zu machen.
+    In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst, um die Elefanten elastisch zu machen.
 
 
 ## Springen
