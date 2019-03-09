@@ -549,19 +549,12 @@
     Rigidbody2D
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)" class="md-nav__link">
-    Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wiederholung-von-grundlagen" title="Wiederholung von Grundlagen:" class="md-nav__link">
-    Wiederholung von Grundlagen:
+  <a href="#wiederholung-der-c-grundlagen" title="Wiederholung der C# Grundlagen" class="md-nav__link">
+    Wiederholung der C# Grundlagen
   </a>
   
 </li>
@@ -569,6 +562,13 @@
           <li class="md-nav__item">
   <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
     Codebibliotheken
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -661,6 +661,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -722,19 +734,12 @@
     Rigidbody2D
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)" class="md-nav__link">
-    Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wiederholung-von-grundlagen" title="Wiederholung von Grundlagen:" class="md-nav__link">
-    Wiederholung von Grundlagen:
+  <a href="#wiederholung-der-c-grundlagen" title="Wiederholung der C# Grundlagen" class="md-nav__link">
+    Wiederholung der C# Grundlagen
   </a>
   
 </li>
@@ -742,6 +747,13 @@
           <li class="md-nav__item">
   <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
     Codebibliotheken
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -771,6 +783,10 @@
                 
                 
                 <h1 id="teil-3-bewegung">Teil 3 - Bewegung<a class="headerlink" href="#teil-3-bewegung" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, wie du deine Spielfigur steuerbar machen kannst. Du lernst wie man Tasten im Input Manager einstellt. Anschließend lernst du, wie man ein Script schreibt, über das du deine Figur dann bewegen kannst.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -798,13 +814,13 @@
 </tbody>
 </table>
 <h3 id="die-bewegung-der-elefantin-implementieren">Die Bewegung der Elefantin implementieren<a class="headerlink" href="#die-bewegung-der-elefantin-implementieren" title="Permanent link">&para;</a></h3>
-<p>Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken.</p>
+<p>Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken. Alternativ kannst du auch den Namen anklicken und F2 drücken.</p>
 <p><img alt="Rename Gameobject" src="../img/T03/T03-a-Elefant umbenennen.png" />
 <!-- elefanti verwirrender name? --></p>
 <p>Zuerst kümmern wir uns um die Tasten-Eingabe für die Bewegung. Unter <em>Edit -&gt; Project Settings -&gt; Input</em> kann man den <em>Input Manager</em> aufrufen.</p>
 <p><img alt="Input Manager" src="../img/T03/T03-b-Input Settings bearbeiten.png" /></p>
-<p>Im Input Manager siehst du eine Horizontal Achse und eine Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit <em>“H-AchseElli”</em>  bzw. <em>“V-AchseElli”</em> benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.</p>
-<p>Diese Positive/Negative Button macht Sinn sobald du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.</p>
+<p>Im Input Manager siehst du eine Horizontal Achse und eine Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit <strong>“H-AchseElli”</strong>  bzw. <strong>“V-AchseElli”</strong> benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.</p>
+<p>Dieser Positive/Negative Button macht Sinn wenn du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.</p>
 <p>Du kannst also jetzt die Tasten für die jeweiligen Bewegungsrichtungen eintragen, so wie du denkst die Steuerung ist am Besten. Ein Beispiel hierfür wäre:</p>
 <ul>
 <li>H-AchseElli<ul>
@@ -840,18 +856,25 @@
 <img alt="add script option" src="../img/T03/T03-f-Neues Script erstellen 2.png" /></p>
 <p>Das eben erstellte Script befindet sich nun im Projekt im Asset Panel. Wir verschieben es jedoch in das Unterverzeichnis Scripts.</p>
 <p>Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen.</p>
-<h3 id="cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca">Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)<a class="headerlink" href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Permanent link">&para;</a></h3>
-<h4 id="wiederholung-von-grundlagen">Wiederholung von Grundlagen:<a class="headerlink" href="#wiederholung-von-grundlagen" title="Permanent link">&para;</a></h4>
-<p><strong>Kommentar</strong>: In C-Sprachen sind Zeilen, die mit // beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer.</p>
-<p><strong>Variablen</strong>: eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur <em>Datentypen</em> für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
-String name = “Jenny”; integer alter = 12; alter = alter + 1;
-Diese beiden Variablen “name” und “alter” werden gleich bei der <em>Deklaration</em> (erste Definition) mit Werten belegt durch “=”. Das kann auch später passieren. Am Ende dieser Codezeile enthält die Variable “alter” den Wert 13.</p>
-<p><strong>Funktionen</strong>: beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
+<h4 id="wiederholung-der-c-grundlagen">Wiederholung der C# Grundlagen<a class="headerlink" href="#wiederholung-der-c-grundlagen" title="Permanent link">&para;</a></h4>
+<p><strong>Kommentar</strong>:</p>
+<p>In C-Sprachen sind Zeilen, die mit <code>//</code> beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer. KOmmentare werden grün angezeigt.</p>
+<p><strong>Variablen</strong>:</p>
+<p>Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur <em>Datentypen</em> für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.</p>
+<div class="codehilite"><pre><span></span>    <span class="n">String</span> <span class="n">name</span> <span class="p">=</span> <span class="err">“</span><span class="n">Jenny</span><span class="err">”</span><span class="p">;</span>
+    <span class="n">integer</span> <span class="n">alter</span> <span class="p">=</span> <span class="m">12</span><span class="p">;</span>
+    <span class="n">alter</span> <span class="p">=</span> <span class="n">alter</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span>
+</pre></div>
+
+
+<p>Diese beiden Variablen “name” und “alter” werden gleich bei der <em>Deklaration</em> (Das erste mal definieren) mit Werten belegt durch <code>=</code>. Den Wert kann man später auch ändern.. Am Ende dieser Codestelle enthält die Variable “alter” den Wert 13.</p>
+<p><strong>Funktionen</strong>:</p>
+<p>Sie beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
 <!-- Definition von Algorithmus VB -->
-Eine Funktion ist deshalb so nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=<em>Parameter</em>), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword <em>return</em> ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion <em a_="a;" class=".." return="return">integer addieren()</em> ist der return-Datentyp <em>integer</em>!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:</p>
+Eine Funktion ist deshalb nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=<em>Parameter</em>), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword <em>return</em> ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion <em a_="a;" class=".." return="return">integer addieren()</em> ist der return-Datentyp <em>integer</em>!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:</p>
 <div class="codehilite"><pre><span></span><span class="kt">double</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1.5</span><span class="p">;</span> <span class="c1">//&quot;double&quot; ist der gängige Datentyp für Kommazahlen</span>
 <span class="kt">double</span> <span class="n">b</span> <span class="p">=</span> <span class="m">4.3</span><span class="p">;</span> <span class="c1">//a und b werden unten als Parameter für die Funktion verwendet</span>
-<span class="n">integer</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>      <span class="c1">//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!</span>
+<span class="n">integer</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>  <span class="c1">//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!</span>
 <span class="n">integer</span> <span class="nf">addieren_int</span><span class="p">(</span><span class="kt">double</span>  <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span> <span class="c1">//das Zwischenergebnis ist hier 1.5 + 4.3 = 5.8</span>
 <span class="p">}</span>
@@ -930,7 +953,7 @@ schleifen?
 
 
 <p><img alt="VS neues Script" src="../img/T03/T03-g-Visual Studio Neues Script.png" /></p>
-<p>Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile “// Anfangseinstellungen setzen”  und die Prozedur <em>Update</em> benennen wir in <em>FixedUpdate</em> um. FixedUpdate sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall <em>nicht</em> die Framerate (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook.</p>
+<p>Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile <code>// Anfangseinstellungen setzen</code>  und die Prozedur <code>Update</code> benennen wir in <code>FixedUpdate</code> um. <code>FixedUpdate</code> sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall <strong>nicht</strong> die Framerate (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook.</p>
 <div class="codehilite"><pre><span></span><span class="c1">// Anfangseinstellungen setzen</span>
 <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
 <span class="p">{</span>
@@ -945,7 +968,7 @@ schleifen?
 </pre></div>
 
 
-<p>Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur <em>Gehen</em> Folgendes:
+<p>Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur <code>Gehen</code> folgendes:
 Wir berechnen aus dem Wert, den wir aus der horizontalen Eingabe-Achse abfragen, die horizontale (seitliche) Bewegung des Elefantenkörpers.
 Wir bestimmen anhand der Bewegung des Elefantenkörpers die Blickrichtung.
 Wir übermitteln die Bewegungsgeschwindigkeit an die Animation in Unity.
@@ -1078,8 +1101,9 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 
 <p>Wenn wir nun auf Play drücken und das Spiel starten, dann fällt Elli ins bodenlose Leere. Deshalb setzen wir im Inspector Panel bei Rigidbody2D von Elli <em>Gravity Scale</em> kurzfristig auf Null. So können wir auch testen, ob wir die Bewegung erfolgreich implementiert haben.</p>
 <p><img alt="Gravity scale" src="../img/T03/T03-i-Gravity Scale 0.png" /></p>
-<p>Sourcecode
-Download Sourcecode Teil 03: http://comber.at/dev/BouncyFant03.zip</p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T03/Bouncy%20Fant%2003.zip">Download Sourcecode Teil 03</a></p>
                 
                   
                 

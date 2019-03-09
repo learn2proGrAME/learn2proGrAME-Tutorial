@@ -647,6 +647,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -724,6 +731,18 @@
   <li class="md-nav__item">
     <a href="../T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
       Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
     </a>
   </li>
 
@@ -875,6 +894,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -905,6 +931,10 @@
                 
                 
                 <h1 id="teil-4-levels-und-collider">Teil 4 - Levels und Collider<a class="headerlink" href="#teil-4-levels-und-collider" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, wie man mehrere Assets importiert und sie als Plattform in einem Spiel verwendet. Außerdem lernst du wie man "Collider" zu Objekten hinzufügt. Das Endziel ist es, ein Level mit verschiedenen PLattformen zu bauen, auf denen deine Figur stehen kann.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -952,17 +982,20 @@
 </tbody>
 </table>
 <h3 id="unsere-neuen-assets-importieren-und-benennen">Unsere neuen Assets importieren und benennen<a class="headerlink" href="#unsere-neuen-assets-importieren-und-benennen" title="Permanent link">&para;</a></h3>
-<p>In diesem Teil wollen wir das Spielfeld, in dem sich die Elefanten bewegen, erstellen. Dazu gehören vorerst die unbeweglichen Spielobjekte und der Hintergrund. Der größte Unterschied zwischen den Spielobjekten und dem Hintergrund ist der, dass die Elefanten mit dem Spielobjekten interagieren können: Spielobjekte können den Elefanten den Weg versperren, einfach als Boden zum drauf stehen dienen oder auch von den Elefanten bewegt werden. 
-Als erstes importieren wir die Landschafts-Assets. In unserem Moodle-Kurs findet ihr Assets zum Download, die für die freie Verwendung zur Verfügung stehen. Gerne könnt ihr euch auch eure eigenen Assets erstellen. </p>
+<p>In diesem Teil wollen wir das Spielfeld, in dem sich die Elefanten bewegen, erstellen. Dazu gehören vorerst die unbeweglichen Spielobjekte und der Hintergrund. Der größte Unterschied zwischen den Spielobjekten und dem Hintergrund ist der, dass die Elefanten mit dem Spielobjekten interagieren können: Spielobjekte können den Elefanten den Weg versperren, einfach als Boden zum drauf stehen dienen oder auch von den Elefanten bewegt werden.
+Als erstes importieren wir die Landschafts-Assets. In unserem Moodle-Kurs findet ihr Assets zum Download, die für die freie Verwendung zur Verfügung stehen. Gerne könnt ihr euch auch eure eigenen Assets erstellen.</p>
 <p><img alt="Sprites importieren" src="../img/T04/T01-e-Sprites importieren II.png" /></p>
-<p>In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter https://www.gameart2d.com/free-platformer-game-tileset.html 
-Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf https://www.gameart2d.com/freebies.html. Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter https://www.gameart2d.com/license.html.    </p>
+<p>In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter <a href="https://www.gameart2d.com/free-platformer-game-tileset.html">https://www.gameart2d.com/free-platformer-game-tileset.html</a></p>
+<p>Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf <a href="https://www.gameart2d.com/freebies.html">https://www.gameart2d.com/freebies.html</a>.</p>
+<p>Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter <a href="https://www.gameart2d.com/license.html">https://www.gameart2d.com/license.html</a>.    </p>
 <p><img alt="Tiles importieren" src="../img/T04/T04-a-Tilesets importieren.png" /></p>
-<p>Im Heruntergeladenen Ordner navigieren gehen wir zu freetileset/png/Tiles, importieren die Dateien mit den Nummern 2, 13, 14 und 15 und benennen Sie folgendermaßen um:
-2 -&gt; Boden 
-13 -&gt; Plattform_Links
-14 -&gt; Plattform_Mitte
-15 -&gt; Plattform_Rechts</p>
+<p>Im Heruntergeladenen Ordner navigieren gehen wir zu freetileset/png/Tiles, importieren die Dateien mit den Nummern 2, 13, 14 und 15 und benennen Sie folgendermaßen um:</p>
+<ul>
+<li>2 -&gt; Boden</li>
+<li>13 -&gt; Plattform_Links</li>
+<li>14 -&gt; Plattform_Mitte</li>
+<li>15 -&gt; Plattform_Rechts</li>
+</ul>
 <p>Das Ergebnis sollte in etwa so aussehen:</p>
 <p><img alt="Rename Tiles" src="../img/T04/T04-b-Tilesets umbenannt.png" /></p>
 <p>Die Plattformen ziehen wir einfach via Drag-and-Drop in die Spiel-Szene hinein.
@@ -974,26 +1007,26 @@ Die Plattformen sind wahrscheinlich zu groß, aber das können wir wieder mit de
 <p>Ändern wir nun wieder bei Elli im Inspector Panel die Gravity Scale auf 1 und drücken auf Play, dann fällt die Elefantin wieder ins Bodenlose durch die Plattform. Der Grund dafür liegt darin, dass die Plattform noch kein Teil der physikalischen Welt ist. Genau genommen liegt die Ursache darin begründet, dass wir noch keine Collider für die Plattformteile angelegt haben. Ohne Collider ist unsere Plattform nämlich einfach ein Hintergrundobjekt, an dem andere Objekte einfach vorbeiziehen.</p>
 <h4 id="collider">Collider<a class="headerlink" href="#collider" title="Permanent link">&para;</a></h4>
 <p>Collider stellen in Unity Grenzen für die Kollisionserkennung zur Verfügung. Überschneiden sich die Grenzen von zwei Objekten die Teil der Physik Welt sind, dann wird eine Kollision ausgelöst, dass wird beispielsweise dazu eingesetzt, dass ein Objekt von einem anderen Objekt abprallt oder nicht hindurch kann.</p>
-<p>Es gibt in Unity unterschiedliche Arten von Collidern: </p>
+<p>Es gibt in Unity unterschiedliche Arten von Collidern:</p>
 <ul>
 <li>Box Collider</li>
-<li>Circle Collider </li>
+<li>Circle Collider</li>
 <li>Edge Collider (für Ränder)</li>
-<li>Composite Collider </li>
-<li>Capsule Collider </li>
+<li>Composite Collider</li>
+<li>Capsule Collider</li>
 <li>Polygon Collider</li>
 </ul>
 <p>Die einfachsten Collider sind Box Collider und Circle Collider. Mit Einfachheit ist nicht nur die Einfachheit der Form gemeint, sondern auch, wie einfach Kollisionsereignisse zu berechnen sind. Bei Box und Circle sind Kollisionsereignisse mit weniger Aufwand zu berechnen, als bei komplizierten Formen, die etwa Polygon-Collider verwenden. Deshalb sollte man nach Möglichkeit eher einfache Collider verwenden. Verwendet man zu viele komplizierte Collider kann dies die Framerate verringern, bzw. zu Ruckeln führen.</p>
-<p>Um das Konzept des Geschwindigkeitsvorteils von einfachen Collidern anzuwenden, fügen wir der Plattform_Links nun statt einem Polygon Collider, zwei Box Collider hinzu. 
+<p>Um das Konzept des Geschwindigkeitsvorteils von einfachen Collidern anzuwenden, fügen wir der Plattform_Links nun statt einem Polygon Collider, zwei Box Collider hinzu.
 Dafür klicken wir im Inspector Panel auf AddComponent -&gt;Physics2D-&gt;Box Collider 2D.
 Wir optimieren noch das Offset (Position) und die Werte bei Size (Größe). Bei mir haben diese Werte gut ausgesehen, aber es kann gut sein, dass in deinem Spiel ein paar Dinge anders sind.  </p>
 <p><img alt="Adjust Collider 1" src="../img/T04/T04-h-Anpassen Component Box Collider 1.png" />
 <img alt="Adjust Collider 2" src="../img/T04/T04-i-Anpassen Component Box Collider 2.png" /></p>
 <p>Alternativ kann man auch auf den Button neben Edit Collider klicken und den Collider durch Ziehen mit der Maus anpassen.</p>
-<p><img alt="MISSIN IMG, Collider adjusting via Dragging" src="../img/T04/T04-i Anpassen Component Box Collider 3.png" /> </p>
+<p><img alt="MISSIN IMG, Collider adjusting via Dragging" src="../img/T04/T04-i Anpassen Component Box Collider 3.png" /></p>
 <p>Nachfolgend unser Plattformteil mit den Collider-Grenzen der zwei Box-Collider in grün.</p>
 <p><img alt="Platform Left" src="../img/T04/T04-j-Objekt Collidergrenenzen in gruen.png" /></p>
-<p>Anmerkung: Zuvor habe ich über das Konzept des Geschwindigkeitsvorteils bei Collider geschrieben. Ich habe deswegen zuvor in der Formulierung das Konzept verwendet, weil in der Praxis so einfache Objekte wie unsere Plattformen, noch dazu, wenn sie in so geringer Zahl sind und sich darüber hinaus statisch, also fix in der Landschaft sind, locker mit der Rechenleistung von älteren Computern, Konsolen oder Smartphones auskommen. Dennoch halte ich es für wichtig, dass man gerade im Simulationsbereich oder im Bereich der Computergrafik über Effizienz von Berechnungen oder Algorithmen ein wenig nachdenkt. </p>
+<p>Anmerkung: Zuvor habe ich über das Konzept des Geschwindigkeitsvorteils bei Collider geschrieben. Ich habe deswegen zuvor in der Formulierung das Konzept verwendet, weil in der Praxis so einfache Objekte wie unsere Plattformen, noch dazu, wenn sie in so geringer Zahl sind und sich darüber hinaus statisch, also fix in der Landschaft sind, locker mit der Rechenleistung von älteren Computern, Konsolen oder Smartphones auskommen. Dennoch halte ich es für wichtig, dass man gerade im Simulationsbereich oder im Bereich der Computergrafik über Effizienz von Berechnungen oder Algorithmen ein wenig nachdenkt.</p>
 <p>Für das mittlere Plattformstück reicht ein einzelner Box Collider. Für das rechte Plattformobjekt habe ich diesmal die Box Collider nicht überschneidend sondern einfach übereinandergelegt gestaltet.</p>
 <p><img alt="Platform Middle" src="../img/T04/T04-k-Mittleres Objekt Collidergrenenzen in gruen.png" />
 <img alt="Platform Right" src="../img/T04/T04-l-rechtes Objekt Collidergrenenzen in gruen.png" /></p>
@@ -1002,8 +1035,8 @@ Wir optimieren noch das Offset (Position) und die Werte bei Size (Größe). Bei 
 <img alt="Duplicate Platform" src="../img/T04/T04-m-Duplicate Plattform.png" /></p>
 <p>Am Ende sollte das Spielfeld in etwa so aussehen:</p>
 <p><img alt="Level Layout" src="../img/T04/T04-m-Duplicated Plattforms  All.png" /></p>
-<p>Das graue Rechteck stellt den momentanen Kameraausschnitt dar. Dieser Ausschnitt bestimmt wie viel Platz wir am Spielfeld haben. Ist uns der Platz am Spielfeld zu gering, so können wir einfach durch einen Klick auf Main Camera (zu finden in der Hierarchy) die Eigenschaften der Kamera im Inspector anzeigen. In den Eigenschaften ändern wir einfach die Größe (Size) auf einen höheren Wert, z.b. 7. </p>
-<p>Der Elefantendame Elli gönnen wir am Ende noch einen Polygon Collider. </p>
+<p>Das graue Rechteck stellt den momentanen Kameraausschnitt dar. Dieser Ausschnitt bestimmt wie viel Platz wir am Spielfeld haben. Ist uns der Platz am Spielfeld zu gering, so können wir einfach durch einen Klick auf Main Camera (zu finden in der Hierarchy) die Eigenschaften der Kamera im Inspector anzeigen. In den Eigenschaften ändern wir einfach die Größe (Size) auf einen höheren Wert, z.b. 7.</p>
+<p>Der Elefantendame Elli gönnen wir am Ende noch einen Polygon Collider.</p>
 <p><img alt="Add Collider" src="../img/T04/T04-m-Add Elli Poligoncollider.png" /></p>
 <p>Beim Hauptcharakter unseres Spiels kann man schließlich ein wenig mehr Rechenaufwand in Kauf nehmen und die genauen Grenzen, wie etwa beim Rüssel, machen dann die ganze Physik-Simulation viel spaßiger beim Spielen.</p>
 <p><img alt="Elli Collider" src="../img/T04/T04-m-Elli Poligoncollider.png" /></p>
@@ -1060,7 +1093,7 @@ In diesem Beispiel wählen wir Variante 3, erstellen einen neues Game Object, be
 </tbody>
 </table>
 <h2 id="bodenlegen">Bodenlegen<a class="headerlink" href="#bodenlegen" title="Permanent link">&para;</a></h2>
-<p>Jetzt fällt Elli zumindest nicht mehr aus dem Spielfeld heraus. Doch auf einem unsichtbaren Bodens gehen hat nur halb so viel Stil. Deshalb werden wir uns jetzt einen schönen Boden legen, der sich genau mit der Grenze des unteren Spielfeldcolliders deckt. 
+<p>Jetzt fällt Elli zumindest nicht mehr aus dem Spielfeld heraus. Doch auf einem unsichtbaren Bodens gehen hat nur halb so viel Stil. Deshalb werden wir uns jetzt einen schönen Boden legen, der sich genau mit der Grenze des unteren Spielfeldcolliders deckt.
 Zuerst änderen wir die Größe des Sprites für den Boden auf 170 pixels per unit  und ziehen dann das Boden-Sprite in die Szene hinein. Das Ganze machen wir nun in etwa 30 Mal. Dabei bekommt man richtig viel Übung ;-)  Halt, Nein, Scherz! Als InformatikerInnen lieben wir Effizienz und elegante Konstrukte und deshalb verwenden wir für das Erstellen der weiteren Bodenteile eine Schleife.</p>
 <p><img alt="Bodenlegen" src="../img/T04/T04-q-Bodenlegen.png" /></p>
 <h2 id="vorlagen">Vorlagen<a class="headerlink" href="#vorlagen" title="Permanent link">&para;</a></h2>
@@ -1068,7 +1101,7 @@ Zuerst änderen wir die Größe des Sprites für den Boden auf 170 pixels per un
 <p><img alt="Vorlage erstellen" src="../img/T04/T04-r-Vorlage erstellen.png" /></p>
 <p>Dem Objekt Spielfeldgrenzen fügen wir nun mittels Add Component ein neues Script hinzu, das wir Spielfeld nennen. Dieses Script verschieben wir auch gleich wieder in den Ordner Scripts.</p>
 <p><img alt="Create Script" src="../img/T04/T04-q-Bodenlegen Script.png" /></p>
-<p>Das Script klicken wir doppelt an und nun sollte sich Microsoft Visual Studio öffnen. In Visual Studio löschen wir im Script Spielfeld zuerst die Prozedur Update. Dann fügen wir gleich unter der Klassendefinition unser Spielobjekt namens Boden hinzu und speichern das Script mit Strg+s. Das GameObject Boden entspricht dann beim Programmieren unserer Vorlage Boden die wir vorhin erstellt haben. </p>
+<p>Das Script klicken wir doppelt an und nun sollte sich Microsoft Visual Studio öffnen. In Visual Studio löschen wir im Script Spielfeld zuerst die Prozedur Update. Dann fügen wir gleich unter der Klassendefinition unser Spielobjekt namens Boden hinzu und speichern das Script mit Strg+s. Das GameObject Boden entspricht dann beim Programmieren unserer Vorlage Boden die wir vorhin erstellt haben.</p>
 <div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Spielfeld</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
     <span class="k">public</span> <span class="n">GameObject</span> <span class="n">Boden</span><span class="p">;</span>
 </pre></div>
@@ -1093,12 +1126,12 @@ Zuerst änderen wir die Größe des Sprites für den Boden auf 170 pixels per un
 <p>Wir befinden uns im 2D Modus, also gibt es keine Z Koordinate. Wir könnten also statt -4 irgendwas schreiben, das macht keinen Unterschied. Solltest du aber irgendwann mal ein 3D Spiel machen wollen, musst du auch bei der Z Koordinate etwas berechnen.</p>
 </div>
 <h2 id="aufgabe">Aufgabe<a class="headerlink" href="#aufgabe" title="Permanent link">&para;</a></h2>
-<p>Füge in die vorhandenen Prozedur Start eine Schleife ein, die die Bodenstücke am am unteren Rand des Spielfelds automatisch zeichnet. </p>
+<p>Füge in die vorhandenen Prozedur Start eine Schleife ein, die die Bodenstücke am am unteren Rand des Spielfelds automatisch zeichnet.</p>
 <div class="codehilite"><pre><span></span><span class="c1">// Initialisierungen</span>
 <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">// In dieser Schleife wird der Boden gezeichnet</span>
-    <span class="cm">/*** Hier den Code für die Schleife einfügen ***/</span> 
+    <span class="cm">/*** Hier den Code für die Schleife einfügen ***/</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -1143,9 +1176,9 @@ Zuerst änderen wir die Größe des Sprites für den Boden auf 170 pixels per un
 <p>Das Resultat sieht dann so aus:</p>
 <p><img alt="Fertiges Level" src="../img/T04/T04-t-fertigesLevel.png" style="height:60%;width:60%" /></p>
 <h2 id="hintergrund-und-abschlussaufgaben">Hintergrund und Abschlussaufgaben<a class="headerlink" href="#hintergrund-und-abschlussaufgaben" title="Permanent link">&para;</a></h2>
-<p>Zum Abschluss haben wir die letzten Schritte des Leveldesign als Übung für dich ausgedacht. Dabei geht es darum Dinge anzuwenden, die in diesem Kapitel besprochen wurden. </p>
+<p>Zum Abschluss haben wir die letzten Schritte des Leveldesign als Übung für dich ausgedacht. Dabei geht es darum Dinge anzuwenden, die in diesem Kapitel besprochen wurden.</p>
 <h3 id="aufgabe-1">Aufgabe 1<a class="headerlink" href="#aufgabe-1" title="Permanent link">&para;</a></h3>
-<p>Füge der Spieleszene den Hintergrund BG.png aus freetileset_jungle\png\BG (Download)  hinzu. 
+<p>Füge der Spieleszene den Hintergrund BG.png aus freetileset_jungle\png\BG (Download)  hinzu.
 In Moodle wird man dann die Lösung ein/ausblenden können.</p>
 <h4 id="losung-aufgabe-1">Lösung Aufgabe 1<a class="headerlink" href="#losung-aufgabe-1" title="Permanent link">&para;</a></h4>
 <p>Rechtsklick in den Asset Panel-&gt;Import New Asset. Auswählen von freetileset_jungle\png\BG\BG.png</p>
@@ -1155,7 +1188,7 @@ Position: X=0, Y=0, Z=10
 Größe: Im Inspector Scale auf folgenden Werte setzen: X=2, Y=2, Z=1. Fertig!
 Eventuell, musst du im Inspector bei Sprite Renderer “Order in Layer” auf -1 setzen. Dadurch ist dein Hintergrund auf einem eigenen Layer hinter den anderen Objekten.</p>
 <h3 id="aufgabe-2">Aufgabe 2<a class="headerlink" href="#aufgabe-2" title="Permanent link">&para;</a></h3>
-<p>Füge die Grafik Tree3.png aus dem freetileset_jungle\png\Object zur Spielszene hinzu und Weise dem Baum einen Polygon Collider 2D zu. </p>
+<p>Füge die Grafik Tree3.png aus dem freetileset_jungle\png\Object zur Spielszene hinzu und Weise dem Baum einen Polygon Collider 2D zu.</p>
 <h4 id="losung-aufgabe-2">Lösung Aufgabe 2:<a class="headerlink" href="#losung-aufgabe-2" title="Permanent link">&para;</a></h4>
 <p>Rechtsklick in den Asset Panel-&gt;Import New Asset. Auswählen von freetileset_jungle\png\Object\Tree_3.png
 Die Grafik vom Projektbereich in die Hierarchy ziehen und in Baum umbenennen.
@@ -1167,8 +1200,9 @@ In der Hierarchy den Baum anklicken und im Inspector über Add Component-&gt;Phy
 <p class="admonition-title">Pro-Tipp</p>
 <p>Wenn man möchte, dass die Objekte im Spielfeld ein wenig in der Baumkrone verschwinden, dann kann man die Größe des Objekts z.B. Tree_3 zuerst auf einen höheren Wert setzen (z.B. 110) und dann den Collider hinzufügen. Ein höherer Wert bei Pixelgröße bedeutet ja, dass der Baum kleiner dargestellt wird. Dadurch haben wir einen etwas kleineren Baum mit einem kleineren Collider. Wenn wir jetzt die Pixelgröße wieder auf den ursprünglichen Wert von 100 zurücksetzen, dann bleibt der Collider kleiner als die graphische Darstellung des Baums. Der Collider skaliert nämlich nur dann mit, wenn ich die Größe eines Spielobjekts via Transform/Scale ändere. Für das Finetuning könnte man noch das Offset des Polygon Colliders anpassen, z.B. indem wir Y=-0,1 setzen. Abschließend setzt man noch den Z-Wert des Baums auf einen niedrigeren Z-Wert, als den Wert der anderen Spielobjekte (z.B. -2).</p>
 </div>
-<p>Sourcecode
-Download Sourcecode Teil 04: <a href="http://comber.at/dev/BouncyFant04.zip">http://comber.at/dev/BouncyFant04.zip</a></p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T04/Bouncy%20Fant%2004.zip">Download Sourcecode Teil 04</a></p>
                 
                   
                 

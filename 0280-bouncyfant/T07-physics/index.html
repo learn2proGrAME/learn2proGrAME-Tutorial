@@ -598,17 +598,23 @@
     Skalieren
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
+  </a>
+  
 </li>
         
       </ul>
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
-    Sourcecode
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -643,6 +649,18 @@
   <li class="md-nav__item">
     <a href="../T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
       Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
     </a>
   </li>
 
@@ -709,17 +727,23 @@
     Skalieren
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
+  </a>
+  
 </li>
         
       </ul>
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
-    Sourcecode
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -744,8 +768,8 @@
                 
                 <h1 id="teil-7-physik">Teil 7 - Physik<a class="headerlink" href="#teil-7-physik" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p class="admonition-title">Ziele</p>
-<p>Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.</p>
+<p class="admonition-title">Ziel</p>
+<p>In diesem Kapitel lernst du, wie du automatisch generierte Hindernisse für dein Spiel erstellst. Dafür lernst du wie man ein Script schreibt, dass diese Objekte aus einer Vorlage erstellt und in deinem Spiel von der Decke fallen lässt.</p>
 </div>
 <hr />
 <table>
@@ -771,6 +795,7 @@
 </tbody>
 </table>
 <h2 id="hindernisse-hinzufugen">Hindernisse hinzufügen<a class="headerlink" href="#hindernisse-hinzufugen" title="Permanent link">&para;</a></h2>
+<p>Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.</p>
 <p><img alt="Kiste" src="../img/T07/T07-aa-Kiste.png" /> <img alt="Kugel" src="../img/T07/T07-ab-Kugel.png" /></p>
 <p>Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (<em>Import New Asset</em>) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du in <a href="/0280-bouncyfant/T02-animstat">Kapitel 2</a></p>
 <p>Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel einen Circle Collider und die Kiste einen Box Collider) zugewiesen. Füge den Kisten und Kugeln einen <em>RigidBody2D</em> hinzu, damit sich die Kisten und Kugeln auch bewegen können und nicht starr im Level verharren.</p>
@@ -847,8 +872,9 @@
 
 <p>Wenn alles gespeichert ist, weisen wir im Inspector dem <em>Level01</em> die Vorlagen den Variablen <em>Kiste</em> und <em>Kugel</em> zu.</p>
 <p><img alt="Vorlagen zuweisen" src="../img/T07/T07-d-Zuweisen der Vorlagen zum Script.png" style="height:50%;width:50%" /></p>
-<h2 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h2>
-<p>Download Sourcecode Teil 07: http://comber.at/dev/BouncyFant07.zip</p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T07/Bouncy%20Fant%2007.zip">Download Sourcecode Teil 07</a></p>
                 
                   
                 

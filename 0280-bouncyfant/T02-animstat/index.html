@@ -548,6 +548,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#parameter" title="Parameter" class="md-nav__link">
+    Parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#einstellungen-bei-den-ubergangen" title="Einstellungen bei den Übergängen" class="md-nav__link">
     Einstellungen bei den Übergängen
   </a>
@@ -667,6 +674,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -739,6 +758,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#parameter" title="Parameter" class="md-nav__link">
+    Parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#einstellungen-bei-den-ubergangen" title="Einstellungen bei den Übergängen" class="md-nav__link">
     Einstellungen bei den Übergängen
   </a>
@@ -783,6 +809,10 @@
                 
                 
                 <h1 id="teil-2-animationen-und-states">Teil 2 - Animationen und "States"<a class="headerlink" href="#teil-2-animationen-und-states" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, wie du eine Animation für deine Spielfigur erstellst und sie mithilfe des "Animation Controller" animierst.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -821,7 +851,7 @@
 </tr>
 </tbody>
 </table>
-<p>Überprüfe, ob du, wie in Teil 1 vorgegeben, den Animationsstufen die Namen Elefant_Gehen_1, Elefant_Gehen_2, Elefant_Stehen gegeben hast. Klicke auf Elefant, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.</p>
+<p>Überprüfe, ob du, wie in <a href="../T01-adassets/#animationsstufen-benennen">Teil 1</a> vorgegeben, den Animationsstufen die Namen <strong>Elefant_Gehen_1</strong>, <strong>Elefant_Gehen_2</strong> und <strong>Elefant_Stehen</strong> gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.</p>
 <h2 id="states-und-animationen">States und Animationen<a class="headerlink" href="#states-und-animationen" title="Permanent link">&para;</a></h2>
 <p>Bevor wir den Elefanten am Bildschirm hin- und herbewegen wollen, legen wir zuerst die Bewegungsabläufe oder Animationen (Stehen und Gehen) für den Elefanten fest. Die Bewegungsabläufe sind durch unterschiedliche Zustände (engl. <em>states</em>)  gekennzeichnet.  Ein Zustand der Spielfigur ist “Stehen” und der andere Zustand ist “Gehen”. Solange später der Elefant mit Tasteneingaben (das kommt später) bewegt wird, befindet sich das GameObject Elefant im Zustand Gehen, und dann bewegen sich seine Beine.</p>
 <h3 id="animationen">Animationen<a class="headerlink" href="#animationen" title="Permanent link">&para;</a></h3>
@@ -837,15 +867,17 @@
 <h3 id="animator">Animator<a class="headerlink" href="#animator" title="Permanent link">&para;</a></h3>
 <p>Wenn man diesen Controller doppelt klickt öffnet sich der <em>Animator (Window/Animator)</em>. Im Animator sind verschiedene Zustände (<em>States</em>) und deren Übergänge definiert.</p>
 <p><img alt="Animator" src="../img/T02/T02-d-Animator.png" /></p>
-<p>Neue <em>States</em> kann ich mittels Rechtsklick  und <em>States-&gt; Create/Empty</em> hinzufügen (siehe Screenshot unten).</p>
+<p>Neue <em>States</em> kann ich mittels Rechtsklick und dann durch Klicken auf <em>Create States -&gt; Empty</em> hinzufügen (siehe Screenshot unten).</p>
 <p><img alt="Animator2" src="../img/T02/T02-e-Animator Neue Stats erzeugen.png" /><br />
 Zuerst wollen wir einen Zustand namens Stehen erzeugen. Diesem müssen wir die <em>Stehen</em>-Animation zuweisen.<br />
-Dann setzen wir diesen Zustand als Standard (rechte Maustaste/“Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet.
+Dann setzen wir diesen Zustand als Standard (Klick mit der rechten Maustaste auf einen State -&gt; “Set As Layer Default State”). Dadurch wird der Zustand orange gekennzeichnet. Unsere Animation startet immer beim Default State.
 Mittels Rechtsklick auf den Zustand und Make Transition fügt man neue Übergänge zwischen den Zuständen hinzu.</p>
 <p><img alt="Animator3" src="../img/T02/T02-f-Neue Transitions.png" /></p>
-<p>Ziel ist es, dass die Geh-Animation (die in dem entsprechenden Zustand ausgewählt ist) aktiv ist, wenn der Elefant bewegt wird! Am Ende wollen wir die Zustände und Übergänge sowie am Screenshot verbunden zu haben.</p>
+<p>Ziel ist es, dass die Geh-Animation (die in dem entsprechenden Zustand ausgewählt ist) aktiv ist, wenn der Elefant bewegt wird! Am Ende wollen wir die Zustände und Übergänge so wie am Screenshot unten verbunden zu haben.</p>
 <p><img alt="Animator4" src="../img/T02/T02-f-States Zielzustand.png" /></p>
-<p>Man nennt verbundene Zustände State Machine oder Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen. Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (wahr/falsch). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.</p>
+<p>Man nennt verbundene Zustände eine State Machine oder einen Zustandsautomat. Man kann sich diesen tatsächlich wie eine abgeschlossene Maschine vorstellen.</p>
+<h3 id="parameter">Parameter<a class="headerlink" href="#parameter" title="Permanent link">&para;</a></h3>
+<p>Um der State Machine mitzuteilen, in welcher Animationsstufe sich unsere Spielfigur gerade befindet, benötigen wir Parameter. Neue Parameter stellt man im Animator ein, indem man auf Parameters klickt und dann das Plus-Zeichen anklickt. Wir erstellen die Parameter Geschwindigkeit vom Typ Float (Kommazahl) und Springen vom Typ Bool (<code>true</code> \ <code>false</code>). Da der Animator und die Code-Datei (Script) im Inspector zugewiesen sind, können Parameter später im Code verwendet werden.</p>
 <p><img alt="Animator Parameter" src="../img/T02/T02-g-Parameter erstellen Geschwindigkeit und Springen.png" /></p>
 <p>Wenn man nun auf Play drückt, wechselt der Elefant von selbst alle paar Sekunden von der stehenden Animation in die Animation des Gehens. Auch wenn sich der Elefant gar nicht hin- und her bewegt, zappelt er mit den Beinen. Das ist aber etwas komisch für den Spieler, wenn eine Figur die Beine bewegt ohne eigentlich zu gehen.Damit sich unsere Spielfigur später im Spielen nur dann die Beine bewegt, wenn wir auch den Elefanten hin und her bewegen, müssen wir den Übergang von von Stehen zu Gehen und von Gehen zu Stehen an eine Bedingung knüpfen: Ist die horizontale Geschwindigkeit kleiner als 0.01, so soll der Elefant stehen. Ist die horizontale Geschwindigkeit jedoch größer als 0.01, so soll die Animation für die Bewegung abgespielt werden. Diese Bedingungen legt man unter <em>Conditions</em> fest. Dafür klickt man einfach den Übergang (blauer Pfeil im Screenshot) an und fügt mit dem “+” eine neue Bedingung hinzu.</p>
 <div class="admonition tip">
@@ -856,10 +888,11 @@ Mittels Rechtsklick auf den Zustand und Make Transition fügt man neue Übergän
 <p>Bedingung für den Übergang von Stehen zu Gehen:</p>
 <p><img alt="Animator Bedingungen" src="../img/T02/T02-h-Bedingung Stehen - Gehen.png" /></p>
 <h3 id="einstellungen-bei-den-ubergangen">Einstellungen bei den Übergängen<a class="headerlink" href="#einstellungen-bei-den-ubergangen" title="Permanent link">&para;</a></h3>
-<p>Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit die Bewegung nicht verzögert auftritt. <em>Has Exit Time</em> soll nicht ausgewählt sein, <em>Fixed Duration</em> ebenso nicht, die <em>Transition Duration</em> und das <em>Transition Offset</em> sollten auf 0 gesetzt werden. Diese Optionen würden bewirken, dass die Übergangsbedingung an eine Zeitdauer (duration) geknüpft ist (Fixed Duration) oder der Übergang verzögert oder mit einer gewissen Geschwindigkeit erfolgt (Transition Offset/Duration). Hier soll aber der Elefant sofort aufhören, die Beine zu bewegen, wenn er stehen bleibt.</p>
+<p>Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit die Bewegung nicht verzögert auftritt. <em>Has Exit Time</em> soll nicht ausgewählt sein, <em>Fixed Duration</em> ebenso nicht, die <em>Transition Duration</em> und das <em>Transition Offset</em> sollten auf 0 gesetzt werden. Diese Optionen würden bewirken, dass die Übergangsbedingung an eine Zeitdauer (Duration) geknüpft ist (Fixed Duration) oder der Übergang verzögert oder mit einer gewissen Geschwindigkeit erfolgt (Transition Offset/Duration). Hier soll aber der Elefant sofort aufhören, die Beine zu bewegen, wenn er stehen bleibt.</p>
 <p><img alt="Transition settings" src="../img/T02/T02-j-Einstellungen Uebergaenge.png" /></p>
+<hr />
 <h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
-<p>Download Sourcecode Teil 02: http://comber.at/dev/BouncyFant02.zip</p>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T02/Bouncy%20Fant%2002.zip">Download Sourcecode Teil 02</a></p>
 <div class="footnote">
 <hr />
 <ol>

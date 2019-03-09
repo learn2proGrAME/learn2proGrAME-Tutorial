@@ -673,6 +673,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -795,6 +807,10 @@
                 
                 
                 <h1 id="teil-5-zweite-spielfigur-erstellen">Teil 5 - Zweite Spielfigur erstellen<a class="headerlink" href="#teil-5-zweite-spielfigur-erstellen" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du wie man eine zweite Spielfigur erstellt. Du lernst über das Konzept von Vererbung in der Programmierung und wie Mutter-und Kindklassen schreibst, um Zeit zu sparen.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -836,14 +852,14 @@
 <h3 id="objektorientierte-programmierung-vererbung">Objektorientierte Programmierung, Vererbung<a class="headerlink" href="#objektorientierte-programmierung-vererbung" title="Permanent link">&para;</a></h3>
 <p>In diesem Kapitel erstellen wir eine zweite Spielfigur. Wir möchten jedoch nicht einfach eine Kopie der vorhandenen Spielfigur erstellen, sondern wir möchten eine Parent-Klasse erstellen von der wir dann die Child-Klassen ableiten.</p>
 <p><img alt="Parent and Child Diagram" src="../img/T05/T05-a-Neues Parent und Child Klasse.png" /></p>
-<p>Dazu ist es hilfreich über die grundlegenden Prinzipien der objektorientierten Programmierung Bescheid zu wissen. Wer sich noch einmal die Grundlagen der objektorientierten Programmierung durchlesen möchte, kann diese in unserem Moodle-Kurs unter diesem Link finden: Lernmaterialien über objektorientierte Programmierung </p>
+<p>Dazu ist es hilfreich über die grundlegenden Prinzipien der objektorientierten Programmierung Bescheid zu wissen. Wer sich noch einmal die Grundlagen der objektorientierten Programmierung durchlesen möchte, kann diese in unserem Moodle-Kurs unter diesem Link finden: Lernmaterialien über objektorientierte Programmierung</p>
 <h4 id="einfuhrende-ubung">Einführende Übung<a class="headerlink" href="#einfuhrende-ubung" title="Permanent link">&para;</a></h4>
 <p>Überlegt in Gruppen zu je vier Personen, welche Vorteile eine Vorlage einer Spielfigur, von der dann die weiteren Spielfiguren abgeleitet sind, bringt. Notiert eure Ergebnisse auf einem Medium (Papier, PC, Smartphone) eurer Wahl.</p>
 <h5 id="mogliche-vorteile-beispielantworten">Mögliche Vorteile (Beispielantworten)<a class="headerlink" href="#mogliche-vorteile-beispielantworten" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Der Quellcode wird strukturierter und übersichtlicher.</li>
 <li>Man kann durch Vererbung gemeinsame Eigenschaften und gemeinsames Verhalten teilen Muss den Quellcode nicht doppelt implementieren/kopieren.</li>
-<li>Änderungen in der Vorlage wirken sich automatisch auf die abgeleiteten Objekte aus. Man muss nicht jede Änderung für jede Spielfigur durchführen. </li>
+<li>Änderungen in der Vorlage wirken sich automatisch auf die abgeleiteten Objekte aus. Man muss nicht jede Änderung für jede Spielfigur durchführen.</li>
 </ul>
 <h3 id="ein-neues-objekt-bouncyfant-erstellen">Ein neues Objekt “BouncyFant” erstellen<a class="headerlink" href="#ein-neues-objekt-bouncyfant-erstellen" title="Permanent link">&para;</a></h3>
 <p>Das neue Objekt, dass wir benötigen, realisieren wir einfach in einem Script. Dazu erstellen wir in unserem Script-Verzeichnis das Script BouncyFant.cs.</p>
@@ -871,7 +887,7 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 
         <span class="cm">/* Blickrichtung des Elefanten bestimmen.</span>
 <span class="cm">            * Der Vektor für die Blickrichtung soll ein Vektor sein,</span>
-<span class="cm">            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1) </span>
+<span class="cm">            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1)</span>
 <span class="cm">            * der horizontalen Bewegungsrichtung (Mathf.Sign(h)) ergibt.</span>
 <span class="cm">            * Der y-Wert des Elefanten bleibt gleich, daher transform.localScale.y.       </span>
 <span class="cm">            */</span>
@@ -879,7 +895,7 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 
         <span class="cm">/* Die Geschwindigkeit wird auf den Absolutbetrag der horizontalen</span>
 <span class="cm">            * Bewegung gesetzt. Negative Geschwindigkeit gibt es nicht.</span>
-<span class="cm">            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich </span>
+<span class="cm">            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich</span>
 <span class="cm">            * 10km/h in einer Rückwärtsbewegung und nicht &quot;-10km/h&quot; ;)</span>
 <span class="cm">            */</span>
         <span class="n">Animation</span><span class="p">.</span><span class="n">SetFloat</span><span class="p">(</span><span class="s">&quot;Geschwindigkeit&quot;</span><span class="p">,</span> <span class="n">Mathf</span><span class="p">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">h</span><span class="p">));</span>
@@ -896,7 +912,7 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 <span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
 
 <span class="k">public</span> <span class="k">class</span> <span class="nc">Elli</span> <span class="p">:</span> <span class="n">BouncyFant</span> <span class="p">{</span>
-    <span class="c1">// Anfangseinstellungen setzen </span>
+    <span class="c1">// Anfangseinstellungen setzen</span>
     <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
     <span class="p">{</span>
         <span class="c1">// Den Namen setzen</span>
@@ -926,7 +942,7 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 
 <p>Jetzt können wir  uns bereits um Ellis Begleiter kümmern. Zuallererst klicken wir in der Hierarchy mit der rechten Maustaste auf Elli und duplizieren das GameObject Elli.</p>
 <p><img alt="Rename Gameobject" src="../img/T05/T05-c-Duplicate Elli.png" /></p>
-<p>Das neue GameObject benennen wir nun um, beispielsweise in "Ossi". </p>
+<p>Das neue GameObject benennen wir nun um, beispielsweise in "Ossi".</p>
 <p>Der Elefant Ossi benötigt ein eigenes Script. Durch das Duplizieren des Objekts Elli ist auch noch Elli Script in Ossi enthalten. Dieses Script löschen wir im Inspector.</p>
 <p><img alt="Rename Gameobject" src="../img/T05/T05-d-Ellis Script aus Ossis Repertoire loeschen.png" /></p>
 <p>Ossis neues Script erstellen wir via Add Component-&gt;New Script ebenfalls im Inspector. Doch einen Doppelklick auf das Script öffnet sich wieder Visual Studio.  Wann legen wir zuerst fest, dass Ossi  von der Klasse BouncyFant abgeleitet wird:
@@ -941,7 +957,7 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 <span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
 
 <span class="k">public</span> <span class="k">class</span> <span class="nc">Ossi</span> <span class="p">:</span> <span class="n">BouncyFant</span> <span class="p">{</span>
-    <span class="c1">// Anfangseinstellungen setzen </span>
+    <span class="c1">// Anfangseinstellungen setzen</span>
     <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="c1">// Den Namen setzen</span>
@@ -967,9 +983,9 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 
 
 <p>Gerne könnt ihr probieren, wie das Spiel läuft, wenn ihr die Eingabe Achse nicht ändert. Dann steuern sich die Elefanten wunderbar synchron - beide mit den Tasten A und D.</p>
-<p>Jetzt wo wir schon die Eingabe Achse geändert haben sollten wir auch gleich in den Projekteigenschaften die veränderte Achse definieren. Das bewerkstelligen wir wieder in den Input Settings. </p>
+<p>Jetzt wo wir schon die Eingabe Achse geändert haben sollten wir auch gleich in den Projekteigenschaften die veränderte Achse definieren. Das bewerkstelligen wir wieder in den Input Settings.</p>
 <p><img alt="Rename Gameobject" src="../img/T05/T03-b-Input Settings bearbeiten.png" /></p>
-<p>In den Input Settings (im Inspector) finden wir zwei weitere Achsen, die Horizontal und Vertical heißen. </p>
+<p>In den Input Settings (im Inspector) finden wir zwei weitere Achsen, die Horizontal und Vertical heißen.</p>
 <p><img alt="Rename Gameobject" src="../img/T05/T05-e-Input Achsen Ossi.png" />
 <img alt="Rename Gameobject" src="../img/T05/T05-f-Input Achsen Ossi umbenannt.png" /></p>
 <p>Diese Achsen benennen wir in H-AchseOssi und V-AchseOssi um und ändern folgende Einstellungen:</p>
@@ -989,8 +1005,9 @@ Nun verschieben (Ausschneiden - STRG + X ) wir von Elli alle Variablen und Metho
 </ul>
 <p><img alt="Rename Gameobject" src="../img/T05/T05-g-Input Achsen Ossi Settings.png" /></p>
 <p>Das war's auch schon. Jetzt sind beide Elefanten unabhängig voneinander steuerbar, Elli mit den Tasten A und D und Ossi mit den Pfeiltasten.</p>
+<hr />
 <h5 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h5>
-<p>Download Sourcecode Teil 05: <a href="http://comber.at/dev/BouncyFant05.zip">http://comber.at/dev/BouncyFant05.zip</a></p>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T05/Bouncy%20Fant%2005.zip">Download Sourcecode Teil 05</a></p>
                 
                   
                 
