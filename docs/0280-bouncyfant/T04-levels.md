@@ -1,5 +1,8 @@
 # Teil 4 - Levels und Collider
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du, wie man mehrere Assets importiert und sie als Plattform in einem Spiel verwendet. Außerdem lernst du wie man "Collider" zu Objekten hinzufügt. Das Endziel ist es, ein Level mit verschiedenen PLattformen zu bauen, auf denen deine Figur stehen kann.
+
 In diesem Kapitel wirst du...  |    Erledigt?
 -------------------------------|----------------
 Assets für Plattformen importieren |

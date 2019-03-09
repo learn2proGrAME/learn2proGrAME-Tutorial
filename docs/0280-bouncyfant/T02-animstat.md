@@ -1,5 +1,7 @@
 # Teil 2 - Animationen und "States"
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du, wie du eine Animation für deine Spielfigur erstellst und sie mithilfe des "Animation Controller" animierst.
 
 In diesem Kapitel wirst du... |  Geschafft?
 ------------------------------|-------------

@@ -1,14 +1,19 @@
 # Teil 6 - Jump around!
 
-Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
-Dafür wirst du ...
-
-* ... eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist.
-* ... eine Methode implementieren, die die Elefanten springen lässt.
-* ... ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht
-
 !!! Abstract "Lernziele"
     In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst, um die Elefanten elastisch zu machen.
+	
+In diesem Kapitel wirst du... | Erledigt?
+----------------------------- | ---------
+Eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist. |
+Eine Methode implementieren, die die Elefanten springen lässt. |
+Ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht |
+
+Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
+
+
+
+
 
 
 ## Springen

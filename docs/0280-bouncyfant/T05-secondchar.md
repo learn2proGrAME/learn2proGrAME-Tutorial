@@ -1,5 +1,8 @@
 # Teil 5 - Zweite Spielfigur erstellen
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du wie man eine zweite Spielfigur erstellt. Du lernst über das Konzept von Vererbung in der Programmierung und wie Mutter-und Kindklassen schreibst, um Zeit zu sparen.
+
 In diesem Kapitel wirst du...  |    Erledigt?
 -------------------------------|----------------
 Die Steuerung deiner Figur einstellen. |

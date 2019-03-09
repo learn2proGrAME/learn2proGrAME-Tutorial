@@ -1,7 +1,7 @@
 # Teil 7 - Physik
 
 !!!Abstract "Ziel"
-    Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.
+    In diesem Kapitel lernst du, wie du automatisch generierte Hindernisse für dein Spiel erstellst. Dafür lernst du wie man ein Script schreibt, dass diese Objekte aus einer Vorlage erstellt und in deinem Spiel von der Decke fallen lässt.
 
 ---
 
@@ -12,6 +12,7 @@ Den Unterschied zwischen Skalierung und Änderung der Pixel per Unit zur Veränd
 Ein Script schreiben, das Kugeln und Kisten vom Himmel herabregnen lässt. |
 
 ## Hindernisse hinzufügen
+Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.
 
 ![Kiste](img/T07/T07-aa-Kiste.png) ![Kugel](img/T07/T07-ab-Kugel.png)
 

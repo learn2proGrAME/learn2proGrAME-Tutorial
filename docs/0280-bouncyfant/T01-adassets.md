@@ -1,5 +1,8 @@
 ﻿# Teil 1 - Neues Projekt erstellen und Assets einfügen
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du wie du ein Unity Projekt erstellst und deine erste Grafik ("Sprite") in dein Spiel einfügst.
+
 In diesem Kapitel wirst du...   |  Erledigt?
 ------------------------------- | -----------
 Den Arbeitsbereich kennenlernen.|  

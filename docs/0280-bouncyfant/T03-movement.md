@@ -1,5 +1,7 @@
 # Teil 3 - Bewegung
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du, wie du deine Spielfigur steuerbar machen kannst. Du lernst wie man Tasten im Input Manager einstellt. Anschließend lernst du, wie man ein Script schreibt, über das du deine Figur dann bewegen kannst.
 
 In diesem Kapitel wirst du...  |    Erledigt?
 -------------------------------|----------------

@@ -1,8 +1,8 @@
 # Teil 8 - Play to compete, cooperate to win!
 
 !!! Abstract "Ziel"
-    Im ersten Level ist es das Ziel, einen magischen Pilz zu erreichen. Diejenige, die zuerst den Pilz erreicht, bekommt einen Punkt. Das erste Level ist geschafft, wenn einer der Elefanten 10 Punkte erreicht hat. Die Zusammenarbeit kann aber über das bloße, gemeinsame Sammeln von Punkten auch hinausgehen. Beispielsweise könnt ihr euch helfen, den Pilz zu erreichen, etwa indem ihr euch gegenseitig in die Luft katapultiert und so höhere Sprünge machen könnt.
-
+    In diesem Kapitel lernst du, wie du ein Zielobjekt und einen Punktezähler inklusive der Skripte erstellst.
+	
 ---
 
 In diesem Kapitel wirst du... | Erledigt?
@@ -12,8 +12,12 @@ Ein Punktezähler als Text hinzufügen, der die Siege eines Spielers aufzeichnet
 Eine Funktion schreiben die dein Level neu lädt. |
 Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt. |
 
+## Kurzbeschreibung des Spielziels
+Im ersten Level ist es das Ziel, einen magischen Pilz zu erreichen. Diejenige, die zuerst den Pilz erreicht, bekommt einen Punkt. Das erste Level ist geschafft, wenn einer der Elefanten 10 Punkte erreicht hat. Die Zusammenarbeit kann aber über das bloße, gemeinsame Sammeln von Punkten auch hinausgehen. Beispielsweise könnt ihr euch helfen, den Pilz zu erreichen, etwa indem ihr euch gegenseitig in die Luft katapultiert und so höhere Sprünge machen könnt.
+
 
 ## Der Zauberpilz und seine Eigenschaften
+
 
 Lassen wir einen magischen Pilz entstehen, der, wenn er berührt wird, einen Punkt für den jeweiligen Bouncy Fant bringt!
 

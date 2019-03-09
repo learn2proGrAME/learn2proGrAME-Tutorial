@@ -1,7 +1,7 @@
 # Teil 9 - Finetuning
 
 !!!Abstract "Ziel"
-    Einen Platform Effector hinzufügen, damit die Figur nicht an der Wand hängen bleibt.
+    In diesem Kapitel lernst du, wie man einen PlatformEffector hinzufügt, damit deine Figur nicht an den Spielfeldgrenzen stecken bleibt.
 
 In diesem Kapitel wirst du... | Erledigt?
 ----------------------------- | ----------
