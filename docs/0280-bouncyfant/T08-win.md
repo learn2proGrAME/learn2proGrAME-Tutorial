@@ -5,12 +5,12 @@
 	
 ---
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ---------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Ein Zielobjekt (den Zauberpilz) erstellen. |
 Ein Punktezähler als Text hinzufügen, der die Siege eines Spielers aufzeichnet. |
 Eine Funktion schreiben die dein Level neu lädt. |
-Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt. |
+Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt.|
 
 ## Kurzbeschreibung des Spielziels
 Im ersten Level ist es das Ziel, einen magischen Pilz zu erreichen. Diejenige, die zuerst den Pilz erreicht, bekommt einen Punkt. Das erste Level ist geschafft, wenn einer der Elefanten 10 Punkte erreicht hat. Die Zusammenarbeit kann aber über das bloße, gemeinsame Sammeln von Punkten auch hinausgehen. Beispielsweise könnt ihr euch helfen, den Pilz zu erreichen, etwa indem ihr euch gegenseitig in die Luft katapultiert und so höhere Sprünge machen könnt.
