@@ -870,25 +870,20 @@
 <thead>
 <tr>
 <th>In diesem Kapitel wirst du...</th>
-<th>Erledigt?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Ein Zielobjekt (den Zauberpilz) erstellen.</td>
-<td></td>
 </tr>
 <tr>
 <td>Ein Punktezähler als Text hinzufügen, der die Siege eines Spielers aufzeichnet.</td>
-<td></td>
 </tr>
 <tr>
 <td>Eine Funktion schreiben die dein Level neu lädt.</td>
-<td></td>
 </tr>
 <tr>
 <td>Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -919,8 +914,9 @@
 Wir duplizieren also as Text-Objekt zweimal und benennen sieTextPunkteElli, TextPunkteOssi und TextGewinner.</p>
 <p><img alt="Textobjekte" src="../img/T08/T08-ea-instertedTexts.png" /></p>
 <p>Danach verändern wir noch die Position der Texte für die Punktestände.</p>
-<p><img alt="Position festlegen" src="../img/T08/T08-g-Text Position und Detaileinstellungen.png" style="height:35%;width:35%" /> <img alt="Texteinstellungen festlegen" src="../img/T08/T08-ga-Texteinstellungen2.png" style="height:60%;width:60%" /></p>
-<p>Je nach Bildschirmgröße, kann es sein, dass man die Position anpassen muss, sodass der Text nicht außerhalb des Bilds ist. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.</p>
+<p><img alt="Position festlegen" src="../img/T08/T08-g-Text Position und Detaileinstellungen-Elli.png" style="height:35%;width:35%" /> <img alt="Position festlegen" src="../img/T08/T08-g-Text Position und Detaileinstellungen-Ossi.png" style="height:35%;width:35%" /> <img alt="Texteinstellungen festlegen" src="../img/T08/T08-ga-Texteinstellungen2.png" style="height:60%;width:60%" /></p>
+<p>Damit der Text bei verschiedenen Bildschirmgrößen immer an der passenden Position ist, setze den Ursprung der Textkoordinaten für Ossi und Elli in die Ecken rechts und links oben und für den Gewinnertext in die Mitte.<br />
+Beachtet auch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tipp</p>
 <p>Truncate bedeutet so viel wie Abschneiden oder Wegschneiden. Die Größe des Textfeldes wird bei bei den Eigenschaften Rect Transform unter <em>Width</em> und <em>Height</em> angegeben. Ist der Text größer als die angegebene Höhe und Vertical Overflow auf Truncate gesetzt, dann wird der komplette Text weggeschnitten, da er über den Rand hinaus steht.</p>
