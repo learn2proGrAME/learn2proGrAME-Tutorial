@@ -56,9 +56,10 @@ Wir duplizieren also as Text-Objekt zweimal und benennen sieTextPunkteElli, Text
 
 Danach verändern wir noch die Position der Texte für die Punktestände.
 
-![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen.png){: style="height:35%;width:35%"} ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png){: style="height:60%;width:60%"}
+![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen-Elli.png){: style="height:35%;width:35%"} ![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen-Ossi.png){: style="height:35%;width:35%"} ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png){: style="height:60%;width:60%"}
 
-Je nach Bildschirmgröße, kann es sein, dass man die Position anpassen muss, sodass der Text nicht außerhalb des Bilds ist. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
+Damit der Text bei verschiedenen Bildschirmgrößen immer an der passenden Position ist, setze den Ursprung der Textkoordinaten für Ossi und Elli in die Ecken rechts und links oben und für den Gewinnertext in die Mitte.  
+Beachtet auch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
 
 !!!Tip "Tipp"
     Truncate bedeutet so viel wie Abschneiden oder Wegschneiden. Die Größe des Textfeldes wird bei bei den Eigenschaften Rect Transform unter *Width* und *Height* angegeben. Ist der Text größer als die angegebene Höhe und Vertical Overflow auf Truncate gesetzt, dann wird der komplette Text weggeschnitten, da er über den Rand hinaus steht.
