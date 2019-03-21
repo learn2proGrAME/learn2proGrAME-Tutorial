@@ -3,8 +3,8 @@
 !!! Abstract "Lernziele"
 	In diesem Kapitel lernst du, wie du deine Spielfigur steuerbar machen kannst. Du lernst wie man Tasten im Input Manager einstellt. Anschließend lernst du, wie man ein Script schreibt, über das du deine Figur dann bewegen kannst.
 
-In diesem Kapitel wirst du...  |    Erledigt?
--------------------------------|----------------
+In diesem Kapitel wirst du...  |
+-------------------------------|
 Die Steuerung deiner Figur einstellen. |
 Die RigidBody 2D Komponente zu deiner Figur hinzufügen. |
 Ein Script schreiben, dass es deiner Figur erlaubt sich zu bewegen. |

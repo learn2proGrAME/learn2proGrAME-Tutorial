@@ -3,8 +3,8 @@
 !!! Abstract "Lernziele"
 	In diesem Kapitel lernst du wie man eine zweite Spielfigur erstellt. Du lernst über das Konzept von Vererbung in der Programmierung und wie Mutter-und Kindklassen schreibst, um Zeit zu sparen.
 
-In diesem Kapitel wirst du...  |    Erledigt?
--------------------------------|----------------
+In diesem Kapitel wirst du...  |
+-------------------------------|
 Die Steuerung deiner Figur einstellen. |
 Über Vererbung in der objektorientierten Programmierung lernen. |
 Ein neues BouncyFant.cs Script erstellen.  |

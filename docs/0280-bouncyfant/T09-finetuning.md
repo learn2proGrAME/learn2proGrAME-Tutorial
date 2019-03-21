@@ -3,8 +3,8 @@
 !!!Abstract "Ziel"
     In diesem Kapitel lernst du, wie man einen PlatformEffector hinzufügt, damit deine Figur nicht an den Spielfeldgrenzen stecken bleibt.
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ----------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Lernen wie man einen PlatformEffector verwendet |
 
 

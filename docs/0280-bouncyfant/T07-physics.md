@@ -5,8 +5,8 @@
 
 ---
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ---------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Kugeln und Kisten als Hindernisse für die Elefanten erstellen |
 Den Unterschied zwischen Skalierung und Änderung der Pixel per Unit zur Veränderung der Größe eines Objekts verstehen |
 Ein Script schreiben, das Kugeln und Kisten vom Himmel herabregnen lässt. |
