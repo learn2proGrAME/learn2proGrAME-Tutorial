@@ -3,8 +3,8 @@
 !!! Abstract "Lernziele"
 	In diesem Kapitel lernst du wie du ein Unity Projekt erstellst und deine erste Grafik ("Sprite") in dein Spiel einfügst.
 
-In diesem Kapitel wirst du...   |  Erledigt?
-------------------------------- | -----------
+In diesem Kapitel wirst du...   |
+------------------------------- |
 Den Arbeitsbereich kennenlernen.|  
 Ordner im Asset-Bereich hinzufügen.|  
 Neue Assets zu deinem Projekt hinzufügen. |

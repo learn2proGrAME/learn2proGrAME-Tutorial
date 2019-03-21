@@ -3,8 +3,8 @@
 !!! Abstract "Lernziele"
     In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst, um die Elefanten elastisch zu machen.
 	
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ---------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist. |
 Eine Methode implementieren, die die Elefanten springen lässt. |
 Ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht |

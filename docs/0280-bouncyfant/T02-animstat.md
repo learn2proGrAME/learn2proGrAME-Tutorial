@@ -3,8 +3,8 @@
 !!! Abstract "Lernziele"
 	In diesem Kapitel lernst du, wie du eine Animation für deine Spielfigur erstellst und sie mithilfe des "Animation Controller" animierst.
 
-In diesem Kapitel wirst du... |  Geschafft?
-------------------------------|-------------
+In diesem Kapitel wirst du... |
+------------------------------|
 Benennung der Animationsstufen überprüfen |  
 Eine Animation erstellen. |
 Dem AnimationsController einen geeigneten Namen geben. |
