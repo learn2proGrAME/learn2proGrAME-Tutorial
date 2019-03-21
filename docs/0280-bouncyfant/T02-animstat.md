@@ -1,7 +1,7 @@
 # Teil 2 - Animationen und "States"
 
 
-In diesem Kapitel wirst du... |  Geschafft?
+In diesem Kapitel wirst du... |  Erledigt?
 ------------------------------|-------------
 Benennung der Animationsstufen überprüfen |  
 Eine Animation erstellen. |
