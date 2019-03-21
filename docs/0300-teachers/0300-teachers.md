@@ -5,7 +5,7 @@
 
 ##Lernergebnis Strukturmodell
 
-**Voraussetzungen: [DigiKomp(DK) 31., 3.3](https://digikomp.at/index.php?id=585&L=0)** 
+**Voraussetzungen: [DigiKomp(DK) 3.1, 3.3](https://digikomp.at/index.php?id=585&L=0)** 
 
 **Inhalte:**
 
