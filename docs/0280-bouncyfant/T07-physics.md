@@ -16,7 +16,7 @@ Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. S
 
 ![Kiste](img/T07/T07-aa-Kiste.png) ![Kugel](img/T07/T07-ab-Kugel.png)
 
-Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du in [hier](https://www.comber.at/dev/assets.zip)
+Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du [hier](https://www.comber.at/dev/assets.zip)
 .
 ### Rigidbody und Collider
 Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel einen Circle Collider und die Kiste einen Box Collider) zugewiesen. Füge den Kisten und Kugeln einen *RigidBody2D* hinzu, damit sich die Kisten und Kugeln auch bewegen können und nicht starr im Level verharren.
