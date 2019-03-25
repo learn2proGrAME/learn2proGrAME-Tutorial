@@ -1,4 +1,4 @@
-# Teil 7 - Physik
+# Teil 7 - Es regne Müll!
 
 !!!Abstract "Ziel"
     In diesem Kapitel lernst du, wie du automatisch generierte Hindernisse für dein Spiel erstellst. Dafür lernst du wie man ein Script schreibt, dass diese Objekte aus einer Vorlage erstellt und in deinem Spiel von der Decke fallen lässt.
@@ -16,7 +16,7 @@ Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. S
 
 ![Kiste](img/T07/T07-aa-Kiste.png) ![Kugel](img/T07/T07-ab-Kugel.png)
 
-Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du [hier](https://www.comber.at/dev/assets.zip)
+Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Die Assets die du dafür verwenden kannst, findest du [hier](https://www.comber.at/dev/assets.zip)
 .
 ### Rigidbody und Collider
 Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel einen Circle Collider und die Kiste einen Box Collider) zugewiesen. Füge den Kisten und Kugeln einen *RigidBody2D* hinzu, damit sich die Kisten und Kugeln auch bewegen können und nicht starr im Level verharren.
@@ -34,10 +34,12 @@ Nun ziehen wir das zuvor erstellte elastische Material aus dem Ordner *Material*
 
 ![Vorlage erstellen](img/T07/T07-b-Kugeln und Kiste Vorlagen.png)
 
-Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Es soll in regelmäßigen Abständen Müll (Kisten oder Bälle) regnen. Um die Erzeugung dieser Objekte soll sich ein eigenes *GameObject* kümmern. Wir geben diesem Objekt den Namen *MuellGenerator*
-![Leeres GameObject erstellen](img/T07/T07-c-Erstellen des leeren GameObject Level01.png)
+Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Es soll in regelmäßigen Abständen Müll (Kisten oder Bälle) regnen. Um die Erzeugung dieser Objekte soll sich ein eigenes *GameObject* kümmern.  
+Erstelle ein neues *GameObject* und gib diesem den Namen *MuellGenerator*
 
-Wir erstellen im GameObject *MuellGenerator* ein Script und nennen es *Muell.cs*. Dieses Script soll so aussehen (der Quellcode wird später noch im Detail genau erklärt).
+![Leeres GameObject erstellen](img/T07/T07-ca-Spielobjekt-MuellGenerator-Erstellen.png)
+
+Wir erstellen im GameObject *MuellGenerator* ein Script und nennen es *Muell.cs*. Dieses Script soll so aussehen (der Quellcode wird im [Videotutorial](https://www.youtube.com/watch?v=x4mYCVALFek&list=PLwrS_Vh1B1U2lo3P6h03fD1qYhoIcPGBS&index=7&t=5m26s) genau erklärt).
 
 ```C#
 using System.Collections;
@@ -100,7 +102,7 @@ public class Muell : MonoBehaviour {
 
 Wenn alles gespeichert ist, weisen wir im Inspector dem *MuellGenerator* die Vorlagen den Variablen *Kiste* und *Kugel* zu.
 
-![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png){: style="height:50%;width:50%"}
+![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png){: style="height:120%;width:120%"}
 
 ---
 
