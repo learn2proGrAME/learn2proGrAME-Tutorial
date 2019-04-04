@@ -1,0 +1,26 @@
+language: python
+python:
+  - "2.6"
+before_install:
+  - |
+      if ! echo $TRAVIS_COMMIT_MESSAGE | grep -i 'deploy'
+      then
+        echo "Kein Deploy Commit."
+        exit
+      fi
+install:
+  - pip install mkdocs
+  - pip install mkdocs-material
+script:
+  - mkdocs build
+branches:
+  only:
+    - master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: ./site/
+  on:
+    branch: master
