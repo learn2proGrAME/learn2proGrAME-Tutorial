@@ -45,7 +45,7 @@ public class Enemy {
 }
 ```
 
-`hitpoints` aus der Klasse `Player` ist *private* und kann somit aus der Klasse `Enemy` nicht direkt verändert werde.  
+`hitpoints` aus der Klasse `Player` ist *private* und kann somit aus der Klasse `Enemy` nicht direkt verändert werden.  
 Die Methode `NimmSchaden()` ist aber *public*. Somit kann man aus der Klasse `Enemy` mithilfe dieser Methode die Hitpoints eines Player Objekts verändern.
 
 `damage` in `Enemy` ist *public*. Das heißt in Unity scheint diese Variable im Inspector auf und du kannst direkt im Inspector den Schaden eines Gegners einstellen.
@@ -73,7 +73,7 @@ public class Player {
 
 
 !!!Tip "Tipp"
-	Zugriffsmodifikatoren sollten, wenn möglich immer möglichst eingeschränkt verwendet werden.  
+	Zugriffsmodifikatoren sollten, immer möglichst eingeschränkt verwendet werden.  
 	Das heißt *public* sollte man nur dann verwenden, wenn man einen guten Grund dafür hat.
 
 	Ein Programm wird nämlich sehr schnell sehr unübersichtlich, wenn Variablen von vielen verschiedenen Stellen aus bearbeitet werden.  
