@@ -1,6 +1,6 @@
 # Project information
-site_name: 'learn2proGrAME Grundlagentutorial'
-site_description: 'Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity'
+site_name: 'learn2proGrAME Tutorial'
+site_description: 'Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity'
 site_author: 'learn2proGrAME'
 site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
 nav:
