@@ -1,4 +1,4 @@
-# learn2proGrAME Grundlagentutorial
+# learn2proGrAME Tutorial
 
 ![learn2proGrAME Logo](0110-index/img/programe_header.jpg)
 
