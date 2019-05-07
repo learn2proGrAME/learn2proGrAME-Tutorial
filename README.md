@@ -1,5 +1,5 @@
-# learn2proGrAME-Grundlagen
-Basic Tutorial/*Grundlagentutorial*
+# learn2proGrAME-Tutorial
+Tutorial/*Tutorial*
 
 
 ## How to Contribute/*Wie mitwirken*?
