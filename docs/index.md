@@ -2,7 +2,7 @@
 
 ![learn2proGrAME Logo](0110-index/img/programe_header.jpg)
 
-Spiele programmieren mit C# in Unity - Grundlagentutorial
+Spiele programmieren mit C# in Unity - Tutorial
 
 !!!warning "WORK IN PROGRESS"
 
