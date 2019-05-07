@@ -785,7 +785,7 @@ Die drei wichtigsten Zugriffsmodifikatoren sind:</p>
 </pre></div>
 
 
-<p><code>hitpoints</code> aus der Klasse <code>Player</code> ist <em>private</em> und kann somit aus der Klasse <code>Enemy</code> nicht direkt verändert werde.<br />
+<p><code>hitpoints</code> aus der Klasse <code>Player</code> ist <em>private</em> und kann somit aus der Klasse <code>Enemy</code> nicht direkt verändert werden.<br />
 Die Methode <code>NimmSchaden()</code> ist aber <em>public</em>. Somit kann man aus der Klasse <code>Enemy</code> mithilfe dieser Methode die Hitpoints eines Player Objekts verändern.</p>
 <p><code>damage</code> in <code>Enemy</code> ist <em>public</em>. Das heißt in Unity scheint diese Variable im Inspector auf und du kannst direkt im Inspector den Schaden eines Gegners einstellen.
 <img alt="publicVariableInInspector" src="../img/publicVariableInspector.png" /></p>
@@ -811,7 +811,7 @@ Die Methode <code>NimmSchaden()</code> ist aber <em>public</em>. Somit kann man 
 <hr />
 <div class="admonition tip">
 <p class="admonition-title">Tipp</p>
-<p>Zugriffsmodifikatoren sollten, wenn möglich immer möglichst eingeschränkt verwendet werden.<br />
+<p>Zugriffsmodifikatoren sollten, immer möglichst eingeschränkt verwendet werden.<br />
 Das heißt <em>public</em> sollte man nur dann verwenden, wenn man einen guten Grund dafür hat.</p>
 <p>Ein Programm wird nämlich sehr schnell sehr unübersichtlich, wenn Variablen von vielen verschiedenen Stellen aus bearbeitet werden.<br />
 Dadurch kommt es leichter zu Bugs. Außerdem sind diese Bugs dann auch schwerer zu finden.</p>
