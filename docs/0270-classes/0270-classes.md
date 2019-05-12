@@ -34,7 +34,7 @@ Das Schlüsselwort **new** gefolgt von der Konstruktor-Methode erzeugt eine neue
 
 Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert werden:
 ``` C#
-    class Elefant : MonoBehavior
+    class Elefant
 	{
 		public Elefant() //Das ist die Konstruktor-Methode. Sie hat dieselbe Bezeichnung wie die Klasse.
 		{
@@ -42,6 +42,40 @@ Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert w
 		}
 	}
 ``` 
+
+###Objektvariablen und Methoden
+
+Vereinfacht gesagt beschreibt eine Klasse die Eigenschaften und Fähigkeiten ihrer Objekte. Wobei die Eigenschaften **Klassenvariablen** und die Fähigkeiten **Methoden** sind.
+
+**Beispiel:**  
+Hier hat ein Elefant die Eigenschaften *farbe* und *alter*. Außerdem kann man ihn über die entsprechende Funktion tröten lassen.
+
+``` c#
+public class Elefant {
+	public String farbe;
+	public int alter;
+	
+	public void troeten(int anzahl) {
+		while(anzahl > 0) {
+			Console.WriteLine("Töröööö! "); //In einem Textfenster wird
+								"Töröööö!" ausgegeben
+			anzahl--; //der Parameter Anzahl wird reduziert um 1
+		}
+	}
+}
+```
+
+###Der Punktoperator
+
+
+Mithilfe eines Punktes kann man dann auf die Variablen, bzw. Methoden des Objektes zugreifen. (Vorausgesetzt die [Sichtbarkeitsmodifikatoren](../0230-accessmodifiers/0230-accessmodifiers.md) passen).
+
+```csharp
+	Elefant elli = new Elefant();
+	elli.farbe = grau;
+	elli.alter = 10;
+	elli.troeten();
+```
 
 ##BouncyFant - Intro
 

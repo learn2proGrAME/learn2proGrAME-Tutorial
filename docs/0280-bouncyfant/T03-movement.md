@@ -54,6 +54,9 @@ Da Elli kein unbewegliches Objekt in unserem Spiel sein wird, brauchen wir eine 
 <!-- noch zu formatieren -->
 ![add rigidbody component option](img/T03/T03-d-Rigidbody hinzufuegen.png)
 
+
+###Die Programmierung des Elefanten
+
 Um die Bewegung zu programmieren, benötigen wir ein Script, das der Spielfigur Elli hinzugefügt wird. Dieses Script erstellen wir, indem wir im *Hierarchy Panel* auf Elli klicken und dann im Inspector Panel auf der rechten Seite auf A*dd Component -> NewScript -> Create and Add* (siehe Screenshot) klicken.
 
 ![add script menu](img/T03/T03-e-Neues Script erstellen 1.png)
@@ -65,99 +68,6 @@ Das eben erstellte Script befindet sich nun im Projekt im Asset Panel. Wir versc
 
 Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen.
 
-
-#### Wiederholung der C# Grundlagen
-
-**Kommentar**:
-
-In C-Sprachen sind Zeilen, die mit ```//``` beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer. KOmmentare werden grün angezeigt.
-
-**Variablen**:
-
-Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur *Datentypen* für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
-``` c#
-	String name = “Jenny”;
-	integer alter = 12;
-	alter = alter + 1;
-```
-Diese beiden Variablen “name” und “alter” werden gleich bei der *Deklaration* (Das erste mal definieren) mit Werten belegt durch ```=```. Den Wert kann man später auch ändern.. Am Ende dieser Codestelle enthält die Variable “alter” den Wert 13.
-
-**Funktionen**:
-
-Sie beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
-<!-- Definition von Algorithmus VB -->
-Eine Funktion ist deshalb nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=*Parameter*), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword *return* ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion *integer addieren()*{... return a;} ist der return-Datentyp *integer*!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:
-
-``` c#
-double a = 1.5;	//"double" ist der gängige Datentyp für Kommazahlen
-double b = 4.3;	//a und b werden unten als Parameter für die Funktion verwendet
-integer c = 0;	//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!
-integer addieren_int(double  a, double b) {
-	return a + b; //das Zwischenergebnis ist hier 1.5 + 4.3 = 5.8
-}
-c = addieren_int(a,b);
-```
-
-Diese Funktion “addieren_int” addiert zwei Kommazahlen (double) und gibt eine Integer-Zahl (Zahl ohne Kommastellen) zurück. In der Variable “c” ist nachher “5” gespeichert.
-
-**Class**: Klassen sind vom Programmierer und Programmierinnen erstellte Datentypen. Diese enthalten Eigenschaften in Form von Variablen und Algorithmen in Form von Funktionen (etwa eine Funktion, die das Alter erhöht). Zu einer Klasse zugehörige Funktionen nennt man auch *Methoden*. Die Variablen einer Klasse werden auch Member(-variablen) genannt, da sie ohne einem Objekt nicht existieren.
-Etwa definiert die Klasse “Katze” die Eigenschaften Farbe, Alter und die Methode gehen(), miauen(), etc. Das Objekt Schnurli ist weiß, 2 Jahre alt und kann gehen und miauen.
-Das könnte in C# so programmiert sein:
-
-``` c#
-public class Elefant {
-	public String farbe;
-	public int alter;
-	Elefant() { } //Die Methode mit dem selben Namen wie die Klasse nennt man Konstruktor. Er wird hier aber nicht verwendet. Man könnte damit die Variablen oben belegen lassen!
-	gehen() { }  //nicht ausprogrammiert
-	troeten(int anzahl) {
-		while(anzahl > 0) {
-			Console.WriteLine("Töröööö! "); //In einem Textfenster wird
-								"Töröööö!" ausgegeben
-			anzahl--; //der Parameter Anzahl wird reduziert um 1
-		}
-	}
-}
-Katze benjamin = new Elefant(); //Dieser Konstruktor erfordert keine Variablen
-benjamin.farbe = "grau";
-benjamin.alter = 30;
-benjamin.troeten(2);
-```
-*Ausgabe in Konsole: “Töröööö! Töröööö! ”.*
-
-**Zugriff und Punktoperator**: wie im Beispiel oben ersichtlich ist, kann mittels diesem **.** auf eine Variable eines Objektes zugegriffen werden wie bei
-``` c#
-benjamin.farbe = "grau";
-```
-Variablen von Objekten können nur dann mit **.** gelesen und geschrieben werden, wenn der zugriff darauf bei der *Deklaration* mit dem keyword *public* erlaubt wurde. Wie hier:
-``` c#
-public String farbe;
-```
-
-**Instanz**: oder Objekt wird aufgrund der Vorgaben der zugehörigen Klasse erzeugt. Das Objekt enthält die von der Klasse definierten Variablen und kann diese befüllen.
-**Vererbung**: ist das wichtigste Konzept bei der Verwendung von Klassen oder Objekten (Objektorientierung). Im Code steht etwa:
-public class Elli : MonoBehaviour { …
-Das bedeutet, dass die neue, hier definierte, Klasse Elli (meist alle) Variablen und Methoden von Monobehaviour erbt, diese also auch Elli zur Verfügung stehen. MonoBehaviour ist eine zentrale von Unity schon vorgegebene Klasse, die u.a. Zugriff auf viele Komponenten zulässt, wie RigidBody, das wir einen Abschnitt weiter oben schon bei der Spielfigur hinzugefügt haben.
-
-#### Codebibliotheken
-
-``` c#
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-```
-
-Das Keyword *using* importiert jeweils vorhandene Codebibliotheken (Sammlungen an Sachen die jemand anderer bereits programmiert hat und wir verwenden können) auf die im Script dadurch zugegriffen werden kann. Etwa wird die UnityEngine Bibliothek importiert, die das *MonoBehaviour* zur Verfügung stellt. In Unity müssen alle C#-Codedateien eine Klasse, die von Monobehaviour erbt, beinhalten. Dadurch werden u.a. die Funktionen Update() oder FixedUpdate() verfügbar, die später erklärt werden.
-
-<!--
-Erklärung von häufigen Codeelementen
-man könnte noch erklärungen anführen zu
-public/private:
-If , Bedinungssyntax:
-funktion/prozedur: aufruf und return
-datentypen?
-schleifen?
--->
 
 !!!bug "Achtung"
     Beachte bitte, dass der Name der Klasse (Elli) jedenfalls mit dem Namen der Code-Datei (Script) übereinstimmen muss. Du hast die Code-Datei wahrscheinlich nicht *Elli* genannt und musst in folgender Zeile Elli mit diesem Dateinamen ersetzen:
