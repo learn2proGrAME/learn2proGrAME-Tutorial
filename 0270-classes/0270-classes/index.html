@@ -483,6 +483,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#objektvariablen-und-methoden" title="Objektvariablen und Methoden" class="md-nav__link">
+    Objektvariablen und Methoden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-punktoperator" title="Der Punktoperator" class="md-nav__link">
+    Der Punktoperator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -721,6 +735,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#objektvariablen-und-methoden" title="Objektvariablen und Methoden" class="md-nav__link">
+    Objektvariablen und Methoden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-punktoperator" title="Der Punktoperator" class="md-nav__link">
+    Der Punktoperator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -777,13 +805,41 @@
 
 <p>Das Schlüsselwort <strong>new</strong> gefolgt von der Konstruktor-Methode erzeugt eine neue Instanz einer Klasse. Die Instanz wird in eine Variable gespeichert. Der Datentyp der Variable ist die Klassenbezeichnung.</p>
 <p>Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert werden:</p>
-<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">:</span> <span class="n">MonoBehavior</span>
+<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span>
     <span class="p">{</span>
         <span class="k">public</span> <span class="nf">Elefant</span><span class="p">()</span> <span class="c1">//Das ist die Konstruktor-Methode. Sie hat dieselbe Bezeichnung wie die Klasse.</span>
         <span class="p">{</span>
             <span class="p">...</span> <span class="c1">//Hier können der Instanz Werte bei der Erzeugung zugewiesen werden.</span>
         <span class="p">}</span>
     <span class="p">}</span>
+</pre></div>
+
+
+<h3 id="objektvariablen-und-methoden">Objektvariablen und Methoden<a class="headerlink" href="#objektvariablen-und-methoden" title="Permanent link">&para;</a></h3>
+<p>Vereinfacht gesagt beschreibt eine Klasse die Eigenschaften und Fähigkeiten ihrer Objekte. Wobei die Eigenschaften <strong>Klassenvariablen</strong> und die Fähigkeiten <strong>Methoden</strong> sind.</p>
+<p><strong>Beispiel:</strong><br />
+Hier hat ein Elefant die Eigenschaften <em>farbe</em> und <em>alter</em>. Außerdem kann man ihn über die entsprechende Funktion tröten lassen.</p>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">alter</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">troeten</span><span class="p">(</span><span class="kt">int</span> <span class="n">anzahl</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">anzahl</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Töröööö! &quot;</span><span class="p">);</span> <span class="c1">//In einem Textfenster wird</span>
+                                <span class="s">&quot;Töröööö!&quot;</span> <span class="n">ausgegeben</span>
+            <span class="n">anzahl</span><span class="p">--;</span> <span class="c1">//der Parameter Anzahl wird reduziert um 1</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="der-punktoperator">Der Punktoperator<a class="headerlink" href="#der-punktoperator" title="Permanent link">&para;</a></h3>
+<p>Mithilfe eines Punktes kann man dann auf die Variablen, bzw. Methoden des Objektes zugreifen. (Vorausgesetzt die <a href="../../0230-accessmodifiers/0230-accessmodifiers/">Sichtbarkeitsmodifikatoren</a> passen).</p>
+<div class="codehilite"><pre><span></span>    <span class="n">Elefant</span> <span class="n">elli</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Elefant</span><span class="p">();</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="n">grau</span><span class="p">;</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">alter</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">troeten</span><span class="p">();</span>
 </pre></div>
 
 

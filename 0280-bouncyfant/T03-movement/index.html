@@ -549,22 +549,15 @@
     Rigidbody2D
   </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-programmierung-des-elefanten" title="Die Programmierung des Elefanten" class="md-nav__link">
+    Die Programmierung des Elefanten
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wiederholung-der-c-grundlagen" title="Wiederholung der C# Grundlagen" class="md-nav__link">
-    Wiederholung der C# Grundlagen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
-    Codebibliotheken
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
@@ -734,22 +727,15 @@
     Rigidbody2D
   </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-programmierung-des-elefanten" title="Die Programmierung des Elefanten" class="md-nav__link">
+    Die Programmierung des Elefanten
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wiederholung-der-c-grundlagen" title="Wiederholung der C# Grundlagen" class="md-nav__link">
-    Wiederholung der C# Grundlagen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
-    Codebibliotheken
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
@@ -844,6 +830,7 @@
 <!-- <img alt="roter Pfeil" src="img/T03/roter Pfeil.png" /> -->
 <!-- noch zu formatieren -->
 <img alt="add rigidbody component option" src="../img/T03/T03-d-Rigidbody hinzufuegen.png" /></p>
+<h3 id="die-programmierung-des-elefanten">Die Programmierung des Elefanten<a class="headerlink" href="#die-programmierung-des-elefanten" title="Permanent link">&para;</a></h3>
 <p>Um die Bewegung zu programmieren, benötigen wir ein Script, das der Spielfigur Elli hinzugefügt wird. Dieses Script erstellen wir, indem wir im <em>Hierarchy Panel</em> auf Elli klicken und dann im Inspector Panel auf der rechten Seite auf A<em>dd Component -&gt; NewScript -&gt; Create and Add</em> (siehe Screenshot) klicken.</p>
 <p><img alt="add script menu" src="../img/T03/T03-e-Neues Script erstellen 1.png" />
 <!-- <img alt="roter Pfeil" src="img/T03/roter Pfeil.png" /> -->
@@ -851,89 +838,6 @@
 <img alt="add script option" src="../img/T03/T03-f-Neues Script erstellen 2.png" /></p>
 <p>Das eben erstellte Script befindet sich nun im Projekt im Asset Panel. Wir verschieben es jedoch in das Unterverzeichnis Scripts.</p>
 <p>Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen.</p>
-<h4 id="wiederholung-der-c-grundlagen">Wiederholung der C# Grundlagen<a class="headerlink" href="#wiederholung-der-c-grundlagen" title="Permanent link">&para;</a></h4>
-<p><strong>Kommentar</strong>:</p>
-<p>In C-Sprachen sind Zeilen, die mit <code>//</code> beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer. KOmmentare werden grün angezeigt.</p>
-<p><strong>Variablen</strong>:</p>
-<p>Eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur <em>Datentypen</em> für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.</p>
-<div class="codehilite"><pre><span></span>    <span class="n">String</span> <span class="n">name</span> <span class="p">=</span> <span class="err">“</span><span class="n">Jenny</span><span class="err">”</span><span class="p">;</span>
-    <span class="n">integer</span> <span class="n">alter</span> <span class="p">=</span> <span class="m">12</span><span class="p">;</span>
-    <span class="n">alter</span> <span class="p">=</span> <span class="n">alter</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span>
-</pre></div>
-
-
-<p>Diese beiden Variablen “name” und “alter” werden gleich bei der <em>Deklaration</em> (Das erste mal definieren) mit Werten belegt durch <code>=</code>. Den Wert kann man später auch ändern.. Am Ende dieser Codestelle enthält die Variable “alter” den Wert 13.</p>
-<p><strong>Funktionen</strong>:</p>
-<p>Sie beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
-<!-- Definition von Algorithmus VB -->
-Eine Funktion ist deshalb nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=<em>Parameter</em>), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword <em>return</em> ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion <em a_="a;" class=".." return="return">integer addieren()</em> ist der return-Datentyp <em>integer</em>!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:</p>
-<div class="codehilite"><pre><span></span><span class="kt">double</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1.5</span><span class="p">;</span> <span class="c1">//&quot;double&quot; ist der gängige Datentyp für Kommazahlen</span>
-<span class="kt">double</span> <span class="n">b</span> <span class="p">=</span> <span class="m">4.3</span><span class="p">;</span> <span class="c1">//a und b werden unten als Parameter für die Funktion verwendet</span>
-<span class="n">integer</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>  <span class="c1">//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!</span>
-<span class="n">integer</span> <span class="nf">addieren_int</span><span class="p">(</span><span class="kt">double</span>  <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span> <span class="c1">//das Zwischenergebnis ist hier 1.5 + 4.3 = 5.8</span>
-<span class="p">}</span>
-<span class="n">c</span> <span class="p">=</span> <span class="n">addieren_int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
-</pre></div>
-
-
-<p>Diese Funktion “addieren_int” addiert zwei Kommazahlen (double) und gibt eine Integer-Zahl (Zahl ohne Kommastellen) zurück. In der Variable “c” ist nachher “5” gespeichert.</p>
-<p><strong>Class</strong>: Klassen sind vom Programmierer und Programmierinnen erstellte Datentypen. Diese enthalten Eigenschaften in Form von Variablen und Algorithmen in Form von Funktionen (etwa eine Funktion, die das Alter erhöht). Zu einer Klasse zugehörige Funktionen nennt man auch <em>Methoden</em>. Die Variablen einer Klasse werden auch Member(-variablen) genannt, da sie ohne einem Objekt nicht existieren.
-Etwa definiert die Klasse “Katze” die Eigenschaften Farbe, Alter und die Methode gehen(), miauen(), etc. Das Objekt Schnurli ist weiß, 2 Jahre alt und kann gehen und miauen.
-Das könnte in C# so programmiert sein:</p>
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">{</span>
-    <span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
-    <span class="k">public</span> <span class="kt">int</span> <span class="n">alter</span><span class="p">;</span>
-    <span class="n">Elefant</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span> <span class="c1">//Die Methode mit dem selben Namen wie die Klasse nennt man Konstruktor. Er wird hier aber nicht verwendet. Man könnte damit die Variablen oben belegen lassen!</span>
-    <span class="n">gehen</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>  <span class="c1">//nicht ausprogrammiert</span>
-    <span class="n">troeten</span><span class="p">(</span><span class="kt">int</span> <span class="n">anzahl</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">while</span><span class="p">(</span><span class="n">anzahl</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Töröööö! &quot;</span><span class="p">);</span> <span class="c1">//In einem Textfenster wird</span>
-                                <span class="s">&quot;Töröööö!&quot;</span> <span class="n">ausgegeben</span>
-            <span class="n">anzahl</span><span class="p">--;</span> <span class="c1">//der Parameter Anzahl wird reduziert um 1</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">Katze</span> <span class="n">benjamin</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Elefant</span><span class="p">();</span> <span class="c1">//Dieser Konstruktor erfordert keine Variablen</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="s">&quot;grau&quot;</span><span class="p">;</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">alter</span> <span class="p">=</span> <span class="m">30</span><span class="p">;</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">troeten</span><span class="p">(</span><span class="m">2</span><span class="p">);</span>
-</pre></div>
-
-
-<p><em>Ausgabe in Konsole: “Töröööö! Töröööö! ”.</em></p>
-<p><strong>Zugriff und Punktoperator</strong>: wie im Beispiel oben ersichtlich ist, kann mittels diesem <strong>.</strong> auf eine Variable eines Objektes zugegriffen werden wie bei</p>
-<div class="codehilite"><pre><span></span><span class="n">benjamin</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="s">&quot;grau&quot;</span><span class="p">;</span>
-</pre></div>
-
-
-<p>Variablen von Objekten können nur dann mit <strong>.</strong> gelesen und geschrieben werden, wenn der zugriff darauf bei der <em>Deklaration</em> mit dem keyword <em>public</em> erlaubt wurde. Wie hier:</p>
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
-</pre></div>
-
-
-<p><strong>Instanz</strong>: oder Objekt wird aufgrund der Vorgaben der zugehörigen Klasse erzeugt. Das Objekt enthält die von der Klasse definierten Variablen und kann diese befüllen.
-<strong>Vererbung</strong>: ist das wichtigste Konzept bei der Verwendung von Klassen oder Objekten (Objektorientierung). Im Code steht etwa:
-public class Elli : MonoBehaviour { …
-Das bedeutet, dass die neue, hier definierte, Klasse Elli (meist alle) Variablen und Methoden von Monobehaviour erbt, diese also auch Elli zur Verfügung stehen. MonoBehaviour ist eine zentrale von Unity schon vorgegebene Klasse, die u.a. Zugriff auf viele Komponenten zulässt, wie RigidBody, das wir einen Abschnitt weiter oben schon bei der Spielfigur hinzugefügt haben.</p>
-<h4 id="codebibliotheken">Codebibliotheken<a class="headerlink" href="#codebibliotheken" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
-</pre></div>
-
-
-<p>Das Keyword <em>using</em> importiert jeweils vorhandene Codebibliotheken (Sammlungen an Sachen die jemand anderer bereits programmiert hat und wir verwenden können) auf die im Script dadurch zugegriffen werden kann. Etwa wird die UnityEngine Bibliothek importiert, die das <em>MonoBehaviour</em> zur Verfügung stellt. In Unity müssen alle C#-Codedateien eine Klasse, die von Monobehaviour erbt, beinhalten. Dadurch werden u.a. die Funktionen Update() oder FixedUpdate() verfügbar, die später erklärt werden.</p>
-<!--
-Erklärung von häufigen Codeelementen
-man könnte noch erklärungen anführen zu
-public/private:
-If , Bedinungssyntax:
-funktion/prozedur: aufruf und return
-datentypen?
-schleifen?
--->
-
 <div class="admonition bug">
 <p class="admonition-title">Achtung</p>
 <p>Beachte bitte, dass der Name der Klasse (Elli) jedenfalls mit dem Namen der Code-Datei (Script) übereinstimmen muss. Du hast die Code-Datei wahrscheinlich nicht <em>Elli</em> genannt und musst in folgender Zeile Elli mit diesem Dateinamen ersetzen:</p>
