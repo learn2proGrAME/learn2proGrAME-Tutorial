@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0280-bouncyfant/T06-jump/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Teil 6 - Jump Around - learn2proGrAME Grundlagentutorial</title>
+        <title>Teil 6 - Jump Around - learn2proGrAME Tutorial</title>
       
     
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Teil 6 - Jump Around
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -605,12 +605,18 @@
     Elastisches Material
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
     Sourcecode
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -657,6 +663,18 @@
   <li class="md-nav__item">
     <a href="../T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
       Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
     </a>
   </li>
 
@@ -742,12 +760,18 @@
     Elastisches Material
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
     Sourcecode
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -772,35 +796,28 @@
                 
                 <h1 id="teil-6-jump-around">Teil 6 - Jump around!<a class="headerlink" href="#teil-6-jump-around" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p class="admonition-title">Ziele</p>
-<p>Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  </p>
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst, um die Elefanten elastisch zu machen.</p>
 </div>
 <table>
 <thead>
 <tr>
 <th>In diesem Kapitel wirst du...</th>
-<th>Erledigt?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist.</td>
-<td></td>
 </tr>
 <tr>
-<td>Eine Methode implementieren, die die Elefanten springen lässt</td>
-<td></td>
-</tr>
-<tr>
-<td>Physikalische Materialien in Unity kennenlernen</td>
-<td></td>
+<td>Eine Methode implementieren, die die Elefanten springen lässt.</td>
 </tr>
 <tr>
 <td>Ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht</td>
-<td></td>
 </tr>
 </tbody>
 </table>
+<p>Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  </p>
 <h2 id="springen">Springen<a class="headerlink" href="#springen" title="Permanent link">&para;</a></h2>
 <h3 id="sprungkraft">Sprungkraft<a class="headerlink" href="#sprungkraft" title="Permanent link">&para;</a></h3>
 <p>Erstelle zuallererst in BouncyFant.cs eine Variable für die Sprungkraft. Diese Variable soll festlegen wie hoch die Elefanten springen können. Setze diese Variable auf 300. (Du kannst auch gerne mit einer höheren oder niedrigeren Sprungkraft experimentieren)</p>
@@ -812,10 +829,6 @@
 </pre></div>
 
 
-<div class="admonition tip">
-<p class="admonition-title">Anmerkung</p>
-<p>Anm: Solltet ihr dieses Spiel mit eurer Biologielehrerin programmieren, dann setzt die Variable Sprungkraft immer auf 0. ;-)</p>
-</div>
 <h3 id="feststellen-ob-sich-der-elefant-am-boden-befindet">Feststellen, ob sich der Elefant am Boden befindet<a class="headerlink" href="#feststellen-ob-sich-der-elefant-am-boden-befindet" title="Permanent link">&para;</a></h3>
 <p>Die Elefanten sollen grundsätzlich nur dann springen können, wenn sie auf einem Objekt stehen, von welchem sie abspringen können.  Könnten Ossi und Elli nämlich aus der Luft nochmal los springen, wäre das ziemlich gecheatet.  Es spricht aber nichts dagegen, dass man in einem anderen Spiel, einem anderen Level unseres Spiels oder bei Boostern, so ein Feature (z.B. Double Jump, oder ein Art Flappybird-Mechanik) einbaut.
 Die <a href="/0220-functions/0220-functions">Methode</a> AmBoden() stellt fest, ob sich direkt unter dem Elefanten ein Collider befindet. Baue diese Methode in das Script BouncyFant.cs ein, damit sie allen Elefanten zur Verfügung steht.</p>
@@ -887,8 +900,9 @@ Die <a href="/0220-functions/0220-functions">Methode</a> AmBoden() stellt fest, 
 <p><img alt="Eigenschaften von Material" src="../img/T06/T06-b-Elastisches Material Eigenschaften.png" /></p>
 <p>Das Material kann man einem Objekt zuweisen, indem man es einfach auf das GameObject zieht.  Es erscheint dann auch automatisch beim Polygon Collider 2D als Material.</p>
 <p><img alt="Material zuweisen" src="../img/T06/T06-c-Elastisches Material zuweisen.png" /></p>
-<h2 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h2>
-<p>Download Sourcecode Teil 06: http://comber.at/dev/BouncyFant06.zip</p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T06/Bouncy%20Fant%2006.zip">Download Sourcecode Teil 06</a></p>
                 
                   
                 

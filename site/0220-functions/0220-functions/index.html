@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0220-functions/0220-functions/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Funktionen - learn2proGrAME Grundlagentutorial</title>
+        <title>Funktionen - learn2proGrAME Tutorial</title>
       
     
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Funktionen
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -653,6 +653,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -770,11 +782,12 @@
 <h2 id="wofur-braucht-man-funktionen">Wofür braucht man Funktionen?<a class="headerlink" href="#wofur-braucht-man-funktionen" title="Permanent link">&para;</a></h2>
 <p>Funktionen (bzw. Methoden) sind kleine <em>Unterprogramme</em>.</p>
 <p>Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.</p>
-<p>Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.
-Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.</p>
+<p>Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen,<br />
+oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.<br />
+Beides ist aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.</p>
 <p>Eine bessere Möglichkeit ist:</p>
 <p>Du erstellst eine <strong>Funktion</strong>, die den Abstand zwischen zwei Punkten berechnet.<br />
-Die Erstellung einer Funktion man als <em>Definition</em>.</p>
+Die Erstellung einer Funktion nennt man <em>Definition</em>.</p>
 <div class="codehilite"><pre><span></span>   <span class="c1">//Diese Funktion berechnet den Abstand zwischen zwei Objekten</span>
    <span class="k">public</span> <span class="kt">float</span> <span class="nf">Abstand</span><span class="p">(</span><span class="n">GameObject</span> <span class="n">object1</span><span class="p">,</span> <span class="n">GameObject</span> <span class="n">object2</span><span class="p">)</span>
     <span class="p">{</span>

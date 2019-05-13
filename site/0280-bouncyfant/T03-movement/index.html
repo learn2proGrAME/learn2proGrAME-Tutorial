@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0280-bouncyfant/T03-movement/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Teil 3 - Bewegung - learn2proGrAME Grundlagentutorial</title>
+        <title>Teil 3 - Bewegung - learn2proGrAME Tutorial</title>
       
     
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Teil 3 - Bewegung
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -545,30 +545,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rigidbody2d-g" title="Rigidbody2D (G)" class="md-nav__link">
-    Rigidbody2D (G)
+  <a href="#rigidbody2d" title="Rigidbody2D" class="md-nav__link">
+    Rigidbody2D
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)" class="md-nav__link">
-    Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)
+  <a href="#die-programmierung-des-elefanten" title="Die Programmierung des Elefanten" class="md-nav__link">
+    Die Programmierung des Elefanten
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wiederholung-von-grundlagen" title="Wiederholung von Grundlagen:" class="md-nav__link">
-    Wiederholung von Grundlagen:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
-    Codebibliotheken
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -661,6 +654,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -718,30 +723,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rigidbody2d-g" title="Rigidbody2D (G)" class="md-nav__link">
-    Rigidbody2D (G)
+  <a href="#rigidbody2d" title="Rigidbody2D" class="md-nav__link">
+    Rigidbody2D
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)" class="md-nav__link">
-    Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)
+  <a href="#die-programmierung-des-elefanten" title="Die Programmierung des Elefanten" class="md-nav__link">
+    Die Programmierung des Elefanten
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wiederholung-von-grundlagen" title="Wiederholung von Grundlagen:" class="md-nav__link">
-    Wiederholung von Grundlagen:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codebibliotheken" title="Codebibliotheken" class="md-nav__link">
-    Codebibliotheken
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -771,45 +769,44 @@
                 
                 
                 <h1 id="teil-3-bewegung">Teil 3 - Bewegung<a class="headerlink" href="#teil-3-bewegung" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Lernziele</p>
+<p>In diesem Kapitel lernst du, wie du deine Spielfigur steuerbar machen kannst. Du lernst wie man Tasten im Input Manager einstellt. Anschließend lernst du, wie man ein Script schreibt, über das du deine Figur dann bewegen kannst.</p>
+</div>
 <table>
 <thead>
 <tr>
 <th>In diesem Kapitel wirst du...</th>
-<th>Erledigt?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Die Steuerung deiner Figur einstellen.</td>
-<td></td>
 </tr>
 <tr>
 <td>Die RigidBody 2D Komponente zu deiner Figur hinzufügen.</td>
-<td></td>
 </tr>
 <tr>
 <td>Ein Script schreiben, dass es deiner Figur erlaubt sich zu bewegen.</td>
-<td></td>
 </tr>
 <tr>
 <td>Das Script zu deiner Spielfigur hinzufügen.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
 <h3 id="die-bewegung-der-elefantin-implementieren">Die Bewegung der Elefantin implementieren<a class="headerlink" href="#die-bewegung-der-elefantin-implementieren" title="Permanent link">&para;</a></h3>
-<p>Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken.</p>
+<p>Bevor wir mit der Realisierung der Bewegung starten, benennen wir unsere Spielfigur einmal um, damit wir uns später, wenn wir mehrere Figuren haben, besser orientieren können. Ich habe den Namen Elli gewählt. Einfach mit rechten Maustaste draufklicken und auf Rename klicken. Alternativ kannst du auch den Namen anklicken und F2 drücken.</p>
 <p><img alt="Rename Gameobject" src="../img/T03/T03-a-Elefant umbenennen.png" />
 <!-- elefanti verwirrender name? --></p>
-<p>Zuerst kümmern wir uns um die Tasten-Eingabe für die Bewegung. Unter <em>Edit -&gt; Project Settings -&gt; Input</em> kann man den <em>Input Manager</em> aufrufen. </p>
+<p>Zuerst kümmern wir uns um die Tasten-Eingabe für die Bewegung. Unter <em>Edit -&gt; Project Settings -&gt; Input</em> kann man den <em>Input Manager</em> aufrufen.</p>
 <p><img alt="Input Manager" src="../img/T03/T03-b-Input Settings bearbeiten.png" /></p>
-<p>Im Input Manager siehst du eine (G)Horizontal Achse und eine (G)Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit <em>“H-AchseElli”</em>  bzw. <em>“V-AchseElli”</em> benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.</p>
-<p>Diese Positive/Negative Button macht Sinn sobald du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.</p>
+<p>Im Input Manager siehst du eine Horizontal Achse und eine Vertikal Achse. Diese benennen wir im ersten Schritt mal um. Ich habe sie hier mit <strong>“H-AchseElli”</strong>  bzw. <strong>“V-AchseElli”</strong> benannt. Diesen Namen brauchen wir später noch beim Programmieren. Bei den Achsen steht jeweils Positive Button und Negative Button mit je einem Feld wo man eine Taste eintragen kann.</p>
+<p>Dieser Positive/Negative Button macht Sinn wenn du dir ein Koordinatensystem vorstellst. In so einem System ist auf der Horizontal Achse, Positiv nach Rechts, und Negativ nach Links bzw. auf der Vertikalachse, Positiv nach Oben und Negativ nach Unten. Wenn jemand die Taste drückt die bei der HorizontalAchse Positiv Button ist, bewegt sich die Figur nach Rechts.</p>
 <p>Du kannst also jetzt die Tasten für die jeweiligen Bewegungsrichtungen eintragen, so wie du denkst die Steuerung ist am Besten. Ein Beispiel hierfür wäre:</p>
 <ul>
 <li>H-AchseElli<ul>
 <li>Negative Button: a</li>
-<li>Positiv Button: s</li>
+<li>Positiv Button: d</li>
 <li>Type: Key or Mouse Button</li>
 </ul>
 </li>
@@ -822,100 +819,25 @@
 </ul>
 <div class="admonition bug">
 <p class="admonition-title">WICHTIG</p>
-<p>Stelle sicher, dass unter Type “Key or Mouse Button” ausgewählt ist, ansonsten funktionieren unsere Einstellungen nicht richtig. </p>
+<p>Stelle sicher, dass unter Type “Key or Mouse Button” ausgewählt ist, ansonsten funktionieren unsere Einstellungen nicht richtig.</p>
 </div>
 <p><img alt="Input Manager" src="../img/T03/T03-c-Inputachsen umbenennen.png" /></p>
 <p>Da wir gerade die Projekteinstellungen geändert haben, ist es wichtig nun auch das Projekt zu speichern. Das geschieht durch das Anklicken von <em>File</em> und <em>Save Project</em>.</p>
 <p><img alt="save project" src="../img/T03/T03-c-Projekt speichern.png" /></p>
-<h3 id="rigidbody2d-g">Rigidbody2D (G)<a class="headerlink" href="#rigidbody2d-g" title="Permanent link">&para;</a></h3>
-<p>Da Elli kein unbewegliches Objekt in unserem Spiel sein wird, brauchen wir eine Komponente(G), die uns hilft Elli zu bewegen, die Bewegungen zu berechnen und sogar die Physik auf sie wirken zu lassen. Glücklicherweise bietet Unity genau so eine Komponente an, die sich um all die Dinge, wie Bewegung, Berechnung physikalischer Vorgänge und Eigenschaften, Kollisionen, elastische Stöße und dergleichen kümmert. Diese Komponente nennt sich Rigidbody2D. Rigid bedeutet so viel wie “starr”, und dass der Körper starr ist, kommt uns sehr gelegen, denn wir brauchen uns nicht darum kümmern, eine ganze Skellettstruktur für Elli zu modellieren.  Einen Rigidbody2D erstellen wir, indem wir im Hierarchy Panel auf Elli draufklicken und dann im Inspector Panel auf der rechten Seite auf <em>Add Component -&gt; Physics2D -&gt; Rigidbody 2D</em> klicken.</p>
-<p><img alt="add rigidbody component menu" src="img/T03/T03-d-Rigidbody hinzufügen 2.png" />
+<h3 id="rigidbody2d">Rigidbody2D<a class="headerlink" href="#rigidbody2d" title="Permanent link">&para;</a></h3>
+<p>Da Elli kein unbewegliches Objekt in unserem Spiel sein wird, brauchen wir eine Komponente, die uns hilft Elli zu bewegen, die Bewegungen zu berechnen und sogar die Physik auf sie wirken zu lassen. Glücklicherweise bietet Unity genau so eine Komponente an, die sich um all die Dinge, wie Bewegung, Berechnung physikalischer Vorgänge und Eigenschaften, Kollisionen, elastische Stöße und dergleichen kümmert. Diese Komponente nennt sich Rigidbody2D. Rigid bedeutet so viel wie “starr”, und dass der Körper starr ist, kommt uns sehr gelegen, denn wir brauchen uns nicht darum kümmern, eine ganze Skellettstruktur für Elli zu modellieren.  Einen Rigidbody2D erstellen wir, indem wir im Hierarchy Panel auf Elli draufklicken und dann im Inspector Panel auf der rechten Seite auf <em>Add Component -&gt; Physics2D -&gt; Rigidbody 2D</em> klicken.</p>
+<p><img alt="add rigidbody component menu" src="../img/T03/T03-d-Rigidbody hinzufuegen 2.png" />
 <!-- <img alt="roter Pfeil" src="img/T03/roter Pfeil.png" /> -->
 <!-- noch zu formatieren -->
-<img alt="add rigidbody component option" src="img/T03/T03-d-Rigidbody hinzufügen.png" /></p>
+<img alt="add rigidbody component option" src="../img/T03/T03-d-Rigidbody hinzufuegen.png" /></p>
+<h3 id="die-programmierung-des-elefanten">Die Programmierung des Elefanten<a class="headerlink" href="#die-programmierung-des-elefanten" title="Permanent link">&para;</a></h3>
 <p>Um die Bewegung zu programmieren, benötigen wir ein Script, das der Spielfigur Elli hinzugefügt wird. Dieses Script erstellen wir, indem wir im <em>Hierarchy Panel</em> auf Elli klicken und dann im Inspector Panel auf der rechten Seite auf A<em>dd Component -&gt; NewScript -&gt; Create and Add</em> (siehe Screenshot) klicken.</p>
 <p><img alt="add script menu" src="../img/T03/T03-e-Neues Script erstellen 1.png" />
 <!-- <img alt="roter Pfeil" src="img/T03/roter Pfeil.png" /> -->
 <!-- noch zu formatieren -->
 <img alt="add script option" src="../img/T03/T03-f-Neues Script erstellen 2.png" /></p>
 <p>Das eben erstellte Script befindet sich nun im Projekt im Asset Panel. Wir verschieben es jedoch in das Unterverzeichnis Scripts.</p>
-<p>Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen. </p>
-<h3 id="cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca">Cheat Sheet um Code zu verstehen (sollte 1 seite sein ca)<a class="headerlink" href="#cheat-sheet-um-code-zu-verstehen-sollte-1-seite-sein-ca" title="Permanent link">&para;</a></h3>
-<h4 id="wiederholung-von-grundlagen">Wiederholung von Grundlagen:<a class="headerlink" href="#wiederholung-von-grundlagen" title="Permanent link">&para;</a></h4>
-<p><strong>Kommentar</strong>: In C-Sprachen sind Zeilen, die mit // beginnen, Kommentare. Das sind Texte, die vom Compiler ignoriert werden, also nur für den Programmierer sichtbar sind. Diese Zeilen erklären das Programm für später oder andere Programmierer.</p>
-<p><strong>Variablen</strong>: eine Variable kann wie in der Mathematik einfach Zahlen enthalten. Allerdings gibt es nicht nur <em>Datentypen</em> für Zahlen, sondern auch Text. Der Datentyp einer Variable wird in C-Sprachen immer vor dem Namen einer neuen Variable angegeben.
-String name = “Jenny”; integer alter = 12; alter = alter + 1;
-Diese beiden Variablen “name” und “alter” werden gleich bei der <em>Deklaration</em> (erste Definition) mit Werten belegt durch “=”. Das kann auch später passieren. Am Ende dieser Codezeile enthält die Variable “alter” den Wert 13.</p>
-<p><strong>Funktionen</strong>: beinhalten Algorithmen, also Problemlöseverfahren mit endlich vielen Schritten.
-<!-- Definition von Algorithmus VB -->
-Eine Funktion ist deshalb so nützlich, weil ein spezielle Berechnung nicht öfters programmiert werden muss, sondern öfters abrufbar ist. Gibt es Daten, die von der Funktion verarbeitet werden müssen (=<em>Parameter</em>), werden diese beim Funktionsaufruf in runden Klammern mitgeteilt. Wird im aufrufenden Codestück ein Ergebniswert benötigt, muss die Funktion mit dem Keyword <em>return</em> ein Ergebnis zurückliefern! Der Datentyp, der von return geliefert werden muss, steht vor dem Funktionsnamen ( bei der Funktion <em a_="a;" class=".." return="return">integer addieren()</em> ist der return-Datentyp <em>integer</em>!). Liefert eine Funktion nichts zurück, nennt man sie Prozedur. Es entfällt das Keyword “return” am Ende der Prozedur. Als return-Datentyp wird “void” (engl. “nichts”) angegeben. Beispiel:</p>
-<div class="codehilite"><pre><span></span><span class="kt">double</span> <span class="n">a</span> <span class="p">=</span> <span class="m">1.5</span><span class="p">;</span> <span class="c1">//&quot;double&quot; ist der gängige Datentyp für Kommazahlen</span>
-<span class="kt">double</span> <span class="n">b</span> <span class="p">=</span> <span class="m">4.3</span><span class="p">;</span> <span class="c1">//a und b werden unten als Parameter für die Funktion verwendet</span>
-<span class="n">integer</span> <span class="n">c</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>      <span class="c1">//integer kann nur ganze Zahlen speichern. Speichert man darin eine Kommazahl, wird nicht gerundet, sondern die Kommastellen werden einfach gelöscht!</span>
-<span class="n">integer</span> <span class="nf">addieren_int</span><span class="p">(</span><span class="kt">double</span>  <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span> <span class="c1">//das Zwischenergebnis ist hier 1.5 + 4.3 = 5.8</span>
-<span class="p">}</span>
-<span class="n">c</span> <span class="p">=</span> <span class="n">addieren_int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
-</pre></div>
-
-
-<p>Diese Funktion “addieren_int” addiert zwei Kommazahlen (double) und gibt eine Integer-Zahl (Zahl ohne Kommastellen) zurück. In der Variable “c” ist nachher “5” gespeichert.</p>
-<p><strong>Class</strong>: Klassen sind vom Programmierer und Programmierinnen erstellte Datentypen. Diese enthalten Eigenschaften in Form von Variablen und Algorithmen in Form von Funktionen (etwa eine Funktion, die das Alter erhöht). Zu einer Klasse zugehörige Funktionen nennt man auch <em>Methoden</em>. Die Variablen einer Klasse werden auch Member(-variablen) genannt, da sie ohne einem Objekt nicht existieren.
-Etwa definiert die Klasse “Katze” die Eigenschaften Farbe, Alter und die Methode gehen(), miauen(), etc. Das Objekt Schnurli ist weiß, 2 Jahre alt und kann gehen und miauen.
-Das könnte in C# so programmiert sein:</p>
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">{</span>
-    <span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
-    <span class="k">public</span> <span class="kt">int</span> <span class="n">alter</span><span class="p">;</span>
-    <span class="n">Elefant</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span> <span class="c1">//Die Methode mit dem selben Namen wie die Klasse nennt man Konstruktor. Er wird hier aber nicht verwendet. Man könnte damit die Variablen oben belegen lassen!</span>
-    <span class="n">gehen</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>  <span class="c1">//nicht ausprogrammiert </span>
-    <span class="n">troeten</span><span class="p">(</span><span class="kt">int</span> <span class="n">anzahl</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">while</span><span class="p">(</span><span class="n">anzahl</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span> 
-            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Töröööö! &quot;</span><span class="p">);</span> <span class="c1">//In einem Textfenster wird </span>
-                                <span class="s">&quot;Töröööö!&quot;</span> <span class="n">ausgegeben</span>
-            <span class="n">anzahl</span><span class="p">--;</span> <span class="c1">//der Parameter Anzahl wird reduziert um 1</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">Katze</span> <span class="n">benjamin</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Elefant</span><span class="p">();</span> <span class="c1">//Dieser Konstruktor erfordert keine Variablen</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="s">&quot;grau&quot;</span><span class="p">;</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">alter</span> <span class="p">=</span> <span class="m">30</span><span class="p">;</span>
-<span class="n">benjamin</span><span class="p">.</span><span class="n">troeten</span><span class="p">(</span><span class="m">2</span><span class="p">);</span>
-</pre></div>
-
-
-<p><em>Ausgabe in Konsole: “Töröööö! Töröööö! ”.</em></p>
-<p><strong>Zugriff und Punktoperator</strong>: wie im Beispiel oben ersichtlich ist, kann mittels diesem <strong>.</strong> auf eine Variable eines Objektes zugegriffen werden wie bei</p>
-<div class="codehilite"><pre><span></span><span class="n">benjamin</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="s">&quot;grau&quot;</span><span class="p">;</span>
-</pre></div>
-
-
-<p>Variablen von Objekten können nur dann mit <strong>.</strong> gelesen und geschrieben werden, wenn der zugriff darauf bei der <em>Deklaration</em> mit dem keyword <em>public</em> erlaubt wurde. Wie hier:</p>
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
-</pre></div>
-
-
-<p><strong>Instanz</strong>: oder Objekt wird aufgrund der Vorgaben der zugehörigen Klasse erzeugt. Das Objekt enthält die von der Klasse definierten Variablen und kann diese befüllen.
-<strong>Vererbung</strong>: ist das wichtigste Konzept bei der Verwendung von Klassen oder Objekten (Objektorientierung). Im Code steht etwa:
-public class Elli : MonoBehaviour { …
-Das bedeutet, dass die neue, hier definierte, Klasse Elli (meist alle) Variablen und Methoden von Monobehaviour erbt, diese also auch Elli zur Verfügung stehen. MonoBehaviour ist eine zentrale von Unity schon vorgegebene Klasse, die u.a. Zugriff auf viele Komponenten zulässt, wie RigidBody, das wir einen Abschnitt weiter oben schon bei der Spielfigur hinzugefügt haben.</p>
-<h4 id="codebibliotheken">Codebibliotheken<a class="headerlink" href="#codebibliotheken" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
-</pre></div>
-
-
-<p>Das Keyword <em>using</em> importiert jeweils vorhandene Codebibliotheken (Sammlungen an Sachen die jemand anderer bereits programmiert hat und wir verwenden können) auf die im Script dadurch zugegriffen werden kann. Etwa wird die UnityEngine Bibliothek importiert, die das <em>MonoBehaviour</em> zur Verfügung stellt. In Unity müssen alle C#-Codedateien eine Klasse, die von Monobehaviour erbt, beinhalten. Dadurch werden u.a. die Funktionen Update() oder FixedUpdate() verfügbar, die später erklärt werden.</p>
-<!--
-Erklärung von häufigen Codeelementen
-man könnte noch erklärungen anführen zu
-public/private: 
-If , Bedinungssyntax:
-funktion/prozedur: aufruf und return
-datentypen?
-schleifen?
--->
-
+<p>Durch einen Doppelklick auf das Script öffnet sich Visual Studio und wir können nun mit dem Programmieren beginnen.</p>
 <div class="admonition bug">
 <p class="admonition-title">Achtung</p>
 <p>Beachte bitte, dass der Name der Klasse (Elli) jedenfalls mit dem Namen der Code-Datei (Script) übereinstimmen muss. Du hast die Code-Datei wahrscheinlich nicht <em>Elli</em> genannt und musst in folgender Zeile Elli mit diesem Dateinamen ersetzen:</p>
@@ -930,8 +852,8 @@ schleifen?
 
 
 <p><img alt="VS neues Script" src="../img/T03/T03-g-Visual Studio Neues Script.png" /></p>
-<p>Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile “// Anfangseinstellungen setzen”  und die Prozedur <em>Update</em> benennen wir in <em>FixedUpdate</em> um. FixedUpdate sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall <em>nicht</em> die Framerate(G) (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook. </p>
-<div class="codehilite"><pre><span></span><span class="c1">// Anfangseinstellungen setzen </span>
+<p>Am Anfang nehmen wir in unserem Script ein paar kleine Änderungen vor. In der Kommentarzeile ersetzen wir die englische Anmerkung durch die Zeile <code>// Anfangseinstellungen setzen</code>  und die Prozedur <code>Update</code> benennen wir in <code>FixedUpdate</code> um. <code>FixedUpdate</code> sorgt nämlich dafür, dass das Spiel auf unterschiedlich schnellen Geräten (egal ob auf einem älteren Notebook, einem Smartphone, oder einem brandneuen Gaming PC) immer gleich schnell läuft. Schnell meint in diesem Fall <strong>nicht</strong> die Framerate (FPS), sondern wie schnell sich die Spielfigur und die Objekte im Spiel bewegen. Obwohl sich nun die Spielfigur auf allen Plattformen gleich schnell am Bildschirm herum bewegt, hat man auf dem neuen Gaming-Monster-PC eine höhere Framerate als auf einem uralten Notebook.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Anfangseinstellungen setzen</span>
 <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
 <span class="p">{</span>
 
@@ -939,21 +861,21 @@ schleifen?
 
 <span class="c1">// Fixed Update wird immer in einem fixen Intervall aufgerufen.</span>
 <span class="k">void</span> <span class="nf">FixedUpdate</span><span class="p">()</span>
-<span class="p">{</span> 
+<span class="p">{</span>
 
 <span class="p">}</span>
 </pre></div>
 
 
-<p>Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur <em>Gehen</em> Folgendes:
-Wir berechnen aus dem Wert, den wir aus der horizontalen Eingabe-Achse abfragen, die horizontale (seitliche) Bewegung des Elefantenkörpers. 
+<p>Der nachfolgende Quellcode, um die Bewegung von Elli zu realisieren, ist ein wenig komplizierter. Deshalb betrachten wir das Einbauen der Prozedur Gehen nun als Übung im Umgang mit dem Quellcode. Im Prinzip machen wir in der Prozedur <code>Gehen</code> folgendes:
+Wir berechnen aus dem Wert, den wir aus der horizontalen Eingabe-Achse abfragen, die horizontale (seitliche) Bewegung des Elefantenkörpers.
 Wir bestimmen anhand der Bewegung des Elefantenkörpers die Blickrichtung.
 Wir übermitteln die Bewegungsgeschwindigkeit an die Animation in Unity.
 Dabei kümmert sich Unity um einige Dinge, um die wir uns nun nicht mehr kümmern brauchen:
 Unity übernimmt die Abfrage der Tasten-Eingabe des Spielers für uns.
 Unity kümmert sich ebenso um die Bewegung des Elefantenkörpers.
 Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation übermitteln.</p>
-<p>Den nachfolgenden Quellcode fügen wir zwischen der geschwungenen Klammer { am Ende der Prozedur Start und den Kommentar vor FixedUpdate hinein. </p>
+<p>Den nachfolgenden Quellcode fügen wir zwischen der geschwungenen Klammer { am Ende der Prozedur Start und den Kommentar vor FixedUpdate hinein.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tipp</p>
 <p>Bei Interesse wird der Code in den Kommentaren genauer erklärt.</p>
@@ -975,7 +897,7 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 
     <span class="cm">/* Blickrichtung des Elefanten bestimmen.</span>
 <span class="cm">        * Der Vektor für die Blickrichtung soll ein Vektor sein,</span>
-<span class="cm">        * der sich aus dem Vorzeichenrückgabewert (-1 oder +1) </span>
+<span class="cm">        * der sich aus dem Vorzeichenrückgabewert (-1 oder +1)</span>
 <span class="cm">        * der horizontalen Bewegungsrichtung (Mathf.Sign(h)) ergibt.</span>
 <span class="cm">        * Der y-Wert des Elefanten bleibt gleich, daher transform.localScale.y.       </span>
 <span class="cm">        */</span>
@@ -983,7 +905,7 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 
     <span class="cm">/* Die Geschwindigkeit wird auf den Absolutbetrag der horizontalen</span>
 <span class="cm">        * Bewegung gesetzt. Negative Geschwindigkeit gibt es nicht.</span>
-<span class="cm">        * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich </span>
+<span class="cm">        * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich</span>
 <span class="cm">        * 10km/h in einer Rückwärtsbewegung und nicht &quot;-10km/h&quot; ;)</span>
 <span class="cm">        */</span>
     <span class="n">Animation</span><span class="p">.</span><span class="n">SetFloat</span><span class="p">(</span><span class="s">&quot;Geschwindigkeit&quot;</span><span class="p">,</span> <span class="n">Mathf</span><span class="p">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">h</span><span class="p">));</span>
@@ -991,15 +913,15 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 </pre></div>
 
 
-<p>Nachdem wir dies gemacht haben, erhalten wir vorerst jede Menge Fehler da ja etwa Variablen wie Max Geschwindigkeit oder Objekte wie Elefanten Körper noch gar nicht existieren. </p>
+<p>Nachdem wir dies gemacht haben, erhalten wir vorerst jede Menge Fehler da ja etwa Variablen wie Max Geschwindigkeit oder Objekte wie Elefanten Körper noch gar nicht existieren.</p>
 <p><img alt="Fehler in Konsole" src="../img/T03/T03-h-Einige Fehler voellig normal - don't panic.png" /></p>
-<p>Diese Variablen wollen wir im nächsten Schritt definieren und gleich in der Prozedur Start mit den entsprechenden Komponenten verlinken: </p>
+<p>Diese Variablen wollen wir im nächsten Schritt definieren und gleich in der Prozedur Start mit den entsprechenden Komponenten verlinken:</p>
 <div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Elli</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
     <span class="k">protected</span> <span class="n">Rigidbody2D</span> <span class="n">Elefantenkoerper</span><span class="p">;</span>
     <span class="k">protected</span> <span class="n">Animator</span> <span class="n">Animation</span><span class="p">;</span>
     <span class="k">public</span> <span class="kt">float</span> <span class="n">MaxGeschwindigkeit</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
 
-    <span class="c1">// Anfangseinstellungen setzen </span>
+    <span class="c1">// Anfangseinstellungen setzen</span>
     <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
     <span class="p">{</span>
         <span class="c1">// Elefant mit RigidBody verlinken</span>
@@ -1030,7 +952,7 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
     <span class="k">protected</span> <span class="n">Animator</span> <span class="n">Animation</span><span class="p">;</span>
     <span class="k">public</span> <span class="kt">float</span> <span class="n">MaxGeschwindigkeit</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
 
-    <span class="c1">// Anfangseinstellungen setzen </span>
+    <span class="c1">// Anfangseinstellungen setzen</span>
     <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span>
     <span class="p">{</span>
         <span class="c1">// Elefant mit RigidBody verlinken</span>
@@ -1051,17 +973,17 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 
         <span class="cm">/* Blickrichtung des Elefanten bestimmen.</span>
 <span class="cm">            * Der Vektor für die Blickrichtung soll ein Vektor sein,</span>
-<span class="cm">            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1) </span>
-<span class="cm">            * der horizontalen Bewegungsrichtung (Mathf.Sign(h)) und </span>
+<span class="cm">            * der sich aus dem Vorzeichenrückgabewert (-1 oder +1)</span>
+<span class="cm">            * der horizontalen Bewegungsrichtung (Mathf.Sign(h)) und</span>
 <span class="cm">            * dem Skalierungsfaktor auf der x-Achse ergibt.</span>
-<span class="cm">            * Der y-Wert des Elefanten bleibt gleich, daher nehmen wir nur den </span>
+<span class="cm">            * Der y-Wert des Elefanten bleibt gleich, daher nehmen wir nur den</span>
 <span class="cm">            * Skalierungsfaktor &quot;transform.localScale.y&quot;.       </span>
 <span class="cm">            */</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">h</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span> <span class="n">transform</span><span class="p">.</span><span class="n">localScale</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="n">Mathf</span><span class="p">.</span><span class="n">Sign</span><span class="p">(</span><span class="n">h</span><span class="p">)*</span><span class="n">Mathf</span><span class="p">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">transform</span><span class="p">.</span><span class="n">localScale</span><span class="p">.</span><span class="n">x</span><span class="p">),</span> <span class="n">transform</span><span class="p">.</span><span class="n">localScale</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
 
         <span class="cm">/* Die Geschwindigkeit wird auf den Absolutbetrag der horizontalen</span>
 <span class="cm">            * Bewegung gesetzt. Negative Geschwindigkeit gibt es nicht.</span>
-<span class="cm">            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich </span>
+<span class="cm">            * z.B. wenn ich mit dem Auto im Rückwärtsgang 10km/h fahre, fahre ich</span>
 <span class="cm">            * 10km/h in einer Rückwärtsbewegung und nicht &quot;-10km/h&quot;</span>
 <span class="cm">            */</span>
         <span class="n">Animation</span><span class="p">.</span><span class="n">SetFloat</span><span class="p">(</span><span class="s">&quot;Geschwindigkeit&quot;</span><span class="p">,</span> <span class="n">Mathf</span><span class="p">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">h</span><span class="p">));</span>
@@ -1078,8 +1000,9 @@ Wir müssen lediglich die aktuelle Geschwindigkeit von Elli unserer Animation ü
 
 <p>Wenn wir nun auf Play drücken und das Spiel starten, dann fällt Elli ins bodenlose Leere. Deshalb setzen wir im Inspector Panel bei Rigidbody2D von Elli <em>Gravity Scale</em> kurzfristig auf Null. So können wir auch testen, ob wir die Bewegung erfolgreich implementiert haben.</p>
 <p><img alt="Gravity scale" src="../img/T03/T03-i-Gravity Scale 0.png" /></p>
-<p>Sourcecode
-Download Sourcecode Teil 03: http://comber.at/dev/BouncyFant03.zip </p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T03/Bouncy%20Fant%2003.zip">Download Sourcecode Teil 03</a></p>
                 
                   
                 

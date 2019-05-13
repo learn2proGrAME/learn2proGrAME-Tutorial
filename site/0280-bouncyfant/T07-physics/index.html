@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0280-bouncyfant/T07-physics/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Teil 7 - Physikwelt - learn2proGrAME Grundlagentutorial</title>
+        <title>Teil 7 - Physikwelt - learn2proGrAME Tutorial</title>
       
     
     
@@ -107,7 +107,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#teil-7-physik" tabindex="1" class="md-skip">
+      <a href="#teil-7-es-regne-mull" tabindex="1" class="md-skip">
         Zum Inhalt
       </a>
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Teil 7 - Physikwelt
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -594,8 +594,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#rigidbody-und-collider" title="Rigidbody und Collider" class="md-nav__link">
+    Rigidbody und Collider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#skalieren" title="Skalieren" class="md-nav__link">
     Skalieren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -604,11 +619,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
-    Sourcecode
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -643,6 +656,18 @@
   <li class="md-nav__item">
     <a href="../T09-finetuning/" title="Teil 9 - Finetuning" class="md-nav__link">
       Teil 9 - Finetuning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
     </a>
   </li>
 
@@ -705,8 +730,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#rigidbody-und-collider" title="Rigidbody und Collider" class="md-nav__link">
+    Rigidbody und Collider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#skalieren" title="Skalieren" class="md-nav__link">
     Skalieren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
+    Sourcecode
   </a>
   
 </li>
@@ -715,11 +755,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
-    Sourcecode
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -742,35 +780,36 @@
                   <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0280-bouncyfant/T07-physics.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="teil-7-physik">Teil 7 - Physik<a class="headerlink" href="#teil-7-physik" title="Permanent link">&para;</a></h1>
+                <h1 id="teil-7-es-regne-mull">Teil 7 - Es regne Müll!<a class="headerlink" href="#teil-7-es-regne-mull" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p class="admonition-title">Ziele</p>
-<p>Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.</p>
+<p class="admonition-title">Ziel</p>
+<p>In diesem Kapitel lernst du, wie du automatisch generierte Hindernisse für dein Spiel erstellst. Dafür lernst du wie man ein Script schreibt, dass diese Objekte aus einer Vorlage erstellt und in deinem Spiel von der Decke fallen lässt.</p>
 </div>
+<hr />
 <table>
 <thead>
 <tr>
 <th>In diesem Kapitel wirst du...</th>
-<th>Erledigt?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Kugeln und Kisten als Hindernisse für die Elefanten erstellen</td>
-<td></td>
 </tr>
 <tr>
 <td>Den Unterschied zwischen Skalierung und Änderung der Pixel per Unit zur Veränderung der Größe eines Objekts verstehen</td>
-<td></td>
 </tr>
 <tr>
 <td>Ein Script schreiben, das Kugeln und Kisten vom Himmel herabregnen lässt.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="hindernisse-hinzufugen">Hindernisse hinzufügen<a class="headerlink" href="#hindernisse-hinzufugen" title="Permanent link">&para;</a></h2>
-<p>Um den herabfallenden Sperrmüll zu erstellen, lege wieder jeweils ein neues Asset (<em>Import New Asset</em>) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du in <a href="/0280-bouncyfant/T02-animstat">Kapitel 2</a></p>
+<p>Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.</p>
+<p><img alt="Kiste" src="../img/T07/T07-aa-Kiste.png" /> <img alt="Kugel" src="../img/T07/T07-ab-Kugel.png" /></p>
+<p>Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (<em>Import New Asset</em>) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Die Assets die du dafür verwenden kannst, findest du <a href="https://www.comber.at/dev/assets.zip">hier</a>
+.</p>
+<h3 id="rigidbody-und-collider">Rigidbody und Collider<a class="headerlink" href="#rigidbody-und-collider" title="Permanent link">&para;</a></h3>
 <p>Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel einen Circle Collider und die Kiste einen Box Collider) zugewiesen. Füge den Kisten und Kugeln einen <em>RigidBody2D</em> hinzu, damit sich die Kisten und Kugeln auch bewegen können und nicht starr im Level verharren.</p>
 <h3 id="skalieren">Skalieren<a class="headerlink" href="#skalieren" title="Permanent link">&para;</a></h3>
 <p>Die Größe von Kiste und Kugel haben wir in unserem Spiel noch um den Faktor 1,55 jeweils auf der X- und Y-Achse skaliert.</p>
@@ -781,9 +820,10 @@
 </div>
 <p>Nun ziehen wir das zuvor erstellte elastische Material aus dem Ordner <em>Material</em> auf die Kisten auf die Kugel, damit diese auch herumspringen. Um viele Kisten und Kugeln zu erstellen, kreieren wir uns wieder eine Vorlage. Zu diesem Zweck ziehen wir die Kugel und die Kiste in den Ordner <em>Vorlagen</em>.</p>
 <p><img alt="Vorlage erstellen" src="../img/T07/T07-b-Kugeln und Kiste Vorlagen.png" /></p>
-<p>Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Damit wir schon jetzt unser Spiel dafür vorbereiten, dass es unterschiedliche Level geben wird, erstellen wir ein neues <em>GameObject</em> mit dem Namen <em>Level01</em>.</p>
-<p><img alt="Leeres GameObject erstellen" src="../img/T07/T07-c-Erstellen des leeren GameObject Level01.png" /></p>
-<p>Wir erstellen im GameObject <em>Level01</em> ein Script und nennen es <em>Muell.cs</em>. Dieses Script soll so aussehen (der Quellcode wird später noch im Detail genau erklärt).</p>
+<p>Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Es soll in regelmäßigen Abständen Müll (Kisten oder Bälle) regnen. Um die Erzeugung dieser Objekte soll sich ein eigenes <em>GameObject</em> kümmern.<br />
+Erstelle ein neues <em>GameObject</em> und gib diesem den Namen <em>MuellGenerator</em></p>
+<p><img alt="Leeres GameObject erstellen" src="../img/T07/T07-ca-Spielobjekt-MuellGenerator-Erstellen.png" /></p>
+<p>Wir erstellen im GameObject <em>MuellGenerator</em> ein Script und nennen es <em>Muell.cs</em>. Dieses Script soll so aussehen (der Quellcode wird im <a href="https://www.youtube.com/watch?v=x4mYCVALFek&amp;list=PLwrS_Vh1B1U2lo3P6h03fD1qYhoIcPGBS&amp;index=7&amp;t=5m26s">Videotutorial</a> genau erklärt).</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
@@ -843,10 +883,11 @@
 </pre></div>
 
 
-<p>Wenn alles gespeichert ist, weisen wir im Inspector dem <em>Level01</em> die Vorlagen den Variablen <em>Kiste</em> und <em>Kugel</em> zu.</p>
-<p><img alt="Vorlagen zuweisen" src="../img/T07/T07-d-Zuweisen der Vorlagen zum Script.png" style="height:50%;width:50%" /></p>
-<h2 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h2>
-<p>Download Sourcecode Teil 07: http://comber.at/dev/BouncyFant07.zip</p>
+<p>Wenn alles gespeichert ist, weisen wir im Inspector dem <em>MuellGenerator</em> die Vorlagen den Variablen <em>Kiste</em> und <em>Kugel</em> zu.</p>
+<p><img alt="Vorlagen zuweisen" src="../img/T07/T07-d-Zuweisen der Vorlagen zum Script.png" style="height:120%;width:120%" /></p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T07/Bouncy%20Fant%2007.zip">Download Sourcecode Teil 07</a></p>
                 
                   
                 

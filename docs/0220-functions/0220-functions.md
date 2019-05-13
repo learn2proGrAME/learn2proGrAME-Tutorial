@@ -46,7 +46,7 @@ Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktio
 
 ##Aufbau einer Funktion
 
-![Header](img/funktionsHeader.png)
+![Header](img/FunktionsSyntax.svg)
 
 Der [Zugriffsmodifikator](../0230-accessmodifiers/0230-accessmodifiers.md) legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
 
