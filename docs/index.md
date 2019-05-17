@@ -35,6 +35,13 @@ In diesem Tutorial lernst du die Grundlagen zur Spieleprogrammierung in Unity mi
 
 ---
 
+### Warum verwenden wir die Unity Engine?
+Wir verwenden die Unity Engine, weil sie viele Features von Haus aus eingebaut hat die wir für die Erstellung eines Spiels brauchen. Somit können wir uns mehr auf das Design von unserem Spiel und die grundlegende Programmierung konzentrieren. Unity hat zum Beispiel bereits eine richtig coole Physik Engine eingebaut, mit der wir lustige Effekte in unserem Spiel erschaffen können.
+
+Die Unity Engine wird auch von professionellen Spielentwicklern verwendet. So wurden zum Beispiel das Online Kartenspiel „Hearthstone“ von Blizzard und das beliebte Handygame „Temple Run“ mit Unity erstellt.  
+
+---
+
 ##BouncyFant-Tutorial
 
 Im [BouncyFant-Tutorial](0280-bouncyfant/T00-introduction.md) wirst du folgendes lernen:

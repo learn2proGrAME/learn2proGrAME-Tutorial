@@ -10,11 +10,11 @@ In Space-Asteroids fliegst du mit einem Raumschiff durch ein Asteroidenfeld. Du 
 
 !!!success "Arbeitsauftrag"
 	Vervollständige das Unity-Projekt. Lediglich die Programmierung der Asteroiden fehlt noch.
-   
+
 
 ## Projekt downloaden
 
-1. Gehe auf [https://github.com/learn2proGrAME/SpaceShooter](https://github.com/learn2proGrAME/SpaceShooter)
+1. Gehe auf [https://github.com/learn2proGrAME/SpaceShooter](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids1.zip)
 
 2. Klicke zuerst auf **"Clone or Download"** und dann auf **"Download ZIP"**
 

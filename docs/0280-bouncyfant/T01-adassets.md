@@ -73,10 +73,6 @@ Um ein Asset zu unserem Spiel hinzuzufügen, müssen wir im Asset Panel rechtskl
 Im nachfolgenden Fenster navigieren wir zu dem Ordner, in dem wir unsere heruntergeladenen Spielegrafiken gespeichert haben, wählen unsere Spielfigur aus und klicken auf Import. (Mehr zum Erstellen einer von dir erstellten Spielgrafik findest du in unserem GIMP-Tutorial auf Moodle oder auf unserem Youtube-Channel:
 ![Asset Panel: Asset importieren](img/T01/T01-f-Dialog Oeffnen Sprites importieren.png)
 
-
-!!!bug "Achtung!"  
-    Platziere deine ganzen Assets von Anfang an in den Ordner wo sie auch am Ende drin liegen sollen und gib ihnen einen eindeutigen Namen den du nicht mehr ändern musst. Unity merkt sich immer den Pfad und Namen deines Asset im Projektordner und nicht das Asset als Bild an sich. Wenn du die Dateien später verschiebst oder umbenennst und sich dadurch der Pfad ändert, kann es sein, dass dein Level nicht mehr funktioniert. Lege den Elefanten am besten jetzt in den Ordner wo du ihn auch am Ende haben willst, also zum Beispiel den “Sprites” Ordner. Speicher dein Asset mit einem eindeutigen Namen wie “Elefant.png” ab.
-
  Wenn du Assets importierst werden sie in deinen Projekt Ordner kopiert. Solltest du irgendwann etwas an deinem Asset verändern müssen, musst du die Version in deinem Projekt Ordner ändern.
 
 ## Das Sprite zerschneiden
