@@ -29,9 +29,9 @@ In diesem Tutorial lernst du die Grundlagen zur Spieleprogrammierung in Unity mi
 * Anschließend lernst du über [Variablen](0150-variables/0150-variables.md) und [Operatoren](0160-operators/0160-operators.md), um dein erstes Spiel, das allseits beliebte [Krapfenklicker](0170-donutclicker/0170-donutclicker.md), zu entwickeln.
 * Nachdem du die Unity Spielobjektkomponente [Transform](0180-transform/0180-transform.md) kennengelernt hast, kannst du eine Spielerweiterung für Krapfenklicker schreiben.
 * Beim nächsten selbstgeschriebenen Spiel - [Ellis' großes Abenteuer](0200-adventure/0200-adventure.md) - lernst du, mit [Verzweigungen](0190-conditionals/0190-conditionals.md) Spielzustände zu erzeugen und Figuren in einem Grafikprogramm namens [GIMP](https://www.gimp.org) zu [zeichnen](0210-drawingingimp/0210-drawingingimp.md).
-* Im Spiel [Space-Asteroids](0240-spaceshooter/0240-spaceshooter.md) lernst du den Umgang mit [Funkionen](0220-functions/0220-functions.md) und [Zugriffsmodifikatoren](0230-accessmodifiers/0230-accessmodifiers.md). Weiters lernst du das Konzept der [Kollisionsabfrage](0240-spaceshooter/0240-spaceshooter.md) kennen.
+* Im ersten Teil des Tutorials [Space-Asteroids](0285-spaceasteroids/T01-spaceasteroids.md) lernst du den Umgang mit [Funkionen](0220-functions/0220-functions.md) und [Zugriffsmodifikatoren](0230-accessmodifiers/0230-accessmodifiers.md). Weiters lernst du das Konzept der Kollisionsabfrage kennen. Danach lernst du [Partikeleffekte](0285-spaceasteroids/T02-particles1.md) kennen und wirst damit coole Spezialeffekte in das Spiel einbauen.
 * Als Vorbereitung auf das Jump'n'Run artige Arcade Spiel [BouncyFant](0280-bouncyfant/T00-introduction.md) wird letztlich die [Schleife](0250-loops/0250-loops.md) - insbesondere die [Spielschleife](0260-gameloop/0260-gameloop.md) - als wichtiger Aspekt der Spieleprogrammierung vorgestellt.
-* Letztlich werden die [Grundlagen objekt-orientierter Prigrammierung](0270-classes/0270-classes.md) vorgestellt.
+* Letztlich werden die [Grundlagen objekt-orientierter Programmierung](0270-classes/0270-classes.md) vorgestellt.
 
 ---
 
@@ -53,3 +53,15 @@ Im [BouncyFant-Tutorial](0280-bouncyfant/T00-introduction.md) wirst du folgendes
 * Springen mit Hilfe von Vektoren
 * Kollisionsabfrage in Unity
 * Objekt-orienterte Programmierung: Vererbung, Kapselung
+
+##SpaceAsteroids-Tutorial
+
+Space Asteroids ist ein Spiel indem du in einem Raumschiff im All durch ein Asteroidenfeld fliegst.
+
+Im [SpaceAsteroids-Tutorial](0285-spaceasteroids/T01-spaceasteroids.md) wirst folgendes lernen:
+
+* Funktionen anderer Objekte aufrufen
+* Kollisionsabfrage in Unity
+* Spielobjekte zur Laufzeit löschen
+* Partikelsysteme erstellen
+* Fertige Partikelsysteme in das Spiel einbauen

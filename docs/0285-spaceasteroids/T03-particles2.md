@@ -5,7 +5,7 @@
     In diesem Kapitel lernst du wie du die vorgefertigten Partikelsystem von Unity importierst und wie du sie in deinem Spiel verwenden kannst.
 -----
 
-Falls du die Tutorials [Spiel - Space-Asteroids](../0240-spaceshooter/0240-spaceshooter.md) und [Partikelsysteme erstellen](../0285-particles/0285-particles1.md) schon absolviert hast, verwende nun dieses Unityprojekt, ansonsten kannst du dir [hier](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids3%20.zip) das Projekt herunterladen.
+Falls du die Tutorials [Programmierung der Asteroiden](../0285-spaceasteroids/T01-spaceasteroids.md) und [Partikelsysteme erstellen](../0285-spaceasteroids/T02-particles1.md) schon absolviert hast, verwende nun dieses Unityprojekt, ansonsten kannst du dir [hier](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids3%20.zip) das Projekt herunterladen.
 
 ##Particle-Package importierten
 Unity hat standardmäßig schon eine Reihe von tollen Extrapackages eingebaut, die man ganz einfach für die eigenen Spiele verwenden kann. So zum Beispiel auch ein Particle-Package.

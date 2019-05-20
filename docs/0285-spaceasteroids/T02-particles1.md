@@ -37,7 +37,7 @@ Im oben zu sehenden Feuer stößt der Emitter ganz viele kleine orange Partikel 
 
 Nun wirst du dein eigenes Partikelsystem für den Raketenantrieb des Raumschiffs im Spiel *Space-Asteroids* erstellen.
 
-Falls du das Tutorial [Spiel - Space-Asteroids](../0240-spaceshooter/0240-spaceshooter.md) schon absolviert hast, verwende nun dieses Unityprojekt, ansonsten kannst du dir [hier](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids2.zip) das Projekt herunterladen.
+Falls du das Tutorial [Programmierung der Asteroiden](../0285-spaceasteroids/T01-spaceasteroids.md) schon absolviert hast, verwende nun dieses Unityprojekt, ansonsten kannst du dir [hier](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids2.zip) das Projekt herunterladen.
 
 ###1. Erstelle ein neues Partikelsystem.
 Klicke dafür In der Hierarchy mit der rechten Maustaste auf das Objekt *Player* und anschließend *Particle System*
