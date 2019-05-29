@@ -13,7 +13,7 @@
         <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
-        <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0240-spaceshooter/0240-spaceshooter/">
+        <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0285-spaceasteroids/T01-spaceasteroids/">
       
       
         <meta name="author" content="learn2proGrAME">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Spiel - Space-Asteroids - learn2proGrAME Tutorial</title>
+        <title>Programmierung der Asteroiden - learn2proGrAME Tutorial</title>
       
     
     
@@ -133,7 +133,7 @@
                 learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
-                Spiel - Space-Asteroids
+                Programmierung der Asteroiden
               </span>
             
           
@@ -404,145 +404,6 @@
       
       
 
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Spiel - Space-Asteroids
-      </label>
-    
-    <a href="./" title="Spiel - Space-Asteroids" class="md-nav__link md-nav__link--active">
-      Spiel - Space-Asteroids
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#projekt-downloaden" title="Projekt downloaden" class="md-nav__link">
-    Projekt downloaden
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#teste-das-spiel" title="Teste das Spiel" class="md-nav__link">
-    Teste das Spiel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bewegung-der-asteroiden" title="Bewegung der Asteroiden" class="md-nav__link">
-    Bewegung der Asteroiden
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#die-benotigten-variablen-deklarieren" title="Die benötigten Variablen deklarieren" class="md-nav__link">
-    Die benötigten Variablen deklarieren
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bewegung-im-spiel" title="Bewegung im Spiel" class="md-nav__link">
-    Bewegung im Spiel
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rotation-der-asteroiden" title="Rotation der Asteroiden" class="md-nav__link">
-    Rotation der Asteroiden
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kollision" title="Kollision" class="md-nav__link">
-    Kollision
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#was-kollidiert" title="Was kollidiert?" class="md-nav__link">
-    Was kollidiert?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gescho-und-asteroid-loschen" title="Geschoß und Asteroid löschen" class="md-nav__link">
-    Geschoß und Asteroid löschen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#punktestand-erhohen" title="Punktestand erhöhen" class="md-nav__link">
-    Punktestand erhöhen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sound-abspielen" title="Sound abspielen" class="md-nav__link">
-    Sound abspielen
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vollstandiger-sourcecode" title="Vollständiger SourceCode" class="md-nav__link">
-    Vollständiger SourceCode
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-    
-      
-      
-      
-
 
   <li class="md-nav__item">
     <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-nav__link">
@@ -582,13 +443,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-18">
+    <label class="md-nav__link" for="nav-17">
       Spiel - BouncyFant
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-18">
+      <label class="md-nav__title" for="nav-17">
         Spiel - BouncyFant
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -735,23 +596,212 @@
       
       
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18" checked>
+    
+    <label class="md-nav__link" for="nav-18">
+      Spiel - Space Asteroids
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-18">
+        Spiel - Space Asteroids
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Programmierung der Asteroiden
+      </label>
+    
+    <a href="./" title="Programmierung der Asteroiden" class="md-nav__link md-nav__link--active">
+      Programmierung der Asteroiden
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projekt-downloaden" title="Projekt downloaden" class="md-nav__link">
+    Projekt downloaden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teste-das-spiel" title="Teste das Spiel" class="md-nav__link">
+    Teste das Spiel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bewegung-der-asteroiden" title="Bewegung der Asteroiden" class="md-nav__link">
+    Bewegung der Asteroiden
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-benotigten-variablen-deklarieren" title="Die benötigten Variablen deklarieren" class="md-nav__link">
+    Die benötigten Variablen deklarieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bewegung-im-spiel" title="Bewegung im Spiel" class="md-nav__link">
+    Bewegung im Spiel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotation-der-asteroiden" title="Rotation der Asteroiden" class="md-nav__link">
+    Rotation der Asteroiden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kollision" title="Kollision" class="md-nav__link">
+    Kollision
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-kollidiert" title="Was kollidiert?" class="md-nav__link">
+    Was kollidiert?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gescho-und-asteroid-loschen" title="Geschoß und Asteroid löschen" class="md-nav__link">
+    Geschoß und Asteroid löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktestand-erhohen" title="Punktestand erhöhen" class="md-nav__link">
+    Punktestand erhöhen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound-abspielen" title="Sound abspielen" class="md-nav__link">
+    Sound abspielen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vollstandiger-sourcecode" title="Vollständiger SourceCode" class="md-nav__link">
+    Vollständiger SourceCode
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
-    <a href="../../0285-particles/0285-particles1/" title="Partikelsysteme erstellen" class="md-nav__link">
+    <a href="../T02-particles1/" title="Partikelsysteme erstellen" class="md-nav__link">
       Partikelsysteme erstellen
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="../../0285-particles/0285-particles2/" title="Fertige Partikelsysteme verwenden" class="md-nav__link">
+    <a href="../T03-particles2/" title="Fertige Partikelsysteme verwenden" class="md-nav__link">
       Fertige Partikelsysteme verwenden
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T04-deployToMobile/" title="Veröffentlichung aufs Smartphone" class="md-nav__link">
+      Veröffentlichung aufs Smartphone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T05-mobileControls/" title="Steuerung für Smartphones" class="md-nav__link">
+      Steuerung für Smartphones
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -911,7 +961,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0240-spaceshooter/0240-spaceshooter.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/learn2proGrAME/learn2proGrAME-Grundlagen/edit/master/docs/0285-spaceasteroids/T01-spaceasteroids.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="space-asteroids">Space-Asteroids<a class="headerlink" href="#space-asteroids" title="Permanent link">&para;</a></h1>
@@ -1151,7 +1201,7 @@ Also z.B. <code>gameController.ErhoehePunktestand(10);</code></p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../0230-accessmodifiers/0230-accessmodifiers/" title="Zugriffskontrolle" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../0280-bouncyfant/T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1160,19 +1210,19 @@ Also z.B. <code>gameController.ErhoehePunktestand(10);</code></p>
                 <span class="md-footer-nav__direction">
                   Zurück
                 </span>
-                Zugriffskontrolle
+                Teil 10 - Das Spiel Veröffentlichen
               </span>
             </div>
           </a>
         
         
-          <a href="../../0250-loops/0250-loops/" title="Schleifen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../T02-particles1/" title="Partikelsysteme erstellen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Weiter
                 </span>
-                Schleifen
+                Partikelsysteme erstellen
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
