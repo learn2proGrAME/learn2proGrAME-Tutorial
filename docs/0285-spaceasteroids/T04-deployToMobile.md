@@ -1,27 +1,23 @@
-#Spiele für Smartphones und Tablets
+#Spiele für Android exportieren
 
 !!! Abstract "Lernziele"
 
-    In diesem Kapitel lernst du wie du ein Unity Projekt für Android bzw. IOS veröffentlichst.
+    In diesem Kapitel lernst du wie du ein Unity Projekt für Android veröffentlichst.
 -----
 
 ##Voraussetzungen
 
-###Android:
-Android SDK, sowie Java JDK 1.8 (Höhere Versionen werden zur Zeit nicht ohne weiteres unterstützt) müssen installiert sein. Außerdem muss man in Unity unter *Edit->Preferences* den Pfad zu diesen Paketen angeben.
-
-###IOS:
-Das IOS-Modul muss installiert sein.
+Android SDK, sowie Java JDK 1.8 (Höhere Versionen werden zur Zeit nicht ohne weiteres unterstützt) müssen installiert sein.   **Wichtig:** In Unity muss unter *Edit->Preferences* der Pfad zu diesen Paketen angegegeben werden.
 
 ##Zielplatform ändern
-Gehe zu *File->Build Settings* und wähle als Platform Android bzw. IOS aus.
+Gehe zu *File->Build Settings* und wähle als Platform Android aus.
 
 ##Live Testen mit Unity-Remote
-Wenn du dein Spiel während dem arbeiten auf dem Smartphone testen willst, kannst du die *Unity-Remote* App auf deinem Smartphone installieren. (Die Findest du im PlayStore bzw. Appstore)
-###Android
-Damit die App funtkioniert musst du allerdings *USB-Debugging* auf deinem Android-Smartphone aktivieren. Außerdem musst du *Device* unter *Edit->Project Settings->Editor* *Any Anrdoid Device*
+Wenn du dein Spiel während dem arbeiten auf dem Smartphone testen willst, kannst du die *Unity-Remote* App auf deinem Smartphone installieren. (Die App Findest du im PlayStore)
 
-Wenn du nun Play drückst, dein Smartphone an den PC angschlossen ist und die Unity-Remote läuft, sollte das Spiel auch auf deinem Smartphone laufen.
+Damit die App funtkioniert musst du allerdings *USB-Debugging* auf deinem Android-Smartphone aktivieren. Außerdem musst du unter *Edit->Project Settings->Editor* bei *Device* *Any Anrdoid Device* einstellen. Starte danach Unity neu.
+
+Wenn du nun Play drückst, dein Smartphone an den PC angeschlossen ist und die Unity-Remote läuft, sollte das Spiel auch auf deinem Smartphone laufen.
 
 ##Spiel exportieren
 
@@ -34,7 +30,7 @@ Nun kannst du auf *Build and Run* klicken um das Spiel zu erstellen und auf dein
 
 Häufige Fehler, weshalb das exportieren nicht funktioniert:
 * Packagename nicht richtig gesetzt
-* Android-SDK, JDK oder IOS-Module nicht installiert bzw. Pfad nicht oder falsch gesetzt
+* Android-SDK, JDK nicht installiert bzw. Pfad nicht oder falsch gesetzt
 * USB-Debugging ist am Smartphone nicht aktiviert
 
 
