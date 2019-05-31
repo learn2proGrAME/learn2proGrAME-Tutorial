@@ -17,7 +17,6 @@ nav:
     - Grafiken gestalten in GIMP: 0210-drawingingimp/0210-drawingingimp.md
     - Funktionen: 0220-functions/0220-functions.md
     - Zugriffskontrolle: 0230-accessmodifiers/0230-accessmodifiers.md
-    - Spiel - Space-Asteroids: 0240-spaceshooter/0240-spaceshooter.md
     - Schleifen: 0250-loops/0250-loops.md
     - Die Spiel-Schleife: 0260-gameloop/0260-gameloop.md
     - Objekt-orientiertes Programmieren - Grundlagen: 0270-classes/0270-classes.md
@@ -33,7 +32,12 @@ nav:
       - Teil 8 - Gewinnbedingung: 0280-bouncyfant/T08-win.md
       - Teil 9 - Finetuning: 0280-bouncyfant/T09-finetuning.md
       - Teil 10 - Das Spiel Veröffentlichen: 0280-bouncyfant/T10-deploy.md
-    - Partikelsysteme: 0285-particles/0285-particles.md
+    - Spiel - Space Asteroids:
+      - Programmierung der Asteroiden: 0285-spaceasteroids/T01-spaceasteroids.md
+      - Partikelsysteme erstellen: 0285-spaceasteroids/T02-particles1.md
+      - Fertige Partikelsysteme verwenden: 0285-spaceasteroids/T03-particles2.md
+      - Veröffentlichung auf Anroid: 0285-spaceasteroids/T04-deployToMobile.md
+      - Steuerung für Touchscreens: 0285-spaceasteroids/T05-mobileControls.md
     - Über learn2proGrAME: 0290-about/0290-about.md
     - Für Lehrpersonen: 0300-teachers/0300-teachers.md
 
