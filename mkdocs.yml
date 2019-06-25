@@ -5,21 +5,22 @@ site_author: 'learn2proGrAME'
 site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
 nav:
     - Einleitung: index.md
-    - Bedienoberflächen: 0120-userinterface/0120-userinterface.md
-    - Erste Schritte: 0130-firststeps/0130-firststeps.md
-    - Fehler und De-Bugging: 0140-debugging/0140-debugging.md
-    - Variablen: 0150-variables/0150-variables.md
-    - Operatoren: 0160-operators/0160-operators.md
-    - Spiel - Krapfenklicker: 0170-donutclicker/0170-donutclicker.md
-    - Transform Spielobjektkomponente: 0180-transform/0180-transform.md
-    - Verzweigungen: 0190-conditionals/0190-conditionals.md
-    - Spiel - Ellis' großes Abenteuer: 0200-adventure/0200-adventure.md
-    - Grafiken gestalten in GIMP: 0210-drawingingimp/0210-drawingingimp.md
-    - Funktionen: 0220-functions/0220-functions.md
-    - Zugriffskontrolle: 0230-accessmodifiers/0230-accessmodifiers.md
-    - Schleifen: 0250-loops/0250-loops.md
-    - Die Spiel-Schleife: 0260-gameloop/0260-gameloop.md
-    - Objekt-orientiertes Programmieren - Grundlagen: 0270-classes/0270-classes.md
+    - Grundlagen:
+        - Bedienoberflächen: 0120-userinterface/0120-userinterface.md
+        - Erste Schritte: 0130-firststeps/0130-firststeps.md
+        - Fehler und De-Bugging: 0140-debugging/0140-debugging.md
+        - Variablen: 0150-variables/0150-variables.md
+        - Operatoren: 0160-operators/0160-operators.md
+        - Spiel - Krapfenklicker: 0170-donutclicker/0170-donutclicker.md
+        - Transform Spielobjektkomponente: 0180-transform/0180-transform.md
+        - Verzweigungen: 0190-conditionals/0190-conditionals.md
+        - Spiel - Ellis' großes Abenteuer: 0200-adventure/0200-adventure.md
+        - Grafiken gestalten in GIMP: 0210-drawingingimp/0210-drawingingimp.md
+        - Funktionen: 0220-functions/0220-functions.md
+        - Zugriffskontrolle: 0230-accessmodifiers/0230-accessmodifiers.md
+        - Schleifen: 0250-loops/0250-loops.md
+        - Die Spiel-Schleife: 0260-gameloop/0260-gameloop.md
+        - Objekt-orientiertes Programmieren - Grundlagen: 0270-classes/0270-classes.md
     - Spiel - BouncyFant:
       - Einführung: 0280-bouncyfant/T00-introduction.md
       - Teil 1 - Neues Projekt und Assets: 0280-bouncyfant/T01-adassets.md
