@@ -15,7 +15,7 @@ Requirements/*Anforderungen*: Python >2.7
 
 If you have [pip](https://pypi.org/project/pip/) installed, you can
 
-*Falls [pip](https://pypi.org/project/pip/) bereits installiert ist, kann man*: 
+*Falls [pip](https://pypi.org/project/pip/) bereits installiert ist, kann man*:
 
 `pip install mkdocs`
 
@@ -23,7 +23,7 @@ If you have [pip](https://pypi.org/project/pip/) installed, you can
 
 ### Workflow
 
-Through `mkdocs serve` tutorial-documentation can be previewed locally. 
+Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 `mkdocs serve` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
 
@@ -33,7 +33,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * Learning goals/*Lernziele*
 * Main Content/*Hauptinhalte*
     * including exercises, work assignments, hints, special notices, references or quotes/*beinhaltet Übungen, Arbeitsaufträge, Tipps, besondere Hinweise (Achtung), Referenzen oder Zitate*
-* Further resources/*Weiterführende Resourcen* 
+* Further resources/*Weiterführende Resourcen*
     * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
 ### Writing Style Guidelines/Schreib-Stil Leitlinien<sup>[1](#myfootnote1)</sup>
@@ -43,7 +43,16 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * rather short and **concise** (essential content, attuned to learning goals)/*eher kurz und prägnant (Kerninhalte, ausgerichtet auf Lernziele)*
 * additional **incentives** (interesting, varied, relatable)/*Zusätzliche Anregungen (interessant, abwechslungsreich, man kann sich damit in Beziehung setzen)*
 
+### Namenskonvention und Ordnerstruktur
 
+####Markdown Files
+
+
+####Bilder
+* Befinden sich im img-Ordner des dazugehörigen Kapitels
+* Beginnen mit Kapitelnummer
+* Keine Leerzeichen
+* Aussagekräftig
 
 **Thanks to all supporters and contributors! *Danke an alle UnterstützerInnen und Mitwirkenden!***
 
