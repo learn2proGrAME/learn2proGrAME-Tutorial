@@ -1,5 +1,12 @@
 #Über [learn2proGrAME](https://programe.at)
 
+##Lizenzen
+Die erstellten Inhalte sind als Open Educational Ressources konzipiert und stehen unter unterschiedlichen freien Lizenzen. Die im Zuge des Projekt erstellten Texte sowie die selbst erstellten Grafiken (die Elefanten, Kisten, Kugeln, Wolken) stehen unter Creative Commons  - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Lizenz:
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+Die freien Inhalte von [GameArt2D](https://www.gameart2d.com/freebies.html) (der Hintergrund, die Plattformen, der Pilz) stehen unter CC0 1.0 Universal (CC0 1.0) Public Domain Dedication [see www.gameart2d.com/license.html](https://www.gameart2d.com/license.html).
+
+
 ---
 ##Das Projekt
 
@@ -17,7 +24,7 @@ Programmieren lernen ist für die meisten Menschen eine große Herausforderung u
  
 ---
 
-##Das Team
+
 
 
 

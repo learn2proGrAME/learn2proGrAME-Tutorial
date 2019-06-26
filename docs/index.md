@@ -4,8 +4,6 @@
 
 Spiele programmieren mit C# in Unity - Tutorial
 
-!!!warning "WORK IN PROGRESS"
-
 ---
 
 ## Was ist learn2proGrAME?
@@ -13,6 +11,8 @@ Spiele programmieren mit C# in Unity - Tutorial
 Bei learn2proGrAME können Schülerinnen und Schüler durch Spiele programmieren das Programmieren mit einer text-basierten Programmiersprache in einer professionellen Spieleprogrammierumgebung lernen.
 
 Die learn2proGrAME Unterlagen - wie etwa dieses Tutorial - sind [offen online zugänglich](https://programe.at).
+
+Die Lernmaterialen stehen als Open Educational Ressources frei zu Verwendung und Veränderung verfügbar, die Lizenzen sind im Kapitel [Über learn to proGrAME](0290-about/0290-about.md) angeführt. 
 
 Viel Spass beim Spiele entwickeln!
 
