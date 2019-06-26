@@ -6,6 +6,7 @@ Die erstellten Inhalte sind als Open Educational Ressources konzipiert und stehe
 
 Die freien Inhalte von [GameArt2D](https://www.gameart2d.com/freebies.html) (der Hintergrund, die Plattformen, der Pilz) stehen unter CC0 1.0 Universal (CC0 1.0) Public Domain Dedication [see www.gameart2d.com/license.html](https://www.gameart2d.com/license.html).
 
+Im Spiel [SpaceAsteroids](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/tree/master/SpaceAsteroids) werden teils Assets von [opengameart.org](https://opengameart.org) verwendet. Diese Assets stehen unter CC0 bzw. CC-BY 3.0. Details [hier](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/SpaceAsteroids/SpaceAsteroids1/LICENSE)
 
 ---
 ##Das Projekt
