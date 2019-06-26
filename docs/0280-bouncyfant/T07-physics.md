@@ -1,22 +1,24 @@
-# Teil 7 - Physik
+# Teil 7 - Es regne Müll!
 
-!!!Abstract "Ziele"
-    Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.
+!!!Abstract "Ziel"
+    In diesem Kapitel lernst du, wie du automatisch generierte Hindernisse für dein Spiel erstellst. Dafür lernst du wie man ein Script schreibt, dass diese Objekte aus einer Vorlage erstellt und in deinem Spiel von der Decke fallen lässt.
 
 ---
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ---------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Kugeln und Kisten als Hindernisse für die Elefanten erstellen |
 Den Unterschied zwischen Skalierung und Änderung der Pixel per Unit zur Veränderung der Größe eines Objekts verstehen |
 Ein Script schreiben, das Kugeln und Kisten vom Himmel herabregnen lässt. |
 
 ## Hindernisse hinzufügen
+Wer die Background Story unseres Spiels gelesen hat, weiß, dass der böse Dr. Scramblewoods alles daran setzen wird, Elli und Ossi daran zu hindern, seine Maschinen zu deaktivieren und den Regenwald zu retten. Deshalb legt Dr. Scramblewoods den Bouncy Fants alle möglichen Hindernisse in den Weg. Im ersten Level lässt er sperrige Kisten und Kugeln auf sie herab regnen, damit sie den magischen Pilz nicht erreichen.
 
 ![Kiste](img/T07/T07-aa-Kiste.png) ![Kugel](img/T07/T07-ab-Kugel.png)
 
-Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Den Link zu den Assets die du dafür verwenden kannst, findest du in [Kapitel 2](/0280-bouncyfant/T02-animstat)
-
+Um den herabfallenden Sperrmüll zu erstellen, lege wieder für die Kugeln und Kisten jeweils ein neues Asset (*Import New Asset*) im Projektbereich an und  ziehe die Kisten und Kugeln in die Spieleszene. Die Assets die du dafür verwenden kannst, findest du [hier](https://www.comber.at/dev/assets.zip)
+.
+### Rigidbody und Collider
 Sowohl Kugel als auch Kiste bekommen einen entsprechenden Collider (die Kugel einen Circle Collider und die Kiste einen Box Collider) zugewiesen. Füge den Kisten und Kugeln einen *RigidBody2D* hinzu, damit sich die Kisten und Kugeln auch bewegen können und nicht starr im Level verharren.
 
 
@@ -32,11 +34,12 @@ Nun ziehen wir das zuvor erstellte elastische Material aus dem Ordner *Material*
 
 ![Vorlage erstellen](img/T07/T07-b-Kugeln und Kiste Vorlagen.png)
 
-Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Damit wir schon jetzt unser Spiel dafür vorbereiten, dass es unterschiedliche Level geben wird, erstellen wir ein neues *GameObject* mit dem Namen *Level01*.
+Jetzt fehlt noch die Implementierung für die herabfallenden Gegenstände. Es soll in regelmäßigen Abständen Müll (Kisten oder Bälle) regnen. Um die Erzeugung dieser Objekte soll sich ein eigenes *GameObject* kümmern.  
+Erstelle ein neues *GameObject* und gib diesem den Namen *MuellGenerator*
 
-![Leeres GameObject erstellen](img/T07/T07-c-Erstellen des leeren GameObject Level01.png)
+![Leeres GameObject erstellen](img/T07/T07-ca-Spielobjekt-MuellGenerator-Erstellen.png)
 
-Wir erstellen im GameObject *Level01* ein Script und nennen es *Muell.cs*. Dieses Script soll so aussehen (der Quellcode wird später noch im Detail genau erklärt).
+Wir erstellen im GameObject *MuellGenerator* ein Script und nennen es *Muell.cs*. Dieses Script soll so aussehen (der Quellcode wird im [Videotutorial](https://www.youtube.com/watch?v=x4mYCVALFek&list=PLwrS_Vh1B1U2lo3P6h03fD1qYhoIcPGBS&index=7&t=5m26s) genau erklärt).
 
 ```C#
 using System.Collections;
@@ -97,9 +100,11 @@ public class Muell : MonoBehaviour {
 }
 ```
 
-Wenn alles gespeichert ist, weisen wir im Inspector dem *Level01* die Vorlagen den Variablen *Kiste* und *Kugel* zu.
+Wenn alles gespeichert ist, weisen wir im Inspector dem *MuellGenerator* die Vorlagen den Variablen *Kiste* und *Kugel* zu.
 
-![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png){: style="height:50%;width:50%"}
+![Vorlagen zuweisen](img/T07/T07-d-Zuweisen der Vorlagen zum Script.png){: style="height:120%;width:120%"}
+
+---
 
 ####Sourcecode
-Download Sourcecode Teil 07: [http://comber.at/dev/BouncyFant07.zip](http://comber.at/dev/BouncyFant06.zip)
+[Download Sourcecode Teil 07](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T07/Bouncy%20Fant%2007.zip)

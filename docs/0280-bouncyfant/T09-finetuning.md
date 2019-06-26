@@ -1,10 +1,10 @@
 # Teil 9 - Finetuning
 
-!!!Abstract "Ziele"
-    Einen Platform Effector hinzufügen, damit die Figur nicht an der Wand hängen bleibt.
+!!!Abstract "Ziel"
+    In diesem Kapitel lernst du, wie man einen PlatformEffector hinzufügt, damit deine Figur nicht an den Spielfeldgrenzen stecken bleibt.
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ----------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Lernen wie man einen PlatformEffector verwendet |
 
 
@@ -26,10 +26,13 @@ Daher klicken wir bei den entsprechenden Spielfeldgrenzen, nämlich den Wänden 
 
 ![PlatformEffector verwenden](img/T09/T09-c-Plattform Effector verwenden.png)
 
-####Sourcecode
-Download Sourcecode Teil 09: [http://comber.at/dev/BouncyFant09.zip](http://comber.at/dev/BouncyFant09.zip)
 
 Für’s erste war es das einmal mit unserem Tutorial. Schön, dass ihr dabei wart. Man könnte auch sagen, jetzt geht es erst richtig los: Neue Levels, neue Features, neue Spielfiguren, …  
 Lasst eurer Fantasie freien Lauf.
 
 **Have Fun!**
+
+-----
+
+####Sourcecode
+[Download Sourcecode Teil 09](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T09/Bouncy%20Fant%2009.zip)

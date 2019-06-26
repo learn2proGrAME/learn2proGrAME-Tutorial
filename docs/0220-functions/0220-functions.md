@@ -16,13 +16,14 @@ Funktionen (bzw. Methoden) sind kleine *Unterprogramme*.
 
 Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.
 
-Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen, oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.
-Das wäre aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.
+Eine Möglichkeit ist: den dafür nötigen Code jedes Mal eintippen,  
+oder: mit Kopieren und Einfügen überall einzufügen, wo du ihn benötigst.  
+Beides ist aber nicht nur sehr viel Arbeit, sondern auch sehr schwer zu warten. Wenn du zum Beispiel später merkst, dass deine Berechnung einen Fehler enthält, musst du an allen Stellen im Programm den Fehler ausbessern.
 
 Eine bessere Möglichkeit ist:
 
 Du erstellst eine **Funktion**, die den Abstand zwischen zwei Punkten berechnet.  
-Die Erstellung einer Funktion man als *Definition*.
+Die Erstellung einer Funktion nennt man *Definition*.
 
 ```csharp
    //Diese Funktion berechnet den Abstand zwischen zwei Objekten
@@ -45,7 +46,7 @@ Außerdem musst du Änderungen nur an einer Stelle, nämlich im Code der Funktio
 
 ##Aufbau einer Funktion
 
-![Header](img/funktionsHeader.png)
+![Header](img/FunktionsSyntax.svg)
 
 Der [Zugriffsmodifikator](../0230-accessmodifiers/0230-accessmodifiers.md) legt fest, von welchen Klassen man auf die Funktion zugreifen kann.
 

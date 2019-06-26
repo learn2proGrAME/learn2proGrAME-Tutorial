@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0280-bouncyfant/T09-finetuning/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Teil 9 - Finetuning - learn2proGrAME Grundlagentutorial</title>
+        <title>Teil 9 - Finetuning - learn2proGrAME Tutorial</title>
       
     
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Teil 9 - Finetuning
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -614,12 +614,18 @@
     Platform Effector
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
     Sourcecode
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -631,6 +637,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
   </li>
 
         
@@ -688,12 +706,18 @@
     Platform Effector
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#sourcecode" title="Sourcecode" class="md-nav__link">
     Sourcecode
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -718,20 +742,18 @@
                 
                 <h1 id="teil-9-finetuning">Teil 9 - Finetuning<a class="headerlink" href="#teil-9-finetuning" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p class="admonition-title">Ziele</p>
-<p>Einen Platform Effector hinzufügen, damit die Figur nicht an der Wand hängen bleibt.</p>
+<p class="admonition-title">Ziel</p>
+<p>In diesem Kapitel lernst du, wie man einen PlatformEffector hinzufügt, damit deine Figur nicht an den Spielfeldgrenzen stecken bleibt.</p>
 </div>
 <table>
 <thead>
 <tr>
 <th>In diesem Kapitel wirst du...</th>
-<th>Erledigt?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Lernen wie man einen PlatformEffector verwendet</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -745,11 +767,12 @@
 <p><img alt="Warnung" src="../img/T09/T09-b-Effector Warning.png" /></p>
 <p>Daher klicken wir bei den entsprechenden Spielfeldgrenzen, nämlich den Wänden links und rechts, einfach auf <em>Used by Effector</em> und schon sollte der Elefant, wenn wir das Spiel starten,nicht mehr in der Wand hängen bleiben, sondern nach unten rutschen.</p>
 <p><img alt="PlatformEffector verwenden" src="../img/T09/T09-c-Plattform Effector verwenden.png" /></p>
-<h2 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h2>
-<p>Download Sourcecode Teil 08: <a href="http://comber.at/dev/BouncyFant09.zip">http://comber.at/dev/BouncyFant09.zip</a></p>
 <p>Für’s erste war es das einmal mit unserem Tutorial. Schön, dass ihr dabei wart. Man könnte auch sagen, jetzt geht es erst richtig los: Neue Levels, neue Features, neue Spielfiguren, …<br />
 Lasst eurer Fantasie freien Lauf.</p>
 <p><strong>Have Fun!</strong></p>
+<hr />
+<h4 id="sourcecode">Sourcecode<a class="headerlink" href="#sourcecode" title="Permanent link">&para;</a></h4>
+<p><a href="https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T09/Bouncy%20Fant%2009.zip">Download Sourcecode Teil 09</a></p>
                 
                   
                 
@@ -785,13 +808,13 @@ Lasst eurer Fantasie freien Lauf.</p>
           </a>
         
         
-          <a href="../../0290-about/0290-about/" title="Über learn2proGrAME" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Weiter
                 </span>
-                Über learn2proGrAME
+                Teil 10 - Das Spiel Veröffentlichen
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -5,7 +5,7 @@
 
 
 
-![Variable Initialisierung](img/variablenBeschr.png)
+![Variable Initialisierung](img/variablenBeschreibung.svg)
 
 Das bedeutet: *Der Integer-Variable "meineVariable" wird der Wert 1 zugewiesen.* Man kann auch sagen: *Die Integer-Variable "meineVariable" wird mit dem Wert 1 initialisiert.*
 

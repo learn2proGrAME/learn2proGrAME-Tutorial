@@ -1,19 +1,23 @@
 # Teil 8 - Play to compete, cooperate to win!
 
-!!! Abstract "Ziele"
-    Im ersten Level ist es das Ziel, einen magischen Pilz zu erreichen. Diejenige, die zuerst den Pilz erreicht, bekommt einen Punkt. Das erste Level ist geschafft, wenn einer der Elefanten 10 Punkte erreicht hat. Die Zusammenarbeit kann aber über das bloße, gemeinsame Sammeln von Punkten auch hinausgehen. Beispielsweise könnt ihr euch helfen, den Pilz zu erreichen, etwa indem ihr euch gegenseitig in die Luft katapultiert und so höhere Sprünge machen könnt.
-
+!!! Abstract "Ziel"
+    In diesem Kapitel lernst du, wie du ein Zielobjekt und einen Punktezähler inklusive der Skripte erstellst.
+	
 ---
 
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ---------
+In diesem Kapitel wirst du... |
+----------------------------- |
 Ein Zielobjekt (den Zauberpilz) erstellen. |
 Ein Punktezähler als Text hinzufügen, der die Siege eines Spielers aufzeichnet. |
 Eine Funktion schreiben die dein Level neu lädt. |
-Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt. |
+Eine Funktion schreiben, die den Punktezähler erhöht wenn man den Pilz mit der Figur berührt.|
+
+## Kurzbeschreibung des Spielziels
+Im ersten Level ist es das Ziel, einen magischen Pilz zu erreichen. Diejenige, die zuerst den Pilz erreicht, bekommt einen Punkt. Das erste Level ist geschafft, wenn einer der Elefanten 10 Punkte erreicht hat. Die Zusammenarbeit kann aber über das bloße, gemeinsame Sammeln von Punkten auch hinausgehen. Beispielsweise könnt ihr euch helfen, den Pilz zu erreichen, etwa indem ihr euch gegenseitig in die Luft katapultiert und so höhere Sprünge machen könnt.
 
 
 ## Der Zauberpilz und seine Eigenschaften
+
 
 Lassen wir einen magischen Pilz entstehen, der, wenn er berührt wird, einen Punkt für den jeweiligen Bouncy Fant bringt!
 
@@ -22,8 +26,8 @@ Zum Einstieg beginnen wir gleich mit einer Aufgabe, deren Lösungsweg wir schon 
 ### Aufgabe 3
 Füge dem Spiel auf der obersten Plattform die Grafik (*freetileset_jungle\png\Object\Mushroom_2.jpg*) des magischen Pilzes hinzu.
 
-!!!Info "Hinweis"
-    Das Tileset findest du in unserem Moodle Kurs oder bei Open Game Art. Wenn du die vorigen Übungen gemacht hast, dann hast du es bereits gespeichert.
+!!!Tip "Tipp"
+    Das Tileset findest du in unserem Moodle Kurs oder bei [Open Game Art](https://www.gameart2d.com/free-platformer-game-tileset.html). Wenn du die vorigen Übungen gemacht hast, dann hast du es bereits gespeichert.
 
 ![Pilz eingefügt](img/T08/T08-a-PilzEingefuegt.png)
 
@@ -52,12 +56,13 @@ Wir duplizieren also as Text-Objekt zweimal und benennen sieTextPunkteElli, Text
 
 Danach verändern wir noch die Position der Texte für die Punktestände.
 
-![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen.png){: style="height:35%;width:35%"} ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png){: style="height:60%;width:60%"}
+![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen-Elli.png){: style="height:35%;width:35%"} ![Position festlegen](img/T08/T08-g-Text Position und Detaileinstellungen-Ossi.png){: style="height:35%;width:35%"} ![Texteinstellungen festlegen](img/T08/T08-ga-Texteinstellungen2.png){: style="height:60%;width:60%"}
 
-Je nach Bildschirmgröße, kann es sein, dass man die Position anpassen muss, sodass der Text nicht außerhalb des Bilds ist. Beachtet jedoch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
+Damit der Text bei verschiedenen Bildschirmgrößen immer an der passenden Position ist, setze den Ursprung der Textkoordinaten für Ossi und Elli in die Ecken rechts und links oben und für den Gewinnertext in die Mitte.  
+Beachtet auch, dass Horizontal- und Vertical Overflow tatsächlich auf Overflow gesetzt sind. Ist nämlich Vertical Overflow  auf Truncate gesetzt, dann kann es passieren, dass euer Text ab einer gewissen Größe nicht mehr angezeigt wird.
 
-!!!Info "Erklärung"
-    Truncate bedeutet nämlich viel wie Abschneiden oder Wegschneiden. Die Größe des Textfeldes wird ja bei bei den Eigenschaften Rect Transform unter Width und Height angegeben. Ist nun der Text größer als die angegebene Höhe und Vertical Overflow auf Truncate gesetzt,  dann wird einfach der komplette Text weggeschnitten, da er über den Rand hinaus steht.
+!!!Tip "Tipp"
+    Truncate bedeutet so viel wie Abschneiden oder Wegschneiden. Die Größe des Textfeldes wird bei bei den Eigenschaften Rect Transform unter *Width* und *Height* angegeben. Ist der Text größer als die angegebene Höhe und Vertical Overflow auf Truncate gesetzt, dann wird der komplette Text weggeschnitten, da er über den Rand hinaus steht.
 
 ##Der Code für die Punkteanzeige und die Kollisionserkennung
 
@@ -136,7 +141,8 @@ Zum Schluss wird das Level mit einer Verzögerung von drei Sekunden neu gestarte
     }
 ```
 
-!!!Tip "Kleine Wiederholung zur Vererbung"
+!!!Tip "Tipp"
+    **Kleine Wiederholung zur Vererbung:**  
     Da wir die Änderungen in der Elternklasse BouncyFant durchführen, brauchen wir dies nicht für jeden Elefanten (Elli, Ossi,...) einzeln zu tun.
 
 ![Vererbung](img/T08/T08-gb-Vererbung.png)
@@ -153,7 +159,7 @@ public virtual void Start(){
 }
 ```
 
-!!!Info "Das Schlüsselwort *virtual*"
+!!!Tip "Tipp"
     Das Schlüsselwort *virtual* gibt an, dass diese Methode in den Child-Klassen überschrieben werden kann. Dies benötigen wir, da in *Elli.cs* und *Ossi.cs* *start()* schon definiert ist. Zu den überschreibenden Methoden in den Child-Klassen muss man dann das Schlüsselwort *override* angeben.
 
 
@@ -291,12 +297,13 @@ public class BouncyFant : MonoBehaviour
 }
 ```
 
-!!!Bug "Hinweis"
+!!!Bug "Achtung"
     Im Moment bekommen wir eine Fehlermeldung, wenn wir das Spiel starten wollen, da in *Elli.cs* und *Ossi.cs* eine virtuelle Methode überschrieben wird und das Schlüsselwort *override* fehlt.  
 
 Gehe in das Skript *Elli.cs* und füge zur Prozedur *Start()* das Schlüsselwort *override* ein und rufe am Ende die Methode *Start()* der Parentklasse auf (verwende dafür den Befehl *base.Start()*)
 
-!!!Info "Start() und Vererbung"
+!!!Tip "Tipp"
+    **Start() und Vererbung**  
     Unity ruft bei der Erzeugung eines Objekts immer automatisch *Start()* auf. Allerdings nur direkt in der zugehörigen Klasse und nicht auch in allen Parent-Klassen. Das heißt, damit *Start()* aus *BouncyFant.cs* ausgeführt wird, wenn Elli bzw. Ossi erzeugt werden, müssen wir diese Methode extra aufrufen.  
     Um Methoden aus der Parentklasse aufzurufen verwende das Schlüsselwort *base*
 
@@ -340,9 +347,9 @@ Zum Schluss müssen wir noch die Achsen beim Eventsystem (das beim Hinzufügen v
 
 ![Achsen setzen](img/T08/T08-h-Achsen Eventsystem.png)
 
-!!!Tip "Weiterführende Idee"
-    Um die Kooperation der SpielerInnen zu fördern: Je schneller man die zehn Punkte beisammen hat, desto höher sind die Bonuspunkte, die man am Ende des Levels bekommt. Später kann es sogar sein, dass einige Levels gar nicht schaffbar sind, ohne das Elli und Ossi zusammen arbeiten. Eurer Fantasie sind dabei keine Grenzen gesetzt, be creative!
+###Weiterführende Idee um die Kooperation der SpielerInnen zu fördern:
+Je schneller man die zehn Punkte beisammen hat, desto höher sind die Bonuspunkte, die man am Ende des Levels bekommt. Später kann es sogar sein, dass einige Levels gar nicht schaffbar sind, ohne das Elli und Ossi zusammen arbeiten. Eurer Fantasie sind dabei keine Grenzen gesetzt, be creative!
 
 ---
 #### Sourcecode
-Download Sourcecode Teil 08: [http://comber.at/dev/BouncyFant08.zip](http://comber.at/dev/BouncyFant08.zip)
+[Download Sourcecode Teil 08](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T08/Bouncy%20Fant%2008.zip)

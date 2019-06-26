@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Das learn2proGrAME Grundlagentutorial zur Spieleprogrammierung mit C# in Unity">
+        <meta name="description" content="Das learn2proGrAME Tutorial zur Spieleprogrammierung mit C# in Unity">
       
       
         <link rel="canonical" href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/0270-classes/0270-classes/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Objekt-orientiertes Programmieren - Grundlagen - learn2proGrAME Grundlagentutorial</title>
+        <title>Objekt-orientiertes Programmieren - Grundlagen - learn2proGrAME Tutorial</title>
       
     
     
@@ -116,7 +116,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-header-nav__button md-logo">
+        <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-header-nav__button md-logo">
           
             <img src="../../0200-adventure/img/elliLogo.png" width="24" height="24">
           
@@ -130,7 +130,7 @@
           
             
               <span class="md-header-nav__topic">
-                learn2proGrAME Grundlagentutorial
+                learn2proGrAME Tutorial
               </span>
               <span class="md-header-nav__topic">
                 Objekt-orientiertes Programmieren - Grundlagen
@@ -212,12 +212,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Grundlagentutorial" class="md-nav__button md-logo">
+    <a href="https://learn2programe.github.io/learn2proGrAME-Grundlagen/" title="learn2proGrAME Tutorial" class="md-nav__button md-logo">
       
         <img src="../../0200-adventure/img/elliLogo.png" width="48" height="48">
       
     </a>
-    learn2proGrAME Grundlagentutorial
+    learn2proGrAME Tutorial
   </label>
   
     <div class="md-nav__source">
@@ -483,6 +483,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#objektvariablen-und-methoden" title="Objektvariablen und Methoden" class="md-nav__link">
+    Objektvariablen und Methoden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-punktoperator" title="Der Punktoperator" class="md-nav__link">
+    Der Punktoperator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -645,6 +659,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../0280-bouncyfant/T10-deploy/" title="Teil 10 - Das Spiel Veröffentlichen" class="md-nav__link">
+      Teil 10 - Das Spiel Veröffentlichen
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -709,6 +735,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#objektvariablen-und-methoden" title="Objektvariablen und Methoden" class="md-nav__link">
+    Objektvariablen und Methoden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-punktoperator" title="Der Punktoperator" class="md-nav__link">
+    Der Punktoperator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -765,13 +805,41 @@
 
 <p>Das Schlüsselwort <strong>new</strong> gefolgt von der Konstruktor-Methode erzeugt eine neue Instanz einer Klasse. Die Instanz wird in eine Variable gespeichert. Der Datentyp der Variable ist die Klassenbezeichnung.</p>
 <p>Innerhalb einer Klasse kann eine Konstruktor-Methode folgendermaßen definiert werden:</p>
-<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">:</span> <span class="n">MonoBehavior</span>
+<div class="codehilite"><pre><span></span>    <span class="k">class</span> <span class="nc">Elefant</span>
     <span class="p">{</span>
         <span class="k">public</span> <span class="nf">Elefant</span><span class="p">()</span> <span class="c1">//Das ist die Konstruktor-Methode. Sie hat dieselbe Bezeichnung wie die Klasse.</span>
         <span class="p">{</span>
             <span class="p">...</span> <span class="c1">//Hier können der Instanz Werte bei der Erzeugung zugewiesen werden.</span>
         <span class="p">}</span>
     <span class="p">}</span>
+</pre></div>
+
+
+<h3 id="objektvariablen-und-methoden">Objektvariablen und Methoden<a class="headerlink" href="#objektvariablen-und-methoden" title="Permanent link">&para;</a></h3>
+<p>Vereinfacht gesagt beschreibt eine Klasse die Eigenschaften und Fähigkeiten ihrer Objekte. Wobei die Eigenschaften <strong>Klassenvariablen</strong> und die Fähigkeiten <strong>Methoden</strong> sind.</p>
+<p><strong>Beispiel:</strong><br />
+Hier hat ein Elefant die Eigenschaften <em>farbe</em> und <em>alter</em>. Außerdem kann man ihn über die entsprechende Funktion tröten lassen.</p>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Elefant</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="n">String</span> <span class="n">farbe</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">alter</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">troeten</span><span class="p">(</span><span class="kt">int</span> <span class="n">anzahl</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">anzahl</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Töröööö! &quot;</span><span class="p">);</span> <span class="c1">//In einem Textfenster wird</span>
+                                <span class="s">&quot;Töröööö!&quot;</span> <span class="n">ausgegeben</span>
+            <span class="n">anzahl</span><span class="p">--;</span> <span class="c1">//der Parameter Anzahl wird reduziert um 1</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="der-punktoperator">Der Punktoperator<a class="headerlink" href="#der-punktoperator" title="Permanent link">&para;</a></h3>
+<p>Mithilfe eines Punktes kann man dann auf die Variablen, bzw. Methoden des Objektes zugreifen. (Vorausgesetzt die <a href="../../0230-accessmodifiers/0230-accessmodifiers/">Sichtbarkeitsmodifikatoren</a> passen).</p>
+<div class="codehilite"><pre><span></span>    <span class="n">Elefant</span> <span class="n">elli</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Elefant</span><span class="p">();</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">farbe</span> <span class="p">=</span> <span class="n">grau</span><span class="p">;</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">alter</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+    <span class="n">elli</span><span class="p">.</span><span class="n">troeten</span><span class="p">();</span>
 </pre></div>
 
 

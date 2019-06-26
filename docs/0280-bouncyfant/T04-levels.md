@@ -1,7 +1,10 @@
 # Teil 4 - Levels und Collider
 
-In diesem Kapitel wirst du...  |    Erledigt?
--------------------------------|----------------
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du, wie man mehrere Assets importiert und sie als Plattform in einem Spiel verwendet. Außerdem lernst du wie man "Collider" zu Objekten hinzufügt. Das Endziel ist es, ein Level mit verschiedenen PLattformen zu bauen, auf denen deine Figur stehen kann.
+
+In diesem Kapitel wirst du...  |
+-------------------------------|
 Assets für Plattformen importieren |
 Eine Plattform zu deiner Spielwelt hinzufügen |
 Der Plattform Collider zuweisen und diese anpassen|
@@ -14,22 +17,26 @@ Einen Boden mit Hilfe eines Scripts und einer Vorlage in deinem Spiel generieren
 
 ### Unsere neuen Assets importieren und benennen
 
-In diesem Teil wollen wir das Spielfeld, in dem sich die Elefanten bewegen, erstellen. Dazu gehören vorerst die unbeweglichen Spielobjekte und der Hintergrund. Der größte Unterschied zwischen den Spielobjekten und dem Hintergrund ist der, dass die Elefanten mit dem Spielobjekten interagieren können: Spielobjekte können den Elefanten den Weg versperren, einfach als Boden zum drauf stehen dienen oder auch von den Elefanten bewegt werden. 
-Als erstes importieren wir die Landschafts-Assets. In unserem Moodle-Kurs findet ihr Assets zum Download, die für die freie Verwendung zur Verfügung stehen. Gerne könnt ihr euch auch eure eigenen Assets erstellen. 
+In diesem Teil wollen wir das Spielfeld, in dem sich die Elefanten bewegen, erstellen. Dazu gehören vorerst die unbeweglichen Spielobjekte und der Hintergrund. Der größte Unterschied zwischen den Spielobjekten und dem Hintergrund ist der, dass die Elefanten mit dem Spielobjekten interagieren können: Spielobjekte können den Elefanten den Weg versperren, einfach als Boden zum drauf stehen dienen oder auch von den Elefanten bewegt werden.
+Als erstes importieren wir die Landschafts-Assets. In unserem Moodle-Kurs findet ihr Assets zum Download, die für die freie Verwendung zur Verfügung stehen. Gerne könnt ihr euch auch eure eigenen Assets erstellen.
 
 ![Sprites importieren](img/T04/T01-e-Sprites importieren II.png)
 
 
-In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter https://www.gameart2d.com/free-platformer-game-tileset.html 
-Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf https://www.gameart2d.com/freebies.html. Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter https://www.gameart2d.com/license.html.    
+In unserem Beispiel nutzen wir die kostenlosen Tilesets von Game Art 2D. Zu finden unter [https://www.gameart2d.com/free-platformer-game-tileset.html](https://www.gameart2d.com/free-platformer-game-tileset.html)
+
+Kostenlose freie Sprites,  Tilesets und mehr findet man z.B. auf [https://www.gameart2d.com/freebies.html](https://www.gameart2d.com/freebies.html).
+
+Die Lizenz für die kostenlosen freien Sprites und Tilesets findet ihr unter [https://www.gameart2d.com/license.html](https://www.gameart2d.com/license.html).    
 
 ![Tiles importieren](img/T04/T04-a-Tilesets importieren.png)
 
 Im Heruntergeladenen Ordner navigieren gehen wir zu freetileset/png/Tiles, importieren die Dateien mit den Nummern 2, 13, 14 und 15 und benennen Sie folgendermaßen um:
-2 -> Boden 
-13 -> Plattform_Links
-14 -> Plattform_Mitte
-15 -> Plattform_Rechts
+
+ * 2 -> Boden
+ * 13 -> Plattform_Links
+ * 14 -> Plattform_Mitte
+ * 15 -> Plattform_Rechts
 
 Das Ergebnis sollte in etwa so aussehen:
 
@@ -52,18 +59,18 @@ In der Spielszene kannst du die Plattformen auf zwei Arten verschieben: Entweder
 ####Collider
 Collider stellen in Unity Grenzen für die Kollisionserkennung zur Verfügung. Überschneiden sich die Grenzen von zwei Objekten die Teil der Physik Welt sind, dann wird eine Kollision ausgelöst, dass wird beispielsweise dazu eingesetzt, dass ein Objekt von einem anderen Objekt abprallt oder nicht hindurch kann.
 
-Es gibt in Unity unterschiedliche Arten von Collidern: 
+Es gibt in Unity unterschiedliche Arten von Collidern:
 
  * Box Collider
- * Circle Collider 
+ * Circle Collider
  * Edge Collider (für Ränder)
- * Composite Collider 
- * Capsule Collider 
+ * Composite Collider
+ * Capsule Collider
  * Polygon Collider
 
 Die einfachsten Collider sind Box Collider und Circle Collider. Mit Einfachheit ist nicht nur die Einfachheit der Form gemeint, sondern auch, wie einfach Kollisionsereignisse zu berechnen sind. Bei Box und Circle sind Kollisionsereignisse mit weniger Aufwand zu berechnen, als bei komplizierten Formen, die etwa Polygon-Collider verwenden. Deshalb sollte man nach Möglichkeit eher einfache Collider verwenden. Verwendet man zu viele komplizierte Collider kann dies die Framerate verringern, bzw. zu Ruckeln führen.
 
-Um das Konzept des Geschwindigkeitsvorteils von einfachen Collidern anzuwenden, fügen wir der Plattform_Links nun statt einem Polygon Collider, zwei Box Collider hinzu. 
+Um das Konzept des Geschwindigkeitsvorteils von einfachen Collidern anzuwenden, fügen wir der Plattform_Links nun statt einem Polygon Collider, zwei Box Collider hinzu.
 Dafür klicken wir im Inspector Panel auf AddComponent ->Physics2D->Box Collider 2D.
 Wir optimieren noch das Offset (Position) und die Werte bei Size (Größe). Bei mir haben diese Werte gut ausgesehen, aber es kann gut sein, dass in deinem Spiel ein paar Dinge anders sind.  
 
@@ -73,13 +80,13 @@ Wir optimieren noch das Offset (Position) und die Werte bei Size (Größe). Bei 
 
 Alternativ kann man auch auf den Button neben Edit Collider klicken und den Collider durch Ziehen mit der Maus anpassen.
 
-![MISSIN IMG, Collider adjusting via Dragging](img/T04/T04-i Anpassen Component Box Collider 3.png) 
+![MISSIN IMG, Collider adjusting via Dragging](img/T04/T04-i Anpassen Component Box Collider 3.png)
 
 Nachfolgend unser Plattformteil mit den Collider-Grenzen der zwei Box-Collider in grün.
 
 ![Platform Left](img/T04/T04-j-Objekt Collidergrenenzen in gruen.png)
 
-Anmerkung: Zuvor habe ich über das Konzept des Geschwindigkeitsvorteils bei Collider geschrieben. Ich habe deswegen zuvor in der Formulierung das Konzept verwendet, weil in der Praxis so einfache Objekte wie unsere Plattformen, noch dazu, wenn sie in so geringer Zahl sind und sich darüber hinaus statisch, also fix in der Landschaft sind, locker mit der Rechenleistung von älteren Computern, Konsolen oder Smartphones auskommen. Dennoch halte ich es für wichtig, dass man gerade im Simulationsbereich oder im Bereich der Computergrafik über Effizienz von Berechnungen oder Algorithmen ein wenig nachdenkt. 
+Anmerkung: Zuvor habe ich über das Konzept des Geschwindigkeitsvorteils bei Collider geschrieben. Ich habe deswegen zuvor in der Formulierung das Konzept verwendet, weil in der Praxis so einfache Objekte wie unsere Plattformen, noch dazu, wenn sie in so geringer Zahl sind und sich darüber hinaus statisch, also fix in der Landschaft sind, locker mit der Rechenleistung von älteren Computern, Konsolen oder Smartphones auskommen. Dennoch halte ich es für wichtig, dass man gerade im Simulationsbereich oder im Bereich der Computergrafik über Effizienz von Berechnungen oder Algorithmen ein wenig nachdenkt.
 
 Für das mittlere Plattformstück reicht ein einzelner Box Collider. Für das rechte Plattformobjekt habe ich diesmal die Box Collider nicht überschneidend sondern einfach übereinandergelegt gestaltet.
 
@@ -95,9 +102,9 @@ Am Ende sollte das Spielfeld in etwa so aussehen:
 
 ![Level Layout](img/T04/T04-m-Duplicated Plattforms  All.png)
 
-Das graue Rechteck stellt den momentanen Kameraausschnitt dar. Dieser Ausschnitt bestimmt wie viel Platz wir am Spielfeld haben. Ist uns der Platz am Spielfeld zu gering, so können wir einfach durch einen Klick auf Main Camera (zu finden in der Hierarchy) die Eigenschaften der Kamera im Inspector anzeigen. In den Eigenschaften ändern wir einfach die Größe (Size) auf einen höheren Wert, z.b. 7. 
+Das graue Rechteck stellt den momentanen Kameraausschnitt dar. Dieser Ausschnitt bestimmt wie viel Platz wir am Spielfeld haben. Ist uns der Platz am Spielfeld zu gering, so können wir einfach durch einen Klick auf Main Camera (zu finden in der Hierarchy) die Eigenschaften der Kamera im Inspector anzeigen. In den Eigenschaften ändern wir einfach die Größe (Size) auf einen höheren Wert, z.b. 7.
 
-Der Elefantendame Elli gönnen wir am Ende noch einen Polygon Collider. 
+Der Elefantendame Elli gönnen wir am Ende noch einen Polygon Collider.
 
 ![Add Collider](img/T04/T04-m-Add Elli Poligoncollider.png)
 
@@ -127,8 +134,8 @@ Unten | 0 | -6.8 | 20 | 1 |
 Links | -9.6 | 1 | 1 | 16 |
 Rechts | 9.6 | 1 | 1 | 16 |
 
-##Bodenlegen 
-Jetzt fällt Elli zumindest nicht mehr aus dem Spielfeld heraus. Doch auf einem unsichtbaren Bodens gehen hat nur halb so viel Stil. Deshalb werden wir uns jetzt einen schönen Boden legen, der sich genau mit der Grenze des unteren Spielfeldcolliders deckt. 
+##Bodenlegen
+Jetzt fällt Elli zumindest nicht mehr aus dem Spielfeld heraus. Doch auf einem unsichtbaren Bodens gehen hat nur halb so viel Stil. Deshalb werden wir uns jetzt einen schönen Boden legen, der sich genau mit der Grenze des unteren Spielfeldcolliders deckt.
 Zuerst änderen wir die Größe des Sprites für den Boden auf 170 pixels per unit  und ziehen dann das Boden-Sprite in die Szene hinein. Das Ganze machen wir nun in etwa 30 Mal. Dabei bekommt man richtig viel Übung ;-)  Halt, Nein, Scherz! Als InformatikerInnen lieben wir Effizienz und elegante Konstrukte und deshalb verwenden wir für das Erstellen der weiteren Bodenteile eine Schleife.
 
 ![Bodenlegen](img/T04/T04-q-Bodenlegen.png)
@@ -143,7 +150,7 @@ Dem Objekt Spielfeldgrenzen fügen wir nun mittels Add Component ein neues Scrip
 
 ![Create Script](img/T04/T04-q-Bodenlegen Script.png)
 
-Das Script klicken wir doppelt an und nun sollte sich Microsoft Visual Studio öffnen. In Visual Studio löschen wir im Script Spielfeld zuerst die Prozedur Update. Dann fügen wir gleich unter der Klassendefinition unser Spielobjekt namens Boden hinzu und speichern das Script mit Strg+s. Das GameObject Boden entspricht dann beim Programmieren unserer Vorlage Boden die wir vorhin erstellt haben. 
+Das Script klicken wir doppelt an und nun sollte sich Microsoft Visual Studio öffnen. In Visual Studio löschen wir im Script Spielfeld zuerst die Prozedur Update. Dann fügen wir gleich unter der Klassendefinition unser Spielobjekt namens Boden hinzu und speichern das Script mit Strg+s. Das GameObject Boden entspricht dann beim Programmieren unserer Vorlage Boden die wir vorhin erstellt haben.
 
 ``` c#
 public class Spielfeld : MonoBehaviour {
@@ -152,9 +159,9 @@ public class Spielfeld : MonoBehaviour {
 Ganz wichtig ist es dem Feld Boden das bei uns in Unity Inspector auftaucht, nun auch die Vorlage zuzuweisen. Dies bewerkstelligen wir, indem wir die zuvor angelegte Vorlage in das entsprechende Feld im Script ziehen.  
 
 ![Add Prefab to Script](img/T04/T04-s-Vorlage dem Script zuweisen.png)
-!!!bug "Achtung" 
+!!!bug "Achtung"
 	Scheint das Feld Boden beim Script nicht auf, liegt das evtl. daran, dass das Script noch nicht gespeichert wurde.
-	
+
 Schließlich erstellen wir die Prozedur für das Zeichnen des Bodens. Dabei wird neuer Boden von unserer Vorlage Boden instanziiert und eine bestimmte Position gesetzt. Diese Position kommt auf die Werte innerhalb von ``` new Vector3(x * 0.75f, -6.81f, -4) ``` an. Die Werte entsprechen den Koordinaten (x,y,z) in einem Koordinatensystem . Beim Aufrufen unserer Funktion ```ZeichnenBoden(int x)``` wird eine Zahl x übergeben und je nachdem welche Zahl x ist, wird unser Boden an einer andere Stelle erschaffen. Wenn wir die Zahl 1 übergeben, ist die Position (0.75, 6.81, -4) und wenn wir 2 übergeben ist die Position (1.5, -6,81, -4).
 
 
@@ -164,14 +171,14 @@ public void ZeichnenBoden(int x)
 {
    Instantiate(Boden, new Vector3(x * 0.75f, -6.81f, -4), Quaternion.identity);
 }
-```	
-	
+```
+
 !!!bug "Tipp"  
 	Wir befinden uns im 2D Modus, also gibt es keine Z Koordinate. Wir könnten also statt -4 irgendwas schreiben, das macht keinen Unterschied. Solltest du aber irgendwann mal ein 3D Spiel machen wollen, musst du auch bei der Z Koordinate etwas berechnen.
-		
-	
-## Aufgabe 
-Füge in die vorhandenen Prozedur Start eine Schleife ein, die die Bodenstücke am am unteren Rand des Spielfelds automatisch zeichnet. 
+
+
+## Aufgabe
+Füge in die vorhandenen Prozedur Start eine Schleife ein, die die Bodenstücke am am unteren Rand des Spielfelds automatisch zeichnet.
 
 
 ``` c#
@@ -179,20 +186,20 @@ Füge in die vorhandenen Prozedur Start eine Schleife ein, die die Bodenstücke 
 void Start ()
 {
     // In dieser Schleife wird der Boden gezeichnet
-    /*** Hier den Code für die Schleife einfügen ***/ 
+    /*** Hier den Code für die Schleife einfügen ***/
 }
-```	
+```
 Eine mögliche Lösung sieht so aus:
 ``` c#
 for (int i = -20; i <= 20; i++) ZeichnenBoden(i);
-```	
+```
 Obige Version ist die Kurzform und gleichwertig mit der Langform mit den geschwungenen Klammern:
 ``` c#
 for (int i = -20; i <= 20; i++)
 {
     ZeichnenBoden(i);
 }     
-```	
+```
 Zum Abschluss noch einmal der ganze Quellcode des Scripts Spielfeld.cs:
 
 ``` c#
@@ -224,10 +231,10 @@ Das Resultat sieht dann so aus:
 
 ## Hintergrund und Abschlussaufgaben
 
-Zum Abschluss haben wir die letzten Schritte des Leveldesign als Übung für dich ausgedacht. Dabei geht es darum Dinge anzuwenden, die in diesem Kapitel besprochen wurden. 
+Zum Abschluss haben wir die letzten Schritte des Leveldesign als Übung für dich ausgedacht. Dabei geht es darum Dinge anzuwenden, die in diesem Kapitel besprochen wurden.
 
 ### Aufgabe 1
-Füge der Spieleszene den Hintergrund BG.png aus freetileset_jungle\png\BG (Download)  hinzu. 
+Füge der Spieleszene den Hintergrund BG.png aus freetileset_jungle\png\BG (Download)  hinzu.
 In Moodle wird man dann die Lösung ein/ausblenden können.
 
 #### Lösung Aufgabe 1
@@ -239,7 +246,7 @@ Position: X=0, Y=0, Z=10
 Größe: Im Inspector Scale auf folgenden Werte setzen: X=2, Y=2, Z=1. Fertig!
 Eventuell, musst du im Inspector bei Sprite Renderer “Order in Layer” auf -1 setzen. Dadurch ist dein Hintergrund auf einem eigenen Layer hinter den anderen Objekten.
 ### Aufgabe 2
-Füge die Grafik Tree3.png aus dem freetileset_jungle\png\Object zur Spielszene hinzu und Weise dem Baum einen Polygon Collider 2D zu. 
+Füge die Grafik Tree3.png aus dem freetileset_jungle\png\Object zur Spielszene hinzu und Weise dem Baum einen Polygon Collider 2D zu.
 
 
 #### Lösung Aufgabe 2:
@@ -254,7 +261,7 @@ In der Hierarchy den Baum anklicken und im Inspector über Add Component->Physic
 !!!bug "Pro-Tipp"
 	Wenn man möchte, dass die Objekte im Spielfeld ein wenig in der Baumkrone verschwinden, dann kann man die Größe des Objekts z.B. Tree_3 zuerst auf einen höheren Wert setzen (z.B. 110) und dann den Collider hinzufügen. Ein höherer Wert bei Pixelgröße bedeutet ja, dass der Baum kleiner dargestellt wird. Dadurch haben wir einen etwas kleineren Baum mit einem kleineren Collider. Wenn wir jetzt die Pixelgröße wieder auf den ursprünglichen Wert von 100 zurücksetzen, dann bleibt der Collider kleiner als die graphische Darstellung des Baums. Der Collider skaliert nämlich nur dann mit, wenn ich die Größe eines Spielobjekts via Transform/Scale ändere. Für das Finetuning könnte man noch das Offset des Polygon Colliders anpassen, z.B. indem wir Y=-0,1 setzen. Abschließend setzt man noch den Z-Wert des Baums auf einen niedrigeren Z-Wert, als den Wert der anderen Spielobjekte (z.B. -2).
 
-#### Sourcecode
-Download Sourcecode Teil 04: [http://comber.at/dev/BouncyFant04.zip](http://comber.at/dev/BouncyFant04.zip)
+---
 
-	
+#### Sourcecode
+[Download Sourcecode Teil 04](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T04/Bouncy%20Fant%2004.zip)

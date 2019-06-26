@@ -1,13 +1,20 @@
 # Teil 6 - Jump around!
 
-!!! Abstract "Ziele"
-    Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
-In diesem Kapitel wirst du... | Erledigt?
------------------------------ | ------------
+!!! Abstract "Lernziele"
+    In diesem Kapitel lernst du, wie man eine Sprungmechanik implementieren kann. Außerdem lernst du, wie du Materialien in Unity verwenden kannst, um die Elefanten elastisch zu machen.
+	
+In diesem Kapitel wirst du... |
+----------------------------- |
 Eine Methode implementieren, die feststellt ob ein Elefant gerade am Boden steht oder in der Luft ist. |
-Eine Methode implementieren, die die Elefanten springen lässt |
-Physikalische Materialien in Unity kennenlernen |
+Eine Methode implementieren, die die Elefanten springen lässt. |
 Ein Material erstellen, dass die Elefanten elastisch wie Hüpfbälle macht |
+
+Nun geht es darum, den Elefanten die Fähigkeit zu verleihen, am Spielfeld wie Flummis herumzuspringen. Das Spiel heißt schließlich ja Bouncy Fant.  
+
+
+
+
+
 
 ## Springen
 
@@ -21,9 +28,6 @@ Erstelle zuallererst in BouncyFant.cs eine Variable für die Sprungkraft. Diese 
     public float MaxGeschwindigkeit = 10;
     public float Sprungkraft = 300;
 ```
-
-!!!Tip "Anmerkung"
-    Anm: Solltet ihr dieses Spiel mit eurer Biologielehrerin programmieren, dann setzt die Variable Sprungkraft immer auf 0. ;-)
 
 ### Feststellen, ob sich der Elefant am Boden befindet
 Die Elefanten sollen grundsätzlich nur dann springen können, wenn sie auf einem Objekt stehen, von welchem sie abspringen können.  Könnten Ossi und Elli nämlich aus der Luft nochmal los springen, wäre das ziemlich gecheatet.  Es spricht aber nichts dagegen, dass man in einem anderen Spiel, einem anderen Level unseres Spiels oder bei Boostern, so ein Feature (z.B. Double Jump, oder ein Art Flappybird-Mechanik) einbaut.
@@ -105,5 +109,7 @@ Das Material kann man einem Objekt zuweisen, indem man es einfach auf das GameOb
 
 ![Material zuweisen](img/T06/T06-c-Elastisches Material zuweisen.png)
 
+---
+
 #### Sourcecode
-Download Sourcecode Teil 06: [http://comber.at/dev/BouncyFant06.zip](http://comber.at/dev/BouncyFant06.zip)
+[Download Sourcecode Teil 06](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T06/Bouncy%20Fant%2006.zip)

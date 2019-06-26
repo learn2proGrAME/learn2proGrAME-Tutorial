@@ -5,7 +5,7 @@
 
 ##Lernergebnis Strukturmodell
 
-**Voraussetzungen: [DigiKomp(DK) 31., 3.3](https://digikomp.at/index.php?id=585&L=0)** 
+**Voraussetzungen: [DigiKomp(DK) 3.1, 3.3](https://digikomp.at/index.php?id=585&L=0)** 
 
 **Inhalte:**
 
@@ -61,6 +61,25 @@
 --- 
 
 ##Unterrichtsmethoden
+
+---
+
+##Zusätzliche Unterrichtsmaterialien
+
+###C#-Cheatsheet
+
+In diesem Dokument sind grundlegende Informationen und Befehle für die Programmierung in C# zusammengefasst. Es ist für die Verwendung im Unterricht zum Einstieg in die Konsolenprogrammierung mit C# konzipiert.  
+
+Die Schüler_innen finden hier übersichtlich zusammengefasst Informationen und Beispiele zu:
+
+* Datentypen
+* Variablen
+* Kommentare
+* Operatoren
+* Befehle zur Ein-/Ausgabe über die Konsole
+* Kontrollstrukuren
+
+[Link zum Cheatsheet](https://docs.google.com/document/d/1Yz8Mu2px40cTVEKozI4FnQ4GlAeDKEwozIZAPn7FCY4/edit?usp=sharing)
 
 ---
 

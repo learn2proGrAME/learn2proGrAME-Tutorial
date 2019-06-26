@@ -1,8 +1,10 @@
 # Teil 2 - Animationen und "States"
 
+!!! Abstract "Lernziele"
+	In diesem Kapitel lernst du, wie du eine Animation für deine Spielfigur erstellst und sie mithilfe des "Animation Controller" animierst.
 
-In diesem Kapitel wirst du... |  Erledigt?
-------------------------------|-------------
+In diesem Kapitel wirst du... |
+------------------------------|
 Benennung der Animationsstufen überprüfen |  
 Eine Animation erstellen. |
 Dem AnimationsController einen geeigneten Namen geben. |
@@ -11,7 +13,7 @@ Einen State im AnimationsController erstellen. |
 Variablen im AnimationsContoller erstellen |
 Bedingungen für die Übergänge einstellen |
 
-Überprüfe, ob du, wie in [Teil 1](0280-bouncyfant/T01-adassets/) vorgegeben, den Animationsstufen die Namen **Elefant_Gehen_1**, **Elefant_Gehen_2** und **Elefant_Stehen** gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
+Überprüfe, ob du, wie in [Teil 1](../T01-adassets/#animationsstufen-benennen) vorgegeben, den Animationsstufen die Namen **Elefant_Gehen_1**, **Elefant_Gehen_2** und **Elefant_Stehen** gegeben hast. Klicke auf dein Elefant Asset, sieh im Sprite Editor nach und benenne gegebenfalls die Animationsstufen. Wenn du im Sprite Editor die einzelnen Bilder anklickst, erscheint um den betreffenden Spriteteil ein blauer Rahmen. Im rechten Eck erscheint ein Fenster, wo oben der Name der Animationsstufe eingetragen sein soll.
 
 ## States und Animationen
 
@@ -80,5 +82,7 @@ Bei beiden Übergängen müssen wir noch ein paar Einstellungen treffen, damit d
 
 ![Transition settings](img/T02/T02-j-Einstellungen Uebergaenge.png)
 
+---
+
 #### Sourcecode
-Download Sourcecode Teil 02: [http://comber.at/dev/BouncyFant02.zip](http://comber.at/dev/BouncyFant02.zip)
+[Download Sourcecode Teil 02](https://github.com/learn2proGrAME/proGrAME-Beispiele-und-Quellcodes/blob/master/BouncyFant/T02/Bouncy%20Fant%2002.zip)
