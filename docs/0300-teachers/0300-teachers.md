@@ -2,6 +2,8 @@
 
 ---
 
+## C# Cheatsheet 
+[C# Cheatsheet für Lehrpersonen](https://docs.google.com/document/d/1Yz8Mu2px40cTVEKozI4FnQ4GlAeDKEwozIZAPn7FCY4/edit)
 
 ##Lernergebnis Strukturmodell
 
