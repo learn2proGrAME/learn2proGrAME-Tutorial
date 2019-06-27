@@ -1,11 +1,8 @@
-#Für Lehrpersonen
+# Für Lehrpersonen
 
 ---
 
-## C# Cheatsheet 
-[C# Cheatsheet für Lehrpersonen](https://docs.google.com/document/d/1Yz8Mu2px40cTVEKozI4FnQ4GlAeDKEwozIZAPn7FCY4/edit)
-
-##Lernergebnis Strukturmodell
+## Lernergebnis Strukturmodell
 
 **Voraussetzungen: [DigiKomp(DK) 3.1, 3.3](https://digikomp.at/index.php?id=585&L=0)** 
 
@@ -62,13 +59,13 @@
 
 --- 
 
-##Unterrichtsmethoden
+## Unterrichtsmethoden
 
 ---
 
-##Zusätzliche Unterrichtsmaterialien
+## Zusätzliche Unterrichtsmaterialien
 
-###C#-Cheatsheet
+### C#-Cheatsheet
 
 In diesem Dokument sind grundlegende Informationen und Befehle für die Programmierung in C# zusammengefasst. Es ist für die Verwendung im Unterricht zum Einstieg in die Konsolenprogrammierung mit C# konzipiert.  
 
