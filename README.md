@@ -31,6 +31,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 #### Markdown Files/Dateien
 
+......
 
 #### Images/Bilder
 * are in the img-Folder of a chapter/befinden sich im img-Ordner des dazugehörigen Kapitels
