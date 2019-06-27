@@ -21,11 +21,15 @@ If you have [pip](https://pypi.org/project/pip/) installed, you can
 
 `pip install mkdocs-material`
 
+
+
 ### Workflow
 
 Through `mkdocs serve` tutorial-documentation can be previewed locally.
 
 `mkdocs serve` *ermöglicht eine lokale Vorschau der Inhalte der Tutorial-Dokumentation.*
+
+
 
 ### Naming conventions and Folderstructure/Namenskonvention und Ordnerstruktur
 
@@ -39,14 +43,7 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * no space/keine Leerzeichen
 * informative naming/aussagekräftig
 
-### Chapter Structure / Kapitelstruktur
 
-* Caption/*Überschrift*
-* Learning goals/*Lernziele*
-* Main Content/*Hauptinhalte*
-    * including exercises, work assignments, hints, special notices, references or quotes/*beinhaltet Übungen, Arbeitsaufträge, Tipps, besondere Hinweise (Achtung), Referenzen oder Zitate*
-* Further resources/*Weiterführende Resourcen*
-    * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
 ### Writing Style Guidelines/Schreib-Stil Leitlinien<sup>[1](#myfootnote1)</sup>
 
@@ -55,6 +52,15 @@ Through `mkdocs serve` tutorial-documentation can be previewed locally.
 * rather short and **concise** (essential content, attuned to learning goals)/*eher kurz und prägnant (Kerninhalte, ausgerichtet auf Lernziele)*
 * additional **incentives** (interesting, varied, relatable)/*Zusätzliche Anregungen (interessant, abwechslungsreich, man kann sich damit in Beziehung setzen)*
 
+
+### Chapter Structure / Kapitelstruktur
+
+* Caption/*Überschrift*
+* Learning goals/*Lernziele*
+* Main Content/*Hauptinhalte*
+    * including exercises, work assignments, hints, special notices, references or quotes/*beinhaltet Übungen, Arbeitsaufträge, Tipps, besondere Hinweise (Achtung), Referenzen oder Zitate*
+* Further resources/*Weiterführende Resourcen*
+    * including links to other tutorials, videos, books/*beinhaltet Links zu anderen Tutorials, Videos oder Büchern*
 
 
 **Thanks to all supporters and contributors! *Danke an alle UnterstützerInnen und Mitwirkenden!***
