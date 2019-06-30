@@ -97,7 +97,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class halloelli : MonoBehaviour {
+public class HalloElli : MonoBehaviour {
 	
 	int punkte = 1;
 	string troeten = "Tröööt.";
@@ -145,7 +145,7 @@ using UnityEngine; //DIESE BIBLIOTHEK ERMÖGLICHT ETWA DEN ZUGRIFF AUF DIE UNITY
 
 
 //EINE KLASSE = class bezeichnung {... Inhalte der Klasse ...}
-public class halloelli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour - IST ALSO FÜR EIN GAMEOBJECT 
+public class HalloElli : MonoBehaviour //DIESE KLASSE "ERBT" VON MonoBehaviour - IST ALSO FÜR EIN GAMEOBJECT 
 {
 	//KLASSEN-ATTRIBUTE (EIGENSCHAFTEN) WERDEN IN VARIABLEN GEFASST
 	int punkte = 1;
