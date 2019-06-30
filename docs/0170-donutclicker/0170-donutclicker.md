@@ -64,7 +64,14 @@ public class GameController : MonoBehaviour {
 ```
 
 !!!success "Arbeitsauftrag"
-    Ergänze die fehlenden Code-Teile.
+    Ergänze die fehlenden Code-Teile, bevor du unten weitermachst.
+    
+##GameObjects in Unity den Variablen vom Skript zuweisen
+
+Die Punkte sollen in der Punkteanzeige angezeigt werden. Klicke im Hierarchy Panel auf das GameObject "GameController", im Inspector siehst du nun das schon beigefügte Skript. Damit du im "GameController"-Skript auf dein Textfeld zugreifen kannst, musst du das Textfeld per Drag and Drop an die *"meinHighscore"*-Variable anheften. Damit das Skript mit dem richtigen Button verknüpft ist, ziehe auch den ClickButton in das entsprechende Feld!
+
+![Anheften meinHighscore](img/meinHighscoreAnheften.gif)
+    
 
 !!!bug "ACHTUNG"
     Damit die ```buttonclick()``` Funktion ausgeführt wird, muss diese dem GameObject *"ClickButton"* zugewiesen werden.
@@ -80,10 +87,6 @@ Das funktioniert so: Drücke auf *"+"*. Wähle im ersten Menü *"Runtime Only"*.
 
 ----
 
-##Fertigstellen
 
-Abschließend sollen die Punkte in der Punkteanzeige angezeigt werden. Damit du im "GameController"-Skript auf dein Textfeld zugreifen kannst, musst du das Textfeld per Drag and Drop an die *"meinHighscore"*-Variable anheften.
-
-![Anheften meinHighscore](img/meinHighscoreAnheften.gif)
 
 Fertig!!!! Und jetzt Punkte sammeln :)
