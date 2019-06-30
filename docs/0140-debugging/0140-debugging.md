@@ -63,7 +63,7 @@ Hast du eine **Fehlerbeschreibung** und eine **Zeilenangabe**, kannst du die Zei
 
 
 !!!success "Arbeitsauftrag"
-    Füge folgenden Programm-Teil in deinem halloelli.cs Skript nach 
+    Füge folgenden Programm-Teil in deinem HalloElli.cs Skript nach 
 	
 	```void OnDisable()
     {
@@ -88,9 +88,9 @@ Um zu sehen, was sich in deinem Skript abspielt, wenn du in Unity auf Start drü
 
 ![Breakpoints](img/breakpointSetzen.gif)
 
-Anschließend kannst du dein Spiel in Unity starten. Sobald die Ausführung deines Programms an die Stelle kommt, wo dein Haltepunkt gesetzt ist, bleibt es stehen.
+Um in dem Debug-Modus zu kommen, klicke auf Debuggen -> Debugging starten (oder F5) in Visual Studio. Anschließend kannst du dein Spiel in Unity starten. Sobald die Ausführung deines Programms an die Stelle kommt, wo dein Haltepunkt gesetzt ist, bleibt es stehen.
 
-Nun kannst du die Inhalte von Variablen im aktuellen Zustand beim Haltepunkt einsehen, indem du den Mauszeiger auf die Variable bewegst. 
+Nun kannst du die Inhalte von Variablen im aktuellen Zustand beim Haltepunkt einsehen (im Fenster links unten, wenn du auf "this" draufklickst), indem du den Mauszeiger auf die Variable bewegst. 
 
 Mit der Taste "Nächste Anweisung anzeigen" kannst das Programm nach einem Haltepunkt weiterlaufen lassen.
 
