@@ -37,7 +37,7 @@ Arithmetische Operatoren erlauben uns einfache Berechnungen durchzuführen, fast
 
 ### = Operator 
 
-```=``` ist der **Zuweisungsoperator**. Du verwendest ihn um ein Ergebnis einer Variable zuzuweisen, d.h. das Ergebnis speichern. Der Operator speichert was **rechts** vom ```=``` steht in die Variable links davon. 
+```=``` ist der **Zuweisungsoperator**. Du verwendest ihn, um ein Ergebnis einer Variable zuzuweisen, d.h. das Ergebnis speichern. Der Operator speichert was **rechts** vom ```=``` steht in die Variable links davon. 
 
 ``` c#
 // = speichert den Wert 3 in der Variable x ab.
@@ -58,7 +58,7 @@ lieblingszahl = 3;
 Debug.Log ("Hallo, meine Lieblingszahl ist" + lieblingszahl);
 ```
 In der Konsole steht nach Aufruf: *"Hallo, meine Lieblingszahl ist 3"* 
-Wir sehen also, der Wert ```lieblingszahl``` und ```name``` sind jetzt anders weil einen neuen Wert mit dem Operator ```=``` zugewiesen haben.
+Wir sehen also, der Wert ```lieblingszahl``` und ```name``` sind jetzt anders, weil wir einen neuen Wert mit dem Operator ```=``` zugewiesen haben.
 
 ---- 
 
@@ -82,7 +82,7 @@ In der Konsole steht nach Aufruf *"3 5"*.
 5 ist das Ergebnis von *"b+3"* denn in b ist 2 gespeichert.
 
 !!!success "Arbeitsauftrag" 
-    Verwende den Additionsparameter ```+``` um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach ```c + a+b``` einfügst ist das Ergebnis anders. Warum?
+    Verwende den Additionsparameter ```+``` um die Zahlen b und c zu addieren. Gib dein Ergebnis mit Debug.Log() aus. Je nachdem ob du deinen Code vor oder nach ```c = a+b``` einfügst ist das Ergebnis anders. Warum?
 
 Du kannst den Additionsoperator ```+``` auch verwenden, um Strings zu kombinieren.
 
@@ -92,7 +92,7 @@ String teil2 = "maschine";
 
 Debug.Log (teil1 + teil2);
 Debug.Log (" Bohr" +teil2);
-Debug Log ("Süßes" + " oder " + "Saures");
+Debug.Log ("Süßes" + " oder " + "Saures");
 ```
 In der Konsole steht jetzt: *Waschmaschine Bohrmaschine Süßes oder Saures*
 
@@ -131,7 +131,7 @@ int a = 3;
 int b = a+2*5;
 Debug.Log(b);
 ```
-In der Konsole steht nach dem Ausführen *25*.  
+In der Konsole steht nach dem Ausführen *13*.  
 
 ---- 
 
@@ -176,9 +176,10 @@ In der Konsole steht nach dem Ausführen *1*, denn 10 dividiert durch 3 ist 3 + 
 
 ## Logische Operatoren
 
-**Logische Operatoren** 
-<!--unterscheiden sich von Arithmetischen Operatoren darin, dass sie dir kein Ergebnis an sich zurückgeben, sondern stattdessen--> angeben, ob eine Verknüpfung von Wahrheitswerten (```boolean```) Wahr oder Falsch ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. 
-Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Durch eine Bedingung in einer Verzweigung kann man festlegen iwas das Programm in welchem Fall machen soll
+Die Auswertung von **logischen Operatoren** 
+gibt an, ob ein logischer Ausdruck (auch genannt ```boolean``` nach George Boole)- oder eine Verknüpfung mehrerer  Wahr (true) oder Falsch (false) ist.  Mit diesen Operatoren kann man also Bedingungen schreiben. In einigen Programmiersprachen werden statt ```true``` und ```false``` auch die int-Zahlenwerte 1 und 0 akzeptiert.
+
+Logischen Operatoren sind besonders wichtig bei [Verzweigungen](../0190-conditionals/0190-conditionals.md). Wie noch gezeigt wird, wird der Code innerhalb einer Verzweigung nur ausgeführt, wenn die Bedinung Wahr ergibt.
 
 
 
@@ -216,7 +217,7 @@ int a = 2
 ---- 
 
 ### ```|| ``` Operator (ODER)
-Der ```||``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt muss mindestens eine Aussage ```true``` sein. Nur wenn keine einzige ```true``` Aussage ist, ist der gesamte Begriff false.
+Der ```||``` Operator wird verwendet um Aussagen zu verknüpfen. Damit der zusammengesetzte Begriff in der Klammer ```true``` ergibt muss mindestens eine Aussage ```true``` sein. Nur wenn keine einzige ```true``` Aussage ist, ist der gesamte Begriff ```false```.
 ``` c#
 int a = 2
 (a < 3) || ( a < 5)   // Dieser Ausdruck ergibt true, da zumindest eine Aussage wahr ist.
