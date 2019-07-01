@@ -58,7 +58,7 @@ public class Elefant {
 	public void troeten(int anzahl) {
 		while(anzahl > 0) {
 			Console.WriteLine("Töröööö! "); //In einem Textfenster wird
-								"Töröööö!" ausgegeben
+							//"Töröööö!" ausgegeben
 			anzahl--; //der Parameter Anzahl wird reduziert um 1
 		}
 	}
