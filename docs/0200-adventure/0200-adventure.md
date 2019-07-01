@@ -124,7 +124,7 @@ Damit du das Skript im Spiel verwenden kannst, musst du zwei Arbeitsschritte mac
 
 1. Verknüpfe den Aufruf der Funktion "ausfuehren" mit "On Click" des Buttons "Ausführen". (Eine Erklärung, wie das geht, findest du beim [Krapfenklicker](../0170-donutclicker/0170-donutclicker.md) Spiel!)
 
-2. Verknüpfe die *public* Variablen im Skript mit GameObjects und Grafiken in Unity.
+2. Verknüpfe die *public* Variablen im Skript mit GameObjects und Grafiken in Unity. Wähle dazu den GameController im Hierarchy Panel aus und ziehe die entsprechenden GameObjects auf die Felder im Inspector!
 
 ![GameController References](img/elligamecontrollerreferences.png)
 
