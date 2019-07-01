@@ -44,7 +44,7 @@ Wie kann man das programmieren?
 Im GameController Spielobjekt des Krapfenklicker Spiels hast du bereits eine Variable angelegt, in der das Krapfen Spielobjekt gespeichert ist: ```public Button clickButton;```.
 
 !!!bug "ACHTUNG"
-    ```public``` bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür die [Fertigstellung des Krapfenklicker Spiels](../0170-donutclicker/0170-donutclicker.md)!
+    ```public``` bedeutet, dass diese Variable für andere Teile des eigenen Spiels (und damit in Unity) aufscheint und beschreibbar ist. Deshalb kannst du dem Skript in Unity ein Spielobjekt zuweisen. Siehe hierfür [GameObjects in Unity den Variablen vom Skript zuweisen](../0170-donutclicker/0170-donutclicker.md)!
 
 
 
