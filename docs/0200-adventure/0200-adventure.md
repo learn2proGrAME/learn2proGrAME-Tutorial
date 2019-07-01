@@ -86,7 +86,7 @@ public class GameController : MonoBehaviour
 	public Sprite spielzustand2;
 	public Sprite spielzustand3;
 
-	haeltSteinMitRuessel = //Ergänze hier den Datentyp und den Wert!
+	haeltSteinMitRuessel = //Ergänze hier den *Datentyp* und den *Wert*!
 
 	public void ausfuehren()
 	{
@@ -105,7 +105,7 @@ public class GameController : MonoBehaviour
 			} 
 			// Ergänze hier das "Sonst" der if-Abfrage!
 			{
-				 = "Oh nein, der Fluss ist zu reißend. Du musst etwas in den Fluss werfen. Gibt es hier etwas, das aufheben kann?"; 
+				 = "Oh nein, der Fluss ist zu reißend. Du musst etwas in den Fluss werfen. Gibt es hier etwas, das man aufheben kann?"; 
 				 //Ergänze hier!
 			}
 		}
