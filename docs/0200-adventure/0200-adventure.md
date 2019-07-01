@@ -77,6 +77,8 @@ Füge dem *"GameController"* Spielobjekt ein Skript hinzu. Nenne das Skript eben
 
 Überschreibe den Quellcode in der Datei "GameController.cs" mit:
 ``` c#
+using UnityEngine;
+using UnityEngine.UI;
 public class GameController : MonoBehaviour 
 {
 	public InputField Eingabefeld;
