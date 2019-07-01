@@ -15,7 +15,7 @@ Die GIMP-BenutzerInnen-Oberfläche umfasst folgende Elemente:
 4. Ebenenfenster
 5. Farbverläufe
 
-Hier wird ein Überblick üder die BenutzerInnen-Oberfläche von GIMP gegeben: [GIMP Benutzeroberfläche](https://docs.gimp.org/de/gimp-concepts-main-windows.html)
+Hier wird ein Überblick über die BenutzerInnen-Oberfläche von GIMP gegeben: [GIMP Benutzeroberfläche](https://docs.gimp.org/de/gimp-concepts-main-windows.html)
 
 ---
 
