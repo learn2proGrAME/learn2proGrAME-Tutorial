@@ -61,7 +61,7 @@ clickButton.GetComponent<RectTransform>()
 ```
 
 !!!success "Übung"
-    * Erkundige dich in der [Unity Scripting Referenz](https://docs.unity3d.com/ScriptReference/), wozu die Funktion ```GetComponent``` dient.
+    * Erkundige dich in der [Unity Scripting Referenz](https://docs.unity3d.com/ScriptReference/), wozu die Funktion ```GetComponent``` dient. (Die Suchfunktion liefert hier einen gangbaren Weg)
 	* Was bedeuten [die Klammern ```<``` und ```>``` in C*#*](http://codekicker.de/fragen/csharp-bedeuten-spitzen-Klammern-generics-list-typ-typisierend/660)?
 
 "Rect" steht für Rectangle, und das heißt: Rechteck. 
