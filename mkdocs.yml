@@ -6,41 +6,41 @@ site_url: 'https://learn2programe.github.io/learn2proGrAME-Grundlagen/'
 nav:
     - Einleitung: index.md
     - Grundlagen:
-        - Bedienoberflächen: 0120-userinterface/0120-userinterface.md
-        - Erste Schritte: 0130-firststeps/0130-firststeps.md
-        - Fehler und De-Bugging: 0140-debugging/0140-debugging.md
-        - Variablen: 0150-variables/0150-variables.md
-        - Operatoren: 0160-operators/0160-operators.md
-        - Spiel - Krapfenklicker: 0170-donutclicker/0170-donutclicker.md
-        - Transform Spielobjektkomponente: 0180-transform/0180-transform.md
-        - Verzweigungen: 0190-conditionals/0190-conditionals.md
-        - Spiel - Ellis' großes Abenteuer: 0200-adventure/0200-adventure.md
-        - Grafiken gestalten in GIMP: 0210-drawingingimp/0210-drawingingimp.md
-        - Funktionen: 0220-functions/0220-functions.md
-        - Zugriffskontrolle: 0230-accessmodifiers/0230-accessmodifiers.md
-        - Schleifen: 0250-loops/0250-loops.md
-        - Die Spiel-Schleife: 0260-gameloop/0260-gameloop.md
-        - Objekt-orientiertes Programmieren - Grundlagen: 0270-classes/0270-classes.md
+        - Bedienoberflächen: fundamentals/T01-userinterface.md
+        - Erste Schritte: fundamentals/T02-firststeps.md
+        - Fehler und De-Bugging: fundamentals/T03-debugging.md
+        - Variablen: fundamentals/T04-variables.md
+        - Operatoren: fundamentals/T05-operators.md
+        - Spiel - Krapfenklicker: fundamentals/T06-donutclicker.md
+        - Transform Spielobjektkomponente: fundamentals/T07-transform.md
+        - Verzweigungen: fundamentals/T08-conditionals.md
+        - Spiel - Ellis' großes Abenteuer: fundamentals/T09-adventure.md
+        - Grafiken gestalten in GIMP: fundamentals/T10-drawingingimp.md
+        - Funktionen: fundamentals/T11-functions.md
+        - Zugriffskontrolle: fundamentals/T12-accessmodifiers.md
+        - Schleifen: fundamentals/T13-loops.md
+        - Die Spiel-Schleife: fundamentals/T14-gameloop.md
+        - Objekt-orientiertes Programmieren - Grundlagen: fundamentals/T15-classes.md
     - Spiel - BouncyFant:
-      - Einführung: 0280-bouncyfant/T00-introduction.md
-      - Teil 1 - Neues Projekt und Assets: 0280-bouncyfant/T01-adassets.md
-      - Teil 2 - Animationen und States: 0280-bouncyfant/T02-animstat.md
-      - Teil 3 - Bewegung: 0280-bouncyfant/T03-movement.md
-      - Teil 4 - Levels, Collider: 0280-bouncyfant/T04-levels.md
-      - Teil 5 - Zweite Spielfigur: 0280-bouncyfant/T05-secondchar.md
-      - Teil 6 - Jump Around: 0280-bouncyfant/T06-jump.md
-      - Teil 7 - Physikwelt: 0280-bouncyfant/T07-physics.md
-      - Teil 8 - Gewinnbedingung: 0280-bouncyfant/T08-win.md
-      - Teil 9 - Finetuning: 0280-bouncyfant/T09-finetuning.md
-      - Teil 10 - Das Spiel Veröffentlichen: 0280-bouncyfant/T10-deploy.md
+      - Einführung: bouncyfant/T00-introduction.md
+      - Teil 1 - Neues Projekt und Assets: bouncyfant/T01-adassets.md
+      - Teil 2 - Animationen und States: bouncyfant/T02-animstat.md
+      - Teil 3 - Bewegung: bouncyfant/T03-movement.md
+      - Teil 4 - Levels, Collider: bouncyfant/T04-levels.md
+      - Teil 5 - Zweite Spielfigur: bouncyfant/T05-secondchar.md
+      - Teil 6 - Jump Around: bouncyfant/T06-jump.md
+      - Teil 7 - Physikwelt: bouncyfant/T07-physics.md
+      - Teil 8 - Gewinnbedingung: bouncyfant/T08-win.md
+      - Teil 9 - Finetuning: bouncyfant/T09-finetuning.md
+      - Teil 10 - Das Spiel Veröffentlichen: bouncyfant/T10-deploy.md
     - Spiel - Space Asteroids:
-      - Programmierung der Asteroiden: 0285-spaceasteroids/T01-spaceasteroids.md
-      - Partikelsysteme erstellen: 0285-spaceasteroids/T02-particles1.md
-      - Fertige Partikelsysteme verwenden: 0285-spaceasteroids/T03-particles2.md
-      - Veröffentlichung auf Android: 0285-spaceasteroids/T04-deployToMobile.md
-      - Steuerung für Touchscreens: 0285-spaceasteroids/T05-mobileControls.md
-    - Über learn2proGrAME: 0290-about/0290-about.md
-    - Für Lehrpersonen: 0300-teachers/0300-teachers.md
+      - Programmierung der Asteroiden: spaceasteroids/T01-spaceasteroids.md
+      - Partikelsysteme erstellen: spaceasteroids/T02-particles1.md
+      - Fertige Partikelsysteme verwenden: spaceasteroids/T03-particles2.md
+      - Veröffentlichung auf Android: spaceasteroids/T04-deployToMobile.md
+      - Steuerung für Touchscreens: spaceasteroids/T05-mobileControls.md
+    - Über learn2proGrAME: about/0290-about.md
+    - Für Lehrpersonen: teachers/0300-teachers.md
 
 
 # Repository
@@ -61,7 +61,7 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   highlightjs: true
-  logo: '0200-adventure/img/elliLogo.png'
+  logo: 'fundamentals/img/elliLogo.png'
 
 
 # Customization
