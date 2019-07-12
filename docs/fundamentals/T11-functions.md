@@ -5,13 +5,9 @@
     In diesem Kapitel lernst du was Funktionen beim Programmieren sind. Du lernst, wofür Funktionen verwendet werden, was **Parameter** und **Rückgabewerte** sind und wie du deine eigenen Funktionen schreiben kannst.
 -----
 
-<!--!!! Abstract "Hinweis"
-    In der Objektorientierten Programmierung wird statt Funktion auch oft der Begriff Methode verwendet.-->
-<!-- ----- -->
-
 ##Wofür braucht man Funktionen?
 
-Funktionen (bzw. Methoden) sind kleine *Unterprogramme*.
+Funktionen sind kleine *Unterprogramme*.
 
 
 Vielleicht musst du für dein Spiel den Abstand zwischen zwei Objekten berechnen? Diese Berechnung benötigt man in den meisten Spielen sehr häufig.
@@ -55,7 +51,7 @@ Die **Parameter** stehen im Body der Funktion als [Variablen](T04-variables.md) 
 
 ##Funktionen mit Rückgabewert
 
-Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Methodenaufrufer zurück.
+Das Schlüsselwort ```return``` beendet die Ausführung einer Funktion und gibt den danachstehenden Wert an den Funktionsaufrufer zurück.
 
 Zum Beispiel kannst du das Ergebnis eines Aufrufs der Funktion ```Abstand()``` in einer [Variable](T04-variables.md) speichern oder direkt in einem *if*-Statement verwenden:
 
@@ -91,9 +87,8 @@ zwei Beispielel:
 
 
 !!!bug "ACHTUNG"
-    Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*.
-    Oft werden als Funktionen nur jene Methoden mit Rückgabewert bezeichnet (In Anlehnung an den Funktionsbegriff aus der Mathematik). Jene ohne Rückgabewert heißen dann *Prozedur*.
-    Im Kontext von C,C++ und C# werden jedoch meist sowohl Methoden mit als auch ohne Rückgabewert als Funktionen bezeichnet.
+    Je nach Programmiersprache gibt es unterschiedliche Definitionen der Begriffe *Funktion*, *Prozedur* und *Methode*. Generell (C,C++, C# und Java) ist eine Funktion der allgemeine Begriff für alle Funktionsarten.
+    Funktionen ohne Rückgabewert werden als *Prozeduren* bezeichnet und Funktionen innerhalb von Klassen sind *Methoden*. Methoden beschreiben Verhalten von [Objekten/Klassen](T15-classes.md) z.B. esseFisch() kann eine Methode der Klasse Katze sein.
 
 -----
 
