@@ -21,7 +21,7 @@ Viel Spass beim Spiele entwickeln!
 
 ## Was wirst du in diesem Tutorial lernen?
 
-In diesem Tutorial lernst du die Grundlagen zur Spieleprogrammierung in Unity mit der Programmiersprache C#.
+In diesem Tutorial lernst du die Grundlagen zur Spieleprogrammierung in Unity mit der Programmiersprache C# [Download Unity](https://unity3d.com/de/get-unity/download/archive). Wir haben die meisten Teile des Tutorials mit Unity Version 5.6.2f1 erstellt und getestet.
 
 * Dabei wirst du zuerst die [Bedienoberflächen von Unity und Visual Studio](fundamentals/T01-userinterface.md) erkunden.
 * Danach schreibst du dein [erstes Programm in C#](fundamentals/T02-firststeps.md).
