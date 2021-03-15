@@ -16,7 +16,7 @@ Im späteren Verlauf des Projekts, kannst du einfach auf dein Projekt in der Lis
 
 ![Neues Projekt](img/T01/T01-a-Neues Projekt.png)
 
-Gib bei den erweiterten Einstellungen einen sinnvollen Namen (z.B. *<DeinName>_BouncyFant*) ein. Ganz wichtig ist es, beim Projekttyp “2D” auszuwählen.
+Gib bei den erweiterten Einstellungen einen sinnvollen Namen (z.B. *<DeinName>BouncyFant*) ein. Ganz wichtig ist es, beim Projekttyp “2D” auszuwählen.
 
 ![2D-Option](img/T01/T01-b-Projekteinstellungen.png)
 
