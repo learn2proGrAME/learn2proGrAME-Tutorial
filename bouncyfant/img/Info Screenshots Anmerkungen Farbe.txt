@@ -1,0 +1,6 @@
+?Screenshots Farbcodes
+Markierungsfarbe: 1acb1a
+Textfarbe: 16bf16
+
+GIMP
+Randstaerke: 4 (in average)
