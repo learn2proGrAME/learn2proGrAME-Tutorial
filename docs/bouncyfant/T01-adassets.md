@@ -112,7 +112,7 @@ Nach dem Slicen geben wir den einzelnen Animationsstufen im Sprite Editor noch s
 
 ### Die Spielfigur zur Spielszene hinzufügen
 
-Unser Ziel ist es jetzt, einen stehenden Elefant als GameObject dem Spiel hinzuzufügen. Dazu klappen wir zuerst das Sprite Elefant auf (klicke auf den kleinen Pfeil links neben Elefant im Asset Panel, im Ordner *Sprites*). Dann siehst du die einzelnen Animationsstufen (Elefant_Gehen_1, Elefant_Gehen_2, Elefant_Stehen). Durch Ziehen der Animationsstufe *Elefant_Gehen* vom Asset Panel in das Hierarchy Panel fügen wir den Elefanten zum Spiel hinzu. Dabei wird auch gleich ein neues GameObject erstellt.
+Unser Ziel ist es jetzt, einen stehenden Elefant als GameObject dem Spiel hinzuzufügen. Dazu klappen wir zuerst das Sprite Elefant auf (klicke auf den kleinen Pfeil links neben Elefant im Asset Panel, im Ordner *Sprites*). Dann siehst du die einzelnen Animationsstufen (Elefant_Gehen_1, Elefant_Gehen_2, Elefant_Stehen). Durch Ziehen der Animationsstufe *Elefant_Stehen* vom Asset Panel in das Hierarchy Panel fügen wir den Elefanten zum Spiel hinzu. Dabei wird auch gleich ein neues GameObject erstellt.
 
 Ist der Elefant hinzugefügt, passen wir noch die Größe an. Das können wir bewerkstelligen, indem wir das Sprite des Elefanten anklicken und im Inspector Panel bei *Pixels Per Unit* den Wert anpassen (in unserem Fall beispielsweise 300). Mit Apply wird das Ganze wieder bestätigt.
 
